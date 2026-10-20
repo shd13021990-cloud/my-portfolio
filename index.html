@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shahid Akram — Freelance Social Media Manager, Digital Marketer, Content Strategist, Graphic Designer & Data Systems Specialist. Inspired by Japanese digital craftsmanship.">
+  <title>Shahid Akram | Freelance Social Media Manager & Digital Marketer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating Mouse Stalker (mildsugardesign.jp signature) -->
+  <div class="p-stalker" id="stalker">Hey! 🤝</div>
+
+  <!-- Header -->
+  <header class="l-header">
+    <div class="l-header__inner">
+      <div class="l-header__brand">
+        <a href="#hero" class="l-header__logo u-en">
+          Shahid Akram
+          <span class="logo-dot"></span>
+        </a>
+        <p class="l-header__tagline u-en">
+          Freelance Social Media &amp; Digital Marketer
+        </p>
+      </div>
+
+      <div class="l-header__actions">
+        <!-- Day / Night Time Toggle -->
+        <button class="time-toggle-btn" id="timeToggleBtn" aria-label="Toggle Day / Night Mode">
+          <span class="icon">☀️</span> Day Room
+        </button>
+
+        <!-- 3-Dot Floating Menu Button -->
+        <button class="l-header__menu-button" id="menuBtn" aria-label="Open Menu">
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Dropdown Menu Drawer -->
+    <div class="l-header__menu-drawer" id="menuDrawer">
+      <nav class="l-header__nav-list">
+        <a href="#hero"><span>01</span> Home</a>
+        <a href="#cases"><span>02</span> Cases (1–5)</a>
+        <a href="#disciplines"><span>03</span> Disciplines</a>
+        <a href="#gallery"><span>04</span> Poster Gallery</a>
+        <a href="#experience"><span>05</span> Experience &amp; Track Record</a>
+        <a href="#tools"><span>06</span> Tools &amp; Stack</a>
+        <a href="#contact"><span>07</span> Say “Hey!”</a>
+      </nav>
+      <div class="l-header__nav-sub">
+        <span>Available for Remote &amp; Global Freelance</span>
+        <span>Worldwide Client Retainers</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Stage -->
+  <section class="p-hero" id="hero">
+    <div class="p-hero__container">
+
+      <!-- Left: Interactive Isometric Room & Character Canvas -->
+      <div class="p-hero__room" id="heroRoom">
+        
+        <!-- Verified Headshot Badge -->
+        <div class="headshot-badge-card">
+          <img src="Man_with_beard_eyeglasses_sitting.jpeg" alt="Shahid Akram" class="headshot-thumb">
+          <div class="headshot-meta">
+            <strong>Shahid Akram</strong>
+            <span>Social &amp; Growth Specialist</span>
+          </div>
+        </div>
+
+        <!-- Interactive SVG Room Illustration -->
+        <svg class="room-interactive-svg" viewBox="0 0 680 510" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background Window: Day Sky -->
+          <g id="roomDaySky" style="transition: opacity 0.5s ease;">
+            <rect x="70" y="50" width="220" height="170" rx="20" fill="#E0F2FE"/>
+            <circle cx="230" cy="100" r="30" fill="#FEA831"/>
+            <path d="M100 160 Q120 140 145 160 T190 160 T235 160 L235 220 L100 220 Z" fill="#BAE6FD" opacity="0.6"/>
+          </g>
+
+          <!-- Background Window: Night Sky (Toggled) -->
+          <g id="roomNightSky" style="opacity: 0; transition: opacity 0.5s ease;">
+            <rect x="70" y="50" width="220" height="170" rx="20" fill="#0F172A"/>
+            <circle cx="230" cy="95" r="24" fill="#FEF08A"/>
+            <circle cx="120" cy="90" r="3" fill="#ffffff"/>
+            <circle cx="170" cy="120" r="2.5" fill="#ffffff"/>
+            <circle cx="100" cy="140" r="2" fill="#ffffff"/>
+            <circle cx="200" cy="75" r="3" fill="#ffffff"/>
+          </g>
+
+          <!-- Window Frame -->
+          <rect x="70" y="50" width="220" height="170" rx="20" stroke="var(--color-black)" stroke-width="6" fill="none"/>
+          <line x1="180" y1="50" x2="180" y2="220" stroke="var(--color-black)" stroke-width="4"/>
+          <line x1="70" y1="135" x2="290" y2="135" stroke="var(--color-black)" stroke-width="4"/>
+
+          <!-- Shelf with Books & Plant -->
+          <rect x="360" y="90" width="240" height="12" rx="6" fill="var(--color-black)"/>
+          <rect x="385" y="45" width="20" height="45" rx="3" fill="#FEA831"/>
+          <rect x="410" y="35" width="24" height="55" rx="3" fill="#3B82F6"/>
+          <rect x="440" y="50" width="18" height="40" rx="3" fill="#10B981"/>
+          <!-- Plant on Shelf -->
+          <rect x="520" y="65" width="35" height="25" rx="5" fill="#E2E8F0" stroke="var(--color-black)" stroke-width="3"/>
+          <path d="M537 65 Q520 40 515 25 Q535 35 537 65" fill="#10B981"/>
+          <path d="M537 65 Q555 35 565 20 Q550 40 537 65" fill="#059669"/>
+
+          <!-- Big Workstation Desk -->
+          <path d="M60 360 L620 360 L600 470 L80 470 Z" fill="var(--color-white)" stroke="var(--color-black)" stroke-width="6"/>
+          <!-- Desk Legs -->
+          <rect x="110" y="470" width="16" height="40" fill="var(--color-black)"/>
+          <rect x="550" y="470" width="16" height="40" fill="var(--color-black)"/>
+
+          <!-- Laptop on Desk -->
+          <rect x="230" y="270" width="220" height="140" rx="12" fill="#1E293B" stroke="var(--color-black)" stroke-width="5"/>
+          <!-- Screen Display: Live Chart -->
+          <rect x="245" y="285" width="190" height="110" rx="6" fill="#0F172A"/>
+          <!-- Chart curve -->
+          <path d="M260 365 Q300 350 330 320 T400 300" stroke="#FEA831" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <circle cx="400" cy="300" r="5" fill="#10B981"/>
+          <!-- Code/Data lines -->
+          <rect x="260" y="300" width="55" height="6" rx="3" fill="#38BDF8"/>
+          <rect x="260" y="312" width="40" height="6" rx="3" fill="#94A3B8"/>
+          <!-- Laptop base -->
+          <path d="M210 410 L470 410 L455 425 L225 425 Z" fill="#94A3B8" stroke="var(--color-black)" stroke-width="4"/>
+
+          <!-- Steaming Coffee Cup -->
+          <rect x="495" y="380" width="34" height="38" rx="8" fill="#FEA831" stroke="var(--color-black)" stroke-width="4"/>
+          <path d="M529 390 Q542 399 529 408" stroke="var(--color-black)" stroke-width="4" fill="none"/>
+          <path d="M504 368 Q508 360 504 352" stroke="var(--color-black)" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M515 370 Q519 362 515 354" stroke="var(--color-black)" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+          <!-- Notebook & Pen -->
+          <rect x="120" y="390" width="70" height="50" rx="6" fill="#EDEAE2" stroke="var(--color-black)" stroke-width="4" transform="rotate(-6 120 390)"/>
+          <line x1="130" y1="405" x2="175" y2="400" stroke="#94A3B8" stroke-width="3"/>
+          <line x1="132" y1="418" x2="177" y2="413" stroke="#94A3B8" stroke-width="3"/>
+
+          <!-- Modern Desk Lamp -->
+          <path d="M140 370 Q140 250 195 240" stroke="var(--color-black)" stroke-width="6" fill="none"/>
+          <path d="M185 230 L220 245 L210 260 L175 245 Z" fill="#FEA831" stroke="var(--color-black)" stroke-width="4"/>
+          <circle cx="140" cy="370" r="16" fill="var(--color-black)"/>
+        </svg>
+
+        <div class="room-badge-bottom">
+          <span class="status-dot-pulse"></span>
+          <span>Open for Global Projects &amp; Freelance</span>
+        </div>
+      </div>
+
+      <!-- Right: Playful Profile Intro -->
+      <div class="p-hero__side">
+        <h1 class="p-hero__hey u-en">
+          Hey! <span class="hand-wave">🤝</span>
+        </h1>
+        <h2 class="p-hero__headline u-en">
+          I’m a multi-disciplinary specialist creating <span>thoughtful strategies</span> &amp; high-impact digital results.
+        </h2>
+        <p class="p-hero__bio">
+          Specializing in <strong>Social Media Management</strong>, <strong>Digital Marketing (ROAS)</strong>, <strong>Content Strategy &amp; Copywriting</strong>, <strong>Graphic Design</strong>, and <strong>Data Systems</strong>. Helping global brands, modern agencies, and e-commerce founders turn attention into revenue with creative craftsmanship and data precision.
+        </p>
+
+        <!-- Signature Mildsugar Action Buttons Row -->
+        <div class="hero-actions-row">
+          <a href="#cases" class="mildsugar-btn">
+            <span class="label">
+              <span class="label-text">Explore Cases (1–5)</span>
+              <span class="label-text label-text--clone" aria-hidden="true">Explore Cases (1–5)</span>
+            </span>
+            <svg class="arrow-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M33.65 10.79L5.48 39.05C4.21 40.32 2.21 40.32 0.95 39.05C-0.32 37.78 -0.32 35.78 0.95 34.52L29.21 6.35H5.08C3.28 6.35 1.9 4.97 1.9 3.17C1.9 1.37 3.28 0 5.08 0H36.83C38.63 0 40 1.37 40 3.17V34.92C40 36.72 38.63 38.1 36.83 38.1C35.03 38.1 33.65 36.72 33.65 34.92V10.79Z" fill="#FEA831"/>
+            </svg>
+          </a>
+
+          <a href="#contact" class="action-btn-pill secondary" style="padding: 14px 26px; font-size: 15px;">
+            <span>Let’s Talk 🤝</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Marquee Ticker -->
+  <div class="p-ticker">
+    <div class="p-ticker__track">
+      <div class="p-ticker__item"><span class="dot">✦</span> Social Media Strategy &amp; Viral Reels</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> High-Converting Content &amp; Copywriting</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> Visual Identity &amp; Graphic Design</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> Digital Marketing &amp; Meta Ads ROAS</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> 100% Precision Data Entry &amp; Automation</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> Social Media Strategy &amp; Viral Reels</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> High-Converting Content &amp; Copywriting</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> Visual Identity &amp; Graphic Design</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> Digital Marketing &amp; Meta Ads ROAS</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> 100% Precision Data Entry &amp; Automation</div>
+    </div>
+  </div>
+
+  <!-- Full-Stage Cases Experience (mildsugardesign.jp /cases/ replica) -->
+  <section class="p-cases-stage" id="cases">
+    <!-- Huge Ghost Headline in Background -->
+    <div class="p-cases__bg-text" aria-hidden="true">
+      <div class="bg-ghost-quote" id="bgGhostQuote">
+        From viral hook to community loyalty. 85K+ followers &amp; 4.2M views.
+      </div>
+    </div>
+
+    <!-- Center Stage Case Card Display -->
+    <div class="p-cases__main">
+
+      <!-- Case 01: Social Media -->
+      <div class="case-card is-active" data-case="0">
+        <div class="case-card__number u-en">Case 01</div>
+        <div class="case-card__visual" title="Click to view deep dive">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25" y="25" width="150" height="150" rx="36" fill="#FEA831"/>
+            <rect x="50" y="50" width="100" height="100" rx="20" fill="var(--color-white)"/>
+            <polygon points="85,75 130,100 85,125" fill="#FEA831"/>
+            <circle cx="150" cy="50" r="14" fill="#3C3728"/>
+            <text x="145" y="55" fill="#fff" font-size="14" font-weight="bold">✦</text>
+          </svg>
+        </div>
+        <h3 class="case-card__title">Social Media Growth Engine: From Cold Scrollers to 85K+ Engaged Community</h3>
+        <p class="case-card__desc">Engineered retention-optimized short-form video hooks, carousel frameworks, and automated DM lead funnels across Instagram and TikTok for international brands and creator channels.</p>
+        <div class="case-card__tags">
+          <span class="case-tag">Social Media Specialist</span>
+          <span class="case-tag">Viral Video Hooks</span>
+          <span class="case-tag">85K Followers</span>
+        </div>
+        <button class="mildsugar-btn" onclick="document.querySelectorAll('.case-card__visual')[0].click()" style="font-size: 20px;">
+          <span class="label">
+            <span class="label-text">View Case Breakdown [↗]</span>
+            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- Case 02: Content Writing -->
+      <div class="case-card" data-case="1">
+        <div class="case-card__number u-en">Case 02</div>
+        <div class="case-card__visual" title="Click to view deep dive">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25" y="25" width="150" height="150" rx="36" fill="#3B82F6"/>
+            <rect x="55" y="55" width="90" height="110" rx="12" fill="var(--color-white)"/>
+            <line x1="70" y1="75" x2="125" y2="75" stroke="#3B82F6" stroke-width="6" stroke-linecap="round"/>
+            <line x1="70" y1="95" x2="130" y2="95" stroke="#3C3728" stroke-width="5" stroke-linecap="round"/>
+            <line x1="70" y1="115" x2="115" y2="115" stroke="#3C3728" stroke-width="5" stroke-linecap="round"/>
+            <line x1="70" y1="135" x2="125" y2="135" stroke="#FEA831" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="case-card__title">Conversion Copywriting &amp; Content Architecture: Generating 42 Inbound B2B Leads/mo</h3>
+        <p class="case-card__desc">Authored authoritative SEO pillar hubs, persuasive landing page copy, and executive LinkedIn thought-leadership essays that position founders as industry authorities.</p>
+        <div class="case-card__tags">
+          <span class="case-tag">Content Writing</span>
+          <span class="case-tag">B2B Strategy</span>
+          <span class="case-tag">120K Views/mo</span>
+        </div>
+        <button class="mildsugar-btn" onclick="document.querySelectorAll('.case-card__visual')[1].click()" style="font-size: 20px;">
+          <span class="label">
+            <span class="label-text">View Case Breakdown [↗]</span>
+            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- Case 03: Graphic Design -->
+      <div class="case-card" data-case="2">
+        <div class="case-card__number u-en">Case 03</div>
+        <div class="case-card__visual" title="Click to view deep dive">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25" y="25" width="150" height="150" rx="36" fill="#EC4899"/>
+            <circle cx="85" cy="100" r="35" fill="var(--color-white)"/>
+            <circle cx="120" cy="100" r="35" fill="#FEA831" fill-opacity="0.8"/>
+            <polygon points="100,55 115,85 85,85" fill="#3C3728"/>
+          </svg>
+        </div>
+        <h3 class="case-card__title">Visual Identity &amp; High-CTR Creative Kit: Elevating Brand Perception Across 15 Channels</h3>
+        <p class="case-card__desc">Designed cohesive brand kits, scroll-stopping social ad creative systems, and investor pitch decks that boosted ad click-through rate by +3.8% across diverse client niches.</p>
+        <div class="case-card__tags">
+          <span class="case-tag">Graphic Design</span>
+          <span class="case-tag">Brand Identity</span>
+          <span class="case-tag">Pitch Decks</span>
+        </div>
+        <button class="mildsugar-btn" onclick="document.querySelectorAll('.case-card__visual')[2].click()" style="font-size: 20px;">
+          <span class="label">
+            <span class="label-text">View Case Breakdown [↗]</span>
+            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- Case 04: Digital Marketing -->
+      <div class="case-card" data-case="3">
+        <div class="case-card__number u-en">Case 04</div>
+        <div class="case-card__visual" title="Click to view deep dive">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25" y="25" width="150" height="150" rx="36" fill="#10B981"/>
+            <rect x="55" y="115" width="22" height="45" rx="5" fill="var(--color-white)"/>
+            <rect x="88" y="90" width="22" height="70" rx="5" fill="var(--color-white)"/>
+            <rect x="121" y="60" width="22" height="100" rx="5" fill="#FEA831"/>
+            <path d="M55 105 Q90 80 132 45" stroke="#3C3728" stroke-width="6" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="case-card__title">Full-Funnel Paid Advertising: Slashing CPA by 52% and Scaling ROAS to 4.2x–6.8x</h3>
+        <p class="case-card__desc">Restructured Meta and Google Ads accounts with creative fatigue management, lookalike segmentation, and omnichannel cart recovery sequences.</p>
+        <div class="case-card__tags">
+          <span class="case-tag">Digital Marketing</span>
+          <span class="case-tag">Meta Ads</span>
+          <span class="case-tag">4.2x ROAS</span>
+        </div>
+        <button class="mildsugar-btn" onclick="document.querySelectorAll('.case-card__visual')[3].click()" style="font-size: 20px;">
+          <span class="label">
+            <span class="label-text">View Case Breakdown [↗]</span>
+            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- Case 05: Data Entry -->
+      <div class="case-card" data-case="4">
+        <div class="case-card__number u-en">Case 05</div>
+        <div class="case-card__visual" title="Click to view deep dive">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25" y="25" width="150" height="150" rx="36" fill="#8B5CF6"/>
+            <rect x="55" y="60" width="90" height="85" rx="10" fill="var(--color-white)"/>
+            <line x1="55" y1="85" x2="145" y2="85" stroke="#8B5CF6" stroke-width="4"/>
+            <line x1="55" y1="115" x2="145" y2="115" stroke="#8B5CF6" stroke-width="4"/>
+            <line x1="100" y1="60" x2="100" y2="145" stroke="#8B5CF6" stroke-width="4"/>
+            <circle cx="130" cy="130" r="14" fill="#FEA831"/>
+            <text x="125" y="135" fill="#fff" font-size="14" font-weight="bold">✓</text>
+          </svg>
+        </div>
+        <h3 class="case-card__title">Precision Data Entry &amp; Automation: 100% Accuracy Across 25,000+ Records</h3>
+        <p class="case-card__desc">Backed by 7+ years of rigorous data management, inventory systems, and spreadsheet architecture with 100% precision across 25,000+ records.</p>
+        <div class="case-card__tags">
+          <span class="case-tag">Data Entry &amp; Systems</span>
+          <span class="case-tag">Excel &amp; Sheets</span>
+          <span class="case-tag">100% Accuracy</span>
+        </div>
+        <button class="mildsugar-btn" onclick="document.querySelectorAll('.case-card__visual')[4].click()" style="font-size: 20px;">
+          <span class="label">
+            <span class="label-text">View Case Breakdown [↗]</span>
+            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Right Side Vertical Dots Navigation (mildsugar signature) -->
+    <nav class="p-cases__nav" aria-label="Case Switcher">
+      <ul class="p-cases__nav-list">
+        <li class="p-cases__nav-item is-current" data-case-index="0">
+          <span class="dot"></span> <span>Case 01</span>
+        </li>
+        <li class="p-cases__nav-item" data-case-index="1">
+          <span class="dot"></span> <span>Case 02</span>
+        </li>
+        <li class="p-cases__nav-item" data-case-index="2">
+          <span class="dot"></span> <span>Case 03</span>
+        </li>
+        <li class="p-cases__nav-item" data-case-index="3">
+          <span class="dot"></span> <span>Case 04</span>
+        </li>
+        <li class="p-cases__nav-item" data-case-index="4">
+          <span class="dot"></span> <span>Case 05</span>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- Complete 5 Disciplines Showcase -->
+  <section class="p-disciplines" id="disciplines">
+    <div class="container-boxed">
+      <div class="section-head">
+        <p class="section-head__tag">DISCIPLINES &amp; CRAFT</p>
+        <h2 class="section-head__title">How Thoughtful Strategy Meets High-Impact Execution</h2>
+        <p class="section-head__desc">A multi-disciplinary stack allowing you to hire one dedicated specialist instead of juggling 5 different freelancers.</p>
+      </div>
+
+      <div class="disciplines-grid">
+
+        <!-- 1. Social Media Specialist -->
+        <div class="discipline-box">
+          <div>
+            <div class="discipline-header">
+              <span class="discipline-num">01</span>
+              <div class="discipline-icon-badge">📱</div>
+            </div>
+            <h3>Social Media Specialist</h3>
+            <p>Full-service community and content management. Turning passive scrollers into passionate brand advocates across Instagram, TikTok, LinkedIn, and YouTube.</p>
+            <ul class="discipline-bullets">
+              <li>Viral Reels, TikToks &amp; Short-Form Video Strategy</li>
+              <li>Monthly Content Calendars &amp; Community Building</li>
+              <li>Brand Reputation &amp; Automated DM Lead Funnels</li>
+            </ul>
+          </div>
+          <div class="discipline-metric">
+            <span>AUDIENCE SCALED</span>
+            <span>+85K Organic</span>
+          </div>
+        </div>
+
+        <!-- 2. Content Writing & Strategy -->
+        <div class="discipline-box">
+          <div>
+            <div class="discipline-header">
+              <span class="discipline-num">02</span>
+              <div class="discipline-icon-badge">✍️</div>
+            </div>
+            <h3>Content Writing &amp; Strategy</h3>
+            <p>Words engineered with conversion psychology and search intent. Crafting persuasive narratives that inform, rank on Google, and drive buying action.</p>
+            <ul class="discipline-bullets">
+              <li>High-Converting Landing Page &amp; Ad Copywriting</li>
+              <li>In-Depth SEO Blog Pillars &amp; Content Hubs</li>
+              <li>Executive LinkedIn Thought Leadership Posts</li>
+            </ul>
+          </div>
+          <div class="discipline-metric">
+            <span>INBOUND PIPELINE</span>
+            <span>42 Leads/mo</span>
+          </div>
+        </div>
+
+        <!-- 3. Graphic Design & Branding -->
+        <div class="discipline-box">
+          <div>
+            <div class="discipline-header">
+              <span class="discipline-num">03</span>
+              <div class="discipline-icon-badge">🎨</div>
+            </div>
+            <h3>Graphic Design &amp; Branding</h3>
+            <p>Visual storytelling that stops the scroll. Developing cohesive visual identities, high-CTR social assets, corporate pitch decks, and infographics.</p>
+            <ul class="discipline-bullets">
+              <li>Complete Brand Guidelines &amp; Typography Systems</li>
+              <li>High-CTR Social Media Ad Templates &amp; Carousels</li>
+              <li>Investor Pitch Decks &amp; Executive Presentations</li>
+            </ul>
+          </div>
+          <div class="discipline-metric">
+            <span>AD CTR IMPROVEMENT</span>
+            <span>+3.8% Lift</span>
+          </div>
+        </div>
+
+        <!-- 4. Digital Marketing & Ads -->
+        <div class="discipline-box">
+          <div>
+            <div class="discipline-header">
+              <span class="discipline-num">04</span>
+              <div class="discipline-icon-badge">📈</div>
+            </div>
+            <h3>Digital Marketing &amp; Ads</h3>
+            <p>Data-driven paid media management across Meta and Google. Architecting full-funnel acquisition roadmaps that lower CPA and compound revenue.</p>
+            <ul class="discipline-bullets">
+              <li>Meta Ads (Facebook/Instagram) &amp; Google Search/Display</li>
+              <li>Dynamic Retargeting &amp; Omnichannel Cart Recovery</li>
+              <li>GA4 Conversion Attribution &amp; KPI Dashboards</li>
+            </ul>
+          </div>
+          <div class="discipline-metric">
+            <span>CAMPAIGN ROAS</span>
+            <span>4.2x – 6.8x</span>
+          </div>
+        </div>
+
+        <!-- 5. Data Entry & Systems -->
+        <div class="discipline-box">
+          <div>
+            <div class="discipline-header">
+              <span class="discipline-num">05</span>
+              <div class="discipline-icon-badge">📊</div>
+            </div>
+            <h3>Data Entry &amp; Systems</h3>
+            <p>Flawless data management and spreadsheet architecture. Ensuring 100% precision in inventory, CRM records, lookup formulas, and executive reports.</p>
+            <ul class="discipline-bullets">
+              <li>Advanced Excel &amp; Google Sheets (VLOOKUP, Index-Match)</li>
+              <li>Database Cleansing, CRM Hygiene &amp; Enrichment</li>
+              <li>Automated Dashboards Cutting Manual Work by 80%</li>
+            </ul>
+          </div>
+          <div class="discipline-metric">
+            <span>DATA ACCURACY</span>
+            <span>100% Precision</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Creative Posters & Brand Graphics Gallery -->
+  <section class="p-gallery" id="gallery">
+    <div class="container-boxed">
+      <div class="section-head">
+        <p class="section-head__tag">CREATIVE GALLERY &amp; POSTERS</p>
+        <h2 class="section-head__title">Visual Assets &amp; Brand Storytelling</h2>
+        <p class="section-head__desc">A selection of visual design assets, advertising creatives, and conceptual artworks crafted for modern campaigns. Click any poster to view in high resolution.</p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- Poster 01 -->
+        <div class="poster-card" onclick="openLightbox('ChatGPT Image Jul 8, 2026, 04_39_44 PM.png', 'Futuristic Cyber Aesthetics &amp; Social Creative')">
+          <div class="poster-img-container">
+            <span class="poster-category-tag">Social Creative</span>
+            <img src="ChatGPT Image Jul 8, 2026, 04_39_44 PM.png" alt="Futuristic Cyber Aesthetics Poster" loading="lazy">
+            <div class="poster-zoom-hint">🔍</div>
+          </div>
+          <div class="poster-details">
+            <div>
+              <h3>Futuristic Cyber Aesthetics &amp; Social Creative</h3>
+              <p>High-energy visual crafted for tech and digital brand campaigns with atmospheric lighting and contrast.</p>
+            </div>
+            <div class="poster-footer-meta">
+              <span>ART DIRECTION</span>
+              <span>CLICK TO EXPAND ↗</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster 02 -->
+        <div class="poster-card" onclick="openLightbox('ChatGPT Image Jul 8, 2026, 06_46_11 PM.png', 'Modern Conceptual Typography &amp; Brand System')">
+          <div class="poster-img-container">
+            <span class="poster-category-tag">Brand Campaign</span>
+            <img src="ChatGPT Image Jul 8, 2026, 06_46_11 PM.png" alt="Modern Conceptual Typography" loading="lazy">
+            <div class="poster-zoom-hint">🔍</div>
+          </div>
+          <div class="poster-details">
+            <div>
+              <h3>Modern Conceptual Typography &amp; Brand System</h3>
+              <p>Bold editorial composition highlighting balance, geometric harmony, and high-retention visual hierarchy.</p>
+            </div>
+            <div class="poster-footer-meta">
+              <span>VISUAL IDENTITY</span>
+              <span>CLICK TO EXPAND ↗</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster 03 -->
+        <div class="poster-card" onclick="openLightbox('ChatGPT Image Jul 8, 2026, 07_18_55 PM.png', 'Dynamic Social Ad Campaign &amp; Creative Direction')">
+          <div class="poster-img-container">
+            <span class="poster-category-tag">Ad Creative</span>
+            <img src="ChatGPT Image Jul 8, 2026, 07_18_55 PM.png" alt="Dynamic Social Ad Campaign" loading="lazy">
+            <div class="poster-zoom-hint">🔍</div>
+          </div>
+          <div class="poster-details">
+            <div>
+              <h3>Dynamic Social Ad Campaign &amp; Creative Direction</h3>
+              <p>Commercial-ready promotional asset built to stop the feed scroll and drive immediate user interest.</p>
+            </div>
+            <div class="poster-footer-meta">
+              <span>PERFORMANCE ADS</span>
+              <span>CLICK TO EXPAND ↗</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- External Link Portfolio Card -->
+        <div class="gallery-external-card">
+          <div class="icon-big">🎨</div>
+          <h3>More Posters &amp; Brand Decks</h3>
+          <p>Have additional graphic design samples on Google Drive, Behance, or Canva? Share your link and your full live portfolio will be embedded right here.</p>
+          <a href="#contact" class="action-btn-pill primary" style="font-size: 15px; padding: 12px 24px;">
+            <span>Share Your Creative Link ↗</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Freelance Track Record (Neutral Client & Project Execution) -->
+  <section class="p-experience" id="experience">
+    <div class="container-boxed">
+      <div class="section-head">
+        <p class="section-head__tag">FREELANCE TRACK RECORD</p>
+        <h2 class="section-head__title">Proven Execution Across Global Brands &amp; Remote Clients</h2>
+        <p class="section-head__desc">Demonstrated expertise across independent client engagements, agency partnerships, and global brands — driving measurable social engagement, paid acquisition, and operational precision.</p>
+      </div>
+
+      <div class="experience-grid">
+
+        <!-- Role 1: Social Media -->
+        <div class="exp-card">
+          <div>
+            <div class="exp-date">2023 – PRESENT (3+ YRS)</div>
+            <h3>Senior Social Media Manager &amp; Growth Strategist</h3>
+            <div class="exp-company">Remote Retainers &amp; Global Brand Accounts</div>
+            <p>Spearheading organic social media growth, viral short-form video hooks, community building, and automated DM lead funnels. Consistently scaling follower bases from cold traffic to 85K+ engaged communities.</p>
+          </div>
+        </div>
+
+        <!-- Role 2: Digital Marketing -->
+        <div class="exp-card">
+          <div>
+            <div class="exp-date">2022 – PRESENT</div>
+            <h3>Digital Marketing &amp; Paid Ads Strategist</h3>
+            <div class="exp-company">Meta &amp; Google Performance Campaigns</div>
+            <p>Architecting full-funnel acquisition roadmaps for e-commerce and B2B clients. Managing creative testing frameworks, dynamic retargeting, and GA4 attribution to deliver 4.2x–6.8x verified ROAS while cutting CPA.</p>
+          </div>
+        </div>
+
+        <!-- Role 3: Graphic Design & Branding -->
+        <div class="exp-card">
+          <div>
+            <div class="exp-date">2021 – PRESENT</div>
+            <h3>Freelance Brand Identity &amp; Graphic Designer</h3>
+            <div class="exp-company">50+ International Client Deliveries</div>
+            <p>Designing high-CTR social ad creatives, complete brand guidelines, investor pitch decks, and custom vector templates. Trusted by founders and agencies across the US, UK, and UAE with 5-star ratings.</p>
+          </div>
+        </div>
+
+        <!-- Role 4: Data Entry & Systems -->
+        <div class="exp-card">
+          <div>
+            <div class="exp-date">7+ YEARS RIGOR</div>
+            <h3>Systems Architecture &amp; Data Precision Lead</h3>
+            <div class="exp-company">Enterprise Databases &amp; Inventory Systems</div>
+            <p>Architecting automated MS Excel and Google Sheets systems with advanced VLOOKUP, XLOOKUP, and Index-Match formulas. 100% data entry precision across 25,000+ complex operational records with automated executive reporting.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Verified Certifications Strip (Clean & Neutral) -->
+      <div class="freelance-cert-strip">
+        <div class="cert-strip-header">
+          <h4>📜 Verified Capabilities &amp; Certifications</h4>
+          <span>Industry-Standard Credentials</span>
+        </div>
+        <div class="cert-tags-wrap">
+          <span class="cert-tag-item"><span>✓</span> Google Ads Certified (Search &amp; Display)</span>
+          <span class="cert-tag-item"><span>✓</span> Motion Graphics &amp; Video Editing (NISDA)</span>
+          <span class="cert-tag-item"><span>✓</span> Graphic Design Specialization (Adobe Photoshop)</span>
+          <span class="cert-tag-item"><span>✓</span> ISO 45001 Compliance &amp; Audit Systems</span>
+          <span class="cert-tag-item"><span>✓</span> Meta Ads &amp; GA4 Conversion Attribution</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Tools & Software Matrix -->
+  <section class="p-tools" id="tools">
+    <div class="container-boxed">
+      <div style="text-align: center; margin-bottom: 28px;">
+        <span class="section-head__tag">PRIMARY TOOLS &amp; STACK</span>
+      </div>
+      <div class="tools-ticker">
+        <div class="tool-chip">📱 Meta Ads Manager</div>
+        <div class="tool-chip">📈 Google Analytics 4</div>
+        <div class="tool-chip">🎨 Figma Pro</div>
+        <div class="tool-chip">✍️ Notion</div>
+        <div class="tool-chip">📊 Advanced MS Excel (VLOOKUP)</div>
+        <div class="tool-chip">📑 Google Sheets (Apps Script)</div>
+        <div class="tool-chip">🎬 CapCut Pro &amp; Premiere</div>
+        <div class="tool-chip">🎨 Canva Pro</div>
+        <div class="tool-chip">🖼️ Adobe Illustrator &amp; Photoshop</div>
+        <div class="tool-chip">💼 LinkedIn Creator Hub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Stage (Say "Hey!" from mildsugar) -->
+  <section class="p-contact" id="contact">
+    <div class="container-boxed">
+      <div class="contact-card-mild">
+        <div>
+          <h2 class="u-en">Say “Hey!” 🤝</h2>
+          <p class="sub">Looking for dedicated freelance support in social media management, performance marketing, content writing, design, or data systems? Let’s chat!</p>
+
+          <div class="contact-buttons-group">
+            <a href="https://wa.me/923004822560?text=Hi%20Shahid!%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20project." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="action-btn-pill primary">
+              <span>Quick Chat on WhatsApp</span>
+              <span>↗</span>
+            </a>
+            <a href="mailto:shahid.choudhary5@yahoo.com?subject=Freelance%20Project%20Inquiry%20via%20Portfolio" 
+               class="action-btn-pill secondary">
+              <span>Send Direct Email</span>
+              <span>✉</span>
+            </a>
+            <a href="https://www.linkedin.com/in/shahidakram" target="_blank" rel="noopener noreferrer" class="action-btn-pill secondary">
+              <span>Connect on LinkedIn</span>
+              <span>🔗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form for Instant Brief -->
+        <form class="contact-form-mild" id="mildContactForm">
+          <input type="text" id="contactName" class="mild-input" placeholder="Your Name or Brand" required>
+          <select id="contactService" class="mild-input" required>
+            <option value="">Select Service Needed</option>
+            <option value="Social Media Management & Growth">Social Media Management &amp; Viral Video</option>
+            <option value="Digital Marketing & Ads">Digital Marketing &amp; Meta/Google Ads</option>
+            <option value="Content Writing & Strategy">Content Writing &amp; Copywriting</option>
+            <option value="Graphic Design & Branding">Graphic Design &amp; Brand Identity</option>
+            <option value="Data Entry & Systems">Data Entry, Excel &amp; Systems</option>
+            <option value="Full Monthly Freelance Retainer">Full Monthly Freelance Retainer</option>
+          </select>
+          <textarea id="contactMessage" class="mild-textarea" rows="4" placeholder="Briefly describe your brand goals or requirements..." required></textarea>
+          <button type="submit" class="action-btn-pill primary" style="justify-content: center; cursor: pointer;">
+            Send Direct to WhatsApp →
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep-Dive Modal Overlay -->
+  <div class="case-modal-overlay" id="caseModalOverlay" aria-hidden="true">
+    <div class="case-modal-content">
+      <button class="case-modal-close" id="caseModalClose" aria-label="Close Case Detail">✕</button>
+      <div id="caseModalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Fullscreen Lightbox Modal for Posters -->
+  <div class="poster-lightbox" id="posterLightbox" aria-hidden="true" onclick="closeLightbox()">
+    <button class="poster-lightbox-close" aria-label="Close Lightbox" onclick="closeLightbox()">✕</button>
+    <div class="poster-lightbox-content" onclick="event.stopPropagation()">
+      <img id="lightboxImg" src="" alt="Poster Preview">
+      <div class="poster-lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="l-footer">
+    <span class="copyright">&copy; 2026 Shahid Akram • Crafted in Mildsugar Digital Style</span>
+    <span>Social Media • Digital Marketing • Content • Design • Data Systems</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
