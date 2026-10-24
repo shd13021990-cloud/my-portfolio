@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shahid Akram — Freelance Social Media Manager, Digital Marketer, Content Strategist, Graphic Designer & Data Systems Specialist. Inspired by Japanese digital craftsmanship.">
+  <title>Shahid Akram | Freelance Social Media Manager & Digital Marketer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating Minimal Glow Cursor Dot -->
+  <div class="p-stalker" id="stalker">
+    <span class="stalker-dot"></span>
+    <span class="stalker-text" id="stalkerText"></span>
+  </div>
+
+  <!-- Header -->
+  <header class="l-header">
+    <div class="l-header__inner">
+      <div class="l-header__brand">
+        <a href="#hero" class="l-header__logo u-en">
+          <img src="21.png" alt="Shahid Akram Logo" class="l-header__logo-img">
+          <span>Shahid Akram</span>
+          <span class="logo-dot"></span>
+        </a>
+        <p class="l-header__tagline u-en">
+          Social Media • Digital Marketing • Content • Design • Data Systems
+        </p>
+      </div>
+
+      <div class="l-header__actions">
+        <!-- Day / Night Time Toggle -->
+        <button class="time-toggle-btn" id="timeToggleBtn" aria-label="Toggle Day / Night Mode">
+          <span class="icon">☀️</span> Day
+        </button>
+
+        <!-- 3-Dot Floating Menu Button -->
+        <button class="l-header__menu-button" id="menuBtn" aria-label="Open Menu">
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Dropdown Menu Drawer -->
+    <div class="l-header__menu-drawer" id="menuDrawer">
+      <nav class="l-header__nav-list">
+        <a href="#hero"><span>01</span> Home</a>
+        <a href="#cases"><span>02</span> Cases (1–5)</a>
+        <a href="#disciplines"><span>03</span> Disciplines</a>
+        <a href="#offer"><span>04</span> Offers &amp; Pricing</a>
+        <a href="#gallery"><span>05</span> Creative Showcase</a>
+        <a href="#experience"><span>06</span> Track Record</a>
+        <a href="#tools"><span>07</span> AI Stack &amp; Tools</a>
+        <a href="#contact"><span>08</span> Say “Hey!”</a>
+      </nav>
+      <div class="l-header__nav-sub">
+        <span>Available for Remote &amp; Global Freelance</span>
+        <span>Worldwide Client Retainers</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Hero Stage -->
+  <section class="p-hero" id="hero">
+    <div class="p-hero__container">
+
+      <!-- Left: Interactive Isometric Room & Character Canvas -->
+      <div class="p-hero__room" id="heroRoom">
+        
+        <!-- Day & Night Dynamic Hero Workspace Images -->
+        <div class="hero-showcase-wrap">
+          <img src="Main Image Day 1.png" alt="Shahid Akram Day Workspace" class="portfolio-image hero-showcase-img--day" id="heroImgDay">
+          <img src="Main Image night.png" alt="Shahid Akram Night Workspace" class="portfolio-image hero-showcase-img--night" id="heroImgNight">
+        </div>
+
+        <div class="room-badge-bottom">
+          <span class="status-dot-pulse"></span>
+          <span>Open for Global Projects &amp; Freelance</span>
+        </div>
+      </div>
+
+      <!-- Right: Playful Profile Intro -->
+      <div class="p-hero__side">
+        <h1 class="p-hero__hey u-en">
+          Hey! <span class="hand-wave">🤝</span>
+        </h1>
+        <h2 class="p-hero__headline u-en">
+          I’m a multi-disciplinary specialist creating <span>thoughtful strategies</span> &amp; high-impact digital results.
+        </h2>
+        <p class="p-hero__bio">
+          Specializing in <strong>Social Media Management</strong>, <strong>Digital Marketing (ROAS)</strong>, <strong>Content Strategy &amp; Copywriting</strong>, <strong>Graphic Design</strong>, and <strong>Data Systems</strong>. Helping global brands, modern agencies, and e-commerce founders turn attention into revenue with creative craftsmanship and data precision.
+        </p>
+
+        <!-- Signature Mildsugar Action Buttons Row -->
+        <div class="hero-actions-row">
+          <a href="#cases" class="mildsugar-btn">
+            <span class="label">
+              <span class="label-text">Explore Cases (1–5)</span>
+              <span class="label-text label-text--clone" aria-hidden="true">Explore Cases (1–5)</span>
+            </span>
+            <svg class="arrow-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M33.65 10.79L5.48 39.05C4.21 40.32 2.21 40.32 0.95 39.05C-0.32 37.78 -0.32 35.78 0.95 34.52L29.21 6.35H5.08C3.28 6.35 1.9 4.97 1.9 3.17C1.9 1.37 3.28 0 5.08 0H36.83C38.63 0 40 1.37 40 3.17V34.92C40 36.72 38.63 38.1 36.83 38.1C35.03 38.1 33.65 36.72 33.65 34.92V10.79Z" fill="#FEA831"/>
+            </svg>
+          </a>
+
+          <a href="#contact" class="action-btn-pill secondary" style="padding: 14px 26px; font-size: 15px;">
+            <span>Let’s Talk 🤝</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Marquee Ticker -->
+  <div class="p-ticker">
+    <div class="p-ticker__track">
+      <div class="p-ticker__item"><span class="dot">✦</span> Social Media Strategy &amp; Viral Reels</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> High-Converting Content &amp; Copywriting</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> Visual Identity &amp; Graphic Design</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> Digital Marketing &amp; Meta Ads ROAS</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> 100% Precision Data Entry &amp; Automation</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> Social Media Strategy &amp; Viral Reels</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> High-Converting Content &amp; Copywriting</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> Visual Identity &amp; Graphic Design</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> Digital Marketing &amp; Meta Ads ROAS</div>
+      <div class="p-ticker__item"><span class="dot">✦</span> 100% Precision Data Entry &amp; Automation</div>
+    </div>
+  </div>
+
+  <!-- Full-Stage Cases Experience (mildsugardesign.jp /cases/ replica) -->
+  <section class="p-cases-stage" id="cases">
+    <!-- Huge Ghost Headline in Background -->
+    <div class="p-cases__bg-text" aria-hidden="true">
+      <div class="bg-ghost-quote" id="bgGhostQuote">
+        From viral hook to community loyalty. 85K+ followers &amp; 4.2M views.
+      </div>
+    </div>
+
+    <!-- Center Stage Case Card Display -->
+    <div class="p-cases__main">
+
+      <!-- Case 01: Social Media -->
+      <div class="case-card is-active" data-case="0">
+        <div class="case-card__number u-en">Case 01</div>
+        <div class="case-card__visual" title="Click to view deep dive">
+          <img src="ChatGPT Image Jul 8, 2026, 04_39_44 PM.png" alt="Social Media Growth Engine" class="case-card__img">
+        </div>
+        <h3 class="case-card__title">Social Media Growth Engine: From Cold Scrollers to 85K+ Engaged Community</h3>
+        <p class="case-card__desc">Engineered retention-optimized short-form video hooks, carousel frameworks, and automated DM lead funnels across Instagram and TikTok for international brands and creator channels.</p>
+        <div class="case-card__tags">
+          <span class="case-tag">Social Media Specialist</span>
+          <span class="case-tag">Viral Video Hooks</span>
+          <span class="case-tag">85K Followers</span>
+        </div>
+        <button class="mildsugar-btn" onclick="document.querySelectorAll('.case-card__visual')[0].click()" style="font-size: 20px;">
+          <span class="label">
+            <span class="label-text">View Case Breakdown [↗]</span>
+            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- Case 02: Content Writing -->
+      <div class="case-card" data-case="1">
+        <div class="case-card__number u-en">Case 02</div>
+        <div class="case-card__visual" title="Click to view deep dive">
+          <img src="Case 2.png" alt="Conversion Copywriting &amp; Content Architecture" class="case-card__img">
+        </div>
+        <h3 class="case-card__title">Conversion Copywriting &amp; Content Architecture: Generating 42 Inbound B2B Leads/mo</h3>
+        <p class="case-card__desc">Authored authoritative SEO pillar hubs, persuasive landing page copy, and executive LinkedIn thought-leadership essays that position founders as industry authorities.</p>
+        <div class="case-card__tags">
+          <span class="case-tag">Content Writing</span>
+          <span class="case-tag">B2B Strategy</span>
+          <span class="case-tag">120K Views/mo</span>
+        </div>
+        <button class="mildsugar-btn" onclick="document.querySelectorAll('.case-card__visual')[1].click()" style="font-size: 20px;">
+          <span class="label">
+            <span class="label-text">View Case Breakdown [↗]</span>
+            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- Case 03: Graphic Design -->
+      <div class="case-card" data-case="2">
+        <div class="case-card__number u-en">Case 03</div>
+        <div class="case-card__visual" title="Click to view deep dive">
+          <img src="Case 3.jpg" alt="Visual Identity &amp; Branding" class="case-card__img">
+        </div>
+        <h3 class="case-card__title">Visual Identity &amp; High-CTR Creative Kit: Elevating Brand Perception Across 15 Channels</h3>
+        <p class="case-card__desc">Designed cohesive brand kits, scroll-stopping social ad creative systems, and investor pitch decks that boosted ad click-through rate by +3.8% across diverse client niches.</p>
+        <div class="case-card__tags">
+          <span class="case-tag">Graphic Design</span>
+          <span class="case-tag">Brand Identity</span>
+          <span class="case-tag">Pitch Decks</span>
+        </div>
+        <button class="mildsugar-btn" onclick="document.querySelectorAll('.case-card__visual')[2].click()" style="font-size: 20px;">
+          <span class="label">
+            <span class="label-text">View Case Breakdown [↗]</span>
+            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- Case 04: Digital Marketing -->
+      <div class="case-card" data-case="3">
+        <div class="case-card__number u-en">Case 04</div>
+        <div class="case-card__visual" title="Click to view deep dive">
+          <img src="Professional at a Modern Office Desk.png" alt="Performance Marketing" class="case-card__img">
+        </div>
+        <h3 class="case-card__title">Full-Funnel Paid Advertising: Slashing CPA by 52% and Scaling ROAS to 4.2x–6.8x</h3>
+        <p class="case-card__desc">Restructured Meta and Google Ads accounts with creative fatigue management, lookalike segmentation, and omnichannel cart recovery sequences.</p>
+        <div class="case-card__tags">
+          <span class="case-tag">Digital Marketing</span>
+          <span class="case-tag">Meta Ads</span>
+          <span class="case-tag">4.2x ROAS</span>
+        </div>
+        <button class="mildsugar-btn" onclick="document.querySelectorAll('.case-card__visual')[3].click()" style="font-size: 20px;">
+          <span class="label">
+            <span class="label-text">View Case Breakdown [↗]</span>
+            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- Case 05: Data Entry -->
+      <div class="case-card" data-case="4">
+        <div class="case-card__number u-en">Case 05</div>
+        <div class="case-card__visual" title="Click to view deep dive">
+          <img src="21.png" alt="Data Systems & Architecture" class="case-card__img">
+        </div>
+        <h3 class="case-card__title">Precision Data Entry &amp; Automation: 100% Accuracy Across 25,000+ Records</h3>
+        <p class="case-card__desc">Backed by 7+ years of rigorous data management, inventory systems, and spreadsheet architecture with 100% precision across 25,000+ records.</p>
+        <div class="case-card__tags">
+          <span class="case-tag">Data Entry &amp; Systems</span>
+          <span class="case-tag">Excel &amp; Sheets</span>
+          <span class="case-tag">100% Accuracy</span>
+        </div>
+        <button class="mildsugar-btn" onclick="document.querySelectorAll('.case-card__visual')[4].click()" style="font-size: 20px;">
+          <span class="label">
+            <span class="label-text">View Case Breakdown [↗]</span>
+            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Right Side Vertical Dots Navigation (mildsugar signature) -->
+    <nav class="p-cases__nav" aria-label="Case Switcher">
+      <ul class="p-cases__nav-list">
+        <li class="p-cases__nav-item is-current" data-case-index="0">
+          <span class="dot"></span> <span>Case 01</span>
+        </li>
+        <li class="p-cases__nav-item" data-case-index="1">
+          <span class="dot"></span> <span>Case 02</span>
+        </li>
+        <li class="p-cases__nav-item" data-case-index="2">
+          <span class="dot"></span> <span>Case 03</span>
+        </li>
+        <li class="p-cases__nav-item" data-case-index="3">
+          <span class="dot"></span> <span>Case 04</span>
+        </li>
+        <li class="p-cases__nav-item" data-case-index="4">
+          <span class="dot"></span> <span>Case 05</span>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- Complete 5 Disciplines Showcase -->
+  <section class="p-disciplines" id="disciplines">
+    <div class="container-boxed">
+      <div class="section-head">
+        <p class="section-head__tag">DISCIPLINES &amp; CRAFT</p>
+        <h2 class="section-head__title">How Thoughtful Strategy Meets High-Impact Execution</h2>
+        <p class="section-head__desc">A multi-disciplinary stack allowing you to hire one dedicated specialist instead of juggling 5 different freelancers.</p>
+      </div>
+
+      <div class="disciplines-grid">
+
+        <!-- 1. Social Media Specialist -->
+        <div class="discipline-box">
+          <div>
+            <div class="discipline-header">
+              <span class="discipline-num">01</span>
+              <div class="discipline-icon-badge">📱</div>
+            </div>
+            <h3>Social Media Specialist</h3>
+            <p>Full-service community and content management. Turning passive scrollers into passionate brand advocates across Instagram, TikTok, LinkedIn, and YouTube.</p>
+            <ul class="discipline-bullets">
+              <li>Viral Reels, TikToks &amp; Short-Form Video Strategy</li>
+              <li>Monthly Content Calendars &amp; Community Building</li>
+              <li>Brand Reputation &amp; Automated DM Lead Funnels</li>
+            </ul>
+          </div>
+          <div class="discipline-metric">
+            <span>AUDIENCE SCALED</span>
+            <span>+85K Organic</span>
+          </div>
+        </div>
+
+        <!-- 2. Content Writing & Strategy -->
+        <div class="discipline-box">
+          <div>
+            <div class="discipline-header">
+              <span class="discipline-num">02</span>
+              <div class="discipline-icon-badge">✍️</div>
+            </div>
+            <h3>Content Writing &amp; Strategy</h3>
+            <p>Words engineered with conversion psychology and search intent. Crafting persuasive narratives that inform, rank on Google, and drive buying action.</p>
+            <ul class="discipline-bullets">
+              <li>High-Converting Landing Page &amp; Ad Copywriting</li>
+              <li>In-Depth SEO Blog Pillars &amp; Content Hubs</li>
+              <li>Executive LinkedIn Thought Leadership Posts</li>
+            </ul>
+          </div>
+          <div class="discipline-metric">
+            <span>INBOUND PIPELINE</span>
+            <span>42 Leads/mo</span>
+          </div>
+        </div>
+
+        <!-- 3. Graphic Design & Branding -->
+        <div class="discipline-box">
+          <div>
+            <div class="discipline-header">
+              <span class="discipline-num">03</span>
+              <div class="discipline-icon-badge">🎨</div>
+            </div>
+            <h3>Graphic Design &amp; Branding</h3>
+            <p>Visual storytelling that stops the scroll. Developing cohesive visual identities, high-CTR social assets, corporate pitch decks, and infographics.</p>
+            <ul class="discipline-bullets">
+              <li>Complete Brand Guidelines &amp; Typography Systems</li>
+              <li>High-CTR Social Media Ad Templates &amp; Carousels</li>
+              <li>Investor Pitch Decks &amp; Executive Presentations</li>
+            </ul>
+          </div>
+          <div class="discipline-metric">
+            <span>AD CTR IMPROVEMENT</span>
+            <span>+3.8% Lift</span>
+          </div>
+        </div>
+
+        <!-- 4. Digital Marketing & Ads -->
+        <div class="discipline-box">
+          <div>
+            <div class="discipline-header">
+              <span class="discipline-num">04</span>
+              <div class="discipline-icon-badge">📈</div>
+            </div>
+            <h3>Digital Marketing &amp; Ads</h3>
+            <p>Data-driven paid media management across Meta and Google. Architecting full-funnel acquisition roadmaps that lower CPA and compound revenue.</p>
+            <ul class="discipline-bullets">
+              <li>Meta Ads (Facebook/Instagram) &amp; Google Search/Display</li>
+              <li>Dynamic Retargeting &amp; Omnichannel Cart Recovery</li>
+              <li>GA4 Conversion Attribution &amp; KPI Dashboards</li>
+            </ul>
+          </div>
+          <div class="discipline-metric">
+            <span>CAMPAIGN ROAS</span>
+            <span>4.2x – 6.8x</span>
+          </div>
+        </div>
+
+        <!-- 5. Data Entry & Systems -->
+        <div class="discipline-box">
+          <div>
+            <div class="discipline-header">
+              <span class="discipline-num">05</span>
+              <div class="discipline-icon-badge">📊</div>
+            </div>
+            <h3>Data Entry &amp; Systems</h3>
+            <p>Flawless data management and spreadsheet architecture. Ensuring 100% precision in inventory, CRM records, lookup formulas, and executive reports.</p>
+            <ul class="discipline-bullets">
+              <li>Advanced Excel &amp; Google Sheets (VLOOKUP, Index-Match)</li>
+              <li>Database Cleansing, CRM Hygiene &amp; Enrichment</li>
+              <li>Automated Dashboards Cutting Manual Work by 80%</li>
+            </ul>
+          </div>
+          <div class="discipline-metric">
+            <span>DATA ACCURACY</span>
+            <span>100% Precision</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. WHAT I OFFER & PACKAGES (Ahmad Farooq Style) -->
+  <section id="offer" class="p-offer">
+    <div class="container-boxed">
+      <div class="section-head">
+        <p class="section-head__tag">PRICING &amp; SCOPE</p>
+        <h2 class="section-head__title">Strategic Scope.<br>Transparent, Competitive Pricing.</h2>
+        <p class="section-head__desc">Clear deliverables, affordable startup-friendly rates, and full multi-disciplinary execution. No lock-in contracts.</p>
+      </div>
+
+      <div class="offer-cards-grid">
+
+        <!-- Package A: Sprint Audit & Setup -->
+        <div class="offer-card">
+          <div class="offer-card__top">
+            <span class="offer-badge">ONE-TIME SPRINT</span>
+            <div class="offer-price-wrap">
+              <span class="offer-price">$120</span>
+              <span class="offer-price-sub">one-off sprint</span>
+            </div>
+          </div>
+          <h3 class="offer-card__title">Social &amp; Brand Growth Audit</h3>
+          <p class="offer-card__desc">Complete profile overhaul, hook frameworks, bio rewrite, and content calendar blueprint that turns passive visitors into inbound inquiries.</p>
+          
+          <div class="offer-deliverables">
+            <p class="offer-deliv-head">What You Get:</p>
+            <ul class="offer-deliv-list">
+              <li><span class="chk">✓</span> High-converting bio &amp; profile positioning rewrite</li>
+              <li><span class="chk">✓</span> 30-day viral short-form Reel &amp; TikTok hook scripts</li>
+              <li><span class="chk">✓</span> 3 custom social media ad/banner templates (Figma/Canva)</li>
+              <li><span class="chk">✓</span> Competitor gap analysis &amp; audience targeting roadmap</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="action-btn-pill secondary" style="width: 100%; justify-content: center;">
+            <span>Get Started with Audit</span>
+          </a>
+        </div>
+
+        <!-- Package B: Monthly Full Growth Retainer (Featured) -->
+        <div class="offer-card offer-card--featured">
+          <div class="offer-card__top">
+            <span class="offer-badge offer-badge--featured">MOST POPULAR PARTNERSHIP</span>
+            <div class="offer-price-wrap">
+              <span class="offer-price offer-price--featured">$350</span>
+              <span class="offer-price-sub">per month</span>
+            </div>
+          </div>
+          <h3 class="offer-card__title">All-in-One Monthly Growth Retainer</h3>
+          <p class="offer-card__desc">A complete done-for-you organic growth, ad creative, and content pipeline taking the entire digital marketing workload off your plate.</p>
+          
+          <div class="offer-highlight-pill">
+            <span>🔥 Full Multi-Disciplinary Coverage: Social + Ads + Content + Data</span>
+          </div>
+
+          <div class="offer-deliverables">
+            <p class="offer-deliv-head">Weekly Operations (Monday to Friday):</p>
+            <ul class="offer-deliv-list">
+              <li><span class="chk">✓</span> 4 to 5 high-retention Reels / Carousels authored &amp; designed weekly</li>
+              <li><span class="chk">✓</span> Meta (FB/IG) Ad creative design &amp; audience campaign management</li>
+              <li><span class="chk">✓</span> Automated DM &amp; inbound prospect lead qualification funnels</li>
+              <li><span class="chk">✓</span> Weekly performance analytics &amp; automated Excel/Sheets report</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="action-btn-pill primary" style="width: 100%; justify-content: center;">
+            <span>Book Monthly Retainer →</span>
+          </a>
+        </div>
+
+        <!-- Package C: Custom Systems & Design Retainer -->
+        <div class="offer-card">
+          <div class="offer-card__top">
+            <span class="offer-badge">SYSTEMS &amp; BRANDING</span>
+            <div class="offer-price-wrap">
+              <span class="offer-price">$220</span>
+              <span class="offer-price-sub">per project</span>
+            </div>
+          </div>
+          <h3 class="offer-card__title">Brand Kit &amp; Data Architecture</h3>
+          <p class="offer-card__desc">Full visual identity system paired with automated spreadsheet/CRM models for companies scaling operations and pitching investors.</p>
+          
+          <div class="offer-deliverables">
+            <p class="offer-deliv-head">What You Get:</p>
+            <ul class="offer-deliv-list">
+              <li><span class="chk">✓</span> Complete brand guidelines, typography pairings &amp; color system</li>
+              <li><span class="chk">✓</span> 15-slide investor pitch deck / client presentation</li>
+              <li><span class="chk">✓</span> Automated Excel / Sheets tracker with dynamic VLOOKUP &amp; dashboards</li>
+              <li><span class="chk">✓</span> 100% precision data cleanup &amp; CRM hygiene</li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="action-btn-pill secondary" style="width: 100%; justify-content: center;">
+            <span>Order Systems Kit</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Creative Posters & Brand Graphics Gallery -->
+  <section class="p-gallery" id="gallery">
+    <div class="container-boxed">
+      <div class="section-head">
+        <p class="section-head__tag">CREATIVE GALLERY &amp; POSTERS</p>
+        <h2 class="section-head__title">Visual Assets &amp; Brand Storytelling</h2>
+        <p class="section-head__desc">A selection of visual design assets, advertising creatives, and conceptual artworks crafted for modern campaigns. Click any poster to view in high resolution.</p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- Poster 01 -->
+        <div class="poster-card" onclick="openLightbox('ChatGPT Image Jul 8, 2026, 04_39_44 PM.png', 'Futuristic Cyber Aesthetics &amp; Social Creative')">
+          <div class="poster-img-container">
+            <span class="poster-category-tag">Social Creative</span>
+            <img src="ChatGPT Image Jul 8, 2026, 04_39_44 PM.png" alt="Futuristic Cyber Aesthetics Poster" loading="lazy">
+            <div class="poster-zoom-hint">🔍</div>
+          </div>
+          <div class="poster-details">
+            <div>
+              <h3>Futuristic Cyber Aesthetics &amp; Social Creative</h3>
+              <p>High-energy visual crafted for tech and digital brand campaigns with atmospheric lighting and contrast.</p>
+            </div>
+            <div class="poster-footer-meta">
+              <span>ART DIRECTION</span>
+              <span>CLICK TO EXPAND ↗</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster 02 -->
+        <div class="poster-card" onclick="openLightbox('ChatGPT Image Jul 8, 2026, 06_46_11 PM.png', 'Modern Conceptual Typography &amp; Brand System')">
+          <div class="poster-img-container">
+            <span class="poster-category-tag">Brand Campaign</span>
+            <img src="ChatGPT Image Jul 8, 2026, 06_46_11 PM.png" alt="Modern Conceptual Typography" loading="lazy">
+            <div class="poster-zoom-hint">🔍</div>
+          </div>
+          <div class="poster-details">
+            <div>
+              <h3>Modern Conceptual Typography &amp; Brand System</h3>
+              <p>Bold editorial composition highlighting balance, geometric harmony, and high-retention visual hierarchy.</p>
+            </div>
+            <div class="poster-footer-meta">
+              <span>VISUAL IDENTITY</span>
+              <span>CLICK TO EXPAND ↗</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Poster 03 -->
+        <div class="poster-card" onclick="openLightbox('ChatGPT Image Jul 8, 2026, 07_18_55 PM.png', 'Dynamic Social Ad Campaign &amp; Creative Direction')">
+          <div class="poster-img-container">
+            <span class="poster-category-tag">Ad Creative</span>
+            <img src="ChatGPT Image Jul 8, 2026, 07_18_55 PM.png" alt="Dynamic Social Ad Campaign" loading="lazy">
+            <div class="poster-zoom-hint">🔍</div>
+          </div>
+          <div class="poster-details">
+            <div>
+              <h3>Dynamic Social Ad Campaign &amp; Creative Direction</h3>
+              <p>Commercial-ready promotional asset built to stop the feed scroll and drive immediate user interest.</p>
+            </div>
+            <div class="poster-footer-meta">
+              <span>PERFORMANCE ADS</span>
+              <span>CLICK TO EXPAND ↗</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Freelance Track Record (Neutral Client & Project Execution) -->
+  <section class="p-experience" id="experience">
+    <div class="container-boxed">
+      <div class="section-head">
+        <p class="section-head__tag">FREELANCE TRACK RECORD</p>
+        <h2 class="section-head__title">Proven Execution Across Global Brands &amp; Remote Clients</h2>
+        <p class="section-head__desc">Demonstrated expertise across independent client engagements, agency partnerships, and global brands — driving measurable social engagement, paid acquisition, and operational precision.</p>
+      </div>
+
+      <div class="experience-grid">
+
+        <!-- Role 1: Social Media -->
+        <div class="exp-card">
+          <div>
+            <div class="exp-date">2023 – PRESENT (3+ YRS)</div>
+            <h3>Senior Social Media Manager &amp; Growth Strategist</h3>
+            <div class="exp-company">Remote Retainers &amp; Global Brand Accounts</div>
+            <p>Spearheading organic social media growth, viral short-form video hooks, community building, and automated DM lead funnels. Consistently scaling follower bases from cold traffic to 85K+ engaged communities.</p>
+          </div>
+        </div>
+
+        <!-- Role 2: Digital Marketing -->
+        <div class="exp-card">
+          <div>
+            <div class="exp-date">2022 – PRESENT</div>
+            <h3>Digital Marketing &amp; Paid Ads Strategist</h3>
+            <div class="exp-company">Meta &amp; Google Performance Campaigns</div>
+            <p>Architecting full-funnel acquisition roadmaps for e-commerce and B2B clients. Managing creative testing frameworks, dynamic retargeting, and GA4 attribution to deliver 4.2x–6.8x verified ROAS while cutting CPA.</p>
+          </div>
+        </div>
+
+        <!-- Role 3: Graphic Design & Branding -->
+        <div class="exp-card">
+          <div>
+            <div class="exp-date">2021 – PRESENT</div>
+            <h3>Freelance Brand Identity &amp; Graphic Designer</h3>
+            <div class="exp-company">50+ International Client Deliveries</div>
+            <p>Designing high-CTR social ad creatives, complete brand guidelines, investor pitch decks, and custom vector templates. Trusted by founders and agencies across the US, UK, and UAE with 5-star ratings.</p>
+          </div>
+        </div>
+
+        <!-- Role 4: Data Entry & Systems -->
+        <div class="exp-card">
+          <div>
+            <div class="exp-date">7+ YEARS RIGOR</div>
+            <h3>Systems Architecture &amp; Data Precision Lead</h3>
+            <div class="exp-company">Enterprise Databases &amp; Inventory Systems</div>
+            <p>Architecting automated MS Excel and Google Sheets systems with advanced VLOOKUP, XLOOKUP, and Index-Match formulas. 100% data entry precision across 25,000+ complex operational records with automated executive reporting.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Verified Certifications Strip (Clean & Neutral) -->
+      <div class="freelance-cert-strip">
+        <div class="cert-strip-header">
+          <h4>📜 Verified Capabilities &amp; Certifications</h4>
+          <span>Industry-Standard Credentials</span>
+        </div>
+        <div class="cert-tags-wrap">
+          <span class="cert-tag-item"><span>✓</span> Google Ads Certified (Search &amp; Display)</span>
+          <span class="cert-tag-item"><span>✓</span> Motion Graphics &amp; Video Editing (NISDA)</span>
+          <span class="cert-tag-item"><span>✓</span> Graphic Design Specialization (Adobe Photoshop)</span>
+          <span class="cert-tag-item"><span>✓</span> ISO 45001 Compliance &amp; Audit Systems</span>
+          <span class="cert-tag-item"><span>✓</span> Meta Ads &amp; GA4 Conversion Attribution</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Tools & Software Matrix -->
+  <section class="p-tools" id="tools">
+    <div class="container-boxed">
+      <div style="text-align: center; margin-bottom: 28px;">
+        <span class="section-head__tag">PRIMARY TOOLS &amp; STACK</span>
+      </div>
+      <div class="tools-ticker">
+        <div class="tool-chip">🤖 ChatGPT 4o &amp; Claude 3.5</div>
+        <div class="tool-chip">🎨 Midjourney v6</div>
+        <div class="tool-chip">✨ Perplexity &amp; Gemini Pro</div>
+        <div class="tool-chip">⚡ Runway Gen-3 &amp; Luma AI</div>
+        <div class="tool-chip">📱 Meta Ads Manager</div>
+        <div class="tool-chip">📈 Google Analytics 4</div>
+        <div class="tool-chip">🎨 Figma Pro</div>
+        <div class="tool-chip">✍️ Notion AI Hub</div>
+        <div class="tool-chip">📊 Advanced MS Excel (VLOOKUP)</div>
+        <div class="tool-chip">📑 Google Sheets (Apps Script)</div>
+        <div class="tool-chip">🎬 CapCut Pro &amp; Premiere</div>
+        <div class="tool-chip">🎨 Canva Pro &amp; Firefly</div>
+        <div class="tool-chip">🖼️ Adobe Illustrator &amp; Photoshop</div>
+        <div class="tool-chip">💼 LinkedIn Creator Hub</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Stage (Say "Hey!" from mildsugar) -->
+  <section class="p-contact" id="contact">
+    <div class="container-boxed">
+      <div class="contact-card-mild">
+        <div>
+          <h2 class="u-en">Say “Hey!” 🤝</h2>
+          <p class="sub">Looking for dedicated freelance support in social media management, performance marketing, content writing, design, or data systems? Let’s chat!</p>
+
+          <div class="contact-buttons-group">
+            <a href="mailto:shahid.choudhary5@yahoo.com?subject=Freelance%20Project%20Inquiry%20via%20Portfolio" 
+               class="action-btn-pill primary">
+              <span>Send Direct Email</span>
+              <span>✉</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form for Instant Brief -->
+        <form class="contact-form-mild" id="mildContactForm">
+          <input type="text" id="contactName" class="mild-input" placeholder="Your Name or Brand" required>
+          <select id="contactService" class="mild-input" required>
+            <option value="">Select Service Needed</option>
+            <option value="Social Media Management & Growth">Social Media Management &amp; Viral Video</option>
+            <option value="Digital Marketing & Ads">Digital Marketing &amp; Meta/Google Ads</option>
+            <option value="Content Writing & Strategy">Content Writing &amp; Copywriting</option>
+            <option value="Graphic Design & Branding">Graphic Design &amp; Brand Identity</option>
+            <option value="Data Entry & Systems">Data Entry, Excel &amp; Systems</option>
+            <option value="Full Monthly Freelance Retainer">Full Monthly Freelance Retainer</option>
+          </select>
+          <textarea id="contactMessage" class="mild-textarea" rows="4" placeholder="Briefly describe your brand goals or requirements..." required></textarea>
+          <button type="submit" class="action-btn-pill primary" style="justify-content: center; cursor: pointer;">
+            Send Direct to WhatsApp →
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deep-Dive Modal Overlay -->
+  <div class="case-modal-overlay" id="caseModalOverlay" aria-hidden="true">
+    <div class="case-modal-content">
+      <button class="case-modal-close" id="caseModalClose" aria-label="Close Case Detail">✕</button>
+      <div id="caseModalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Fullscreen Lightbox Modal for Posters -->
+  <div class="poster-lightbox" id="posterLightbox" aria-hidden="true" onclick="closeLightbox()">
+    <button class="poster-lightbox-close" aria-label="Close Lightbox" onclick="closeLightbox()">✕</button>
+    <div class="poster-lightbox-content" onclick="event.stopPropagation()">
+      <img id="lightboxImg" src="" alt="Poster Preview">
+      <div class="poster-lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="l-footer">
+    <div class="footer-grid-overlay" aria-hidden="true"></div>
+    <div class="footer-inner-wrap">
+      <div class="footer-cols">
+        <!-- Brand column -->
+        <div class="footer-brand-col">
+          <a href="#hero" class="footer-brand-link">
+            <img src="21.png" alt="Shahid Akram Logo" class="l-footer__logo-img">
+            <span class="footer-brand-name">Shahid Akram</span>
+          </a>
+          <p class="footer-tagline">
+            Freelance Social Media Manager &amp; Digital Growth Specialist. Scaling brands, optimizing paid ad funnels, and engineering high-impact visual systems.
+          </p>
+          <div class="footer-socials-row">
+            <!-- LinkedIn SVG Icon -->
+            <a href="https://www.linkedin.com/in/shahidakram" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <!-- WhatsApp SVG Icon -->
+            <a href="https://wa.me/923004822560?text=Hi%20Shahid!%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20discuss%20a%20project." class="footer-social-btn" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+            </a>
+            <!-- Email SVG Icon -->
+            <a href="mailto:shahid.choudhary5@yahoo.com?subject=Project%20Inquiry%20via%20Portfolio" class="footer-social-btn" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigate Column -->
+        <div class="footer-nav-col">
+          <span class="footer-col-label">Navigate</span>
+          <a href="#hero" class="footer-nav-link">Home</a>
+          <a href="#cases" class="footer-nav-link">Cases (1–5)</a>
+          <a href="#disciplines" class="footer-nav-link">Disciplines</a>
+          <a href="#offer" class="footer-nav-link">Offers &amp; Pricing</a>
+          <a href="#contact" class="footer-nav-link">Say “Hey!”</a>
+        </div>
+
+        <!-- Services Column -->
+        <div class="footer-nav-col">
+          <span class="footer-col-label">Services</span>
+          <a href="#offer" class="footer-nav-link">Social Media Management</a>
+          <a href="#offer" class="footer-nav-link">Performance Meta/Google Ads</a>
+          <a href="#offer" class="footer-nav-link">Brand Identity &amp; Creative Kit</a>
+          <a href="#offer" class="footer-nav-link">Data Entry &amp; Automation</a>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom-bar">
+        <p class="footer-copy">&copy; 2026 Shahid Akram. All rights reserved.</p>
+        <a href="mailto:shahid.choudhary5@yahoo.com" class="footer-email-link">shahid.choudhary5@yahoo.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

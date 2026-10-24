@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 1. Mouse Stalker Cursor Follower
   const stalker = document.getElementById('stalker');
+  const stalkerText = document.getElementById('stalkerText');
   let mouseX = -200, mouseY = -200;
   let currentX = -200, currentY = -200;
 
@@ -48,8 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const renderStalker = () => {
-    currentX += (mouseX - currentX) * 0.15;
-    currentY += (mouseY - currentY) * 0.15;
+    currentX += (mouseX - currentX) * 0.2;
+    currentY += (mouseY - currentY) * 0.2;
     if (stalker) {
       stalker.style.left = `${currentX}px`;
       stalker.style.top = `${currentY}px`;
@@ -63,24 +64,25 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll(selector).forEach(el => {
       el.addEventListener('mouseenter', () => {
         if (!stalker) return;
-        stalker.textContent = text;
+        if (stalkerText) stalkerText.textContent = text;
         if (isHoverClass) stalker.classList.add('is-hovering');
       });
       el.addEventListener('mouseleave', () => {
         if (!stalker) return;
-        stalker.textContent = 'Hey! 🤝';
+        if (stalkerText) stalkerText.textContent = '';
         stalker.classList.remove('is-hovering');
       });
     });
   };
 
-  bindStalkerHover('.case-card__visual', 'View Detail ↗');
+  bindStalkerHover('.case-card__visual', 'View ↗');
   bindStalkerHover('.mildsugar-btn', 'Explore ✦');
   bindStalkerHover('.discipline-box', 'Inspect ✦');
-  bindStalkerHover('.time-toggle-btn', 'Shift Mode');
-  bindStalkerHover('.action-btn-pill', 'Say Hey!');
+  bindStalkerHover('.time-toggle-btn', 'Theme');
+  bindStalkerHover('.action-btn-pill', 'Connect');
   bindStalkerHover('.poster-card', 'Preview 🔍');
-  bindStalkerHover('.exp-card', 'Experience ✦');
+  bindStalkerHover('.exp-card', 'Details ✦');
+  bindStalkerHover('.offer-card', 'Pricing ✦');
 
   // 2. Day & Night Mode (Room Time Toggle)
   const timeToggleBtn = document.getElementById('timeToggleBtn');
@@ -90,21 +92,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (theme === 'night') {
       document.documentElement.setAttribute('data-theme', 'night');
       if (timeToggleBtn) {
-        timeToggleBtn.innerHTML = `<span class="icon">🌙</span> Night Room`;
+        timeToggleBtn.innerHTML = `<span class="icon">🌙</span> Night`;
       }
-      const daySky = document.getElementById('roomDaySky');
-      const nightSky = document.getElementById('roomNightSky');
-      if (daySky) daySky.style.opacity = '0';
-      if (nightSky) nightSky.style.opacity = '1';
+      const dayImg = document.getElementById('heroImgDay');
+      const nightImg = document.getElementById('heroImgNight');
+      if (dayImg) dayImg.style.opacity = '0';
+      if (nightImg) nightImg.style.opacity = '1';
     } else {
       document.documentElement.removeAttribute('data-theme');
       if (timeToggleBtn) {
-        timeToggleBtn.innerHTML = `<span class="icon">☀️</span> Day Room`;
+        timeToggleBtn.innerHTML = `<span class="icon">☀️</span> Day`;
       }
-      const daySky = document.getElementById('roomDaySky');
-      const nightSky = document.getElementById('roomNightSky');
-      if (daySky) daySky.style.opacity = '1';
-      if (nightSky) nightSky.style.opacity = '0';
+      const dayImg = document.getElementById('heroImgDay');
+      const nightImg = document.getElementById('heroImgNight');
+      if (dayImg) dayImg.style.opacity = '1';
+      if (nightImg) nightImg.style.opacity = '0';
     }
     localStorage.setItem('mildsugar_theme', theme);
   };
@@ -320,20 +322,291 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 6. Contact Form & WhatsApp Direct Dispatch
+    // 6. Dual-Dispatch Contact Form (WhatsApp + Direct Email)
   const contactForm = document.getElementById('mildContactForm');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('contactName').value;
-      const service = document.getElementById('contactService').value;
-      const message = document.getElementById('contactMessage').value;
+  const btnWhatsApp = document.getElementById('btnSubmitWhatsApp');
+  const btnEmail = document.getElementById('btnSubmitEmail');
 
+  function getFormPayload() {
+    if (contactForm && !contactForm.reportValidity()) return null;
+    return {
+      name: (document.getElementById('contactName')?.value || '').trim(),
+      service: (document.getElementById('contactService')?.value || '').trim(),
+      message: (document.getElementById('contactMessage')?.value || '').trim()
+    };
+  }
+
+  if (btnWhatsApp) {
+    btnWhatsApp.addEventListener('click', () => {
+      const payload = getFormPayload();
+      if (!payload) return;
       const waText = encodeURIComponent(
-        `Hi Shahid! I came across your portfolio.\n\n*From:* ${name}\n*Requirement:* ${service}\n*Details:* ${message}`
+        `Hi Shahid! I came across your portfolio.\n\n*From:* ${payload.name}\n*Service:* ${payload.service}\n*Details:* ${payload.message}`
       );
       window.open(`https://wa.me/923004822560?text=${waText}`, '_blank');
       contactForm.reset();
     });
   }
+
+  if (btnEmail) {
+    btnEmail.addEventListener('click', () => {
+      const payload = getFormPayload();
+      if (!payload) return;
+      const subject = encodeURIComponent(`Project Inquiry: ${payload.service} - ${payload.name}`);
+      const body = encodeURIComponent(
+        `Hi Shahid,\n\nI came across your portfolio and would like to discuss a project with you.\n\nFrom: ${payload.name}\nService Needed: ${payload.service}\n\nProject Requirements / Details:\n${payload.message}\n\nLooking forward to hearing from you!`
+      );
+      window.location.href = `mailto:heyshahidakram@gmail.com?subject=${subject}&body=${body}`;
+      contactForm.reset();
+    });
+  }
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (btnWhatsApp) btnWhatsApp.click();
+    });
+  }
 });
+
+
+// ==========================================
+// BLOG & GROWTH INSIGHTS DYNAMIC ARCHITECTURE
+// ==========================================
+// Add as many articles as you want here!
+// Each article will automatically render in the slider without making the page longer.
+const DEFAULT_ARTICLES = [
+  {
+    tag: "Growth Strategy",
+    title: "Vanity Metrics vs. Revenue: Why 5,000 Followers Can Out-Earn 100,000",
+    snippet: "Why follower counts don't pay bills in 2026, and the exact 3-step high-intent funnel framework we use to convert cold scrollers into booked high-ticket clients.",
+    content: `
+      <p style="font-size: 16px; line-height: 1.8; margin-bottom: 18px;">
+        A brand with 5,000 hyper-engaged followers can easily generate more predictable monthly revenue than a generic account with 100,000 empty followers. In 2026, the biggest trap in social media marketing remains the <strong>"Vanity Metric Bubble"</strong>.
+      </p>
+      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">1. Broad Content Attracts Tourists; High-Intent Solves Pain</h4>
+      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
+        When brands create generic lifestyle content, they get random likes from people who will never buy. Our Helvetiqa framework focuses on addressing specific client bottlenecks, demonstrating direct ROI, and showcasing deep domain expertise.
+      </p>
+      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">2. Build a Frictionless Funnel</h4>
+      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
+        A viral post without a next step is wasted attention. Every carousel, Reel, and tweet must offer an intentional call to action: direct message automation, a high-value resource download, or an executive discovery call link.
+      </p>
+      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">3. Track What Moves Cash Flow</h4>
+      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
+        Stop reporting impressions to leadership. Measure Cost Per Lead (CPL), Click-Through Rate (CTR), and Sales Pipeline Velocity. Content builds awareness; disciplined strategy builds revenue.
+      </p>
+    `
+  },
+  {
+    tag: "Short-Form Video",
+    title: "The 3-Second Psychological Hook Framework for Viral Reels & TikToks",
+    snippet: "How to defeat algorithmic drop-offs using visual pattern interrupts, pacing, and emotional curiosity gaps that retain viewers past the critical 5-second mark.",
+    content: `
+      <p style="font-size: 16px; line-height: 1.8; margin-bottom: 18px;">
+        Algorithms don't reward effort; they reward viewer retention. If your video loses more than 50% of its audience in the first 3 seconds, the algorithm immediately chokes its organic distribution.
+      </p>
+      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">1. Visual Pattern Interrupts</h4>
+      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
+        Never start a video standing still and saying "Hello guys". Start in media res: dynamic camera movement, instant on-screen kinetic typography, or an intriguing visual action that breaks the user's subconscious scroll trance.
+      </p>
+      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">2. The Cognitive Curiosity Gap</h4>
+      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
+        State a controversial or high-stakes premise: <em>"The single biggest mistake cost us $14,000 on Meta last month..."</em>. The viewer's brain is naturally hardwired to watch until that tension is resolved.
+      </p>
+      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">3. Dynamic Sound & Pacing</h4>
+      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
+        Use snappy cut transitions every 1.5–2.5 seconds in CapCut, supplemented with subtle sound effects (whoosh, pop, click) to keep engagement peaked throughout the runtime.
+      </p>
+    `
+  },
+  {
+    tag: "Paid Performance",
+    title: "Slashing Meta Ads CPA by 52%: Our Dynamic Creative Testing Matrix",
+    snippet: "A step-by-step blueprint on structuring DCT ad sets, rapid visual iteration, and audience retargeting to achieve 4.2x ROAS without burning ad spend.",
+    content: `
+      <p style="font-size: 16px; line-height: 1.8; margin-bottom: 18px;">
+        Most media buyers burn their budget by running a single ad creative to a broad audience and hoping for miracles. Achieving a scalable 4.2x ROAS requires a systematic creative testing protocol.
+      </p>
+      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">1. The 3:2:2 Dynamic Creative Testing (DCT) Setup</h4>
+      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
+        In every test campaign, upload 3 distinct video/image hooks, 2 primary copy variations (short vs. story-driven), and 2 bold headlines. Let Meta's machine learning find the winning mathematical combinations.
+      </p>
+      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">2. Kill Fast, Scale Aggressively</h4>
+      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
+        Analyze results after 2x–3x target CPA spend. Immediately turn off creatives with low outbound CTR (<1.2%), and migrate the winning post IDs into your primary scaling campaign.
+      </p>
+      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">3. Retargeting with Social Proof</h4>
+      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
+        Warm retargeting audiences should never see the same cold hook. Show them customer transformation videos, case study carousel breakdowns, and risk-reversal guarantees to close the loop.
+      </p>
+    `
+  },
+  {
+    tag: "Personal Branding",
+    title: "The Executive LinkedIn Inbound Engine: Turning Profile Views Into High-Ticket Retainers",
+    snippet: "How to engineer an executive profile headline, structure 3 high-trust content pillars, and leverage creator mode to attract enterprise recruiter outreach.",
+    content: `
+      <p style="font-size: 16px; line-height: 1.8; margin-bottom: 18px;">
+        LinkedIn is not an online resume; it is a high-intent landing page for your personal brand. When founders and recruiters land on your profile, you have exactly 6 seconds to establish undeniable domain authority.
+      </p>
+      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">1. The Benefit-Driven Headline Formula</h4>
+      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
+        Replace passive titles like <em>"Marketing Specialist"</em> with tangible outcomes: <em>"Helping B2B Founders Scale from $20k to $100k/mo via High-CTR Paid Ads &amp; Dedicated Social Media Systems."</em>
+      </p>
+      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">2. The 3 Core Content Pillars</h4>
+      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
+        Post 3 to 4 times a week alternating between: <strong>Case Study Proof</strong> (real numbers &amp; ROAS), <strong>Process Breakdowns</strong> (how you actually execute), and <strong>Industry Hot Takes</strong> (challenging obsolete vanity metrics).
+      </p>
+      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">3. Inbound Conversion Optimization</h4>
+      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
+        Utilize the custom profile action button (e.g. <em>"Book a Consultation"</em>) pointing directly to your calendar or portfolio, transforming passive profile visitors into scheduled discovery calls.
+      </p>
+    `
+  }
+];
+
+// Dynamic Slider & Filter Logic
+let currentFilterCategory = 'all';
+
+function renderInsightsCards(cat = 'all') {
+  const track = document.getElementById('insightsTrack');
+  const counter = document.getElementById('insightsCounter');
+  if (!track) return;
+
+  currentFilterCategory = cat;
+  const articlesList = window.BLOG_ARTICLES || DEFAULT_ARTICLES;
+  const filtered = cat === 'all' 
+    ? articlesList.map((a, i) => ({ ...a, originalIndex: i }))
+    : articlesList.map((a, i) => ({ ...a, originalIndex: i })).filter(a => a.tag.toLowerCase() === cat.toLowerCase());
+
+  if (filtered.length === 0) {
+    track.innerHTML = `<div style="padding: 40px; color: var(--color-black); opacity: 0.6; font-family: var(--font-mono);">No articles found in this category yet. New playbooks drop weekly!</div>`;
+    if (counter) counter.textContent = `0 / 0`;
+    return;
+  }
+
+  track.innerHTML = filtered.map(art => `
+    <article class="insight-card" onclick="openBlogModal(${art.originalIndex})">
+      <div class="insight-card__meta">
+        <span class="insight-tag">${art.tag}</span>
+        
+      </div>
+      <h3 class="insight-card__title">${art.title}</h3>
+      <p class="insight-card__snippet">${art.snippet}</p>
+      <div class="insight-card__footer">
+        <span class="read-more-link">Read Full Playbook &rarr;</span>
+      </div>
+    </article>
+  `).join('');
+
+  updateSliderCounter();
+}
+
+function updateSliderCounter() {
+  const viewport = document.getElementById('insightsViewport');
+  const prevBtn = document.getElementById('insightsPrevBtn');
+  const nextBtn = document.getElementById('insightsNextBtn');
+
+  if (!viewport) return;
+
+  if (prevBtn) prevBtn.disabled = viewport.scrollLeft <= 10;
+  if (nextBtn) nextBtn.disabled = viewport.scrollLeft >= (viewport.scrollWidth - viewport.clientWidth - 15);
+}
+
+// Attach Slider Navigation & Filter Listeners
+document.addEventListener('DOMContentLoaded', () => {
+  renderInsightsCards('all');
+
+  const viewport = document.getElementById('insightsViewport');
+  const prevBtn = document.getElementById('insightsPrevBtn');
+  const nextBtn = document.getElementById('insightsNextBtn');
+
+  if (viewport) {
+    viewport.addEventListener('scroll', updateSliderCounter);
+  }
+
+  if (prevBtn && viewport) {
+    prevBtn.addEventListener('click', () => {
+      const card = viewport.querySelector('.insight-card');
+      const step = card ? card.offsetWidth + 24 : 380;
+      viewport.scrollBy({ left: -step, behavior: 'smooth' });
+    });
+  }
+
+  if (nextBtn && viewport) {
+    nextBtn.addEventListener('click', () => {
+      const card = viewport.querySelector('.insight-card');
+      const step = card ? card.offsetWidth + 24 : 380;
+      viewport.scrollBy({ left: step, behavior: 'smooth' });
+    });
+  }
+
+  // Filter Buttons
+  const filterPills = document.querySelectorAll('.insights-filter-pill');
+  filterPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      filterPills.forEach(p => p.classList.remove('is-active'));
+      pill.classList.add('is-active');
+      const cat = pill.getAttribute('data-cat') || 'all';
+      renderInsightsCards(cat);
+      if (viewport) viewport.scrollTo({ left: 0, behavior: 'smooth' });
+    });
+  });
+
+  // Tools Filter Tabs Interactive Logic
+  const toolPills = document.querySelectorAll('.tool-filter-pill');
+  const toolClusters = document.querySelectorAll('.tools-cluster');
+  if (toolPills.length > 0) {
+    toolPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        toolPills.forEach(p => p.classList.remove('is-active'));
+        pill.classList.add('is-active');
+        const selectedCat = pill.getAttribute('data-cat') || 'all';
+
+        toolClusters.forEach(cluster => {
+          const clusterCat = cluster.getAttribute('data-category');
+          if (selectedCat === 'all' || clusterCat === selectedCat) {
+            cluster.classList.remove('is-hidden');
+          } else {
+            cluster.classList.add('is-hidden');
+          }
+        });
+      });
+    });
+  }
+
+});
+
+
+// Modal Reader Function
+window.openBlogModal = function(index) {
+  const articlesList = window.BLOG_ARTICLES || DEFAULT_ARTICLES;
+  const article = articlesList[index];
+  if (!article) return;
+
+  const modalOverlay = document.getElementById('caseModalOverlay');
+  const modalBody = document.getElementById('caseModalBody');
+  if (modalOverlay && modalBody) {
+    modalBody.innerHTML = `
+      <div style="margin-bottom: 20px;">
+        <span style="font-family: var(--font-mono); font-size: 11.5px; font-weight: 700; color: var(--color-orange); background: rgba(254, 168, 49, 0.12); padding: 5px 14px; border-radius: 999px; text-transform: uppercase;">
+          ${article.tag}
+        </span>
+      </div>
+      <h2 style="font-family: var(--font-en-display); font-size: 26px; line-height: 1.3; color: var(--color-black); margin-bottom: 24px;">
+        ${article.title}
+      </h2>
+      <div style="color: var(--color-black); opacity: 0.9;">
+        ${article.content}
+      </div>
+      <div style="margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--color-card-border); display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 13.5px; color: var(--color-black); opacity: 0.7;">Written by Shahid Akram</span>
+        <a href="#contact" onclick="document.getElementById('caseModalOverlay').classList.remove('is-active')" class="hero-cta-btn" style="padding: 8px 20px; font-size: 13px;">
+          Discuss Strategy &rarr;
+        </a>
+      </div>
+    `;
+    modalOverlay.classList.add('is-active');
+  }
+};
