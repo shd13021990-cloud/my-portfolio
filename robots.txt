@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# AI Assistants & LLMs Guide
+# https://byshahid.vercel.app/llms.txt
+
 Sitemap: https://byshahid.vercel.app/sitemap.xml
