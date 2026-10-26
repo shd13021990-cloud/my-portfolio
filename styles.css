@@ -230,8 +230,9 @@ button {
 .l-header__logo {
   text-decoration: none;
   display: inline-flex;
-  align-items: center;
-  gap: 13px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
   cursor: pointer;
 }
 
@@ -3144,8 +3145,9 @@ button {
 
 .footer-brand-link {
   display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
   font-family: var(--font-en-display);
   font-size: 22px;
   color: var(--color-black);
@@ -3899,16 +3901,7 @@ button {
 }
 
 .logo-shapes-beacon {
-  position: absolute;
-  bottom: -3px;
-  right: -5px;
-  width: 8.5px;
-  height: 8.5px;
-  background: #10b981;
-  border: 1.5px solid var(--color-white);
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.35);
-  animation: beaconPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  display: none !important;
 }
 
 /* Footer Open Shapes */

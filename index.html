@@ -70,7 +70,7 @@
             <span class="logo-shape-item shape--triangle">
               <img src="shape_triangle.png" alt="Triangle">
             </span>
-            <span class="logo-shapes-beacon" title="Available for Global Remote Roles &amp; Sponsorship"></span>
+            
           </div>
           <div class="logo-text-group">
             <div class="logo-name-row">
@@ -1210,6 +1210,65 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- Growth Insights & Strategic Articles Section -->
+  <section class="p-insights" id="insights">
+    <div class="container-boxed">
+      <!-- Section Header in 2 Balanced Clean Lines -->
+      <div class="section-head" style="text-align: left; margin-bottom: 24px;">
+        <p class="section-head__tag">STRATEGIC PLAYBOOKS &amp; ARTICLES</p>
+        <h2 class="section-head__title insights-title-2lines">
+          Growth Insights &amp; Frameworks<br>Campaign Breakdowns
+        </h2>
+        <p class="section-head__desc" style="max-width: 660px; margin: 0;">
+          Practical playbooks from scaling organic audiences, testing high-converting ad hooks, and turning vanity social metrics into predictable business revenue.
+        </p>
+      </div>
+
+      <!-- Controls Row Above Article Cards: Category Filters (Left) + Arrows & Explore More Button (Right) -->
+      <div class="insights-controls-row">
+        <!-- Category Filter Pills -->
+        <div class="insights-filter-bar" id="insightsFilterBar">
+          <button type="button" class="insights-filter-pill is-active" data-cat="all">All Playbooks</button>
+          <button type="button" class="insights-filter-pill" data-cat="Growth Strategy">Growth Strategy</button>
+          <button type="button" class="insights-filter-pill" data-cat="Short-Form Video">Short-Form Video</button>
+          <button type="button" class="insights-filter-pill" data-cat="Paid Performance">Paid Performance</button>
+          <button type="button" class="insights-filter-pill" data-cat="Personal Branding">Personal Branding</button>
+        </div>
+
+        <!-- Right Side: Clean Nav Arrows + Explore More Button -->
+        <div class="insights-right-actions">
+          <div class="insights-arrow-pair">
+            <button type="button" class="insights-nav-btn" id="insightsPrevBtn" aria-label="Previous Articles">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button type="button" class="insights-nav-btn" id="insightsNextBtn" aria-label="Next Articles">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <a href="blog.html" class="insights-explore-btn" title="Open full blog publication in new page">
+            <span>Explore More</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Horizontal Carousel Slider Track (Never expands page height) -->
+      <div class="insights-slider-viewport" id="insightsViewport">
+        <div class="insights-slider-track" id="insightsTrack">
+          <!-- Dynamically Injected from app.js BLOG_ARTICLES -->
+        </div>
+      </div>
     </div>
   </section>
 
