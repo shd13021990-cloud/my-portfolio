@@ -444,7 +444,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const DEFAULT_ARTICLES = [
   {
     tag: "Growth Strategy",
-    title: "Vanity Metrics vs. Revenue: Why 5,000 Followers Can Out-Earn 100,000",
+    title: "Vanity Metrics vs. Revenue: Why 5,000 Followers Can Outperform 100,000",
     snippet: "Why follower counts don't pay bills in 2026, and the exact 3-step high-intent funnel framework we use to convert cold scrollers into booked high-ticket clients.",
     content: `
       <p style="font-size: 16px; line-height: 1.8; margin-bottom: 18px;">
@@ -466,7 +466,7 @@ const DEFAULT_ARTICLES = [
   },
   {
     tag: "Short-Form Video",
-    title: "The 3-Second Psychological Hook Framework for Viral Reels & TikToks",
+    title: "The 3&#8209;Second Psychological Hook Framework for Viral Reels & TikToks",
     snippet: "How to defeat algorithmic drop-offs using visual pattern interrupts, pacing, and emotional curiosity gaps that retain viewers past the critical 5-second mark.",
     content: `
       <p style="font-size: 16px; line-height: 1.8; margin-bottom: 18px;">
@@ -510,7 +510,7 @@ const DEFAULT_ARTICLES = [
   },
   {
     tag: "Personal Branding",
-    title: "The Executive LinkedIn Inbound Engine: Turning Profile Views Into High-Ticket Retainers",
+    title: "The Executive LinkedIn Inbound Engine: Turning Profile Views Into High&#8209;Ticket Retainers",
     snippet: "How to engineer an executive profile headline, structure 3 high-trust content pillars, and leverage creator mode to attract enterprise recruiter outreach.",
     content: `
       <p style="font-size: 16px; line-height: 1.8; margin-bottom: 18px;">
