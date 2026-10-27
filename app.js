@@ -261,72 +261,237 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Case Deep-Dive Modal Data (Neutral Freelance & Client Proven Results)
+  // 5. Case Deep-Dive Modal Data (Option A: Outcome & Impact Architecture)
   const caseDetails = [
     {
-      title: "Case 01: Social Media Growth & Viral Video Engine",
-      tagline: "Short-Form Video Strategy, Community Loyalty & Lead Funnels",
-      challenge: "Brands and creator accounts faced stagnant organic reach (<1.2%), algorithmic drop-offs, and lacked an automated mechanism to convert viral video views into booked discovery calls.",
-      solution: "Engineered 3-second psychological hook frameworks, structured a 30-day viral short-form pipeline (Instagram Reels & TikTok), implemented conversational DM automation funnels, and tracked drop-off analytics in CapCut & Meta Business Suite.",
+      badge: "VIRAL SOCIAL REACH & SHORTS",
+      metric: "+85K Followers & 4.2M Views",
+      title: "01 // Viral Growth Engine: From Cold Scrollers to 85K+ Engaged Community",
+      tagline: "Short-Form Video Strategy, Kinetic Hooks & DM Lead Automation",
+      client: "International Creator Channels & Direct-to-Consumer Brands",
+      whatsappTopic: "Case 01: Viral Growth Engine & 85K+ Community Scaling",
+      stats: [
+        { val: "+85,000", label: "Organic Audience" },
+        { val: "4.2M+", label: "Video Impressions" },
+        { val: "18.0%", label: "Engagement Lift" },
+        { val: "310+", label: "Automated Inbounds" }
+      ],
+      challenge: "Organic reach was stagnating below 1.2% due to algorithmic fatigue and generic formats. Viewers consistently dropped off within the first 1.5 seconds of vertical videos, preventing algorithmic promotion. Furthermore, zero automated capture mechanism existed to turn view counts into qualified direct message inquiries or discovery calls.",
+      phases: [
+        {
+          step: "01",
+          title: "3-Second Psychological Hook Sprint",
+          desc: "Formulated and A/B tested 25+ pattern-interrupt hook formulas (Contrarian, Shock-Stat, Visual Twist) isolating winning formats within 48 hours."
+        },
+        {
+          step: "02",
+          title: "Kinetic Video Pacing & Narrative Rhythm",
+          desc: "Engineered rapid CapCut cuts every 1.8 seconds with bespoke kinetic typography and sound design to elevate average watch time past 82%."
+        },
+        {
+          step: "03",
+          title: "Conversational Inbound DM Funnels",
+          desc: "Configured automated comment-to-DM triggers (e.g., 'GROWTH', 'TEMPLATE') routing viewers directly into pre-qualified sales conversations."
+        }
+      ],
+      evidence: [
+        {
+          src: "showcase_viral_motion_hook.jpg",
+          caption: "Retention-Engineered Kinetic Hook Visual Framework",
+          alt: "Viral Motion Hook"
+        }
+      ],
       results: [
-        "Scaled organic followers from scratch to 85,000+ targeted audience in 90 days",
-        "Generated 4,200,000+ total short-form video views across key hero campaigns",
+        "Scaled organic followers from zero to 85,000+ targeted audience within 90 days",
+        "Generated 4,200,000+ verified short-form video views across key hero campaigns",
         "Elevated average community engagement rate from 1.2% to 18.0%",
-        "Direct message automated funnels converted 310+ high-intent inbound inquiries"
+        "Direct message automated funnels converted 310+ high-intent inbound client inquiries"
       ],
       tools: ["CapCut Pro", "Instagram Reels", "TikTok Creator Studio", "Metricool", "Canva Pro", "Notion Content Hub"]
     },
     {
-      title: "Case 02: High-Converting Content Writing & Strategy",
-      tagline: "Conversion Copywriting, SEO Hubs & LinkedIn Thought Leadership",
-      challenge: "Inbound pipeline was dry, website copy was passive, and executive leadership had zero personal brand authority on LinkedIn.",
-      solution: "Designed an authoritative editorial framework: 20+ keyword-targeted SEO long-form guides, high-converting landing page copy based on PAS (Problem-Agitate-Solution), and 3x weekly executive LinkedIn carousels highlighting industry insights.",
-      results: [
-        "Delivered 120,000+ monthly organic impressions on executive LinkedIn brand",
-        "Generated consistent 42 qualified B2B inbound consulting leads every month",
-        "Ranked 14 primary target industry keywords in Google Top 5 positions",
-        "Email nurture sequences achieved a 46.8% open rate and 11.2% CTR"
+      badge: "EXECUTIVE BRANDING & B2B COPY",
+      metric: "42 Qualified Inbound Leads Monthly",
+      title: "02 // Conversion Copywriting & Content Architecture: Generating 42 Inbound B2B Leads/mo",
+      tagline: "High-Ticket Copywriting, SEO Pillar Hubs & LinkedIn Thought Leadership",
+      client: "B2B SaaS Founders, Enterprise Consultants & Advisory Firms",
+      whatsappTopic: "Case 02: Conversion Copywriting & 42 Inbound Leads/mo",
+      stats: [
+        { val: "42/mo", label: "Qualified B2B Leads" },
+        { val: "120K+", label: "Monthly Impressions" },
+        { val: "46.8%", label: "Email Open Rate" },
+        { val: "Top 5", label: "14 Google Keywords" }
       ],
-      tools: ["Notion", "Google Docs", "Ahrefs", "LinkedIn Creator Mode", "Grammarly Pro", "WordPress"]
+      challenge: "The client's sales pipeline was bone-dry and reliant on exhausting outbound cold pitches with dwindling reply rates. Website copy was passive and feature-centric without addressing executive purchase hesitation. Additionally, the founder lacked a personal thought-leadership presence on LinkedIn.",
+      phases: [
+        {
+          step: "01",
+          title: "Customer Persona & Objection Extraction",
+          desc: "Conducted stakeholder interviews extracting exact client vernacular, key ROI criteria, and primary enterprise purchase friction points."
+        },
+        {
+          step: "02",
+          title: "Executive Thought Leadership Editorial",
+          desc: "Authored 3x weekly authority carousels and contrarian breakdowns following the Hook-Problem-Proof-Offer framework on LinkedIn."
+        },
+        {
+          step: "03",
+          title: "Friction-Free Wireframes & Email Nurture",
+          desc: "Redrafted landing page copy with social proof stacking and deployed a 6-part automated email series with 46.8% open rates."
+        }
+      ],
+      evidence: [
+        {
+          src: "ChatGPT Image Jul 8, 2026, 04_39_44 PM.png",
+          caption: "Executive Content Architecture & B2B Inbound Desk",
+          alt: "Conversion Copywriting Architecture"
+        }
+      ],
+      results: [
+        "Consistently generated 42 qualified inbound B2B consulting inquiries every month",
+        "Surpassed 120,000+ monthly organic impressions on executive LinkedIn brand",
+        "Ranked 14 high-intent industry keywords in Google Top 5 search positions",
+        "Automated email nurture sequences delivered a sustained 46.8% open rate and 11.2% CTR"
+      ],
+      tools: ["Notion", "Google Docs", "Ahrefs", "LinkedIn Creator Mode", "Shield Analytics", "Grammarly Business"]
     },
     {
-      title: "Case 03: Visual Identity & High-CTR Graphic Design",
-      tagline: "Complete Brand Systems, High-CTR Ad Creatives & Pitch Decks",
-      challenge: "Inconsistent brand aesthetics across platforms, generic templates, and low click-through rates on paid advertising creatives.",
-      solution: "Engineered comprehensive visual identity systems: modern typography pairings, high-impact brand color schemes, 40+ modular social ad templates, high-conversion vector carousels, and investor-ready presentation decks.",
+      badge: "BRAND IDENTITY & DESIGN SYSTEMS",
+      metric: "+3.8% Ad CTR & 15+ Touchpoints",
+      title: "03 // Brand Identity & Creative Kit: Elevating Brand Perception Across 15 Channels",
+      tagline: "Swiss-Grade Visual Architecture, High-CTR Paid Ad Kits & Pitch Decks",
+      client: "Helvetiqa Swiss Horology, Modern Tech Startups & Luxury Brands",
+      whatsappTopic: "Case 03: Brand Identity & High-CTR Creative Systems",
+      stats: [
+        { val: "+3.8%", label: "Ad CTR Improvement" },
+        { val: "15+", label: "Brand Touchpoints" },
+        { val: "100+", label: "Bespoke Vector Assets" },
+        { val: "95%", label: "1st Round Approvals" }
+      ],
+      challenge: "Fragmented visual branding across channels diluted credibility and hurt conversion rates among high-net-worth buyers. Paid advertising creatives suffered from low CTR (<1.1%) due to generic templates, while presentation decks lacked executive typographic polish.",
+      phases: [
+        {
+          step: "01",
+          title: "Swiss-Inspired Identity Guidelines",
+          desc: "Constructed comprehensive brand rules: strict typography hierarchy, geometric spacing scales, and Pantone color psychology direction."
+        },
+        {
+          step: "02",
+          title: "High-CTR Paid Creative Production Matrix",
+          desc: "Designed 40+ modular paid ad assets across high-contrast statics, motion teasers, and multi-slide educational carousels."
+        },
+        {
+          step: "03",
+          title: "Executive & Investor Pitch Packaging",
+          desc: "Created investor pitch collateral in Figma/Illustrator with data visualization layouts engineered for high-stakes presentations."
+        }
+      ],
+      evidence: [
+        {
+          src: "showcase_helvetiqa_identity.jpg",
+          caption: "Helvetiqa Swiss Precision Corporate Identity Kit & Guidelines",
+          alt: "Helvetiqa Branding Guidelines"
+        }
+      ],
       results: [
         "Boosted paid ad click-through rate (CTR) by an immediate +3.8% across ad sets",
-        "Visual identity deployed across 15+ international marketing touchpoints",
-        "Created over 100+ bespoke graphics, promotional posters, and deck assets",
-        "Secured client approval in 95% of first-round creative reviews"
+        "Seamless visual identity deployed across 15+ international marketing touchpoints",
+        "Authored 100+ bespoke vector graphics, ad variants, and presentation assets",
+        "Achieved client and stakeholder sign-off in 95% of first-round creative reviews"
       ],
-      tools: ["Adobe Photoshop", "Adobe Illustrator", "Figma Pro", "Canva Pro", "After Effects"]
+      tools: ["Adobe Illustrator", "Photoshop", "Figma Enterprise", "Canva Enterprise", "After Effects"]
     },
     {
-      title: "Case 04: Full-Funnel Digital Marketing & ROAS Scaling",
-      tagline: "Meta & Google Paid Advertising with Full Conversion Tracking",
-      challenge: "Skyrocketing customer acquisition costs ($54+ CPA) and volatile ROAS threatening profit margins across e-commerce & lead gen accounts.",
-      solution: "Restructured entire paid acquisition engine: TOFU viral problem-aware video hooks, MOFU value-demonstration retargeting, and aggressive BOFU cart recovery sequences. Implemented server-side GA4 events and Meta Conversions API (CAPI).",
-      results: [
-        "Maintained sustained 4.2x to 6.8x Return on Ad Spend (ROAS)",
-        "Slashed Cost Per Acquisition (CPA) by 52% within 60 days of restructuring",
-        "Recovered over $48,000 in abandoned checkout revenue via targeted retargeting",
-        "Scaled monthly ad spend profitably from $3,000 to $25,000+"
+      badge: "PERFORMANCE MARKETING & PAID ADS",
+      metric: "4.2x to 6.8x ROAS & -52% CPA",
+      title: "04 // Full-Funnel Paid Advertising: Slashing CPA by 52% and Scaling ROAS to 4.2x–6.8x",
+      tagline: "Dynamic Creative Testing (DCT), Meta/Google Paid Media & GA4 Attribution",
+      client: "Direct-to-Consumer Brands & Scaled E-Commerce Retainers",
+      whatsappTopic: "Case 04: Full-Funnel Paid Ads & ROAS Scaling",
+      stats: [
+        { val: "4.2x–6.8x", label: "Blended Ad ROAS" },
+        { val: "-52%", label: "CPA Reduction" },
+        { val: "+$48K", label: "Abandoned Cart Revenue" },
+        { val: "$25K+", label: "Monthly Profitable Spend" }
       ],
-      tools: ["Meta Ads Manager", "Google Ads", "Google Analytics 4", "Shopify", "Klaviyo", "Looker Studio"]
+      challenge: "Customer acquisition costs were skyrocketing ($54+ CPA) with volatile returns eating away operating margins. Attribution tracking suffered from severe iOS privacy signal loss, and campaigns suffered from creative fatigue with no dynamic testing structure.",
+      phases: [
+        {
+          step: "01",
+          title: "Attribution Audit & Meta CAPI Setup",
+          desc: "Integrated server-side Meta Conversions API (CAPI) and GA4 custom events recovering 98%+ signal tracking accuracy."
+        },
+        {
+          step: "02",
+          title: "Dynamic Creative Testing (DCT) Engine",
+          desc: "Deployed rapid testing matrix pairing 3 emotional angles × 3 hooks × 3 creatives to isolate scalable winners without ad spend waste."
+        },
+        {
+          step: "03",
+          title: "Omnichannel Retargeting & Scaling",
+          desc: "Structured full-funnel retargeting with urgency-driven abandoned cart workflows scaling profitably from $3,000 to $25,000+ monthly spend."
+        }
+      ],
+      evidence: [
+        {
+          src: "showcase_apex_audio_ad.jpg",
+          caption: "High-ROAS Direct-Response Paid Creative Staging",
+          alt: "High-ROAS Creative Staging"
+        }
+      ],
+      results: [
+        "Maintained sustained 4.2x to 6.8x Return on Ad Spend (ROAS) across all scaling sprints",
+        "Slashed Cost Per Acquisition (CPA) by 52% within 60 days of campaign restructuring",
+        "Recovered over $48,000 in abandoned checkout revenue via targeted retargeting funnels",
+        "Successfully scaled ad spend profitably from $3,000 to $25,000+ monthly budget"
+      ],
+      tools: ["Meta Ads Manager", "Google Ads (Certified)", "Google Analytics 4", "Looker Studio", "Shopify", "Klaviyo"]
     },
     {
-      title: "Case 05: Data Entry, Inventory Systems & ERP Architecture",
-      tagline: "100% Accuracy, 25,000+ Records & Automated Reporting",
-      challenge: "Manual spreadsheet reconciliation, inventory discrepancies, and slow weekly executive reporting wasting 15+ hours weekly across operational units.",
-      solution: "Leveraged 7+ years of hands-on technical database systems and inventory precision. Designed automated MS Excel & Google Sheets models with advanced VLOOKUP, XLOOKUP, Index-Match, dynamic Pivot Tables, and automated error-flagging rules.",
+      badge: "COMMERCIAL DATA & INVENTORY SYSTEMS",
+      metric: "100% Accuracy & 25,000+ SKUs",
+      title: "05 // Precision Commercial Data Systems: 100% Accuracy Across 25,000+ Records",
+      tagline: "Dynamic Spreadsheet Architecture, Multi-Channel Reconciliation & Inventory ERP",
+      client: "Enterprise Construction, Logistics Facilities & Commercial E-Commerce",
+      whatsappTopic: "Case 05: Commercial Data Systems & Inventory Precision",
+      stats: [
+        { val: "100%", label: "Precision Rate" },
+        { val: "25,000+", label: "SKU Items Audited" },
+        { val: "80%", label: "Manual Hours Saved" },
+        { val: "0 Penalties", label: "7 Years Clean Audits" }
+      ],
+      challenge: "Fragmented manual spreadsheets caused physical inventory variance, stock discrepancies, and delayed executive visibility. Managers spent 15+ hours weekly compiling manual status sheets, and duplicate records led to frequent stockouts.",
+      phases: [
+        {
+          step: "01",
+          title: "Ledger Audit & Deduplication Sprint",
+          desc: "Cleaned and normalized 25,000+ line items, removing duplicate entries and enforcing standard data entry schemas across departments."
+        },
+        {
+          step: "02",
+          title: "Advanced Formula Pipelines & Validation",
+          desc: "Engineered automated Excel and Google Sheets models utilizing dynamic XLOOKUP, INDEX/MATCH, and automated error-flagging logic."
+        },
+        {
+          step: "03",
+          title: "Executive Inventory Dashboard & Reorder Triggers",
+          desc: "Constructed real-time stock dashboards with conditional automated alerts triggering before popular items reach critical thresholds."
+        }
+      ],
+      evidence: [
+        {
+          src: "Professional at a Modern Office Desk.png",
+          caption: "Commercial Data Operations & Precision Architecture System",
+          alt: "Commercial Data Operations"
+        }
+      ],
       results: [
-        "Maintained 100% data entry accuracy across 25,000+ technical components and logistics items",
-        "Reduced weekly executive inventory reporting time from 6 hours to automated real-time sheets",
+        "Maintained 100% data entry precision across 25,000+ technical components and logistics items",
+        "Reduced weekly executive inventory compilation time from 6 hours to real-time automated sheets",
         "Cleaned and enriched 10,000+ client CRM records eliminating duplicate data by 99.4%",
-        "Zero audit penalties across 7 consecutive years of external audits"
+        "Zero audit penalties across 7 consecutive years of external commercial audits"
       ],
-      tools: ["Advanced MS Excel", "Google Sheets (Apps Script)", "ERP Systems", "Oracle Inventory", "Airtable"]
+      tools: ["Advanced MS Excel (XLOOKUP)", "Google Sheets (Apps Script)", "ERP Systems", "Power Query", "Oracle Inventory"]
     }
   ];
 
@@ -334,46 +499,193 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalBody = document.getElementById('caseModalBody');
   const modalClose = document.getElementById('caseModalClose');
 
-  const openCaseModal = (index) => {
+  window.openCaseModal = function(index) {
     const data = caseDetails[index];
     if (!data || !modalBody || !modalOverlay) return;
 
+    const waEncoded = encodeURIComponent(`Hi Shahid! I reviewed your "${data.title}" case study and would like to discuss a similar project.`);
+
     modalBody.innerHTML = `
-      <div style="font-family: var(--font-en-display); font-size: 14px; color: var(--color-orange); margin-bottom: 8px;">
-        ${data.tagline}
-      </div>
-      <h2 style="font-family: var(--font-en-display); font-size: clamp(24px, 3.5vw, 36px); margin-bottom: 24px; line-height: 1.2;">
-        ${data.title}
-      </h2>
-      
-      <div style="margin-bottom: 20px;">
-        <h4 style="font-size: 13px; font-family: var(--font-mono); text-transform: uppercase; color: var(--color-orange); margin-bottom: 6px;">The Challenge</h4>
-        <p style="font-size: 15px; opacity: 0.85; line-height: 1.6;">${data.challenge}</p>
+      <div class="case-modal-badge-row">
+        <span class="case-modal-badge">${data.badge}</span>
+        <span class="case-modal-metric-badge">${data.metric}</span>
       </div>
 
-      <div style="margin-bottom: 24px;">
-        <h4 style="font-size: 13px; font-family: var(--font-mono); text-transform: uppercase; color: var(--color-orange); margin-bottom: 6px;">Strategic Solution</h4>
-        <p style="font-size: 15px; opacity: 0.85; line-height: 1.6;">${data.solution}</p>
+      <h2 class="case-modal-title">${data.title}</h2>
+      <div class="case-modal-client">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        <span>${data.client}</span>
       </div>
 
-      <div style="background: var(--color-cream-subtle); padding: 20px 24px; border-radius: 20px; margin-bottom: 24px; border: 1px solid var(--color-card-border);">
-        <h4 style="font-family: var(--font-en-display); font-size: 16px; margin-bottom: 12px; color: var(--color-black);">Key Measurable Results</h4>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
-          ${data.results.map(r => `<li style="font-size: 14.5px; font-weight: 600; display: flex; align-items: center; gap: 8px;"><span style="color: var(--color-orange);">✓</span> ${r}</li>`).join('')}
-        </ul>
+      <!-- 4-Stat Impact Bar -->
+      <div class="case-modal-stats-grid">
+        ${data.stats.map(s => `
+          <div class="case-stat-box">
+            <span class="case-stat-val">${s.val}</span>
+            <span class="case-stat-label">${s.label}</span>
+          </div>
+        `).join('')}
       </div>
 
-      <div>
-        <h4 style="font-size: 12px; font-family: var(--font-mono); text-transform: uppercase; opacity: 0.6; margin-bottom: 8px;">Core Tools & Stack</h4>
-        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-          ${data.tools.map(t => `<span style="background: var(--color-orange); color: #fff; font-size: 11px; padding: 6px 14px; border-radius: 100px; font-family: var(--font-en-display);">${t}</span>`).join('')}
+      <!-- Section 1: The Bottleneck (Challenge) -->
+      <div class="case-modal-sec">
+        <h4 class="case-modal-sec-title">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          The Core Challenge & Bottleneck
+        </h4>
+        <p class="case-modal-sec-text">${data.challenge}</p>
+      </div>
+
+      <!-- Section 2: 3-Phase Execution Roadmap -->
+      <div class="case-modal-sec">
+        <h4 class="case-modal-sec-title">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+          Strategic Execution (3-Phase Roadmap)
+        </h4>
+        <div class="case-modal-phases">
+          ${data.phases.map(p => `
+            <div class="case-phase-item">
+              <span class="case-phase-pill">PHASE ${p.step}</span>
+              <div class="case-phase-content">
+                <strong>${p.title}</strong>
+                <p>${p.desc}</p>
+              </div>
+            </div>
+          `).join('')}
         </div>
       </div>
+
+      <!-- Section 3: Visual Evidence & Insights Gallery -->
+      <div class="case-modal-sec">
+        <h4 class="case-modal-sec-title">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+          Visual Evidence & Insights Gallery
+        </h4>
+        <div class="case-modal-evidence-wrap">
+          ${data.evidence.map(e => `
+            <div class="case-evidence-card" onclick="openLightbox('${e.src}', '${data.title}', '${data.badge}', '${e.caption}', [['CATEGORY', '${data.badge}'], ['METRIC', '${data.metric}']])" title="Click to inspect in fullscreen">
+              <img src="${e.src}" alt="${e.alt}" loading="lazy">
+              <div class="case-evidence-caption">
+                <span>${e.caption}</span>
+                <span class="case-evidence-zoom-hint">ZOOM ↗</span>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- Section 4: Verified Outcomes -->
+      <div class="case-modal-sec">
+        <h4 class="case-modal-sec-title">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Verified Key Results & Commercial Impact
+        </h4>
+        <div class="case-results-grid">
+          ${data.results.map(r => `
+            <div class="case-result-row">
+              <span class="case-result-chk" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>${r}</span>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <!-- Section 5: Toolkit & Stack -->
+      <div class="case-modal-sec">
+        <h4 class="case-modal-sec-title">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          Applied Toolkit & Systems
+        </h4>
+        <div class="case-chips-wrap">
+          ${data.tools.map(t => `<span class="disc-chip">${t}</span>`).join('')}
+        </div>
+      </div>
+
+      <!-- Section 6: Action Buttons -->
+      <div class="case-modal-cta-row">
+        <a href="https://wa.me/923004822560?text=${waEncoded}" target="_blank" rel="noopener noreferrer" class="case-modal-wa-btn">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          <span>Discuss via WhatsApp</span>
+        </a>
+        <button type="button" onclick="sendCaseBrief(${index})" class="case-modal-brief-btn">
+          <span>Send Project Brief ↓</span>
+        </button>
+      </div>
     `;
+
     modalOverlay.classList.add('is-active');
+    document.body.style.overflow = 'hidden';
   };
 
-  if (modalClose && modalOverlay) {
+  // Global Brief Dispatch from Case Modal
+  window.sendCaseBrief = function(index) {
+    const data = caseDetails[index];
+    if (!data) return;
+
+    modalOverlay.classList.remove('is-active');
+    document.body.style.overflow = '';
+
+    setTimeout(() => {
+      const contactSec = document.getElementById('mildContactForm') || document.getElementById('contact');
+      if (contactSec) {
+        contactSec.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+
+      const serviceSelect = document.getElementById('contactService');
+      const msgField = document.getElementById('contactMessage');
+
+      const serviceMap = [
+        "Social Media Strategy & Viral Growth",
+        "Content Strategy & Conversion Copywriting",
+        "Graphic Design & Creative Brand Identity",
+        "Performance Marketing & Paid Ads (ROAS)",
+        "Inventory Operations & Commercial Data Systems"
+      ];
+
+      if (serviceSelect && serviceMap[index]) {
+        serviceSelect.value = serviceMap[index];
+      }
+
+      if (msgField) {
+        msgField.value = `Hi Shahid,
+
+I saw your "${data.title}" case study and would like to explore a similar strategy for my brand.
+
+Project Overview:
+• Brand / Company: 
+• Target Goal / Objective: 
+• Target Timeline: 
+
+Looking forward to your response!`;
+
+        msgField.focus();
+        msgField.scrollTop = 0;
+        const cursorTarget = '• Brand / Company: ';
+        const cIdx = msgField.value.indexOf(cursorTarget);
+        if (cIdx !== -1) {
+          const targetPos = cIdx + cursorTarget.length;
+          msgField.setSelectionRange(targetPos, targetPos);
+        }
+
+        const formCard = document.querySelector('.contact-card-mild');
+        if (formCard) {
+          formCard.style.transition = 'box-shadow 0.4s ease, border-color 0.4s ease';
+          formCard.style.borderColor = 'var(--color-orange)';
+          formCard.style.boxShadow = '0 0 0 3px rgba(254, 168, 49, 0.35)';
+          setTimeout(() => {
+            formCard.style.borderColor = '';
+            formCard.style.boxShadow = '';
+          }, 2200);
+        }
+      }
+    }, 160);
+  };
+
+    if (modalClose && modalOverlay) {
     modalClose.addEventListener('click', () => modalOverlay.classList.remove('is-active'));
     modalOverlay.addEventListener('click', (e) => {
       if (e.target === modalOverlay) modalOverlay.classList.remove('is-active');
@@ -1068,7 +1380,7 @@ window.sendServiceBrief = function(index) {
   closeDisciplineModal();
 
   setTimeout(() => {
-    const contactSec = document.getElementById('contact');
+    const contactSec = document.getElementById('mildContactForm') || document.getElementById('contact');
     if (contactSec) {
       contactSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
