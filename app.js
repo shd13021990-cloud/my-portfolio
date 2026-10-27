@@ -261,7 +261,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 5. Case Deep-Dive Modal Data (Option A: Outcome & Impact Architecture)
+  // 5. Case Deep-Dive Modal Data (Option A: Outcome & Impact Architecture - No Pics)
   const caseDetails = [
     {
       badge: "VIRAL SOCIAL REACH & SHORTS",
@@ -294,13 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
           desc: "Configured automated comment-to-DM triggers (e.g., 'GROWTH', 'TEMPLATE') routing viewers directly into pre-qualified sales conversations."
         }
       ],
-      evidence: [
-        {
-          src: "showcase_viral_motion_hook.jpg",
-          caption: "Retention-Engineered Kinetic Hook Visual Framework",
-          alt: "Viral Motion Hook"
-        }
-      ],
+      evidence: [],
       results: [
         "Scaled organic followers from zero to 85,000+ targeted audience within 90 days",
         "Generated 4,200,000+ verified short-form video views across key hero campaigns",
@@ -340,13 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
           desc: "Redrafted landing page copy with social proof stacking and deployed a 6-part automated email series with 46.8% open rates."
         }
       ],
-      evidence: [
-        {
-          src: "ChatGPT Image Jul 8, 2026, 04_39_44 PM.png",
-          caption: "Executive Content Architecture & B2B Inbound Desk",
-          alt: "Conversion Copywriting Architecture"
-        }
-      ],
+      evidence: [],
       results: [
         "Consistently generated 42 qualified inbound B2B consulting inquiries every month",
         "Surpassed 120,000+ monthly organic impressions on executive LinkedIn brand",
@@ -386,13 +374,7 @@ document.addEventListener('DOMContentLoaded', () => {
           desc: "Created investor pitch collateral in Figma/Illustrator with data visualization layouts engineered for high-stakes presentations."
         }
       ],
-      evidence: [
-        {
-          src: "showcase_helvetiqa_identity.jpg",
-          caption: "Helvetiqa Swiss Precision Corporate Identity Kit & Guidelines",
-          alt: "Helvetiqa Branding Guidelines"
-        }
-      ],
+      evidence: [],
       results: [
         "Boosted paid ad click-through rate (CTR) by an immediate +3.8% across ad sets",
         "Seamless visual identity deployed across 15+ international marketing touchpoints",
@@ -432,13 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
           desc: "Structured full-funnel retargeting with urgency-driven abandoned cart workflows scaling profitably from $3,000 to $25,000+ monthly spend."
         }
       ],
-      evidence: [
-        {
-          src: "showcase_apex_audio_ad.jpg",
-          caption: "High-ROAS Direct-Response Paid Creative Staging",
-          alt: "High-ROAS Creative Staging"
-        }
-      ],
+      evidence: [],
       results: [
         "Maintained sustained 4.2x to 6.8x Return on Ad Spend (ROAS) across all scaling sprints",
         "Slashed Cost Per Acquisition (CPA) by 52% within 60 days of campaign restructuring",
@@ -478,13 +454,7 @@ document.addEventListener('DOMContentLoaded', () => {
           desc: "Constructed real-time stock dashboards with conditional automated alerts triggering before popular items reach critical thresholds."
         }
       ],
-      evidence: [
-        {
-          src: "Professional at a Modern Office Desk.png",
-          caption: "Commercial Data Operations & Precision Architecture System",
-          alt: "Commercial Data Operations"
-        }
-      ],
+      evidence: [],
       results: [
         "Maintained 100% data entry precision across 25,000+ technical components and logistics items",
         "Reduced weekly executive inventory compilation time from 6 hours to real-time automated sheets",
@@ -495,17 +465,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   ];
 
-  const modalOverlay = document.getElementById('caseModalOverlay');
-  const modalBody = document.getElementById('caseModalBody');
-  const modalClose = document.getElementById('caseModalClose');
+  const caseModalOverlay = document.getElementById('caseModalOverlay');
+  const caseModalBody = document.getElementById('caseModalBody');
+  const caseModalClose = document.getElementById('caseModalClose');
 
   window.openCaseModal = function(index) {
     const data = caseDetails[index];
-    if (!data || !modalBody || !modalOverlay) return;
+    if (!data || !caseModalBody || !caseModalOverlay) return;
 
     const waEncoded = encodeURIComponent(`Hi Shahid! I reviewed your "${data.title}" case study and would like to discuss a similar project.`);
 
-    modalBody.innerHTML = `
+    caseModalBody.innerHTML = `
       <div class="case-modal-badge-row">
         <span class="case-modal-badge">${data.badge}</span>
         <span class="case-modal-metric-badge">${data.metric}</span>
@@ -555,6 +525,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
 
+      ${data.evidence && data.evidence.length > 0 ? `
       <!-- Section 3: Visual Evidence & Insights Gallery -->
       <div class="case-modal-sec">
         <h4 class="case-modal-sec-title">
@@ -567,12 +538,13 @@ document.addEventListener('DOMContentLoaded', () => {
               <img src="${e.src}" alt="${e.alt}" loading="lazy">
               <div class="case-evidence-caption">
                 <span>${e.caption}</span>
-                <span class="case-evidence-zoom-hint">ZOOM ↗</span>
+                <span class="case-evidence-zoom-hint">ZOOM</span>
               </div>
             </div>
           `).join('')}
         </div>
       </div>
+      ` : ''}
 
       <!-- Section 4: Verified Outcomes -->
       <div class="case-modal-sec">
@@ -617,7 +589,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
-    modalOverlay.classList.add('is-active');
+    caseModalOverlay.classList.add('is-active');
     document.body.style.overflow = 'hidden';
   };
 
@@ -626,13 +598,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const data = caseDetails[index];
     if (!data) return;
 
-    modalOverlay.classList.remove('is-active');
+    if (caseModalOverlay) {
+      caseModalOverlay.classList.remove('is-active');
+    }
     document.body.style.overflow = '';
 
     setTimeout(() => {
-      const contactSec = document.getElementById('mildContactForm') || document.getElementById('contact');
+      const contactSec = document.getElementById('contact');
       if (contactSec) {
-        contactSec.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        contactSec.scrollIntoView({ behavior: 'smooth' });
       }
 
       const serviceSelect = document.getElementById('contactService');
@@ -685,472 +659,33 @@ Looking forward to your response!`;
     }, 160);
   };
 
-    if (modalClose && modalOverlay) {
-    modalClose.addEventListener('click', () => modalOverlay.classList.remove('is-active'));
-    modalOverlay.addEventListener('click', (e) => {
-      if (e.target === modalOverlay) modalOverlay.classList.remove('is-active');
+  if (caseModalClose && caseModalOverlay) {
+    caseModalClose.addEventListener('click', () => {
+      caseModalOverlay.classList.remove('is-active');
+      document.body.style.overflow = '';
+    });
+    caseModalOverlay.addEventListener('click', (e) => {
+      if (e.target === caseModalOverlay) {
+        caseModalOverlay.classList.remove('is-active');
+        document.body.style.overflow = '';
+      }
     });
   }
 
   // Bind clicks on case visual cards to open deep-dive
-  caseCards.forEach((card, idx) => {
+  const stageCaseCards = document.querySelectorAll('.case-card');
+  stageCaseCards.forEach((card, idx) => {
     const visual = card.querySelector('.case-card__visual');
     if (visual) {
-      visual.addEventListener('click', () => openCaseModal(idx));
+      visual.addEventListener('click', () => window.openCaseModal(idx));
     }
   });
-
-    // 6. Dual-Dispatch Contact Form (WhatsApp + Direct Email)
-  const contactForm = document.getElementById('mildContactForm');
-  const btnWhatsApp = document.getElementById('btnSubmitWhatsApp');
-  const btnEmail = document.getElementById('btnSubmitEmail');
-
-  function getFormPayload() {
-    if (contactForm && !contactForm.reportValidity()) return null;
-    return {
-      name: (document.getElementById('contactName')?.value || '').trim(),
-      service: (document.getElementById('contactService')?.value || '').trim(),
-      message: (document.getElementById('contactMessage')?.value || '').trim()
-    };
-  }
-
-  if (btnWhatsApp) {
-    btnWhatsApp.addEventListener('click', () => {
-      const payload = getFormPayload();
-      if (!payload) return;
-      const waText = encodeURIComponent(
-        `Hi Shahid! I came across your portfolio.\n\n*From:* ${payload.name}\n*Service:* ${payload.service}\n*Details:* ${payload.message}`
-      );
-      window.open(`https://wa.me/923004822560?text=${waText}`, '_blank');
-      contactForm.reset();
-    });
-  }
-
-  if (btnEmail) {
-    btnEmail.addEventListener('click', () => {
-      const payload = getFormPayload();
-      if (!payload) return;
-      const subject = encodeURIComponent(`Project Inquiry: ${payload.service} - ${payload.name}`);
-      const body = encodeURIComponent(
-        `Hi Shahid,\n\nI came across your portfolio and would like to discuss a project with you.\n\nFrom: ${payload.name}\nService Needed: ${payload.service}\n\nProject Requirements / Details:\n${payload.message}\n\nLooking forward to hearing from you!`
-      );
-      window.location.href = `mailto:heyshahidakram@gmail.com?subject=${subject}&body=${body}`;
-      contactForm.reset();
-    });
-  }
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      if (btnWhatsApp) btnWhatsApp.click();
-    });
-  }
 });
 
+// ==========================================================================
+// Core Disciplines Dynamic Modal System
+// ==========================================================================
 
-// ==========================================
-// BLOG & GROWTH INSIGHTS DYNAMIC ARCHITECTURE
-// ==========================================
-// Add as many articles as you want here!
-// Each article will automatically render in the slider without making the page longer.
-const DEFAULT_ARTICLES = [
-  {
-    tag: "Growth Strategy",
-    title: "Vanity Metrics vs. Revenue: Why 5,000 Followers Can Outperform 100,000",
-    snippet: "Why follower counts don't pay bills in 2026, and the exact 3-step high-intent funnel framework we use to convert cold scrollers into booked high-ticket clients.",
-    content: `
-      <p style="font-size: 16px; line-height: 1.8; margin-bottom: 18px;">
-        A brand with 5,000 hyper-engaged followers can easily generate more predictable monthly revenue than a generic account with 100,000 empty followers. In 2026, the biggest trap in social media marketing remains the <strong>"Vanity Metric Bubble"</strong>.
-      </p>
-      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">1. Broad Content Attracts Tourists; High-Intent Solves Pain</h4>
-      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
-        When brands create generic lifestyle content, they get random likes from people who will never buy. Our Helvetiqa framework focuses on addressing specific client bottlenecks, demonstrating direct ROI, and showcasing deep domain expertise.
-      </p>
-      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">2. Build a Frictionless Funnel</h4>
-      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
-        A viral post without a next step is wasted attention. Every carousel, Reel, and tweet must offer an intentional call to action: direct message automation, a high-value resource download, or an executive discovery call link.
-      </p>
-      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">3. Track What Moves Cash Flow</h4>
-      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
-        Stop reporting impressions to leadership. Measure Cost Per Lead (CPL), Click-Through Rate (CTR), and Sales Pipeline Velocity. Content builds awareness; disciplined strategy builds revenue.
-      </p>
-    `
-  },
-  {
-    tag: "Short-Form Video",
-    title: "The 3&#8209;Second Psychological Hook Framework for Viral Reels & TikToks",
-    snippet: "How to defeat algorithmic drop-offs using visual pattern interrupts, pacing, and emotional curiosity gaps that retain viewers past the critical 5-second mark.",
-    content: `
-      <p style="font-size: 16px; line-height: 1.8; margin-bottom: 18px;">
-        Algorithms don't reward effort; they reward viewer retention. If your video loses more than 50% of its audience in the first 3 seconds, the algorithm immediately chokes its organic distribution.
-      </p>
-      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">1. Visual Pattern Interrupts</h4>
-      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
-        Never start a video standing still and saying "Hello guys". Start in media res: dynamic camera movement, instant on-screen kinetic typography, or an intriguing visual action that breaks the user's subconscious scroll trance.
-      </p>
-      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">2. The Cognitive Curiosity Gap</h4>
-      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
-        State a controversial or high-stakes premise: <em>"The single biggest mistake cost us $14,000 on Meta last month..."</em>. The viewer's brain is naturally hardwired to watch until that tension is resolved.
-      </p>
-      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">3. Dynamic Sound & Pacing</h4>
-      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
-        Use snappy cut transitions every 1.5–2.5 seconds in CapCut, supplemented with subtle sound effects (whoosh, pop, click) to keep engagement peaked throughout the runtime.
-      </p>
-    `
-  },
-  {
-    tag: "Paid Performance",
-    title: "Slashing Meta Ads CPA by 52%: Our Dynamic Creative Testing Matrix",
-    snippet: "A step-by-step blueprint on structuring DCT ad sets, rapid visual iteration, and audience retargeting to achieve 4.2x ROAS without burning ad spend.",
-    content: `
-      <p style="font-size: 16px; line-height: 1.8; margin-bottom: 18px;">
-        Most media buyers burn their budget by running a single ad creative to a broad audience and hoping for miracles. Achieving a scalable 4.2x ROAS requires a systematic creative testing protocol.
-      </p>
-      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">1. The 3:2:2 Dynamic Creative Testing (DCT) Setup</h4>
-      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
-        In every test campaign, upload 3 distinct video/image hooks, 2 primary copy variations (short vs. story-driven), and 2 bold headlines. Let Meta's machine learning find the winning mathematical combinations.
-      </p>
-      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">2. Kill Fast, Scale Aggressively</h4>
-      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
-        Analyze results after 2x–3x target CPA spend. Immediately turn off creatives with low outbound CTR (<1.2%), and migrate the winning post IDs into your primary scaling campaign.
-      </p>
-      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">3. Retargeting with Social Proof</h4>
-      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
-        Warm retargeting audiences should never see the same cold hook. Show them customer transformation videos, case study carousel breakdowns, and risk-reversal guarantees to close the loop.
-      </p>
-    `
-  },
-  {
-    tag: "Personal Branding",
-    title: "The Executive LinkedIn Inbound Engine: Turning Profile Views Into High&#8209;Ticket Retainers",
-    snippet: "How to engineer an executive profile headline, structure 3 high-trust content pillars, and leverage creator mode to attract enterprise recruiter outreach.",
-    content: `
-      <p style="font-size: 16px; line-height: 1.8; margin-bottom: 18px;">
-        LinkedIn is not an online resume; it is a high-intent landing page for your personal brand. When founders and recruiters land on your profile, you have exactly 6 seconds to establish undeniable domain authority.
-      </p>
-      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">1. The Benefit-Driven Headline Formula</h4>
-      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
-        Replace passive titles like <em>"Marketing Specialist"</em> with tangible outcomes: <em>"Helping B2B Founders Scale from $20k to $100k/mo via High-CTR Paid Ads &amp; Dedicated Social Media Systems."</em>
-      </p>
-      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">2. The 3 Core Content Pillars</h4>
-      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
-        Post 3 to 4 times a week alternating between: <strong>Case Study Proof</strong> (real numbers &amp; ROAS), <strong>Process Breakdowns</strong> (how you actually execute), and <strong>Industry Hot Takes</strong> (challenging obsolete vanity metrics).
-      </p>
-      <h4 style="font-size: 18px; color: var(--color-orange); margin: 24px 0 10px 0;">3. Inbound Conversion Optimization</h4>
-      <p style="font-size: 15px; line-height: 1.7; margin-bottom: 14px;">
-        Utilize the custom profile action button (e.g. <em>"Book a Consultation"</em>) pointing directly to your calendar or portfolio, transforming passive profile visitors into scheduled discovery calls.
-      </p>
-    `
-  }
-];
-
-// Dynamic Slider & Filter Logic
-let currentFilterCategory = 'all';
-
-function renderInsightsCards(cat = 'all') {
-  const track = document.getElementById('insightsTrack');
-  const counter = document.getElementById('insightsCounter');
-  if (!track) return;
-
-  currentFilterCategory = cat;
-  const articlesList = window.BLOG_ARTICLES || DEFAULT_ARTICLES;
-  const filtered = cat === 'all' 
-    ? articlesList.map((a, i) => ({ ...a, originalIndex: i }))
-    : articlesList.map((a, i) => ({ ...a, originalIndex: i })).filter(a => a.tag.toLowerCase() === cat.toLowerCase());
-
-  if (filtered.length === 0) {
-    track.innerHTML = `<div style="padding: 40px; color: var(--color-black); opacity: 0.6; font-family: var(--font-mono);">No articles found in this category yet. New playbooks drop weekly!</div>`;
-    if (counter) counter.textContent = `0 / 0`;
-    return;
-  }
-
-  track.innerHTML = filtered.map(art => `
-    <article class="insight-card" onclick="openBlogModal(${art.originalIndex})">
-      <div class="insight-card__meta">
-        <span class="insight-tag">${art.tag}</span>
-        
-      </div>
-      <h3 class="insight-card__title">${art.title}</h3>
-      <p class="insight-card__snippet">${art.snippet}</p>
-      <div class="insight-card__footer">
-        <span class="read-more-link">Read Full Playbook &rarr;</span>
-      </div>
-    </article>
-  `).join('');
-
-  updateSliderCounter();
-}
-
-function updateSliderCounter() {
-  const viewport = document.getElementById('insightsViewport');
-  const prevBtn = document.getElementById('insightsPrevBtn');
-  const nextBtn = document.getElementById('insightsNextBtn');
-
-  if (!viewport) return;
-
-  if (prevBtn) prevBtn.disabled = viewport.scrollLeft <= 10;
-  if (nextBtn) nextBtn.disabled = viewport.scrollLeft >= (viewport.scrollWidth - viewport.clientWidth - 15);
-}
-
-// Attach Slider Navigation & Filter Listeners
-document.addEventListener('DOMContentLoaded', () => {
-  renderInsightsCards('all');
-
-  const viewport = document.getElementById('insightsViewport');
-  const prevBtn = document.getElementById('insightsPrevBtn');
-  const nextBtn = document.getElementById('insightsNextBtn');
-
-  if (viewport) {
-    viewport.addEventListener('scroll', updateSliderCounter);
-  }
-
-  if (prevBtn && viewport) {
-    prevBtn.addEventListener('click', () => {
-      const card = viewport.querySelector('.insight-card');
-      const step = card ? card.offsetWidth + 24 : 380;
-      viewport.scrollBy({ left: -step, behavior: 'smooth' });
-    });
-  }
-
-  if (nextBtn && viewport) {
-    nextBtn.addEventListener('click', () => {
-      const card = viewport.querySelector('.insight-card');
-      const step = card ? card.offsetWidth + 24 : 380;
-      viewport.scrollBy({ left: step, behavior: 'smooth' });
-    });
-  }
-
-  // Filter Buttons
-  const filterPills = document.querySelectorAll('.insights-filter-pill');
-  filterPills.forEach(pill => {
-    pill.addEventListener('click', () => {
-      filterPills.forEach(p => p.classList.remove('is-active'));
-      pill.classList.add('is-active');
-      const cat = pill.getAttribute('data-cat') || 'all';
-      renderInsightsCards(cat);
-      if (viewport) viewport.scrollTo({ left: 0, behavior: 'smooth' });
-    });
-  });
-
-  // Tools Filter Tabs Interactive Logic
-  const toolPills = document.querySelectorAll('.tool-filter-pill');
-  const toolCards = document.querySelectorAll('.tool-card');
-  if (toolPills.length > 0 && toolCards.length > 0) {
-    toolPills.forEach(pill => {
-      pill.addEventListener('click', () => {
-        toolPills.forEach(p => p.classList.remove('is-active'));
-        pill.classList.add('is-active');
-        const selectedCat = pill.getAttribute('data-cat') || 'all';
-
-        toolCards.forEach(card => {
-          const cardCat = card.getAttribute('data-category');
-          if (selectedCat === 'all' || cardCat === selectedCat) {
-            card.classList.remove('is-hidden');
-            card.style.animation = 'none';
-            void card.offsetWidth;
-            card.style.animation = 'cardAppear 0.35s ease forwards';
-          } else {
-            card.classList.add('is-hidden');
-          }
-        });
-      });
-    });
-  }
-
-});
-
-
-// Modal Reader Function
-window.openBlogModal = function(index) {
-  const articlesList = window.BLOG_ARTICLES || DEFAULT_ARTICLES;
-  const article = articlesList[index];
-  if (!article) return;
-
-  const modalOverlay = document.getElementById('caseModalOverlay');
-  const modalBody = document.getElementById('caseModalBody');
-  if (modalOverlay && modalBody) {
-    modalBody.innerHTML = `
-      <div style="margin-bottom: 20px;">
-        <span style="font-family: var(--font-mono); font-size: 11.5px; font-weight: 700; color: var(--color-orange); background: rgba(254, 168, 49, 0.12); padding: 5px 14px; border-radius: 999px; text-transform: uppercase;">
-          ${article.tag}
-        </span>
-      </div>
-      <h2 style="font-family: var(--font-en-display); font-size: 26px; line-height: 1.3; color: var(--color-black); margin-bottom: 24px;">
-        ${article.title}
-      </h2>
-      <div style="color: var(--color-black); opacity: 0.9;">
-        ${article.content}
-      </div>
-      <div style="margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--color-card-border); display: flex; justify-content: space-between; align-items: center;">
-        <span style="font-size: 13.5px; color: var(--color-black); opacity: 0.7;">Written by Shahid Akram</span>
-        <a href="#contact" onclick="document.getElementById('caseModalOverlay').classList.remove('is-active')" class="hero-cta-btn" style="padding: 8px 20px; font-size: 13px;">
-          Discuss Strategy &rarr;
-        </a>
-      </div>
-    `;
-    modalOverlay.classList.add('is-active');
-  }
-};
-
-// --------------------------------------------------------------------------
-// Pricing & Retainer Packages Modal Logic
-// --------------------------------------------------------------------------
-const packageDetails = [
-  {
-    badge: "EXECUTIVE BRANDING",
-    title: "LinkedIn Profile Writing & Optimization",
-    price: "$180",
-    period: "complete makeover",
-    desc: "Transform your LinkedIn profile into an inbound conversion magnet for high-ticket clients, executive recruiters, and strategic partners.",
-    deliverables: [
-      "High-converting Headline & Story-driven 'About' bio rewrite",
-      "Custom branded 4K Header Banner design (Canva / Photoshop)",
-      "Complete Experience section formatting with measurable metrics & achievements",
-      "SEO Keyword Indexing for top recruiter & client search rankings",
-      "Featured Section curation & media link embedding",
-      "5 plug-and-play viral LinkedIn thought-leadership post drafts"
-    ],
-    timeline: "2-3 business days delivery",
-    support: "1-on-1 revision cycle included until 100% satisfaction",
-    btnText: "Book LinkedIn Makeover ($180)"
-  },
-  {
-    badge: "🔥 MOST POPULAR PARTNERSHIP",
-    title: "Dedicated Social Media Handler Retainer",
-    price: "$450",
-    period: "per month",
-    desc: "Complete done-for-you day-to-day social media operations taking your brand presence, video creation, and audience growth completely off your hands.",
-    deliverables: [
-      "Full Operations across Instagram + Facebook + LinkedIn channels",
-      "4 to 5 high-retention Reels & carousels created, edited & posted weekly (CapCut/Canva)",
-      "Daily story scheduling, trend research & sound hook strategy",
-      "Active community management & automated DM prospect handling",
-      "Meta Ads campaign setup, audience lookalike scaling & dynamic creative testing",
-      "Weekly analytics reporting dashboard & 30-day visual content calendar"
-    ],
-    timeline: "Dedicated Monday to Friday operations • Onboarding within 24-48 hrs",
-    support: "Direct Slack / WhatsApp channel sync + Weekly strategy calls",
-    btnText: "Hire Social Media Handler ($450/mo)"
-  },
-  {
-    badge: "CREATIVE DESIGN",
-    title: "Graphic Design & Brand Identity Kit",
-    price: "$250",
-    period: "complete brand kit",
-    desc: "A scroll-stopping visual identity package engineered to elevate brand perception, establish authority, and increase ad click-through rates.",
-    deliverables: [
-      "Comprehensive Brand Guidelines (Color palette, typography scale & vector assets)",
-      "20 high-converting social media templates & ad banners (Photoshop / Canva Pro)",
-      "15-slide investor pitch deck or executive client presentation design",
-      "Custom YouTube/Podcast thumbnails & high-contrast carousel covers",
-      "Print-ready stationary vectors & digital stationery mockups",
-      "Full source files provided (AI, PSD, PNG, SVG)"
-    ],
-    timeline: "5-7 business days delivery with phased previews",
-    support: "2 comprehensive rounds of design revisions",
-    btnText: "Get Brand Creative Kit ($250)"
-  },
-  {
-    badge: "FULL-SCALE GROWTH",
-    title: "All-in-One Digital Growth Partner",
-    price: "$650",
-    period: "per month",
-    desc: "The ultimate end-to-end partnership covering social media handling, paid performance ads, custom creative design, and CRM data automation.",
-    deliverables: [
-      "Full Dedicated Social Media Handler operations across all brand channels",
-      "Meta & Google Ads performance management targeting 4.2x+ ROAS",
-      "Unlimited graphic design & short-form video creative iterations",
-      "Advanced Excel/Sheets CRM automation & lead tracking pipeline",
-      "Omnichannel retargeting funnels & cart abandonment email flows",
-      "Priority 24/7 executive support and weekly ROI review meetings"
-    ],
-    timeline: "Full-scale dedicated retainer with priority execution queue",
-    support: "Dedicated private Slack channel + 24/7 priority communication",
-    btnText: "Discuss Full-Scale Retainer ($650/mo)"
-  }
-];
-
-window.openPackageModal = function(index) {
-  const pkg = packageDetails[index];
-  if (!pkg) return;
-  
-  const modal = document.getElementById('packageModalOverlay');
-  const body = document.getElementById('packageModalBody');
-  if (!modal || !body) return;
-  
-  body.innerHTML = `
-    <div class="pkg-modal-header">
-      <span class="pkg-modal-badge">${pkg.badge}</span>
-      <div class="pkg-modal-price-wrap">
-        <span class="pkg-modal-price">${pkg.price}</span>
-        <span class="pkg-modal-period">${pkg.period}</span>
-      </div>
-    </div>
-    
-    <h2 class="pkg-modal-title">${pkg.title}</h2>
-    <p class="pkg-modal-desc">${pkg.desc}</p>
-    
-    <div class="pkg-modal-section">
-      <h4 class="pkg-modal-subhead">Comprehensive Deliverables & Scope:</h4>
-      <ul class="pkg-modal-list">
-        ${pkg.deliverables.map(item => `<li><span class="chk-icon">✔</span> <span>${item}</span></li>`).join('')}
-      </ul>
-    </div>
-    
-    <div class="pkg-modal-meta-grid">
-      <div class="pkg-modal-meta-item">
-        <span class="meta-label">Turnaround & SLA</span>
-        <span class="meta-val">${pkg.timeline}</span>
-      </div>
-      <div class="pkg-modal-meta-item">
-        <span class="meta-label">Dedicated Support</span>
-        <span class="meta-val">${pkg.support}</span>
-      </div>
-    </div>
-    
-    <div class="pkg-modal-actions">
-      <a href="#contact" class="pkg-modal-cta" onclick="selectPackageForContact('${pkg.title}'); closePackageModal();">
-        <span>${pkg.btnText} &rarr;</span>
-      </a>
-      <a href="https://wa.me/923004822560?text=Hi%20Shahid,%20I%20am%20interested%20in%20your%20${encodeURIComponent(pkg.title)}%20package." target="_blank" rel="noopener noreferrer" class="pkg-modal-wa">
-        <span>Chat on WhatsApp</span>
-      </a>
-    </div>
-  `;
-  
-  modal.classList.add('is-active');
-  document.body.style.overflow = 'hidden';
-};
-
-window.closePackageModal = function() {
-  const modal = document.getElementById('packageModalOverlay');
-  if (modal) {
-    modal.classList.remove('is-active');
-    document.body.style.overflow = '';
-  }
-};
-
-window.selectPackageForContact = function(pkgName) {
-  const subjectInput = document.querySelector('input[name="subject"], select[name="package"], input[name="package"]');
-  const messageInput = document.querySelector('textarea[name="message"]');
-  if (subjectInput) {
-    subjectInput.value = `Inquiry regarding ${pkgName}`;
-  }
-  if (messageInput && !messageInput.value) {
-    messageInput.value = `Hi Shahid, I am interested in discussing your ${pkgName} package. Please let me know the next steps for onboarding.`;
-  }
-};
-
-// Close modal on Escape key
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    closePackageModal();
-  }
-});
-
-// ==========================================
-// CORE DISCIPLINES & SERVICES MODAL DATA
-// ==========================================
 const DISCIPLINE_DETAILS = [
   {
     badge: "ORGANIC SOCIAL & VIRAL VIDEO",
@@ -1280,71 +815,80 @@ const DISCIPLINE_DETAILS = [
   }
 ];
 
+const discModalOverlay = document.getElementById('disciplineModalOverlay');
+const discModalBody = document.getElementById('disciplineModalBody');
+const discModalClose = document.getElementById('disciplineModalClose');
+
 window.openDisciplineModal = function(index) {
   const d = DISCIPLINE_DETAILS[index];
-  if (!d) return;
+  if (!d || !discModalBody || !discModalOverlay) return;
 
-  const modal = document.getElementById('disciplineModalOverlay');
-  const body = document.getElementById('disciplineModalBody');
-  if (!modal || !body) return;
+  const waEncoded = encodeURIComponent(`Hi Shahid! I would like to inquire about your "${d.title}" service.`);
 
-  const waEncoded = encodeURIComponent(`Hi Shahid! I saw your portfolio and would like to discuss: ${d.whatsappTopic}`);
+  discModalBody.innerHTML = `
+    <span class="disc-modal-badge">${d.badge}</span>
+    <h2 class="disc-modal-title">${d.title}</h2>
+    <p class="disc-modal-tagline">${d.tagline}</p>
 
-  body.innerHTML = `
-    <div class="disc-modal-head">
-      <div class="disc-modal-badge-row">
-        <span class="disc-modal-badge">${d.badge}</span>
-        <span class="disc-modal-metric">${d.metric}</span>
-      </div>
-      <h2 class="disc-modal-title">${d.title}</h2>
-      <p class="disc-modal-tagline">${d.tagline}</p>
-    </div>
-
-    <!-- Section 1: Exact Deliverables -->
+    <!-- Section 1: Deliverables -->
     <div class="disc-modal-sec">
-      <h4 class="disc-modal-sec-title">Exactly What You Receive (Deliverables):</h4>
-      <div class="disc-modal-deliverables">
-        ${d.deliverables.map(del => `
-          <div class="disc-deliv-item">
-            <div class="disc-deliv-chk" aria-hidden="true">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div>
-            <div class="disc-deliv-text">
-              <strong>${del.name}</strong>
-              <p>${del.desc}</p>
-            </div>
+      <h4 class="disc-modal-sec-title">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        Key Deliverables & Scope
+      </h4>
+      <div class="disc-deliverables-grid">
+        ${d.deliverables.map(deliv => `
+          <div class="disc-deliverable-item">
+            <strong>${deliv.name}</strong>
+            <p>${deliv.desc}</p>
           </div>
         `).join('')}
       </div>
     </div>
 
-    <!-- Section 2: 3-Step Execution Workflow -->
+    <!-- Section 2: Framework & Workflow -->
     <div class="disc-modal-sec">
-      <h4 class="disc-modal-sec-title">How We Execute (3-Step Workflow):</h4>
-      <div class="disc-modal-steps">
-        ${d.workflow.map(w => `
-          <div class="disc-step-card">
-            <span class="disc-step-num">STEP ${w.step}</span>
-            <h5 class="disc-step-title">${w.title}</h5>
-            <p class="disc-step-desc">${w.desc}</p>
+      <h4 class="disc-modal-sec-title">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        Proven Workflow & Timeline
+      </h4>
+      <div class="disc-timeline-wrap">
+        <div class="disc-timeline-step">
+          <span class="disc-step-num">STEP 1</span>
+          <div class="disc-step-info">
+            <strong>Audit & Alignment</strong>
+            <p>Discovery intake, competitive gap analysis, and brand asset review.</p>
           </div>
-        `).join('')}
-      </div>
-    </div>
-
-    <!-- Section 3: Timeline & Tools -->
-    <div class="disc-modal-meta-grid">
-      <div class="disc-meta-box">
-        <span class="disc-meta-label">DELIVERY PACE</span>
-        <span class="disc-meta-val">${d.turnaround}</span>
-      </div>
-      <div class="disc-meta-box">
-        <span class="disc-meta-label">TOOLKIT &amp; SYSTEMS</span>
-        <div class="disc-meta-chips">
-          ${d.tools.map(t => `<span class="disc-chip">${t}</span>`).join('')}
         </div>
+        <div class="disc-timeline-step">
+          <span class="disc-step-num">STEP 2</span>
+          <div class="disc-step-info">
+            <strong>Architecture & Production</strong>
+            <p>Rapid draft generation, creative design sprints, and system deployment.</p>
+          </div>
+        </div>
+        <div class="disc-timeline-step">
+          <span class="disc-step-num">STEP 3</span>
+          <div class="disc-step-info">
+            <strong>Optimization & Handover</strong>
+            <p>Performance tracking, QA revision pass, and scheduled client delivery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Tools & Metrics -->
+    <div class="disc-modal-sec">
+      <h4 class="disc-modal-sec-title">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+        Applied Toolkit & Benchmark
+      </h4>
+      <div class="disc-chips-wrap" style="margin-bottom: 14px;">
+        ${d.tools.map(t => `<span class="disc-chip">${t}</span>`).join('')}
+      </div>
+      <div class="disc-metric-highlight">
+        <span class="disc-metric-badge">PRIMARY KPI:</span>
+        <span class="disc-metric-stat">${d.metric}</span>
       </div>
     </div>
 
@@ -1362,16 +906,15 @@ window.openDisciplineModal = function(index) {
     </div>
   `;
 
-  modal.classList.add('is-open');
-  modal.setAttribute('aria-hidden', 'false');
+  discModalOverlay.classList.add('is-open');
+  discModalOverlay.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
 };
 
 window.closeDisciplineModal = function() {
-  const modal = document.getElementById('disciplineModalOverlay');
-  if (!modal) return;
-  modal.classList.remove('is-open');
-  modal.setAttribute('aria-hidden', 'true');
+  if (!discModalOverlay) return;
+  discModalOverlay.classList.remove('is-open');
+  discModalOverlay.setAttribute('aria-hidden', 'true');
   document.body.style.overflow = '';
 };
 
@@ -1440,13 +983,20 @@ Looking forward to your response!`;
   }, 160);
 };
 
-
 // Keyboard ESC to close discipline modal
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeDisciplineModal();
   }
 });
+
+if (discModalClose && discModalOverlay) {
+  discModalClose.addEventListener('click', closeDisciplineModal);
+  discModalOverlay.addEventListener('click', (e) => {
+    if (e.target === discModalOverlay) closeDisciplineModal();
+  });
+}
+
 // Auto-open discipline modal if hash is #service-0 to #service-5
 window.addEventListener('DOMContentLoaded', () => {
   if (window.location.hash.startsWith('#service-')) {
