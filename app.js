@@ -835,3 +835,343 @@ document.addEventListener('keydown', (e) => {
     closePackageModal();
   }
 });
+
+// ==========================================
+// CORE DISCIPLINES & SERVICES MODAL DATA
+// ==========================================
+const DISCIPLINE_DETAILS = [
+  {
+    badge: "ORGANIC SOCIAL & VIRAL VIDEO",
+    title: "Social Media Strategy & Viral Growth",
+    tagline: "End-to-end social media architecture, daily feed operations & high-retention video pacing that transforms scrollers into buyers.",
+    deliverables: [
+      { name: "Monthly 30-Day Notion Content Calendar", desc: "Complete scheduled grid with video hooks, captions, targeted hashtags, and publishing times." },
+      { name: "15–25 Short-Form Videos / Reels / TikToks", desc: "9:16 high-retention video production with pattern interrupts, animated captions, and sound design." },
+      { name: "Multi-Slide Educational Carousel Systems", desc: "High-CTR graphic carousels engineered in Figma and Canva to maximize saves and shares." },
+      { name: "Active Community Management & DM Funnels", desc: "Daily comment responses, keyword comment seeding, and automated DM lead routing." },
+      { name: "Weekly Performance & Attribution Audits", desc: "In-depth analytics reviewing watch time past 3s, follower growth velocity, and lead attribution." }
+    ],
+    workflow: [
+      { step: "01", title: "Audit & Hook Ideation", desc: "Reverse-engineer top competitors, discover winning algorithmic angles, and establish brand visual guidelines (Days 1–3)." },
+      { step: "02", title: "Batch Asset Production", desc: "Script, design, edit, and assemble the first 15-day batch of videos and carousel assets for sign-off (Days 4–7)." },
+      { step: "03", title: "Algorithmic Scaling", desc: "Daily scheduled publishing, real-time comment management, and weekly creative iteration based on retention data." }
+    ],
+    turnaround: "Initial batch ready in 72 hours; ongoing weekly delivery batches.",
+    tools: ["Meta Business Suite", "CapCut Pro", "TikTok Creative Center", "Canva Enterprise", "Notion"],
+    metric: "+85K Organic Reach & Active Community Scaling",
+    whatsappTopic: "Social Media Strategy & Viral Growth"
+  },
+  {
+    badge: "EXECUTIVE BRANDING & B2B INBOUND",
+    title: "LinkedIn Profile Writing & Optimization",
+    tagline: "Executive personal branding that positions founders, executives, and consultants as industry authorities, generating high-ticket inbound leads.",
+    deliverables: [
+      { name: "SEO Keyword Indexing & Algorithmic Headline", desc: "Strategic headline restructuring ensuring your profile ranks in top search results for your niche." },
+      { name: "Story-Driven 'About' Narrative", desc: "High-converting founder/executive personal story following the Hook-Problem-Proof-Offer framework." },
+      { name: "Experience Section Transformation", desc: "Converting dry job duties into quantified business accomplishments and proof-backed case studies." },
+      { name: "Custom 4K Branded Profile Banner Design", desc: "High-resolution bespoke header banner reflecting corporate stature, credibility, and brand colors." },
+      { name: "30-Day Executive Thought Leadership Framework", desc: "12 custom post templates (Story, Breakdown, Carousel, Contrarian Take) ready to publish." }
+    ],
+    workflow: [
+      { step: "01", title: "Executive Career Deep-Dive", desc: "Comprehensive 45-minute consultation to extract career milestones, authority angles, and business goals." },
+      { step: "02", title: "Copywriting & Asset Sprint", desc: "Drafting complete Headline, About, quantified Experience, and designing custom 4K header banner (48 Hours)." },
+      { step: "03", title: "Profile Rollout & Inbound Launch", desc: "Guide profile rollout, configure Creator Mode features, and launch the inbound posting system." }
+    ],
+    turnaround: "48 to 72 hours for complete executive profile transformation.",
+    tools: ["LinkedIn Creator Mode", "Canva Pro", "Shield Analytics", "Copywriting Frameworks"],
+    metric: "+320% Inbound Profile Views & Inbound Lead Lift",
+    whatsappTopic: "LinkedIn Profile Writing & Executive Branding"
+  },
+  {
+    badge: "VISUAL IDENTITY & PERFORMANCE CREATIVES",
+    title: "Graphic Design & Creative Brand Identity",
+    tagline: "Visual storytelling engineered to stop the scroll. Cohesive brand kits, high-CTR paid ad creatives, corporate pitch decks, and visual packaging.",
+    deliverables: [
+      { name: "Complete Brand Identity Guidelines", desc: "Custom color palettes, typography hierarchy, logo usage rules, and digital moodboard direction." },
+      { name: "High-CTR Social Ad Creatives", desc: "Statics, carousels, and motion banners engineered to stop the feed scroll within 1.5 seconds." },
+      { name: "Multi-Slide Educational Carousels", desc: "Seamless typography-focused swipe carousels for LinkedIn, Instagram, and corporate decks." },
+      { name: "Investor & Sales Pitch Decks", desc: "Executive presentation decks designed in PowerPoint/Figma for fundraising and client pitching." },
+      { name: "Full Vector & Source Asset Packaging", desc: "Delivery in .SVG, .PNG, .PDF, .AI, and editable Figma/Canva links for seamless internal handoff." }
+    ],
+    workflow: [
+      { step: "01", title: "Moodboard & Style Alignment", desc: "Curate visual benchmarks, color psychology, and typographic combinations for approval (Day 1)." },
+      { step: "02", title: "Creative Concept Sprint", desc: "Produce 2 distinct visual concepts for feedback, testing, and collaborative refinement (Days 2–3)." },
+      { step: "03", title: "Final Asset Packaging", desc: "Export all production files, web-optimized formats, vector masters, and editable template kits (Day 4)." }
+    ],
+    turnaround: "2 to 4 business days per creative design sprint.",
+    tools: ["Adobe Illustrator", "Photoshop", "Figma", "Canva Enterprise"],
+    metric: "+3.8% Ad Click-Through Rate (CTR) Improvement",
+    whatsappTopic: "Graphic Design & Creative Brand Identity"
+  },
+  {
+    badge: "PAID ACQUISITION & PERFORMANCE MEDIA",
+    title: "Performance Marketing & Paid Ads (ROAS)",
+    tagline: "Quantitative paid media execution across Meta & Google Ads. Full-funnel roadmaps that lower CPA, protect margins, and scale profitably.",
+    deliverables: [
+      { name: "Full-Funnel Campaign Architecture", desc: "TOFU (Cold traffic testing), MOFU (Engagement retargeting), and BOFU (High-intent purchase conversions)." },
+      { name: "Dynamic Creative Testing (DCT) Matrix", desc: "Rapid testing of 3 angles × 3 hooks × 3 creatives to isolate winning combinations without ad waste." },
+      { name: "Direct-Response Ad Copywriting", desc: "Multi-angle copy (Pain-Agitate-Solve, Social Proof, Urgency) tailored for high-conversion clicks." },
+      { name: "GA4 & Server-Side Event Tracking", desc: "Clean custom conversion events, Server-Side API integration, and granular UTM tracking parameters." },
+      { name: "Weekly Executive ROI Dashboard", desc: "Live Looker Studio / Google Sheets reporting CPA, Blended ROAS, CAC, and ad spend efficiency." }
+    ],
+    workflow: [
+      { step: "01", title: "Account & Pixel Audit", desc: "Audit existing ad accounts, fix tracking attribution, and isolate historical winning data (Week 1)." },
+      { step: "02", title: "Creative Testing Sprints", desc: "Launch low-budget testing ad sets to discover the lowest CAC audiences and hook creative (Weeks 1–2)." },
+      { step: "03", title: "Profitable Scaling", desc: "Scale winning ad combinations while strictly maintaining 4.2x+ ROAS and low blended CPA targets." }
+    ],
+    turnaround: "Campaigns live within 5 business days; daily monitoring & optimization.",
+    tools: ["Meta Ads Manager", "Google Ads (Certified)", "Google Analytics 4", "Looker Studio"],
+    metric: "4.2x – 6.8x Return on Ad Spend (ROAS)",
+    whatsappTopic: "Performance Marketing & Paid Ads (ROAS)"
+  },
+  {
+    badge: "CONTENT ARCHITECTURE & CONVERSION COPY",
+    title: "Content Strategy & Conversion Copywriting",
+    tagline: "Persuasive direct-response messaging engineered with buyer psychology. Crafting clear narratives that command attention and drive sales.",
+    deliverables: [
+      { name: "High-Converting Landing Page & Sales Copy", desc: "Wireframe copy with emotional triggers, social proof stacking, and friction-reducing CTAs." },
+      { name: "0–3s Short-Form Video Hook Scripts", desc: "Psychological pattern-interrupt scripts built specifically for vertical video retention past 80%." },
+      { name: "Executive Ghostwriting & Articles", desc: "Long-form strategic articles and LinkedIn newsletters positioning you as the leading category authority." },
+      { name: "Automated Email Nurture Sequences", desc: "5–7 part automated drip email series that turns cold subscribers into booked discovery calls." },
+      { name: "SEO Editorial Content Calendars", desc: "Target keyword clusters, competitor search gap analysis, and content briefs for Google ranking." }
+    ],
+    workflow: [
+      { step: "01", title: "Voice & Persona Extraction", desc: "Analyze customer pain points, vernacular, and primary purchase hesitations to establish tone (Day 1)." },
+      { step: "02", title: "Draft Sprint & Formatting", desc: "Deliver raw copywriting drafts structured with visual layout cues and conversion psychology notes (Days 2–3)." },
+      { step: "03", title: "Polish & A/B Variations", desc: "Polish copy rhythm, generate alternative headline variants, and finalize deliverables for publication." }
+    ],
+    turnaround: "2 to 3 days per copywriting asset or sequence.",
+    tools: ["AIDA & PAS Psychology", "Notion", "Google Docs", "Direct-Response Swipe Files"],
+    metric: "42 Qualified Inbound Leads Generated Monthly",
+    whatsappTopic: "Content Strategy & Conversion Copywriting"
+  },
+  {
+    badge: "COMMERCIAL DATA & INVENTORY CONTROL",
+    title: "Inventory Operations & Commercial Data Systems",
+    tagline: "15,000+ SKU catalog auditing, POS/ERP synchronization & flawless spreadsheet architecture ensuring 99.4% stock precision.",
+    deliverables: [
+      { name: "Advanced Spreadsheet Architecture", desc: "Custom Excel & Google Sheets models using dynamic XLOOKUP, INDEX/MATCH, and Power Query pipelines." },
+      { name: "15,000+ SKU Stock Reconciliation", desc: "Daily and monthly shrinkage audits, warehouse variance reconciliation with 99.4% physical precision." },
+      { name: "Automated Stock Level & Reorder Triggers", desc: "Formula-driven dashboards that alert managers before popular SKUs reach critical stock-out thresholds." },
+      { name: "POS & E-Commerce Catalog Integration", desc: "Bridging physical store POS transactions with digital online inventory and warehouse channels." },
+      { name: "Executive Operations KPI Dashboard", desc: "Clean automated summary views cutting manual calculation time by up to 80%." }
+    ],
+    workflow: [
+      { step: "01", title: "Data Audit & Ledger Diagnostics", desc: "Audit current catalog databases, identify discrepancies, and normalize raw transaction records (Days 1–2)." },
+      { step: "02", title: "Formula & Workflow Automation", desc: "Build automated reconciliation sheets, lookup pipelines, and inventory dashboard views (Days 3–4)." },
+      { step: "03", title: "Floor Rollout & Maintenance", desc: "Implement routine physical audit checklists and train team members on daily entry protocols." }
+    ],
+    turnaround: "Initial system audit in 48 hours; custom dashboard deployed in 5 days.",
+    tools: ["Advanced Excel (XLOOKUP)", "Power Query", "Google Sheets", "POS / ERP Databases"],
+    metric: "99.4% Physical vs. Digital Stock Reconciliation Accuracy",
+    whatsappTopic: "Inventory Operations & Commercial Data Systems"
+  }
+];
+
+window.openDisciplineModal = function(index) {
+  const d = DISCIPLINE_DETAILS[index];
+  if (!d) return;
+
+  const modal = document.getElementById('disciplineModalOverlay');
+  const body = document.getElementById('disciplineModalBody');
+  if (!modal || !body) return;
+
+  const waEncoded = encodeURIComponent(`Hi Shahid! I saw your portfolio and would like to discuss: ${d.whatsappTopic}`);
+
+  body.innerHTML = `
+    <div class="disc-modal-head">
+      <div class="disc-modal-badge-row">
+        <span class="disc-modal-badge">${d.badge}</span>
+        <span class="disc-modal-metric">${d.metric}</span>
+      </div>
+      <h2 class="disc-modal-title">${d.title}</h2>
+      <p class="disc-modal-tagline">${d.tagline}</p>
+    </div>
+
+    <!-- Section 1: Exact Deliverables -->
+    <div class="disc-modal-sec">
+      <h4 class="disc-modal-sec-title">Exactly What You Receive (Deliverables):</h4>
+      <div class="disc-modal-deliverables">
+        ${d.deliverables.map(del => `
+          <div class="disc-deliv-item">
+            <div class="disc-deliv-chk" aria-hidden="true">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <div class="disc-deliv-text">
+              <strong>${del.name}</strong>
+              <p>${del.desc}</p>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+
+    <!-- Section 2: 3-Step Execution Workflow -->
+    <div class="disc-modal-sec">
+      <h4 class="disc-modal-sec-title">How We Execute (3-Step Workflow):</h4>
+      <div class="disc-modal-steps">
+        ${d.workflow.map(w => `
+          <div class="disc-step-card">
+            <span class="disc-step-num">STEP ${w.step}</span>
+            <h5 class="disc-step-title">${w.title}</h5>
+            <p class="disc-step-desc">${w.desc}</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+
+    <!-- Section 3: Timeline & Tools -->
+    <div class="disc-modal-meta-grid">
+      <div class="disc-meta-box">
+        <span class="disc-meta-label">DELIVERY PACE</span>
+        <span class="disc-meta-val">${d.turnaround}</span>
+      </div>
+      <div class="disc-meta-box">
+        <span class="disc-meta-label">TOOLKIT &amp; SYSTEMS</span>
+        <div class="disc-meta-chips">
+          ${d.tools.map(t => `<span class="disc-chip">${t}</span>`).join('')}
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Action Buttons -->
+    <div class="disc-modal-cta-row">
+      <a href="https://wa.me/923004822560?text=${waEncoded}" target="_blank" rel="noopener noreferrer" class="disc-modal-wa-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span>Discuss on WhatsApp</span>
+      </a>
+      <button type="button" onclick="sendServiceBrief(${index})" class="disc-modal-brief-btn">
+        <span>Send Project Brief ↓</span>
+      </button>
+    </div>
+  `;
+
+  modal.classList.add('is-open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closeDisciplineModal = function() {
+  const modal = document.getElementById('disciplineModalOverlay');
+  if (!modal) return;
+  modal.classList.remove('is-open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+};
+
+window.sendServiceBrief = function(index) {
+  const d = (typeof DISCIPLINE_DETAILS !== 'undefined' && DISCIPLINE_DETAILS[index]) ? DISCIPLINE_DETAILS[index] : null;
+  closeDisciplineModal();
+
+  setTimeout(() => {
+    const contactSec = document.getElementById('contact');
+    if (contactSec) {
+      contactSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    if (!d) return;
+
+    // Service mapping for the dropdown in the contact form - exact 1-to-1 match
+    const serviceSelect = document.getElementById('contactService');
+    if (serviceSelect && serviceSelect.options.length > index + 1) {
+      serviceSelect.selectedIndex = index + 1;
+    }
+
+    // Pre-populate the message field and focus it
+    const msgField = document.getElementById('contactMessage');
+    if (msgField) {
+      const delivBullets = (d.deliverables && d.deliverables.length >= 2)
+        ? `  • ${d.deliverables[0].name}\n  • ${d.deliverables[1].name}`
+        : (d.deliverables && d.deliverables[0] ? `  • ${d.deliverables[0].name}` : '  • Full Scope Execution');
+
+      msgField.value = 
+`Hi Shahid,
+
+I would like to inquire about your "${d.title}" service.
+
+Target Deliverables:
+${delivBullets}
+
+Project Overview:
+• Brand / Company: 
+• Primary Goal: 
+• Target Timeline: 
+
+Looking forward to your response!`;
+
+      msgField.focus();
+      msgField.scrollTop = 0;
+
+      // Place cursor right after "• Brand / Company: " for instant typing
+      const cursorTarget = '• Brand / Company: ';
+      const cIdx = msgField.value.indexOf(cursorTarget);
+      if (cIdx !== -1) {
+        const targetPos = cIdx + cursorTarget.length;
+        msgField.setSelectionRange(targetPos, targetPos);
+      }
+
+      const formCard = document.querySelector('.contact-card-mild');
+      if (formCard) {
+        formCard.style.transition = 'box-shadow 0.4s ease, border-color 0.4s ease';
+        formCard.style.borderColor = 'var(--color-orange)';
+        formCard.style.boxShadow = '0 0 0 3px rgba(254, 168, 49, 0.35)';
+        setTimeout(() => {
+          formCard.style.borderColor = '';
+          formCard.style.boxShadow = '';
+        }, 2200);
+      }
+    }
+  }, 160);
+};
+
+
+// Keyboard ESC to close discipline modal
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeDisciplineModal();
+  }
+});
+// Auto-open discipline modal if hash is #service-0 to #service-5
+window.addEventListener('DOMContentLoaded', () => {
+  if (window.location.hash.startsWith('#service-')) {
+    const sIdx = parseInt(window.location.hash.replace('#service-', ''), 10);
+    if (!isNaN(sIdx) && sIdx >= 0 && sIdx < 6) {
+      setTimeout(() => openDisciplineModal(sIdx), 300);
+    }
+  }
+});
+
+// ==========================================================================
+// FAQ Interactive Accordions
+// ==========================================================================
+document.addEventListener('DOMContentLoaded', () => {
+  const faqItems = document.querySelectorAll('.p-faq__item');
+  faqItems.forEach(item => {
+    const btn = item.querySelector('.p-faq__question');
+    if (btn) {
+      btn.addEventListener('click', () => {
+        const isActive = item.classList.contains('is-active');
+        // Close other items
+        faqItems.forEach(other => {
+          if (other !== item) {
+            other.classList.remove('is-active');
+            const otherBtn = other.querySelector('.p-faq__question');
+            if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+          }
+        });
+        // Toggle current item
+        if (isActive) {
+          item.classList.remove('is-active');
+          btn.setAttribute('aria-expanded', 'false');
+        } else {
+          item.classList.add('is-active');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    }
+  });
+});
