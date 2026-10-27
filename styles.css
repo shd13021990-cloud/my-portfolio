@@ -4,8 +4,7 @@
    Palette: #f7f5f1 (Milk Sugar Cream), #3c3728 (Espresso Black), #fea831 (Warm Tangerine)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Righteous&family=Syne:wght@700;800&display=swap');
-
+/* Google Fonts loaded asynchronously in HTML <head> */
 :root {
   --color-black: #3c3728;
   --color-white: #f7f5f1;
@@ -9397,4 +9396,55 @@ button {
     text-align: center;
     justify-content: center;
   }
+}
+
+/* ==========================================================================
+   PageSpeed Accessibility & Contrast Enhancements
+   ========================================================================== */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+:root {
+  --color-orange-text: #A05400;
+}
+
+[data-theme="night"] {
+  --color-orange-text: #FEA831;
+}
+
+.hero-eyebrow {
+  color: var(--color-orange-text) !important;
+  background: rgba(160, 84, 0, 0.09) !important;
+  border-color: rgba(160, 84, 0, 0.28) !important;
+}
+
+[data-theme="night"] .hero-eyebrow {
+  color: #FEA831 !important;
+  background: rgba(254, 168, 49, 0.12) !important;
+  border-color: rgba(254, 168, 49, 0.35) !important;
+}
+
+.p-hero__headline span {
+  color: var(--color-orange-text) !important;
+}
+
+.section-head__tag {
+  color: var(--color-orange-text) !important;
+}
+
+.poster-category-tag {
+  color: var(--color-orange-text) !important;
+}
+
+.case-card__number {
+  color: var(--color-orange-text) !important;
 }

@@ -29,6 +29,7 @@ window.openLightbox = function(src, title, tag, desc, specs) {
         specsEl.innerHTML = '';
       }
     }
+    lightbox.style.display = 'flex';
     lightbox.classList.add('is-active');
     document.body.style.overflow = 'hidden';
   }
@@ -38,6 +39,7 @@ window.closeLightbox = function() {
   const lightbox = document.getElementById('posterLightbox');
   if (lightbox) {
     lightbox.classList.remove('is-active');
+    lightbox.style.display = 'none';
     document.body.style.overflow = '';
   }
 };
@@ -589,6 +591,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
+    caseModalOverlay.style.display = 'flex';
     caseModalOverlay.classList.add('is-active');
     document.body.style.overflow = 'hidden';
   };
@@ -600,6 +603,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (caseModalOverlay) {
       caseModalOverlay.classList.remove('is-active');
+      caseModalOverlay.style.display = 'none';
     }
     document.body.style.overflow = '';
 
@@ -662,11 +666,13 @@ Looking forward to your response!`;
   if (caseModalClose && caseModalOverlay) {
     caseModalClose.addEventListener('click', () => {
       caseModalOverlay.classList.remove('is-active');
+      caseModalOverlay.style.display = 'none';
       document.body.style.overflow = '';
     });
     caseModalOverlay.addEventListener('click', (e) => {
       if (e.target === caseModalOverlay) {
         caseModalOverlay.classList.remove('is-active');
+      caseModalOverlay.style.display = 'none';
         document.body.style.overflow = '';
       }
     });
@@ -820,6 +826,8 @@ const discModalBody = document.getElementById('disciplineModalBody');
 const discModalClose = document.getElementById('disciplineModalClose');
 
 window.openDisciplineModal = function(index) {
+  const discModalOverlay = document.getElementById('disciplineModalOverlay');
+  const discModalBody = document.getElementById('disciplineModalBody');
   const d = DISCIPLINE_DETAILS[index];
   if (!d || !discModalBody || !discModalOverlay) return;
 
@@ -906,15 +914,17 @@ window.openDisciplineModal = function(index) {
     </div>
   `;
 
+  discModalOverlay.style.display = 'flex';
   discModalOverlay.classList.add('is-open');
   discModalOverlay.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
 };
 
 window.closeDisciplineModal = function() {
+  const discModalOverlay = document.getElementById('disciplineModalOverlay');
   if (!discModalOverlay) return;
   discModalOverlay.classList.remove('is-open');
-  discModalOverlay.setAttribute('aria-hidden', 'true');
+  discModalOverlay.style.display = 'none';
   document.body.style.overflow = '';
 };
 
@@ -1037,3 +1047,159 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// --------------------------------------------------------------------------
+// Pricing & Retainer Packages Modal Logic
+// --------------------------------------------------------------------------
+const packageDetails = [
+  {
+    badge: "EXECUTIVE BRANDING",
+    title: "LinkedIn Profile Writing & Optimization",
+    price: "$180",
+    period: "complete makeover",
+    desc: "Transform your LinkedIn profile into an inbound conversion magnet for high-ticket clients, executive recruiters, and strategic partners.",
+    deliverables: [
+      "High-converting Headline & Story-driven 'About' bio rewrite",
+      "Custom branded 4K Header Banner design (Canva / Photoshop)",
+      "Complete Experience section formatting with measurable metrics & achievements",
+      "SEO Keyword Indexing for top recruiter & client search rankings",
+      "Featured Section curation & media link embedding",
+      "5 plug-and-play viral LinkedIn thought-leadership post drafts"
+    ],
+    timeline: "2-3 business days delivery",
+    support: "1-on-1 revision cycle included until 100% satisfaction",
+    btnText: "Book LinkedIn Makeover ($180)"
+  },
+  {
+    badge: "🔥 MOST POPULAR PARTNERSHIP",
+    title: "Dedicated Social Media Handler Retainer",
+    price: "$450",
+    period: "per month",
+    desc: "Complete done-for-you day-to-day social media operations taking your brand presence, video creation, and audience growth completely off your hands.",
+    deliverables: [
+      "Full Operations across Instagram + Facebook + LinkedIn channels",
+      "4 to 5 high-retention Reels & carousels created, edited & posted weekly (CapCut/Canva)",
+      "Daily story scheduling, trend research & sound hook strategy",
+      "Active community management & automated DM prospect handling",
+      "Meta Ads campaign setup, audience lookalike scaling & dynamic creative testing",
+      "Weekly analytics reporting dashboard & 30-day visual content calendar"
+    ],
+    timeline: "Dedicated Monday to Friday operations • Onboarding within 24-48 hrs",
+    support: "Direct Slack / WhatsApp channel sync + Weekly strategy calls",
+    btnText: "Hire Social Media Handler ($450/mo)"
+  },
+  {
+    badge: "CREATIVE DESIGN",
+    title: "Graphic Design & Brand Identity Kit",
+    price: "$250",
+    period: "complete brand kit",
+    desc: "A scroll-stopping visual identity package engineered to elevate brand perception, establish authority, and increase ad click-through rates.",
+    deliverables: [
+      "Comprehensive Brand Guidelines (Color palette, typography scale & vector assets)",
+      "20 high-converting social media templates & ad banners (Photoshop / Canva Pro)",
+      "15-slide investor pitch deck or executive client presentation design",
+      "Custom YouTube/Podcast thumbnails & high-contrast carousel covers",
+      "Print-ready stationary vectors & digital stationery mockups",
+      "Full source files provided (AI, PSD, PNG, SVG)"
+    ],
+    timeline: "5-7 business days delivery with phased previews",
+    support: "2 comprehensive rounds of design revisions",
+    btnText: "Get Brand Creative Kit ($250)"
+  },
+  {
+    badge: "FULL-SCALE GROWTH",
+    title: "All-in-One Digital Growth Partner",
+    price: "$650",
+    period: "per month",
+    desc: "The ultimate end-to-end partnership covering social media handling, paid performance ads, custom creative design, and CRM data automation.",
+    deliverables: [
+      "Full Dedicated Social Media Handler operations across all brand channels",
+      "Meta & Google Ads performance management targeting 4.2x+ ROAS",
+      "Unlimited graphic design & short-form video creative iterations",
+      "Advanced Excel/Sheets CRM automation & lead tracking pipeline",
+      "Omnichannel retargeting funnels & cart abandonment email flows",
+      "Priority 24/7 executive support and weekly ROI review meetings"
+    ],
+    timeline: "Full-scale dedicated retainer with priority execution queue",
+    support: "Dedicated private Slack channel + 24/7 priority communication",
+    btnText: "Discuss Full-Scale Retainer ($650/mo)"
+  }
+];
+
+window.openPackageModal = function(index) {
+  const pkg = packageDetails[index];
+  if (!pkg) return;
+  
+  const modal = document.getElementById('packageModalOverlay');
+  const body = document.getElementById('packageModalBody');
+  if (!modal || !body) return;
+  
+  body.innerHTML = `
+    <div class="pkg-modal-header">
+      <span class="pkg-modal-badge">${pkg.badge}</span>
+      <div class="pkg-modal-price-wrap">
+        <span class="pkg-modal-price">${pkg.price}</span>
+        <span class="pkg-modal-period">${pkg.period}</span>
+      </div>
+    </div>
+    
+    <h2 class="pkg-modal-title">${pkg.title}</h2>
+    <p class="pkg-modal-desc">${pkg.desc}</p>
+    
+    <div class="pkg-modal-section">
+      <h4 class="pkg-modal-subhead">Comprehensive Deliverables & Scope:</h4>
+      <ul class="pkg-modal-list">
+        ${pkg.deliverables.map(item => `<li><span class="chk-icon">✔</span> <span>${item}</span></li>`).join('')}
+      </ul>
+    </div>
+    
+    <div class="pkg-modal-meta-grid">
+      <div class="pkg-modal-meta-item">
+        <span class="meta-label">Turnaround & SLA</span>
+        <span class="meta-val">${pkg.timeline}</span>
+      </div>
+      <div class="pkg-modal-meta-item">
+        <span class="meta-label">Dedicated Support</span>
+        <span class="meta-val">${pkg.support}</span>
+      </div>
+    </div>
+    
+    <div class="pkg-modal-actions">
+      <a href="#contact" class="pkg-modal-cta" onclick="selectPackageForContact('${pkg.title}'); closePackageModal();">
+        <span>${pkg.btnText} &rarr;</span>
+      </a>
+      <a href="https://wa.me/923004822560?text=Hi%20Shahid,%20I%20am%20interested%20in%20your%20${encodeURIComponent(pkg.title)}%20package." target="_blank" rel="noopener noreferrer" class="pkg-modal-wa">
+        <span>Chat on WhatsApp</span>
+      </a>
+    </div>
+  `;
+  
+  modal.style.display = 'flex';
+  modal.classList.add('is-active');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closePackageModal = function() {
+  const modal = document.getElementById('packageModalOverlay');
+  if (modal) {
+    modal.classList.remove('is-active');
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+};
+
+window.selectPackageForContact = function(pkgName) {
+  const select = document.getElementById('contactService');
+  const messageInput = document.getElementById('contactMessage');
+  if (select) {
+    for (let opt of select.options) {
+      if (opt.text.toLowerCase().includes('retainer') || opt.text.toLowerCase().includes('social')) {
+        select.value = opt.value;
+        break;
+      }
+    }
+  }
+  if (messageInput && !messageInput.value) {
+    messageInput.value = `Hi Shahid, I am interested in discussing your ${pkgName} package. Please let me know the next steps for onboarding.`;
+  }
+};

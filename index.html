@@ -68,6 +68,14 @@
   <!-- Theme color for mobile browser bars and WhatsApp link header -->
   <meta name="theme-color" content="#0B0E14">
 
+    <!-- Fonts & Asset Preload for Instant First Contentful Paint -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="Professional%20at%20a%20Modern%20Office%20Desk.webp" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Righteous&family=Syne:wght@700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Righteous&family=Syne:wght@700;800&display=swap">
+  </noscript>
   <link rel="stylesheet" href="styles.css">
   <!-- Microsoft Clarity Analytics -->
   <script type="text/javascript">
@@ -93,13 +101,13 @@
         <a href="#hero" class="l-header__logo u-en">
           <div class="logo-shapes-open" title="Shahid Akram Brandmark">
             <span class="logo-shape-item shape--circle">
-              <img src="shape_circle.png" alt="Circle">
+              <img src="shape_circle.webp" alt="Circle" width="94" height="93">
             </span>
             <span class="logo-shape-item shape--square">
-              <img src="shape_square.png" alt="Square">
+              <img src="shape_square.webp" alt="Square" width="89" height="89">
             </span>
             <span class="logo-shape-item shape--triangle">
-              <img src="shape_triangle.png" alt="Triangle">
+              <img src="shape_triangle.webp" alt="Triangle" width="61" height="92">
             </span>
             
           </div>
@@ -158,6 +166,7 @@
   </header>
 
   <!-- Main Hero Stage -->
+  <main id="main-content">
   <section class="p-hero" id="hero">
     <div class="p-hero__container">
 
@@ -166,8 +175,8 @@
         
         <!-- Day & Night Dynamic Hero Workspace Images -->
         <div class="hero-showcase-wrap">
-          <img src="Professional at a Modern Office Desk.png" alt="Shahid Akram Day Workspace" class="portfolio-image hero-showcase-img--day" id="heroImgDay">
-          <img src="ChatGPT Image Jul 8, 2026, 04_39_44 PM.png" alt="Shahid Akram Night Workspace" class="portfolio-image hero-showcase-img--night" id="heroImgNight">
+          <img src="Professional at a Modern Office Desk.webp" alt="Shahid Akram Day Workspace" class="portfolio-image hero-showcase-img--day" id="heroImgDay" width="1144" height="1145" fetchpriority="high" decoding="async">
+          <img src="ChatGPT Image Jul 8, 2026, 04_39_44 PM.webp" alt="Shahid Akram Night Workspace" class="portfolio-image hero-showcase-img--night" id="heroImgNight" width="1024" height="1023" loading="lazy" decoding="async">
         </div>
 
         <div class="room-badge-bottom">
@@ -793,9 +802,9 @@
       <div class="gallery-grid">
 
         <!-- Creative Asset 01: Performance Ad -->
-        <div class="poster-card" onclick="openLightbox('showcase_apex_audio_ad.jpg', 'High-ROAS Meta Ad Creative: Luxury Cyber-Tech E-Commerce Campaign', 'PAID ADS & PERFORMANCE MEDIA', 'Engineered for high-ROAS Meta and TikTok paid campaigns. Combines floating product staging, high-contrast studio lighting, and conversion-focused typography that stops feed scrolling within 1.5 seconds.', [['Objective', 'Cold Traffic Acquisition & 4.2x ROAS Scaling'], ['Platforms', 'Meta (Feed & Stories) & TikTok Ads'], ['Tools Used', 'Adobe Photoshop, Canva Pro, Midjourney'], ['Impact', '+38% Click-Through Rate & Lowered CPA']])">
+        <div class="poster-card" onclick="openLightbox('showcase_apex_audio_ad.webp', 'High-ROAS Meta Ad Creative: Luxury Cyber-Tech E-Commerce Campaign', 'PAID ADS & PERFORMANCE MEDIA', 'Engineered for high-ROAS Meta and TikTok paid campaigns. Combines floating product staging, high-contrast studio lighting, and conversion-focused typography that stops feed scrolling within 1.5 seconds.', [['Objective', 'Cold Traffic Acquisition & 4.2x ROAS Scaling'], ['Platforms', 'Meta (Feed & Stories) & TikTok Ads'], ['Tools Used', 'Adobe Photoshop, Canva Pro, Midjourney'], ['Impact', '+38% Click-Through Rate & Lowered CPA']])">
           <div class="poster-img-container">
-            <img src="showcase_apex_audio_ad.jpg" alt="Performance Ad Creative" loading="lazy">
+            <img src="showcase_apex_audio_ad.webp" alt="Performance Ad Creative" loading="lazy" decoding="async" width="1024" height="1024">
             <div class="poster-zoom-hint">🔍</div>
           </div>
           <div class="poster-details">
@@ -817,9 +826,9 @@
         </div>
 
         <!-- Creative Asset 02: Brand Identity System -->
-        <div class="poster-card" onclick="openLightbox('showcase_helvetiqa_identity.jpg', 'Helvetiqa Visual Identity System: 3D Brand Guidelines & Mockup', 'BRAND IDENTITY & VISUAL SYSTEMS', 'Comprehensive brand architecture created for Helvetiqa Creative Studio. Showcases custom minimalist typography, geometric logo construction, luxury tactile stationery, and cohesive digital design guidelines.', [['Objective', 'Premium Agency Positioning & Authority'], ['Deliverables', 'Logo Suite, Typography Scale, Color Palette'], ['Tools Used', 'Adobe Illustrator, Photoshop, Figma'], ['Impact', '95%+ Client Pitch Win Rate']])">
+        <div class="poster-card" onclick="openLightbox('showcase_helvetiqa_identity.webp', 'Helvetiqa Visual Identity System: 3D Brand Guidelines & Mockup', 'BRAND IDENTITY & VISUAL SYSTEMS', 'Comprehensive brand architecture created for Helvetiqa Creative Studio. Showcases custom minimalist typography, geometric logo construction, luxury tactile stationery, and cohesive digital design guidelines.', [['Objective', 'Premium Agency Positioning & Authority'], ['Deliverables', 'Logo Suite, Typography Scale, Color Palette'], ['Tools Used', 'Adobe Illustrator, Photoshop, Figma'], ['Impact', '95%+ Client Pitch Win Rate']])">
           <div class="poster-img-container">
-            <img src="showcase_helvetiqa_identity.jpg" alt="Brand Identity Guidelines" loading="lazy">
+            <img src="showcase_helvetiqa_identity.webp" alt="Brand Identity Guidelines" loading="lazy" decoding="async" width="1024" height="1024">
             <div class="poster-zoom-hint">🔍</div>
           </div>
           <div class="poster-details">
@@ -841,9 +850,9 @@
         </div>
 
         <!-- Creative Asset 03: Viral Motion Hook -->
-        <div class="poster-card" onclick="openLightbox('showcase_viral_motion_hook.jpg', 'Viral Short-Form Motion Hook: 3D Kinetic Social Engagement', 'VIRAL CONTENT & MOTION DESIGN', 'High-velocity short-form visual asset engineered for TikTok and Instagram Reels. Built with 3D kinetic typography and psychological pattern interrupts that lock viewer attention past the crucial 3-second drop-off.', [['Objective', 'Algorithmic Reach & Organic Community'], ['Platforms', 'TikTok, Instagram Reels & YouTube Shorts'], ['Tools Used', 'CapCut Pro, Adobe Premiere, After Effects'], ['Impact', '85K+ Followers Scaled & 4.2M Views']])">
+        <div class="poster-card" onclick="openLightbox('showcase_viral_motion_hook.webp', 'Viral Short-Form Motion Hook: 3D Kinetic Social Engagement', 'VIRAL CONTENT & MOTION DESIGN', 'High-velocity short-form visual asset engineered for TikTok and Instagram Reels. Built with 3D kinetic typography and psychological pattern interrupts that lock viewer attention past the crucial 3-second drop-off.', [['Objective', 'Algorithmic Reach & Organic Community'], ['Platforms', 'TikTok, Instagram Reels & YouTube Shorts'], ['Tools Used', 'CapCut Pro, Adobe Premiere, After Effects'], ['Impact', '85K+ Followers Scaled & 4.2M Views']])">
           <div class="poster-img-container">
-            <img src="showcase_viral_motion_hook.jpg" alt="Viral Motion Hook" loading="lazy">
+            <img src="showcase_viral_motion_hook.webp" alt="Viral Motion Hook" loading="lazy" decoding="async" width="1024" height="1024">
             <div class="poster-zoom-hint">🔍</div>
           </div>
           <div class="poster-details">
@@ -1574,8 +1583,10 @@
 
                 <!-- Form for Instant Brief with Dual Dispatch -->
         <form class="contact-form-mild" id="mildContactForm" onsubmit="event.preventDefault();">
-          <input type="text" id="contactName" class="mild-input" placeholder="Your Name or Brand" required>
-          <select id="contactService" class="mild-input" required>
+          <label for="contactName" class="visually-hidden">Your Name or Brand</label>
+          <input type="text" id="contactName" name="name" class="mild-input" placeholder="Your Name or Brand" required>
+          <label for="contactService" class="visually-hidden">Select Service Needed</label>
+          <select id="contactService" name="service" aria-label="Select Service Needed" class="mild-input" required>
             <option value="" disabled selected>Select Service Needed</option>
             <option value="Social Media Strategy &amp; Viral Growth">Social Media Strategy &amp; Viral Growth</option>
             <option value="LinkedIn Profile Writing &amp; Optimization">LinkedIn Profile Writing &amp; Optimization</option>
@@ -1585,7 +1596,8 @@
             <option value="Inventory Operations &amp; Commercial Data Systems">Inventory Operations &amp; Commercial Data Systems</option>
             <option value="Other / Custom Project Consultation">Other / Custom Project Consultation</option>
           </select>
-          <textarea id="contactMessage" class="mild-textarea" rows="4" placeholder="Briefly describe your brand goals or requirements..." required></textarea>
+          <label for="contactMessage" class="visually-hidden">Project Goals or Requirements</label>
+          <textarea id="contactMessage" name="message" class="mild-textarea" rows="4" placeholder="Briefly describe your brand goals or requirements..." required></textarea>
           
           <div class="form-submit-actions">
             <!-- WhatsApp Button -->
@@ -1610,7 +1622,7 @@
   </section>
 
   <!-- Deep-Dive Modal Overlay -->
-  <div class="case-modal-overlay" id="caseModalOverlay" aria-hidden="true">
+  <div class="case-modal-overlay" id="caseModalOverlay" style="display: none;">
     <div class="case-modal-content">
       <button class="case-modal-close" id="caseModalClose" aria-label="Close Case Detail">✕</button>
       <div id="caseModalBody">
@@ -1620,11 +1632,11 @@
   </div>
 
   <!-- Fullscreen Lightbox Modal for Creative Assets with Specs Drawer -->
-  <div class="poster-lightbox" id="posterLightbox" aria-hidden="true" onclick="closeLightbox()">
+  <div class="poster-lightbox" id="posterLightbox" style="display: none;" onclick="closeLightbox()">
     <button class="poster-lightbox-close" aria-label="Close Lightbox" onclick="closeLightbox()">✕</button>
     <div class="poster-lightbox-content" onclick="event.stopPropagation()">
       <div class="lightbox-media-wrap">
-        <img id="lightboxImg" src="" alt="Creative Asset Preview">
+        <img id="lightboxImg" src="" alt="Creative Asset Preview" width="1200" height="800">
       </div>
       <div class="lightbox-info-drawer">
         <span class="lightbox-tag" id="lightboxTag">PERFORMANCE ASSET</span>
@@ -1645,13 +1657,13 @@
           <a href="#hero" class="footer-brand-link">
             <div class="footer-shapes-open" title="Shahid Akram">
               <span class="footer-shape-item shape--circle">
-                <img src="shape_circle.png" alt="Circle">
+                <img src="shape_circle.webp" alt="Circle" width="94" height="93">
               </span>
               <span class="footer-shape-item shape--square">
-                <img src="shape_square.png" alt="Square">
+                <img src="shape_square.webp" alt="Square" width="89" height="89">
               </span>
               <span class="footer-shape-item shape--triangle">
-                <img src="shape_triangle.png" alt="Triangle">
+                <img src="shape_triangle.webp" alt="Triangle" width="61" height="92">
               </span>
             </div>
             <span class="footer-brand-name" style="display: inline-flex; align-items: center; gap: 7px;">
@@ -1714,12 +1726,11 @@
     </div>
   </footer>
 
-  <script src="articles.js"></script>
-  <script src="app.js"></script>
+
   <!-- Dedicated Pricing Package Details Modal -->
-  <div class="package-modal-overlay" id="packageModalOverlay" aria-hidden="true" onclick="closePackageModal()">
+  <div class="package-modal-overlay" id="packageModalOverlay" style="display: none;" onclick="closePackageModal()">
     <div class="package-modal-content" onclick="event.stopPropagation()">
-      <button class="package-modal-close" aria-label="Close Package Details" onclick="closePackageModal()">✕</button>
+      <button class="package-modal-close" id="packageModalClose" aria-label="Close Package Details" onclick="closePackageModal()">✕</button>
       <div id="packageModalBody">
         <!-- Injected dynamically via JavaScript -->
       </div>
@@ -1728,14 +1739,16 @@
 
 
   <!-- Discipline Scope & Deliverables Modal -->
-  <div class="discipline-modal-overlay" id="disciplineModalOverlay" aria-hidden="true" onclick="closeDisciplineModal()">
+  <div class="discipline-modal-overlay" id="disciplineModalOverlay" style="display: none;" onclick="closeDisciplineModal()">
     <div class="discipline-modal-content" onclick="event.stopPropagation()">
-      <button class="discipline-modal-close" aria-label="Close Deliverables" onclick="closeDisciplineModal()">✕</button>
+      <button class="discipline-modal-close" id="disciplineModalClose" aria-label="Close Deliverables" onclick="closeDisciplineModal()">✕</button>
       <div id="disciplineModalBody">
         <!-- Injected dynamically via JavaScript -->
       </div>
     </div>
   </div>
 
+  <script src="articles.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

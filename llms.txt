@@ -1,0 +1,13 @@
+# Shahid Akram - Senior Social Media & Performance Marketer
+
+Portfolio: https://byshahid.vercel.app/
+
+## Navigation & Sections
+- [Overview & Experience](https://byshahid.vercel.app/#hero)
+- [Core Disciplines & Services](https://byshahid.vercel.app/#disciplines)
+- [Case Studies & Impact](https://byshahid.vercel.app/#cases)
+- [Creative Production Showcase](https://byshahid.vercel.app/#creative-showcase)
+- [Tools & Tech Stack](https://byshahid.vercel.app/#tools)
+- [Client Reviews & Testimonials](https://byshahid.vercel.app/#reviews)
+- [Direct Contact & Project Brief](https://byshahid.vercel.app/#contact)
+- [Articles & Strategy Essays](https://byshahid.vercel.app/blog.html)
