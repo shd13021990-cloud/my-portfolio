@@ -102,55 +102,66 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(runTypewriter, 2600);
   }
 
-  // 1. Mouse Stalker Cursor Follower
+  // 1. High-Performance Mouse Stalker (Fine pointer devices only - 0 CPU on mobile)
   const stalker = document.getElementById('stalker');
   const stalkerText = document.getElementById('stalkerText');
-  let mouseX = -200, mouseY = -200;
-  let currentX = -200, currentY = -200;
+  const isFinePointer = window.matchMedia && window.matchMedia('(pointer: fine)').matches;
 
-  window.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    if (stalker && !stalker.classList.contains('is-active')) {
-      stalker.classList.add('is-active');
-    }
-  });
+  if (isFinePointer && stalker) {
+    let mouseX = -200, mouseY = -200;
+    let currentX = -200, currentY = -200;
+    let animId = null;
 
-  const renderStalker = () => {
-    currentX += (mouseX - currentX) * 0.2;
-    currentY += (mouseY - currentY) * 0.2;
-    if (stalker) {
+    const renderStalker = () => {
+      const dx = mouseX - currentX;
+      const dy = mouseY - currentY;
+      currentX += dx * 0.25;
+      currentY += dy * 0.25;
       stalker.style.left = `${currentX}px`;
       stalker.style.top = `${currentY}px`;
-    }
-    requestAnimationFrame(renderStalker);
-  };
-  requestAnimationFrame(renderStalker);
+      if (Math.abs(dx) > 0.1 || Math.abs(dy) > 0.1) {
+        animId = requestAnimationFrame(renderStalker);
+      } else {
+        animId = null;
+      }
+    };
 
-  // Stalker hover interactions
-  const bindStalkerHover = (selector, text, isHoverClass = true) => {
-    document.querySelectorAll(selector).forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        if (!stalker) return;
-        if (stalkerText) stalkerText.textContent = text;
-        if (isHoverClass) stalker.classList.add('is-hovering');
-      });
-      el.addEventListener('mouseleave', () => {
-        if (!stalker) return;
-        if (stalkerText) stalkerText.textContent = '';
-        stalker.classList.remove('is-hovering');
-      });
-    });
-  };
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      if (!stalker.classList.contains('is-active')) {
+        stalker.classList.add('is-active');
+      }
+      if (!animId) {
+        animId = requestAnimationFrame(renderStalker);
+      }
+    }, { passive: true });
 
-  bindStalkerHover('.case-card__visual', 'View ↗');
-  bindStalkerHover('.mildsugar-btn', 'Explore ✦');
-  bindStalkerHover('.discipline-box', 'Inspect ✦');
-  bindStalkerHover('.time-toggle-btn', 'Theme');
-  bindStalkerHover('.action-btn-pill', 'Connect');
-  bindStalkerHover('.poster-card', 'Preview 🔍');
-  bindStalkerHover('.exp-card', 'Details ✦');
-  bindStalkerHover('.offer-card', 'Pricing ✦');
+    // Stalker hover interactions
+    const bindStalkerHover = (selector, text, isHoverClass = true) => {
+      document.querySelectorAll(selector).forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          if (!stalker) return;
+          if (stalkerText) stalkerText.textContent = text;
+          if (isHoverClass) stalker.classList.add('is-hovering');
+        });
+        el.addEventListener('mouseleave', () => {
+          if (!stalker) return;
+          if (stalkerText) stalkerText.textContent = '';
+          stalker.classList.remove('is-hovering');
+        });
+      });
+    };
+
+    bindStalkerHover('.case-card__visual', 'View ↗');
+    bindStalkerHover('.mildsugar-btn', 'Explore ✦');
+    bindStalkerHover('.discipline-box', 'Inspect ✦');
+    bindStalkerHover('.time-toggle-btn', 'Theme');
+    bindStalkerHover('.action-btn-pill', 'Connect');
+    bindStalkerHover('.poster-card', 'Preview 🔍');
+    bindStalkerHover('.exp-card', 'Details ✦');
+    bindStalkerHover('.offer-card', 'Pricing ✦');
+  }
 
   // 2. Day & Night Mode (Room Time Toggle)
   const timeToggleBtn = document.getElementById('timeToggleBtn');
