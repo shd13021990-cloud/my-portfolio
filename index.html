@@ -12,20 +12,17 @@
       if (window.__trackingLoaded) return;
       window.__trackingLoaded = true;
 
-      // 1. Google Tag Manager
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-KWKQ7C6H');
 
-      // 2. Google Analytics 4 (gtag.js)
       var g = document.createElement('script');
       g.async = true;
       g.src = 'https://www.googletagmanager.com/gtag/js?id=G-53BV17FB3X';
       document.head.appendChild(g);
 
-      // 3. Microsoft Clarity
       (function(c,l,a,r,i,t,y){
           c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
           t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
@@ -40,46 +37,14 @@
         setTimeout(loadTrackingScripts, 800);
       });
     }
-    // Also trigger on first interaction
     ['touchstart', 'scroll', 'mousemove', 'click'].forEach(function(evt) {
       window.addEventListener(evt, loadTrackingScripts, { once: true, passive: true });
     });
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shahid Akram | Freelance Social Media Manager &amp; Digital Marketer</title>
-  <meta name="description" content="Shahid Akram — Freelance Social Media Manager, Digital Marketer, Content Strategist &amp; Graphic Designer scaling brands with high-ROAS marketing systems.">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Shahid Akram",
-    "url": "https://byshahid.vercel.app/",
-    "jobTitle": "Freelance Social Media Manager & Digital Marketer",
-    "description": "Freelance Social Media Manager, Digital Marketer, Content Strategist and Graphic Designer based in Lahore, Pakistan.",
-    "telephone": "+923004822560",
-    "email": "heyshahidakram@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Lahore",
-      "addressRegion": "Punjab",
-      "addressCountry": "PK"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/heyshahidakram",
-      "https://byshahid.vercel.app/"
-    ],
-    "knowsAbout": [
-      "Social Media Strategy",
-      "Digital Marketing",
-      "Performance Marketing",
-      "Meta Ads",
-      "Google Ads",
-      "Graphic Design",
-      "Content Strategy"
-    ]
-  }
-  </script>
+  <title>Shahid Akram | Freelance Social Media Manager & Digital Marketer</title>
+  <meta name="description" content="Shahid Akram — Freelance Social Media Manager, Digital Marketer, Content Strategist & Graphic Designer scaling brands with high-ROAS marketing systems.">
   <meta name="author" content="Shahid Akram">
   <link rel="canonical" href="https://byshahid.vercel.app/">
 
@@ -88,31 +53,28 @@
   <link rel="shortcut icon" type="image/png" href="favicon_shapes.png">
   <link rel="apple-touch-icon" href="favicon_shapes.png">
 
-  <!-- Open Graph / WhatsApp / LinkedIn / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://byshahid.vercel.app/">
-  <meta property="og:title" content="Shahid Akram — Digital Growth Marketer &amp; Content Strategist">
-  <meta property="og:description" content="Social media ecosystem architect, viral video narrative engineer &amp; 4.2x ROAS performance marketing specialist.">
+  <meta property="og:title" content="Shahid Akram | Freelance Social Media Manager & Digital Marketer">
+  <meta property="og:description" content="Shahid Akram — Freelance Social Media Manager, Digital Marketer, Content Strategist & Graphic Designer scaling brands with high-ROAS marketing systems.">
   <meta property="og:image" content="https://byshahid.vercel.app/og-preview.png">
   <meta property="og:image:secure_url" content="https://byshahid.vercel.app/og-preview.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Shahid Akram Portfolio Card">
   <meta property="og:site_name" content="Shahid Akram Portfolio">
 
-  <!-- Twitter / X Cards -->
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://byshahid.vercel.app/">
-  <meta name="twitter:title" content="Shahid Akram — Digital Growth Marketer &amp; Content Strategist">
-  <meta name="twitter:description" content="Social media ecosystem architect, viral video narrative engineer &amp; 4.2x ROAS performance marketing specialist.">
+  <meta name="twitter:title" content="Shahid Akram | Freelance Social Media Manager & Digital Marketer">
+  <meta name="twitter:description" content="Shahid Akram — Freelance Social Media Manager, Digital Marketer, Content Strategist & Graphic Designer scaling brands with high-ROAS marketing systems.">
   <meta name="twitter:image" content="https://byshahid.vercel.app/og-preview.png">
-  <meta name="twitter:image:alt" content="Shahid Akram Portfolio Card">
 
-  <!-- Theme color for mobile browser bars and WhatsApp link header -->
   <meta name="theme-color" content="#0B0E14">
 
-    <!-- Fonts & Asset Preload for Instant First Contentful Paint -->
+  <!-- Fonts & Styles -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="Professional%20at%20a%20Modern%20Office%20Desk.webp" type="image/webp" fetchpriority="high">
@@ -121,15 +83,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Righteous&family=Syne:wght@700;800&display=optional">
   </noscript>
   <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWKQ7C6H"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
-  <!-- Floating Minimal Glow Cursor Dot -->
+  <!-- Mouse Stalker -->
   <div class="p-stalker" id="stalker">
     <span class="stalker-dot"></span>
     <span class="stalker-text" id="stalkerText"></span>
@@ -138,8 +98,8 @@
   <!-- Header -->
   <header class="l-header">
     <div class="l-header__inner">
-            <div class="l-header__brand">
-        <a href="#hero" class="l-header__logo u-en">
+      <div class="l-header__brand">
+        <a href="index.html" class="l-header__logo u-en">
           <div class="logo-shapes-open" title="Shahid Akram Brandmark">
             <span class="logo-shape-item shape--circle">
               <img src="shape_circle.webp" alt="Circle" width="94" height="93">
@@ -150,7 +110,6 @@
             <span class="logo-shape-item shape--triangle">
               <img src="shape_triangle.webp" alt="Triangle" width="61" height="92">
             </span>
-            
           </div>
           <div class="logo-text-group">
             <div class="logo-name-row">
@@ -169,6 +128,16 @@
         </a>
       </div>
 
+      <!-- Desktop Nav Links -->
+      <nav class="l-header__nav-desktop" aria-label="Main Navigation">
+        <a href="index.html" class="nav-item-link is-active">Home</a>
+        <a href="work.html" class="nav-item-link">Work</a>
+        <a href="services.html" class="nav-item-link">Services &amp; Pricing</a>
+        <a href="about.html" class="nav-item-link">About</a>
+        <a href="blog.html" class="nav-item-link">Insights</a>
+        <a href="contact.html" class="nav-item-cta">Let's Talk ↗</a>
+      </nav>
+
       <div class="l-header__actions">
         <!-- Day / Night Time Toggle -->
         <button class="time-toggle-btn" id="timeToggleBtn" aria-label="Toggle Day / Night Mode">
@@ -186,18 +155,15 @@
       </div>
     </div>
 
-    <!-- Dropdown Menu Drawer -->
+    <!-- Dropdown Menu Drawer (Mobile & Tablet) -->
     <div class="l-header__menu-drawer" id="menuDrawer">
       <nav class="l-header__nav-list">
-        <a href="#hero"><span>01</span> Overview</a>
-        <a href="#cases"><span>02</span> Case Studies</a>
-        <a href="#disciplines"><span>03</span> Core Services</a>
-        <a href="#offer"><span>04</span> Retainers &amp; Pricing</a>
-        <a href="#gallery"><span>05</span> Design Showcase</a>
-        <a href="#experience"><span>06</span> Career Track Record</a>
-        <a href="#tools"><span>07</span> Tech &amp; AI Stack</a>
-        <a href="#insights"><span>08</span> Growth Insights &amp; Articles</a>
-        <a href="#contact"><span>09</span> Get In Touch</a>
+        <a href="index.html" class=" is-active"><span>01</span> Home Overview</a>
+        <a href="work.html" class=""><span>02</span> Case Studies &amp; Work</a>
+        <a href="services.html" class=""><span>03</span> Services &amp; Pricing</a>
+        <a href="about.html" class=""><span>04</span> About &amp; Experience</a>
+        <a href="blog.html" class=""><span>05</span> Growth Insights &amp; Articles</a>
+        <a href="contact.html" class=""><span>06</span> Get In Touch</a>
       </nav>
       <div class="l-header__nav-sub">
         <span>Available for Remote &amp; Global Freelance</span>
@@ -206,9 +172,8 @@
     </div>
   </header>
 
-  <!-- Main Hero Stage -->
   <main id="main-content">
-  <section class="p-hero" id="hero">
+<section class="p-hero" id="hero">
     <div class="p-hero__container">
 
       <!-- Left: Interactive Isometric Room & Character Canvas -->
@@ -275,10 +240,7 @@
 
     </div></section>
 
-
-
-    <!-- Marquee Ticker -->
-  <div class="p-ticker" aria-label="Key Highlights and Superpowers">
+<div class="p-ticker" aria-label="Key Highlights and Superpowers">
     <div class="p-ticker__track">
       <div class="p-ticker__item"><span class="dot">✦</span> Dedicated Social Media Handler</div>
       <div class="p-ticker__item"><span class="dot">✦</span> 85K+ Organic Community Scaled</div>
@@ -302,1124 +264,119 @@
     </div>
   </div>
 
-  <!-- Full-Stage Cases Experience (mildsugardesign.jp /cases/ replica) -->
-  <section class="p-cases-stage" id="cases">
-    <!-- Huge Ghost Headline in Background -->
-    <div class="p-cases__bg-text" aria-hidden="true">
-      <div class="bg-ghost-quote" id="bgGhostQuote">
-        From viral hook to community loyalty. 85K+ followers &amp; 4.2M views.
-      </div>
-    </div>
-
-    <!-- Center Stage Case Card Display -->
-    <div class="p-cases__main">
-
-      <!-- Case 01: Social Media -->
-      <div class="case-card is-active" data-case="0">
-        <div class="case-card__number u-en">01 // VIRAL GROWTH ENGINE</div>
-        <div class="case-card__visual" onclick="openCaseModal(0)" title="Click to view deep dive">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width: 48%; height: 48%; color: var(--color-orange);">
-            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-            <polyline points="17 6 23 6 23 12"></polyline>
-          </svg>
-        </div>
-        <h3 class="case-card__title">Social Media Growth Engine: From Cold Scrollers to 85K+ Engaged Community</h3>
-        <p class="case-card__desc">Engineered retention-optimized short-form video hooks, carousel frameworks, and automated DM lead funnels across Instagram and TikTok for international brands and creator channels.</p>
-        <div class="case-card__tags">
-          <span class="case-tag">Social Media Specialist</span>
-          <span class="case-tag">Viral Video Hooks</span>
-          <span class="case-tag">85K Followers</span>
-        </div>
-        <button class="mildsugar-btn" onclick="openCaseModal(0)" style="font-size: 20px;">
-          <span class="label">
-            <span class="label-text">View Case Breakdown [↗]</span>
-            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
-          </span>
-        </button>
-      </div>
-
-      <!-- Case 02: Content Writing -->
-      <div class="case-card" data-case="1">
-        <div class="case-card__number u-en">02 // CONVERSION COPYWRITING</div>
-        <div class="case-card__visual" onclick="openCaseModal(1)" title="Click to view deep dive">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width: 48%; height: 48%; color: var(--color-orange);">
-            <path d="M12 20h9"></path>
-            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-          </svg>
-        </div>
-        <h3 class="case-card__title">Conversion Copywriting &amp; Content Architecture: Generating 42 Inbound B2B Leads/mo</h3>
-        <p class="case-card__desc">Authored authoritative SEO pillar hubs, persuasive landing page copy, and executive LinkedIn thought-leadership essays that position founders as industry authorities.</p>
-        <div class="case-card__tags">
-          <span class="case-tag">Content Writing</span>
-          <span class="case-tag">B2B Strategy</span>
-          <span class="case-tag">120K Views/mo</span>
-        </div>
-        <button class="mildsugar-btn" onclick="openCaseModal(1)" style="font-size: 20px;">
-          <span class="label">
-            <span class="label-text">View Case Breakdown [↗]</span>
-            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
-          </span>
-        </button>
-      </div>
-
-      <!-- Case 03: Graphic Design -->
-      <div class="case-card" data-case="2">
-        <div class="case-card__number u-en">03 // BRAND IDENTITY &amp; CREATIVES</div>
-        <div class="case-card__visual" onclick="openCaseModal(2)" title="Click to view deep dive">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width: 48%; height: 48%; color: var(--color-orange);">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-            <path d="M2 12h20"></path>
-          </svg>
-        </div>
-        <h3 class="case-card__title">Visual Identity &amp; High-CTR Creative Kit: Elevating Brand Perception Across 15 Channels</h3>
-        <p class="case-card__desc">Designed cohesive brand kits, scroll-stopping social ad creative systems, and investor pitch decks that boosted ad click-through rate by +3.8% across diverse client niches.</p>
-        <div class="case-card__tags">
-          <span class="case-tag">Graphic Design</span>
-          <span class="case-tag">Brand Identity</span>
-          <span class="case-tag">Pitch Decks</span>
-        </div>
-        <button class="mildsugar-btn" onclick="openCaseModal(2)" style="font-size: 20px;">
-          <span class="label">
-            <span class="label-text">View Case Breakdown [↗]</span>
-            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
-          </span>
-        </button>
-      </div>
-
-      <!-- Case 04: Digital Marketing -->
-      <div class="case-card" data-case="3">
-        <div class="case-card__number u-en">04 // PERFORMANCE PAID ADS</div>
-        <div class="case-card__visual" onclick="openCaseModal(3)" title="Click to view deep dive">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width: 48%; height: 48%; color: var(--color-orange);">
-            <circle cx="12" cy="12" r="10"></circle>
-            <circle cx="12" cy="12" r="6"></circle>
-            <circle cx="12" cy="12" r="2"></circle>
-          </svg>
-        </div>
-        <h3 class="case-card__title">Full-Funnel Paid Advertising: Slashing CPA by 52% and Scaling ROAS to 4.2x–6.8x</h3>
-        <p class="case-card__desc">Restructured Meta and Google Ads accounts with creative fatigue management, lookalike segmentation, and omnichannel cart recovery sequences.</p>
-        <div class="case-card__tags">
-          <span class="case-tag">Digital Marketing</span>
-          <span class="case-tag">Meta Ads</span>
-          <span class="case-tag">4.2x ROAS</span>
-        </div>
-        <button class="mildsugar-btn" onclick="openCaseModal(3)" style="font-size: 20px;">
-          <span class="label">
-            <span class="label-text">View Case Breakdown [↗]</span>
-            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
-          </span>
-        </button>
-      </div>
-
-      <!-- Case 05: Data Entry -->
-      <div class="case-card" data-case="4">
-        <div class="case-card__number u-en">05 // COMMERCIAL DATA SYSTEMS</div>
-        <div class="case-card__visual" onclick="openCaseModal(4)" title="Click to view deep dive">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width: 48%; height: 48%; color: var(--color-orange);">
-            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-          </svg>
-        </div>
-        <h3 class="case-card__title">Precision Data Entry &amp; Automation: 100% Accuracy Across 25,000+ Records</h3>
-        <p class="case-card__desc">Backed by 7+ years of rigorous data management, inventory systems, and spreadsheet architecture with 100% precision across 25,000+ records.</p>
-        <div class="case-card__tags">
-          <span class="case-tag">Data Entry &amp; Systems</span>
-          <span class="case-tag">Excel &amp; Sheets</span>
-          <span class="case-tag">100% Accuracy</span>
-        </div>
-        <button class="mildsugar-btn" onclick="openCaseModal(4)" style="font-size: 20px;">
-          <span class="label">
-            <span class="label-text">View Case Breakdown [↗]</span>
-            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
-          </span>
-        </button>
-      </div>
-
-    </div>
-
-    <!-- Right Side Vertical Dots Navigation (mildsugar signature) -->
-    <nav class="p-cases__nav" aria-label="Case Switcher">
-      <ul class="p-cases__nav-list">
-        <li class="p-cases__nav-item is-current" data-case-index="0">
-          <span class="dot"></span> <span>01. Viral Growth</span>
-        </li>
-        <li class="p-cases__nav-item" data-case-index="1">
-          <span class="dot"></span> <span>02. Copywriting</span>
-        </li>
-        <li class="p-cases__nav-item" data-case-index="2">
-          <span class="dot"></span> <span>03. Brand Identity</span>
-        </li>
-        <li class="p-cases__nav-item" data-case-index="3">
-          <span class="dot"></span> <span>04. Paid Ads</span>
-        </li>
-        <li class="p-cases__nav-item" data-case-index="4">
-          <span class="dot"></span> <span>05. Data Systems</span>
-        </li>
-      </ul>
-    </nav>
-  </section>
-
-  <!-- Complete 5 Disciplines Showcase -->
-  <!-- Core Disciplines & Services -->
-  <section class="p-disciplines" id="disciplines">
+  <!-- Featured Work Preview -->
+  <section class="home-section-teaser" id="featured-work">
     <div class="container-boxed">
-      <div class="section-head">
-        <p class="section-head__tag">CORE DISCIPLINES &amp; SERVICES</p>
-        <h2 class="section-head__title disciplines-main-title">How Thoughtful Strategy Meets High-Impact Execution</h2>
-        <p class="section-head__desc">A cross-functional commercial stack allowing you to hire one dedicated growth partner instead of managing 5 disconnected freelancers.</p>
+      <div class="teaser-header-row">
+        <div>
+          <span class="section-head__tag">✦ PROVEN RESULTS</span>
+          <h2 class="section-head__title">Commercial Case Studies</h2>
+        </div>
+        <a href="work.html" class="teaser-view-all-link">
+          <span>View All 5 Case Studies &amp; Showcase</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
       </div>
-
-      <div class="disciplines-grid">
-
-        <!-- 1. Social Media Strategy & Viral Growth -->
-        <div class="discipline-box" onclick="openDisciplineModal(0)" title="Click to view full deliverables & workflow">
-          <div class="discipline-box__main">
-            <div class="discipline-title-row">
-              <div class="discipline-icon-badge" title="Social Media Strategy">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                </svg>
-              </div>
-              <h3 class="discipline-title">Social Media Strategy &amp; Viral Growth</h3>
-            </div>
-            <p>End-to-end social media architecture and viral short-form pacing. Turning passive scrollers into hyper-engaged brand communities across Instagram, TikTok, LinkedIn, and Facebook.</p>
-            <ul class="discipline-bullets">
-              <li>High-Retention Video Hooks &amp; Micro-Paced Editing (CapCut)</li>
-              <li>Content Calendars &amp; Daily Editorial Storytelling</li>
-              <li>Algorithmic Organic Reach &amp; Automated DM Funnels</li>
-            </ul>
-            <div class="discipline-chips">
-              <span class="disc-chip">Meta Suite</span>
-              <span class="disc-chip">CapCut Pro</span>
-              <span class="disc-chip">TikTok Growth</span>
-              <span class="disc-chip">Canva Pro</span>
-            </div>
+      <div class="p-cases__main" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+        <div class="case-card" style="margin: 0;">
+          <div class="case-card__visual" onclick="window.location.href='work.html'" style="cursor: pointer;">
+            <img src="showcase_apex_audio_ad.webp" alt="Apex Sound Audio Ad Campaign" loading="lazy" width="600" height="400" style="width: 100%; border-radius: 12px; object-fit: cover;">
           </div>
-          <div class="discipline-footer-actions">
-            <button type="button" class="disc-explore-btn" onclick="event.stopPropagation(); openDisciplineModal(0)">
-              <span>Explore Deliverables &amp; Scope</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-            <div class="discipline-metric">
-              <span class="disc-metric-label">AUDIENCE SCALED</span>
-              <span class="disc-metric-value">+85K Organic</span>
+          <div class="case-card__content" style="padding-top: 16px;">
+            <div class="case-card__tags">
+              <span class="case-tag">4.2x ROAS</span>
+              <span class="case-tag">Meta Ads</span>
             </div>
+            <h3 class="case-card__title" style="font-size: 20px; margin: 10px 0;">Apex Audio: 4.2x ROAS Scaling Sprint</h3>
+            <p class="case-card__desc" style="font-size: 14px; color: var(--color-muted-accessible);">Direct response audio video creative funnel generating over $140,000 in tracked attributed sales within 90 days.</p>
+            <a href="work.html" class="action-btn-pill" style="margin-top: 12px; display: inline-flex;">Explore Case Study ↗</a>
           </div>
         </div>
-
-        <!-- 2. LinkedIn Executive Branding & Optimization -->
-        <div class="discipline-box" onclick="openDisciplineModal(1)" title="Click to view full deliverables & workflow">
-          <div class="discipline-box__main">
-            <div class="discipline-title-row">
-              <div class="discipline-icon-badge" title="LinkedIn Executive Branding">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                  <rect x="2" y="9" width="4" height="12"></rect>
-                  <circle cx="4" cy="4" r="2"></circle>
-                </svg>
-              </div>
-              <h3 class="discipline-title">LinkedIn Profile Writing &amp; Optimization</h3>
-            </div>
-            <p>Executive personal branding that positions founders, executives, and consultants as industry authorities, generating high-ticket inbound leads and direct recruiter outreach.</p>
-            <ul class="discipline-bullets">
-              <li>Search SEO Keyword Indexing &amp; High-Converting Headlines</li>
-              <li>Story-Driven 'About' Narrative &amp; Experience Positioning</li>
-              <li>Custom Branded Banner Architecture &amp; Thought Leadership Templates</li>
-            </ul>
-            <div class="discipline-chips">
-              <span class="disc-chip">Creator Mode</span>
-              <span class="disc-chip">Headline SEO</span>
-              <span class="disc-chip">Ghostwriting</span>
-              <span class="disc-chip">Inbound B2B</span>
-            </div>
+        <div class="case-card" style="margin: 0;">
+          <div class="case-card__visual" onclick="window.location.href='work.html'" style="cursor: pointer;">
+            <img src="showcase_helvetiqa_identity.webp" alt="Helvetiqa Digital Growth Architecture" loading="lazy" width="600" height="400" style="width: 100%; border-radius: 12px; object-fit: cover;">
           </div>
-          <div class="discipline-footer-actions">
-            <button type="button" class="disc-explore-btn" onclick="event.stopPropagation(); openDisciplineModal(1)">
-              <span>Explore Deliverables &amp; Scope</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-            <div class="discipline-metric">
-              <span class="disc-metric-label">PROFILE VIEWS</span>
-              <span class="disc-metric-value">+320% Inbound Lift</span>
+          <div class="case-card__content" style="padding-top: 16px;">
+            <div class="case-card__tags">
+              <span class="case-tag">85K+ Community</span>
+              <span class="case-tag">Full Ecosystem</span>
             </div>
+            <h3 class="case-card__title" style="font-size: 20px; margin: 10px 0;">Helvetiqa: 0 to 85K Organic Ecosystem</h3>
+            <p class="case-card__desc" style="font-size: 14px; color: var(--color-muted-accessible);">Multi-channel content flywheel and conversion DM funnels turning cold social impressions into loyal repeat customers.</p>
+            <a href="work.html" class="action-btn-pill" style="margin-top: 12px; display: inline-flex;">Explore Case Study ↗</a>
           </div>
         </div>
-
-        <!-- 3. Graphic Design & Creative Brand Identity -->
-        <div class="discipline-box" onclick="openDisciplineModal(2)" title="Click to view full deliverables & workflow">
-          <div class="discipline-box__main">
-            <div class="discipline-title-row">
-              <div class="discipline-icon-badge" title="Graphic Design &amp; Creative Brand Identity">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
-                  <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
-                  <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
-                  <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
-                  <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.563-2.512 5.563-5.563C22 6.5 17.5 2 12 2z"></path>
-                </svg>
-              </div>
-              <h3 class="discipline-title">Graphic Design &amp; Creative Brand Identity</h3>
-            </div>
-            <p>Visual storytelling engineered to stop the scroll. Developing cohesive brand kits, high-CTR paid ad creatives, corporate pitch decks, and editorial visual packaging.</p>
-            <ul class="discipline-bullets">
-              <li>Full Brand Kits (Color Palettes, Typography &amp; Visual Systems)</li>
-              <li>High-CTR Social Ad Creatives &amp; Multi-Slide Educational Carousels</li>
-              <li>Investor Pitch Decks, Corporate Collateral &amp; Vector Assets</li>
-            </ul>
-            <div class="discipline-chips">
-              <span class="disc-chip">Adobe Illustrator</span>
-              <span class="disc-chip">Photoshop</span>
-              <span class="disc-chip">Figma</span>
-              <span class="disc-chip">Ad Creatives</span>
-            </div>
-          </div>
-          <div class="discipline-footer-actions">
-            <button type="button" class="disc-explore-btn" onclick="event.stopPropagation(); openDisciplineModal(2)">
-              <span>Explore Deliverables &amp; Scope</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-            <div class="discipline-metric">
-              <span class="disc-metric-label">AD CTR IMPROVEMENT</span>
-              <span class="disc-metric-value">+3.8% Lift</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4. Performance Marketing & Paid Ads (ROAS) -->
-        <div class="discipline-box" onclick="openDisciplineModal(3)" title="Click to view full deliverables & workflow">
-          <div class="discipline-box__main">
-            <div class="discipline-title-row">
-              <div class="discipline-icon-badge" title="Performance Marketing &amp; Paid Ads">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-                  <polyline points="17 6 23 6 23 12"></polyline>
-                </svg>
-              </div>
-              <h3 class="discipline-title">Performance Marketing &amp; Paid Ads</h3>
-            </div>
-            <p>Quantitative paid media execution across Meta Ads and Google Ads. Architecting full-funnel acquisition roadmaps that lower CPA, protect margins, and scale profitably.</p>
-            <ul class="discipline-bullets">
-              <li>Google Ads Display Certified &amp; Meta Performance Ads</li>
-              <li>Dynamic Creative Testing (DCT) &amp; High-Intent Retargeting Sprints</li>
-              <li>GA4 Conversion Attribution &amp; Executive ROI Modeling</li>
-            </ul>
-            <div class="discipline-chips">
-              <span class="disc-chip">Google Certified</span>
-              <span class="disc-chip">Meta Ads</span>
-              <span class="disc-chip">GA4</span>
-              <span class="disc-chip">DCT Funnels</span>
-            </div>
-          </div>
-          <div class="discipline-footer-actions">
-            <button type="button" class="disc-explore-btn" onclick="event.stopPropagation(); openDisciplineModal(3)">
-              <span>Explore Deliverables &amp; Scope</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-            <div class="discipline-metric">
-              <span class="disc-metric-label">CAMPAIGN ROAS</span>
-              <span class="disc-metric-value">4.2x – 6.8x Return</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. Content Strategy & Conversion Copywriting -->
-        <div class="discipline-box" onclick="openDisciplineModal(4)" title="Click to view full deliverables & workflow">
-          <div class="discipline-box__main">
-            <div class="discipline-title-row">
-              <div class="discipline-icon-badge" title="Content Strategy &amp; Conversion Copywriting">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 20h9"></path>
-                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-                </svg>
-              </div>
-              <h3 class="discipline-title">Content Strategy &amp; Conversion Copywriting</h3>
-            </div>
-            <p>Persuasive direct-response messaging engineered with buyer psychology. Crafting clear narratives that command attention, rank on Google, and convert prospects into clients.</p>
-            <ul class="discipline-bullets">
-              <li>High-Converting Landing Page &amp; Paid Ad Direct-Response Copy</li>
-              <li>0–3s Short-Form Video Hook Scripts &amp; Pacing Frameworks</li>
-              <li>Executive Thought Leadership Ghostwriting &amp; Email Sequences</li>
-            </ul>
-            <div class="discipline-chips">
-              <span class="disc-chip">AIDA &amp; PAS</span>
-              <span class="disc-chip">Hook Scripts</span>
-              <span class="disc-chip">Direct Response</span>
-              <span class="disc-chip">Email Nurture</span>
-            </div>
-          </div>
-          <div class="discipline-footer-actions">
-            <button type="button" class="disc-explore-btn" onclick="event.stopPropagation(); openDisciplineModal(4)">
-              <span>Explore Deliverables &amp; Scope</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-            <div class="discipline-metric">
-              <span class="disc-metric-label">INBOUND LEADS</span>
-              <span class="disc-metric-value">42 Qualified Leads/mo</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 6. Inventory Operations & Commercial Data Systems -->
-        <div class="discipline-box" onclick="openDisciplineModal(5)" title="Click to view full deliverables & workflow">
-          <div class="discipline-box__main">
-            <div class="discipline-title-row">
-              <div class="discipline-icon-badge" title="Inventory Operations &amp; Commercial Data Systems">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                </svg>
-              </div>
-              <h3 class="discipline-title">Inventory Operations &amp; Commercial Data Systems</h3>
-            </div>
-            <p>Flawless commercial data integrity and retail stock control across 15,000+ SKU catalogs. Bridging physical warehouse stock with POS databases and automated reorder models.</p>
-            <ul class="discipline-bullets">
-              <li>Advanced Excel &amp; Google Sheets (XLOOKUP, Power Query, Dynamic Pivots)</li>
-              <li>15,000+ SKU Stock Auditing with 99.4% Physical Reconciliation Accuracy</li>
-              <li>Automated Reorder Alerts, Stock Forecasting &amp; Shrinkage Control</li>
-            </ul>
-            <div class="discipline-chips">
-              <span class="disc-chip">Advanced Excel</span>
-              <span class="disc-chip">XLOOKUP</span>
-              <span class="disc-chip">15,000+ SKUs</span>
-              <span class="disc-chip">POS / ERP</span>
-            </div>
-          </div>
-          <div class="discipline-footer-actions">
-            <button type="button" class="disc-explore-btn" onclick="event.stopPropagation(); openDisciplineModal(5)">
-              <span>Explore Deliverables &amp; Scope</span>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-            </button>
-            <div class="discipline-metric">
-              <span class="disc-metric-label">DATA ACCURACY</span>
-              <span class="disc-metric-value">99.4% Stock Precision</span>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- 5. WHAT I OFFER & PACKAGES -->
-  <section id="offer" class="p-offer">
+  <!-- Core Disciplines Preview -->
+  <section class="home-section-teaser" id="services-preview" style="background: rgba(60, 55, 40, 0.02); border-top: 1px solid var(--color-card-border); border-bottom: 1px solid var(--color-card-border);">
     <div class="container-boxed">
-      <div class="section-head">
-        <p class="section-head__tag">PRICING PACKAGES &amp; RETAINERS</p>
-        <h2 class="section-head__title packages-main-title">Transparent Scope &amp; Tailored High-Impact Packages</h2>
-        <p class="section-head__desc">Clear deliverables, transparent scope, and dedicated execution tailored for founders, creators, and growing businesses.</p>
+      <div class="teaser-header-row">
+        <div>
+          <span class="section-head__tag">✦ CORE DISCIPLINES</span>
+          <h2 class="section-head__title">Specialized Growth Systems</h2>
+        </div>
+        <a href="services.html" class="teaser-view-all-link">
+          <span>Explore Retainers &amp; Pricing</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
       </div>
-
-      <div class="offer-cards-grid">
-
-        <!-- Package 1: LinkedIn Executive Optimization -->
-        <div class="offer-card">
-          <div class="offer-card__top">
-            <span class="offer-badge">EXECUTIVE BRANDING</span>
-            <div class="offer-price-wrap">
-              <span class="offer-price">$180</span>
-              <span class="offer-price-sub">complete makeover</span>
-            </div>
-          </div>
-          <h3 class="offer-card__title">LinkedIn Profile Writing &amp; Optimization</h3>
-          <p class="offer-card__desc">Transform your LinkedIn presence into an inbound magnet for high-ticket clients, recruiters, and strategic partners.</p>
-          
-          <div class="offer-compact-specs">
-            <div class="offer-spec-line"><span class="chk">✔</span> 4K Custom Header &amp; Story 'About' Rewrite</div>
-            <div class="offer-spec-line"><span class="chk">✔</span> Experience Section with Quantified ROI</div>
-            <div class="offer-spec-line"><span class="chk">✔</span> SEO Recruiter &amp; Client Search Indexing</div>
-          </div>
-
-          <div class="offer-actions-row">
-            <button type="button" class="offer-btn-explore" onclick="openPackageModal(0)">
-              <span>Explore Scope [↗]</span>
-            </button>
-            <a href="#contact" class="offer-btn-book" onclick="selectPackageForContact('LinkedIn Executive Makeover')">
-              <span>Book Now →</span>
-            </a>
-          </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        <div class="discipline-box" style="margin: 0; padding: 24px;">
+          <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Dedicated Social Media Handler</h3>
+          <p style="font-size: 13.5px; color: var(--color-muted-accessible); line-height: 1.5; margin-bottom: 16px;">Full monthly 30-day publishing calendar, viral 9:16 short-form video hooks, and daily community DM funnels.</p>
+          <a href="services.html" style="font-size: 13px; font-weight: 700; color: var(--color-orange-text); text-decoration: none;">View Scope &amp; Deliverables →</a>
         </div>
-
-        <!-- Package 2: Dedicated Social Media Handler (Featured) -->
-        <div class="offer-card offer-card--featured">
-          <div class="offer-card__top">
-            <span class="offer-badge offer-badge--featured">🔥 MOST POPULAR</span>
-            <div class="offer-price-wrap">
-              <span class="offer-price offer-price--featured">$450</span>
-              <span class="offer-price-sub">per month</span>
-            </div>
-          </div>
-          <h3 class="offer-card__title">Dedicated Social Media Handler Retainer</h3>
-          <p class="offer-card__desc">Complete done-for-you day-to-day social media operations taking your content creation and audience growth off your hands.</p>
-          
-          <div class="offer-compact-specs">
-            <div class="offer-spec-line"><span class="chk">✔</span> 4-5 High-Retention Reels &amp; Carousels/Wk</div>
-            <div class="offer-spec-line"><span class="chk">✔</span> Daily Stories, Trend Research &amp; DM Leads</div>
-            <div class="offer-spec-line"><span class="chk">✔</span> Meta Ads Campaign Setup &amp; Testing</div>
-          </div>
-
-          <div class="offer-actions-row">
-            <button type="button" class="offer-btn-explore offer-btn-explore--featured" onclick="openPackageModal(1)">
-              <span>Explore Scope [↗]</span>
-            </button>
-            <a href="#contact" class="offer-btn-book offer-btn-book--featured" onclick="selectPackageForContact('Dedicated Social Media Handler')">
-              <span>Book Now →</span>
-            </a>
-          </div>
+        <div class="discipline-box" style="margin: 0; padding: 24px;">
+          <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Performance Meta &amp; Google Ads</h3>
+          <p style="font-size: 13.5px; color: var(--color-muted-accessible); line-height: 1.5; margin-bottom: 16px;">4.2x ROAS creative engineering, CBO scaling architecture, and full GA4 server-side conversion tracking.</p>
+          <a href="services.html" style="font-size: 13px; font-weight: 700; color: var(--color-orange-text); text-decoration: none;">View Scope &amp; Deliverables →</a>
         </div>
-
-        <!-- Package 3: Graphic Design & Creative Brand Kit -->
-        <div class="offer-card">
-          <div class="offer-card__top">
-            <span class="offer-badge">CREATIVE DESIGN</span>
-            <div class="offer-price-wrap">
-              <span class="offer-price">$250</span>
-              <span class="offer-price-sub">complete brand kit</span>
-            </div>
-          </div>
-          <h3 class="offer-card__title">Graphic Design &amp; Brand Identity Kit</h3>
-          <p class="offer-card__desc">A scroll-stopping visual identity package engineered to elevate brand authority and significantly increase ad click-through rates.</p>
-          
-          <div class="offer-compact-specs">
-            <div class="offer-spec-line"><span class="chk">✔</span> Complete Brand Style Guidelines &amp; Palette</div>
-            <div class="offer-spec-line"><span class="chk">✔</span> 20 Social Ad Templates (Canva/PSD)</div>
-            <div class="offer-spec-line"><span class="chk">✔</span> 15-Slide Investor Pitch Deck Design</div>
-          </div>
-
-          <div class="offer-actions-row">
-            <button type="button" class="offer-btn-explore" onclick="openPackageModal(2)">
-              <span>Explore Scope [↗]</span>
-            </button>
-            <a href="#contact" class="offer-btn-book" onclick="selectPackageForContact('Brand Creative Kit')">
-              <span>Book Now →</span>
-            </a>
-          </div>
+        <div class="discipline-box" style="margin: 0; padding: 24px;">
+          <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Graphic Design &amp; Brand Motion</h3>
+          <p style="font-size: 13.5px; color: var(--color-muted-accessible); line-height: 1.5; margin-bottom: 16px;">Editorial aesthetic social assets, high-CTR carousel slides, and complete brand identity guidelines.</p>
+          <a href="services.html" style="font-size: 13px; font-weight: 700; color: var(--color-orange-text); text-decoration: none;">View Scope &amp; Deliverables →</a>
         </div>
-
-        <!-- Package 4: All-in-One Full-Scale Growth Retainer -->
-        <div class="offer-card">
-          <div class="offer-card__top">
-            <span class="offer-badge">FULL-SCALE GROWTH</span>
-            <div class="offer-price-wrap">
-              <span class="offer-price">$650</span>
-              <span class="offer-price-sub">per month</span>
-            </div>
-          </div>
-          <h3 class="offer-card__title">All-in-One Digital Growth Partner</h3>
-          <p class="offer-card__desc">The ultimate end-to-end partnership covering social media handling, paid performance ads, custom design, and CRM automation.</p>
-          
-          <div class="offer-compact-specs">
-            <div class="offer-spec-line"><span class="chk">✔</span> Full Social Media Handling (All Channels)</div>
-            <div class="offer-spec-line"><span class="chk">✔</span> Meta &amp; Google Ads (4.2x ROAS Scaling)</div>
-            <div class="offer-spec-line"><span class="chk">✔</span> Advanced Sheets CRM &amp; Lead Pipeline</div>
-          </div>
-
-          <div class="offer-actions-row">
-            <button type="button" class="offer-btn-explore" onclick="openPackageModal(3)">
-              <span>Explore Scope [↗]</span>
-            </button>
-            <a href="#contact" class="offer-btn-book" onclick="selectPackageForContact('All-in-One Growth Partner')">
-              <span>Book Now →</span>
-            </a>
-          </div>
+        <div class="discipline-box" style="margin: 0; padding: 24px;">
+          <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">Commercial Inventory &amp; Data Systems</h3>
+          <p style="font-size: 13.5px; color: var(--color-muted-accessible); line-height: 1.5; margin-bottom: 16px;">15,000+ SKU catalog auditing, POS/ERP synchronization, and flawless spreadsheet tracking architecture.</p>
+          <a href="services.html" style="font-size: 13px; font-weight: 700; color: var(--color-orange-text); text-decoration: none;">View Scope &amp; Deliverables →</a>
         </div>
-
-      </div>
-    </div></section>
-
-  <!-- Featured Creative Posters & Brand Graphics Gallery -->
-  <section class="p-gallery" id="gallery">
-    <div class="container-boxed">
-      <div class="section-head">
-        <p class="section-head__tag">CREATIVE DESIGN &amp; MARKETING ASSETS</p>
-        <h2 class="section-head__title gallery-main-title">High-Impact Ad Creatives &amp; Visual&nbsp;Storytelling</h2>
-        <p class="section-head__desc">A curated showcase of performance ad creatives, viral social infographics, and brand storytelling assets engineered to stop the scroll and drive conversions. Click any asset to inspect specs and full resolution.</p>
-      </div>
-
-      <div class="gallery-grid">
-
-        <!-- Creative Asset 01: Performance Ad -->
-        <div class="poster-card" onclick="openLightbox('showcase_apex_audio_ad.webp', 'High-ROAS Meta Ad Creative: Luxury Cyber-Tech E-Commerce Campaign', 'PAID ADS & PERFORMANCE MEDIA', 'Engineered for high-ROAS Meta and TikTok paid campaigns. Combines floating product staging, high-contrast studio lighting, and conversion-focused typography that stops feed scrolling within 1.5 seconds.', [['Objective', 'Cold Traffic Acquisition & 4.2x ROAS Scaling'], ['Platforms', 'Meta (Feed & Stories) & TikTok Ads'], ['Tools Used', 'Adobe Photoshop, Canva Pro, Midjourney'], ['Impact', '+38% Click-Through Rate & Lowered CPA']])">
-          <div class="poster-img-container">
-            <img src="showcase_apex_audio_ad.webp" alt="Performance Ad Creative" loading="lazy" decoding="async" width="1024" height="1024">
-            <div class="poster-zoom-hint">🔍</div>
-          </div>
-          <div class="poster-details">
-            <div>
-              <span class="poster-category-tag">Paid Ads &amp; Performance Media</span>
-              <h3>High-ROAS Meta Ad Creative: Luxury Cyber-Tech Campaign</h3>
-              <p>Commercial ad creative engineered for high-ROAS Meta &amp; TikTok campaigns, pairing floating product staging with conversion-focused hooks.</p>
-              <div class="poster-spec-strip">
-                <span class="poster-spec-pill"><strong>Goal:</strong> 4.2x ROAS</span>
-                <span class="poster-spec-pill"><strong>Channels:</strong> Meta &amp; TikTok</span>
-                <span class="poster-spec-pill"><strong>CTR:</strong> +38% Uplift</span>
-              </div>
-            </div>
-            <div class="poster-footer-meta">
-              <span>PERFORMANCE ASSET</span>
-              <span>EXPLORE SPECS ↗</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Creative Asset 02: Brand Identity System -->
-        <div class="poster-card" onclick="openLightbox('showcase_helvetiqa_identity.webp', 'Helvetiqa Visual Identity System: 3D Brand Guidelines & Mockup', 'BRAND IDENTITY & VISUAL SYSTEMS', 'Comprehensive brand architecture created for Helvetiqa Creative Studio. Showcases custom minimalist typography, geometric logo construction, luxury tactile stationery, and cohesive digital design guidelines.', [['Objective', 'Premium Agency Positioning & Authority'], ['Deliverables', 'Logo Suite, Typography Scale, Color Palette'], ['Tools Used', 'Adobe Illustrator, Photoshop, Figma'], ['Impact', '95%+ Client Pitch Win Rate']])">
-          <div class="poster-img-container">
-            <img src="showcase_helvetiqa_identity.webp" alt="Brand Identity Guidelines" loading="lazy" decoding="async" width="1024" height="1024">
-            <div class="poster-zoom-hint">🔍</div>
-          </div>
-          <div class="poster-details">
-            <div>
-              <span class="poster-category-tag">Brand Identity &amp; Design Systems</span>
-              <h3>Helvetiqa Visual Identity System: 3D Brand Guidelines</h3>
-              <p>Comprehensive agency brand architecture showcasing custom geometric typography, tactile stationery mockups, and cohesive design scales.</p>
-              <div class="poster-spec-strip">
-                <span class="poster-spec-pill"><strong>Scope:</strong> Full Brand System</span>
-                <span class="poster-spec-pill"><strong>Stack:</strong> Illustrator &amp; Figma</span>
-                <span class="poster-spec-pill"><strong>Positioning:</strong> Luxury Tech</span>
-              </div>
-            </div>
-            <div class="poster-footer-meta">
-              <span>BRAND ARCHITECTURE</span>
-              <span>EXPLORE SPECS ↗</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Creative Asset 03: Viral Motion Hook -->
-        <div class="poster-card" onclick="openLightbox('showcase_viral_motion_hook.webp', 'Viral Short-Form Motion Hook: 3D Kinetic Social Engagement', 'VIRAL CONTENT & MOTION DESIGN', 'High-velocity short-form visual asset engineered for TikTok and Instagram Reels. Built with 3D kinetic typography and psychological pattern interrupts that lock viewer attention past the crucial 3-second drop-off.', [['Objective', 'Algorithmic Reach & Organic Community'], ['Platforms', 'TikTok, Instagram Reels & YouTube Shorts'], ['Tools Used', 'CapCut Pro, Adobe Premiere, After Effects'], ['Impact', '85K+ Followers Scaled & 4.2M Views']])">
-          <div class="poster-img-container">
-            <img src="showcase_viral_motion_hook.webp" alt="Viral Motion Hook" loading="lazy" decoding="async" width="1024" height="1024">
-            <div class="poster-zoom-hint">🔍</div>
-          </div>
-          <div class="poster-details">
-            <div>
-              <span class="poster-category-tag">Viral Content &amp; Motion Design</span>
-              <h3>Viral Short-Form Motion Hook: 3D Kinetic Social Asset</h3>
-              <p>High-velocity visual hook engineered for Reels &amp; TikTok with kinetic typography and psychological pattern interrupts that maximize retention.</p>
-              <div class="poster-spec-strip">
-                <span class="poster-spec-pill"><strong>Format:</strong> 9:16 Video Hook</span>
-                <span class="poster-spec-pill"><strong>Tools:</strong> CapCut Pro &amp; Premiere</span>
-                <span class="poster-spec-pill"><strong>Reach:</strong> 4.2M Views</span>
-              </div>
-            </div>
-            <div class="poster-footer-meta">
-              <span>VIRAL HOOK DESIGN</span>
-              <span>EXPLORE SPECS ↗</span>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-    <!-- Career & Freelance Track Record -->
-  <section class="p-experience" id="experience">
+  <!-- Career & Credibility Preview -->
+  <section class="home-section-teaser" id="career-preview">
     <div class="container-boxed">
-      <div class="section-head">
-        <p class="section-head__tag">CAREER &amp; FREELANCE TRACK RECORD</p>
-        <h2 class="section-head__title">Proven Execution Across Global Brands &amp; Client Projects</h2>
-        <p class="section-head__desc">Demonstrated expertise across brand building, high-growth consultancies, international retainers, and cross-functional operational leadership.</p>
+      <div class="teaser-header-row">
+        <div>
+          <span class="section-head__tag">✦ PROVEN TRACK RECORD</span>
+          <h2 class="section-head__title">Experience &amp; Agency Leadership</h2>
+        </div>
+        <a href="about.html" class="teaser-view-all-link">
+          <span>Full Experience &amp; Tech Stack</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
       </div>
-
-      <div class="experience-grid">
-
-        <!-- Role 1: Helvetiqa -->
-        <div class="exp-card">
-          <div>
-            <div class="exp-date">2025 – PRESENT</div>
-            <h3>Founder &amp; Creative Director</h3>
-            <div class="exp-company">Helvetiqa (Creative &amp; Growth Studio)</div>
-            <p>Directing bespoke brand identity, aesthetic content design, and organic growth systems. Scaling digital presence across social channels, producing viral short-form video hooks (CapCut/Premiere), high-converting carousels, and conversion-focused creative assets for growing businesses.</p>
-          </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+        <div class="exp-card" style="padding: 24px; border-radius: 16px; border: 1px solid var(--color-card-border); background: var(--color-card-bg);">
+          <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--color-orange-text);">FOUNDER &amp; HEAD OF GROWTH</span>
+          <h3 style="font-size: 19px; font-weight: 700; margin: 8px 0;">Helvetiqa Digital Agency</h3>
+          <p style="font-size: 13.5px; color: var(--color-muted-accessible); line-height: 1.5;">Directing end-to-end social media growth, high-converting paid acquisition funnels, and executive brand positioning for global founders.</p>
         </div>
-
-        <!-- Role 2: The Rockets Consulting -->
-        <div class="exp-card">
-          <div>
-            <div class="exp-date">2023 – PRESENT</div>
-            <h3>Social Media &amp; Sales Manager</h3>
-            <div class="exp-company">The Rockets Consulting (Dubai, UAE)</div>
-            <p>Formulated and executing multi-channel social media strategies across Instagram, LinkedIn, and Facebook. Designing and scaling high-converting lead generation funnels, Meta Ads, and Metricool scheduling, maintaining a 95%+ client retention rate and lowering CPA.</p>
-          </div>
-        </div>
-
-        <!-- Role 3: Freelance Digital Consultant & Multi-Disciplinary Projects -->
-        <div class="exp-card">
-          <div>
-            <div class="exp-date">2021 – PRESENT</div>
-            <h3>Freelance Growth Strategist &amp; Creative Consultant</h3>
-            <div class="exp-company">Fiverr, Upwork &amp; Independent Client Retainers</div>
-            <p>Delivered multi-disciplinary digital growth projects for 50+ local and international clients with 5-star ratings. Produced high-CTR social ad creatives, brand identity kits, and marketing collateral. Authored persuasive copywriting, content writing, assignment research, and executive resume crafting alongside e-commerce growth retainers.</p>
-          </div>
-        </div>
-
-        <!-- Role 4: IVCC Engineering (Lahore) -->
-        <div class="exp-card">
-          <div>
-            <div class="exp-date">2016 – 2023</div>
-            <h3>Inventory Control Officer (Promoted from Data Entry)</h3>
-            <div class="exp-company">IVCC Engineering (Lahore, Pakistan)</div>
-            <p>Completed 7 years of dedicated operational tenure. Began as Data Entry Operator managing database records and tracking systems; rapidly promoted to Inventory Control Officer. Spearheaded computerized ERP stock databases, weekly discrepancy audits, procurement / GRIN workflows, and cross-departmental coordination before transitioning into full-time digital marketing &amp; agency leadership.</p>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Prior International Onsite & Operational Career Strip (Saudi Arabia, UAE, TCS, Early Foundations) -->
-      <div class="prior-career-panel">
-        <div class="prior-career-header">
-          <div>
-            <h4>Prior International Onsite &amp; Operational Leadership (2009 – 2016)</h4>
-            <p class="prior-career-sub">4 Years GCC Onsite Supervision (UAE &amp; Saudi Arabia) • Logistics, Signage &amp; Data Administration</p>
-          </div>
-          <div class="prior-badge">14+ YRS PROFESSIONAL FOUNDATION</div>
-        </div>
-
-        <div class="prior-grid">
-          <!-- UAE: Star Max General Maintenance -->
-          <div class="prior-card">
-            <div class="prior-date">2014 – 2016 (2 YRS)</div>
-            <h5>Site Supervisor &amp; Office Branding</h5>
-            <div class="prior-company">Star Max General Maintenance (Dubai &amp; Abu Dhabi, UAE)</div>
-            <p>Supervised commercial facility operations, site maintenance teams, and corporate office branding &amp; signage installations across major enterprise client locations throughout the UAE.</p>
-          </div>
-
-          <!-- Saudi Arabia: Ahmad Al-Hindi Contracting -->
-          <div class="prior-card">
-            <div class="prior-date">2012 – 2014 (2 YRS)</div>
-            <h5>Site Foreman</h5>
-            <div class="prior-company">Ahmad Al-Hindi Contracting (Saudi Arabia)</div>
-            <p>Led on-site civil works execution, technical workforce distribution, daily materials dispatch, and rigorous safety compliance across infrastructure projects.</p>
-          </div>
-
-          <!-- TCS Logistics -->
-          <div class="prior-card">
-            <div class="prior-date">2011 – 2012 (6 MOS)</div>
-            <h5>Area Operations Manager</h5>
-            <div class="prior-company">TCS Express &amp; Logistics</div>
-            <p>Directed regional parcel logistics, distribution hub operations, fleet routing efficiency, and delivery team coordination across assigned territory.</p>
-          </div>
-
-          <!-- Early Foundations: Travel Agency & Mitchell's Fruit Farms -->
-          <div class="prior-card">
-            <div class="prior-date">2009 – 2011 (2 YRS)</div>
-            <h5>Data Systems Operator &amp; Technical Trainee</h5>
-            <div class="prior-company">Travel Services (1 Yr) &amp; Mitchell's Fruit Farms (2009–2010)</div>
-            <p>Managed computerized reservation records and high-volume data entry at a travel agency, preceded by hands-on industrial mechanical maintenance training at Mitchell's Fruit Farms.</p>
-          </div>
+        <div class="exp-card" style="padding: 24px; border-radius: 16px; border: 1px solid var(--color-card-border); background: var(--color-card-bg);">
+          <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--color-orange-text);">SENIOR SOCIAL MEDIA LEAD</span>
+          <h3 style="font-size: 19px; font-weight: 700; margin: 8px 0;">Emirat Digital Media</h3>
+          <p style="font-size: 13.5px; color: var(--color-muted-accessible); line-height: 1.5;">Architected viral content engines scaling cross-platform communities to 85,000+ followers while maintaining a 4.2x ROAS on paid campaigns.</p>
         </div>
       </div>
-
-      <!-- Verified Certifications Strip (Clean & Neutral, No Emojis, No IDs) -->
-      <div class="freelance-cert-strip">
-        <div class="cert-strip-header">
-          <h4>Verified Credentials &amp; Certifications</h4>
-          <span>Industry-Standard Accredited Qualifications</span>
-        </div>
-        <div class="cert-tags-wrap">
-          <span class="cert-tag-item"><span class="check-icon">✓</span> Google Ads Certified (Google Skillshop)</span>
-          <span class="cert-tag-item"><span class="check-icon">✓</span> Meta Certified Digital Marketing Associate</span>
-          <span class="cert-tag-item"><span class="check-icon">✓</span> Google Analytics 4 (GA4) Qualified</span>
-          <span class="cert-tag-item"><span class="check-icon">✓</span> Inbound Marketing &amp; Social Strategy (HubSpot Academy)</span>
-          <span class="cert-tag-item"><span class="check-icon">✓</span> HeyOrca Social Scheduling &amp; Publishing Certified</span>
-          <span class="cert-tag-item"><span class="check-icon">✓</span> Marketing &amp; Communications Simulation (NSW Government Australia)</span>
-          <span class="cert-tag-item"><span class="check-icon">✓</span> Branding &amp; Digital Design Simulation (Forage)</span>
-          <span class="cert-tag-item"><span class="check-icon">✓</span> Promotional Video &amp; Visual Design (Canva / Coursera)</span>
-          <span class="cert-tag-item"><span class="check-icon">✓</span> BS in Mass Communication (Virtual University of Pakistan)</span>
-          <span class="cert-tag-item"><span class="check-icon">✓</span> SEO &amp; Content Marketing Fundamentals (Semrush Academy)</span>
-          <span class="cert-tag-item"><span class="check-icon">✓</span> Web Architecture &amp; WordPress CMS (Coursera Project Network)</span>
-          <span class="cert-tag-item"><span class="check-icon">✓</span> Professional Video &amp; Motion Editing (CapCut / Premiere)</span>
-          <span class="cert-tag-item"><span class="check-icon">✓</span> Member, Pakistan Freelancers Association (PAFLA)</span>
-        </div>
-      </div>
-
-    </div></section>
-
-  <!-- Tools & Production Arsenal Matrix -->
-      <section class="p-tools" id="tools">
-    <div class="container-boxed">
-      
-      <!-- Section Header -->
-      <div class="section-head" style="text-align: center; margin-bottom: 28px;">
-        <p class="section-head__tag">PRODUCTION ARSENAL &amp; TECH STACK</p>
-        <h2 class="section-head__title tools-main-title">Tools &amp; Platforms I Master Daily</h2>
-        <p class="tools-main-subtitle">
-          Industry-leading platforms I deploy daily to execute high-ROAS ad campaigns, design viral content, and automate growth systems.
-        </p>
-      </div>
-
-      <!-- Filter Controls Row -->
-      <div class="tools-filter-bar" id="toolsFilterBar">
-        <button type="button" class="tool-filter-pill is-active" data-cat="all">
-          <span>All Platforms</span>
-          <span class="tool-filter-count">32</span>
-        </button>
-        <button type="button" class="tool-filter-pill" data-cat="social">
-          <span>Social &amp; Schedulers</span>
-          <span class="tool-filter-count">6</span>
-        </button>
-        <button type="button" class="tool-filter-pill" data-cat="growth">
-          <span>Paid Ads &amp; Analytics</span>
-          <span class="tool-filter-count">4</span>
-        </button>
-        <button type="button" class="tool-filter-pill" data-cat="creative">
-          <span>Creative &amp; Design</span>
-          <span class="tool-filter-count">8</span>
-        </button>
-        <button type="button" class="tool-filter-pill" data-cat="ops">
-          <span>CRM &amp; Automation</span>
-          <span class="tool-filter-count">8</span>
-        </button>
-        <button type="button" class="tool-filter-pill" data-cat="ai">
-          <span>Generative AI &amp; LLMs</span>
-          <span class="tool-filter-count">6</span>
-        </button>
-      </div>
-
-      <!-- Unified High-Density Arsenal Grid (No Pillar Headers) -->
-      <div class="tools-grid-unified" id="toolsUnifiedGrid">
-        <div class="tool-card" data-category="social">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Hootsuite</title><path d="M11.417 11.14c.505.75.28 1.572-.38 2.017-.66.444-1.505.343-2.01-.407-.506-.75-.282-1.572.378-2.017.66-.444 1.506-.343 2.012.407zm5.017-.274c-.66.444-.884 1.266-.379 2.016.506.75 1.352.852 2.012.407.66-.444.884-1.266.379-2.016-.506-.75-1.352-.852-2.012-.407zm7.422-7.086L19.03 6.638l.236.272c2.224 2.613 3.591 6.409 4.247 8.606a4.362 4.362 0 0 1-.638 3.8C21.449 21.295 18.398 24 12.369 24c-6.58 0-10-3.25-11.644-5.251a3.117 3.117 0 0 1-.51-3.067c.909-2.444 2.766-7.126 4.257-8.825a13.158 13.158 0 0 1 2.897-2.478L2.4.534c-.27-.208-.034-.632.285-.513l8.077 3.006c.38-.066.758-.1 1.13-.1 1.407 0 2.737.307 4.074 1.084l7.744-.695c.266-.024.378.331.147.464zm-8.218 13.656a4.126 4.126 0 0 1-3.316-.232c-.073-.037-.143.055-.087.115.457.49 1.273 1.35 1.766 1.775.102.088.259.077.35-.023l1.369-1.512c.053-.059-.008-.15-.082-.123zm.24-1.156-1.796-2.018a.34.34 0 0 0-.513.008l-1.44 1.716a.18.18 0 0 0 .031.262c.333.239 1.148.76 1.942.76.734 0 1.402-.285 1.724-.447a.18.18 0 0 0 .052-.281zm1.616-8.409c-.3-.034-.603.035-.862.188l-1.808 1.07c-.45.268-1.02.231-1.432-.091L11.819 7.82a4.669 4.669 0 0 0-1.776-.858c-2.698-.638-4.532.78-5.914 3.44-1.32 2.539-.583 6.184 2.672 7.05 3.438.914 5.71-2.903 6.618-4.175a.439.439 0 0 1 .712-.002c1.408 1.916 3.306 3.968 5.34 3.557 2.656-.535 2.342-3.905 1.512-5.7-.735-1.588-1.83-3.074-3.49-3.262z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Hootsuite</span>
-            <span class="tool-card__tag">Social Media Management</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="social">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Buffer</title><path d="M1.371 5.476L11.943 0l10.686 5.476-10.686 5.495zm3.36 4.81l7.212 3.547 7.288-3.547 3.398 1.655-10.686 5.202L1.371 11.94zm0 6.171l7.212 3.911 7.288-3.91 3.398 1.815L11.943 24 1.371 18.273z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Buffer</span>
-            <span class="tool-card__tag">Publishing & Scheduling</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="social">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-  <path d="M12 2C6.48 2 2 6.48 2 12c0 1.95.56 3.77 1.52 5.31L2.1 21.2a.75.75 0 0 0 .9.9l3.89-1.42A9.95 9.95 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 17.5c-1.58 0-3.07-.44-4.34-1.21l-.31-.19-2.12.77.78-2.12-.19-.31A7.44 7.44 0 0 1 4.5 12c0-4.14 3.36-7.5 7.5-7.5s7.5 3.36 7.5 7.5-3.36 7.5-7.5 7.5z" fill="#2BB656"/>
-  <path d="M12 7c-2.76 0-5 2.24-5 5 0 1.05.33 2.02.88 2.83l.21.31-.77 2.12 2.12-.77.31.21c.81.55 1.78.88 2.83.88 2.76 0 5-2.24 5-5s-2.24-5-5-5z" fill="#52C41A"/>
-</svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Sprout Social</span>
-            <span class="tool-card__tag">Audience Analytics & Listening</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="social">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-  <defs>
-    <linearGradient id="metricool-grad" x1="2" y1="12" x2="22" y2="12" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#00D2D3"/>
-      <stop offset="0.5" stop-color="#54A0FF"/>
-      <stop offset="1" stop-color="#5F27CD"/>
-    </linearGradient>
-  </defs>
-  <!-- Metricool Infinity M Flow -->
-  <path d="M6.5 7A4.5 4.5 0 0 0 2 11.5c0 2.48 2.02 4.5 4.5 4.5 2.1 0 3.88-1.44 4.35-3.41L12 8.7l1.15 3.89c.47 1.97 2.25 3.41 4.35 3.41 2.48 0 4.5-2.02 4.5-4.5S19.98 7 17.5 7c-2.1 0-3.88 1.44-4.35 3.41L12 14.3l-1.15-3.89A4.47 4.47 0 0 0 6.5 7zm0 2.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm11 0a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" fill="url(#metricool-grad)"/>
-</svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Metricool</span>
-            <span class="tool-card__tag">Multi-Channel Tracking</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="social">
-          <div class="tool-card__icon-wrap">
-            <svg class="tool-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <radialGradient id="ig-rg" cx="19%" cy="100%" r="108%" fx="19%" fy="100%">
-    <stop offset="0%" stop-color="#fdf497" />
-    <stop offset="5%" stop-color="#fdf497" />
-    <stop offset="45%" stop-color="#fd5949" />
-    <stop offset="60%" stop-color="#d6249f" />
-    <stop offset="90%" stop-color="#285AEB" />
-  </radialGradient>
-  <rect width="24" height="24" rx="6" fill="url(#ig-rg)" />
-  <path d="M12 7.027c-2.742 0-4.973 2.231-4.973 4.973s2.231 4.973 4.973 4.973 4.973-2.231 4.973-4.973-2.231-4.973-4.973-4.973zm0 8.219c-1.79 0-3.246-1.456-3.246-3.246s1.456-3.246 3.246-3.246 3.246 1.456 3.246 3.246-1.456 3.246-3.246 3.246zm6.33-8.388c0 .641-.52 1.161-1.161 1.161s-1.161-.52-1.161-1.161.52-1.161 1.161-1.161 1.161.52 1.161 1.161zm2.637 1.168c-.06-1.264-.349-2.382-1.277-3.31-.928-.928-2.046-1.217-3.31-1.277-1.303-.074-5.21-.074-6.513 0-1.264.06-2.382.349-3.31 1.277-.928.928-1.217 2.046-1.277 3.31-.074 1.303-.074 5.21 0 6.513.06 1.264.349 2.382 1.277 3.31.928.928 2.046 1.217 3.31 1.277 1.303.074 5.21.074 6.513 0 1.264-.06 2.382-.349 3.31-1.277.928-.928 1.217-2.046 1.277-3.31.074-1.303.074-5.21 0-6.513zm-2.083 8.354c-.247.622-.724 1.1-1.346 1.346-1.039.412-3.504.317-5.538.317s-4.499.095-5.538-.317c-.622-.247-1.1-.724-1.346-1.346-.412-1.039-.317-3.504-.317-5.538s-.095-4.499.317-5.538c.247-.622.724-1.1 1.346-1.346 1.039-.412 3.504-.317 5.538-.317s4.499-.095 5.538.317c.622.247 1.1.724 1.346 1.346.412 1.039.317 3.504.317 5.538s.095 4.499-.317 5.538z" fill="#ffffff"/>
-</svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Instagram Business</span>
-            <span class="tool-card__tag">Organic Growth & Carousels</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="social">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#0A66C2" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">LinkedIn Campaign Hub</span>
-            <span class="tool-card__tag">B2B Outreach & Ads</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="growth">
-          <div class="tool-card__icon-wrap">
-            <svg class="tool-card__icon" height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Meta</title><path d="M6.897 4h-.024l-.031 2.615h.022c1.715 0 3.046 1.357 5.94 6.246l.175.297.012.02 1.62-2.438-.012-.019a48.763 48.763 0 00-1.098-1.716 28.01 28.01 0 00-1.175-1.629C10.413 4.932 8.812 4 6.896 4z" fill="url(#lobe-icons-meta-0-_R_0_)"></path><path d="M6.873 4C4.95 4.01 3.247 5.258 2.02 7.17a4.352 4.352 0 00-.01.017l2.254 1.231.011-.017c.718-1.083 1.61-1.774 2.568-1.785h.021L6.896 4h-.023z" fill="url(#lobe-icons-meta-1-_R_0_)"></path><path d="M2.019 7.17l-.011.017C1.2 8.447.598 9.995.274 11.664l-.005.022 2.534.6.004-.022c.27-1.467.786-2.828 1.456-3.845l.011-.017L2.02 7.17z" fill="url(#lobe-icons-meta-2-_R_0_)"></path><path d="M2.807 12.264l-2.533-.6-.005.022c-.177.918-.267 1.851-.269 2.786v.023l2.598.233v-.023a12.591 12.591 0 01.21-2.44z" fill="url(#lobe-icons-meta-3-_R_0_)"></path><path d="M2.677 15.537a5.462 5.462 0 01-.079-.813v-.022L0 14.468v.024a8.89 8.89 0 00.146 1.652l2.535-.585a4.106 4.106 0 01-.004-.022z" fill="url(#lobe-icons-meta-4-_R_0_)"></path><path d="M3.27 16.89c-.284-.31-.484-.756-.589-1.328l-.004-.021-2.535.585.004.021c.192 1.01.568 1.85 1.106 2.487l.014.017 2.018-1.745a2.106 2.106 0 01-.015-.016z" fill="url(#lobe-icons-meta-5-_R_0_)"></path><path d="M10.78 9.654c-1.528 2.35-2.454 3.825-2.454 3.825-2.035 3.2-2.739 3.917-3.871 3.917a1.545 1.545 0 01-1.186-.508l-2.017 1.744.014.017C2.01 19.518 3.058 20 4.356 20c1.963 0 3.374-.928 5.884-5.33l1.766-3.13a41.283 41.283 0 00-1.227-1.886z" fill="#0082FB"></path><path d="M13.502 5.946l-.016.016c-.4.43-.786.908-1.16 1.416.378.483.768 1.024 1.175 1.63.48-.743.928-1.345 1.367-1.807l.016-.016-1.382-1.24z" fill="url(#lobe-icons-meta-6-_R_0_)"></path><path d="M20.918 5.713C19.853 4.633 18.583 4 17.225 4c-1.432 0-2.637.787-3.723 1.944l-.016.016 1.382 1.24.016-.017c.715-.747 1.408-1.12 2.176-1.12.826 0 1.6.39 2.27 1.075l.015.016 1.589-1.425-.016-.016z" fill="#0082FB"></path><path d="M23.998 14.125c-.06-3.467-1.27-6.566-3.064-8.396l-.016-.016-1.588 1.424.015.016c1.35 1.392 2.277 3.98 2.361 6.971v.023h2.292v-.022z" fill="url(#lobe-icons-meta-7-_R_0_)"></path><path d="M23.998 14.15v-.023h-2.292v.022c.004.14.006.282.006.424 0 .815-.121 1.474-.368 1.95l-.011.022 1.708 1.782.013-.02c.62-.96.946-2.293.946-3.91 0-.083 0-.165-.002-.247z" fill="url(#lobe-icons-meta-8-_R_0_)"></path><path d="M21.344 16.52l-.011.02c-.214.402-.519.67-.917.787l.778 2.462a3.493 3.493 0 00.438-.182 3.558 3.558 0 001.366-1.218l.044-.065.012-.02-1.71-1.784z" fill="url(#lobe-icons-meta-9-_R_0_)"></path><path d="M19.92 17.393c-.262 0-.492-.039-.718-.14l-.798 2.522c.449.153.927.222 1.46.222.492 0 .943-.073 1.352-.215l-.78-2.462c-.167.05-.341.075-.517.073z" fill="url(#lobe-icons-meta-10-_R_0_)"></path><path d="M18.323 16.534l-.014-.017-1.836 1.914.016.017c.637.682 1.246 1.105 1.937 1.337l.797-2.52c-.291-.125-.573-.353-.9-.731z" fill="url(#lobe-icons-meta-11-_R_0_)"></path><path d="M18.309 16.515c-.55-.642-1.232-1.712-2.303-3.44l-1.396-2.336-.011-.02-1.62 2.438.012.02.989 1.668c.959 1.61 1.74 2.774 2.493 3.585l.016.016 1.834-1.914a2.353 2.353 0 01-.014-.017z" fill="url(#lobe-icons-meta-12-_R_0_)"></path><defs><linearGradient id="lobe-icons-meta-0-_R_0_" x1="75.897%" x2="26.312%" y1="89.199%" y2="12.194%"><stop offset=".06%" stop-color="#0867DF"></stop><stop offset="45.39%" stop-color="#0668E1"></stop><stop offset="85.91%" stop-color="#0064E0"></stop></linearGradient><linearGradient id="lobe-icons-meta-1-_R_0_" x1="21.67%" x2="97.068%" y1="75.874%" y2="23.985%"><stop offset="13.23%" stop-color="#0064DF"></stop><stop offset="99.88%" stop-color="#0064E0"></stop></linearGradient><linearGradient id="lobe-icons-meta-2-_R_0_" x1="38.263%" x2="60.895%" y1="89.127%" y2="16.131%"><stop offset="1.47%" stop-color="#0072EC"></stop><stop offset="68.81%" stop-color="#0064DF"></stop></linearGradient><linearGradient id="lobe-icons-meta-3-_R_0_" x1="47.032%" x2="52.15%" y1="90.19%" y2="15.745%"><stop offset="7.31%" stop-color="#007CF6"></stop><stop offset="99.43%" stop-color="#0072EC"></stop></linearGradient><linearGradient id="lobe-icons-meta-4-_R_0_" x1="52.155%" x2="47.591%" y1="58.301%" y2="37.004%"><stop offset="7.31%" stop-color="#007FF9"></stop><stop offset="100%" stop-color="#007CF6"></stop></linearGradient><linearGradient id="lobe-icons-meta-5-_R_0_" x1="37.689%" x2="61.961%" y1="12.502%" y2="63.624%"><stop offset="7.31%" stop-color="#007FF9"></stop><stop offset="100%" stop-color="#0082FB"></stop></linearGradient><linearGradient id="lobe-icons-meta-6-_R_0_" x1="34.808%" x2="62.313%" y1="68.859%" y2="23.174%"><stop offset="27.99%" stop-color="#007FF8"></stop><stop offset="91.41%" stop-color="#0082FB"></stop></linearGradient><linearGradient id="lobe-icons-meta-7-_R_0_" x1="43.762%" x2="57.602%" y1="6.235%" y2="98.514%"><stop offset="0%" stop-color="#0082FB"></stop><stop offset="99.95%" stop-color="#0081FA"></stop></linearGradient><linearGradient id="lobe-icons-meta-8-_R_0_" x1="60.055%" x2="39.88%" y1="4.661%" y2="69.077%"><stop offset="6.19%" stop-color="#0081FA"></stop><stop offset="100%" stop-color="#0080F9"></stop></linearGradient><linearGradient id="lobe-icons-meta-9-_R_0_" x1="30.282%" x2="61.081%" y1="59.32%" y2="33.244%"><stop offset="0%" stop-color="#027AF3"></stop><stop offset="100%" stop-color="#0080F9"></stop></linearGradient><linearGradient id="lobe-icons-meta-10-_R_0_" x1="20.433%" x2="82.112%" y1="50.001%" y2="50.001%"><stop offset="0%" stop-color="#0377EF"></stop><stop offset="99.94%" stop-color="#0279F1"></stop></linearGradient><linearGradient id="lobe-icons-meta-11-_R_0_" x1="40.303%" x2="72.394%" y1="35.298%" y2="57.811%"><stop offset=".19%" stop-color="#0471E9"></stop><stop offset="100%" stop-color="#0377EF"></stop></linearGradient><linearGradient id="lobe-icons-meta-12-_R_0_" x1="32.254%" x2="68.003%" y1="19.719%" y2="84.908%"><stop offset="27.65%" stop-color="#0867DF"></stop><stop offset="100%" stop-color="#0471E9"></stop></linearGradient></defs></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Meta Ads Manager</span>
-            <span class="tool-card__tag">Paid Acquisition & Scaling</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="growth">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#4285F4" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Google Ads</title><path fill="#4285F4" d="M3.9998 22.9291C1.7908 22.9291 0 21.1383 0 18.9293s1.7908-3.9998 3.9998-3.9998 3.9998 1.7908 3.9998 3.9998-1.7908 3.9998-3.9998 3.9998zm19.4643-6.0004L15.4632 3.072C14.3586 1.1587 11.9121.5028 9.9988 1.6074S7.4295 5.1585 8.5341 7.0718l8.0009 13.8567c1.1046 1.9133 3.5511 2.5679 5.4644 1.4646 1.9134-1.1046 2.568-3.5511 1.4647-5.4644zM7.5137 4.8438L1.5645 15.1484A4.5 4.5 0 0 1 4 14.4297c2.5597-.0075 4.6248 2.1585 4.4941 4.7148l3.2168-5.5723-3.6094-6.25c-.4499-.7793-.6322-1.6394-.5878-2.4784z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Google Ads</span>
-            <span class="tool-card__tag">Search, Display & YouTube</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="growth">
-          <div class="tool-card__icon-wrap">
-            <svg class="tool-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-  <rect width="24" height="24" rx="6" fill="#010101"/>
-  <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.14.99 2.11 2.02 2.62.91.47 1.97.56 2.98.31 1.05-.24 1.96-.94 2.47-1.89.37-.66.52-1.42.52-2.18V.02h-.73z" fill="#25F4EE"/>
-  <path d="M13.53 1.02c1.31 0 2.61.01 3.91 0 .08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v3.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.14.99 2.11 2.02 2.62.91.47 1.97.56 2.98.31 1.05-.24 1.96-.94 2.47-1.89.37-.66.52-1.42.52-2.18V1.02h-.73z" fill="#FE2C55"/>
-  <path d="M13.03.52c1.31 0 2.61.01 3.91 0 .08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v3.53c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.14.99 2.11 2.02 2.62.91.47 1.97.56 2.98.31 1.05-.24 1.96-.94 2.47-1.89.37-.66.52-1.42.52-2.18V.52h-.73z" fill="#FFFFFF"/>
-</svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">TikTok Ads</span>
-            <span class="tool-card__tag">Short-Form Spark Ads</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="growth">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#E37400" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Google Analytics</title><path fill="#E37400" d="M22.84 2.9982v17.9987c.0086 1.6473-1.3197 2.9897-2.967 2.9984a2.9808 2.9808 0 01-.3677-.0208c-1.528-.226-2.6477-1.5558-2.6105-3.1V3.1204c-.0369-1.5458 1.0856-2.8762 2.6157-3.1 1.6361-.1915 3.1178.9796 3.3093 2.6158.014.1201.0208.241.0202.3619zM4.1326 18.0548c-1.6417 0-2.9726 1.331-2.9726 2.9726C1.16 22.6691 2.4909 24 4.1326 24s2.9726-1.3309 2.9726-2.9726-1.331-2.9726-2.9726-2.9726zm7.8728-9.0098c-.0171 0-.0342 0-.0513.0003-1.6495.0904-2.9293 1.474-2.891 3.1256v7.9846c0 2.167.9535 3.4825 2.3505 3.763 1.6118.3266 3.1832-.7152 3.5098-2.327.04-.1974.06-.3983.0593-.5998v-8.9585c.003-1.6474-1.33-2.9852-2.9773-2.9882z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Google Analytics 4</span>
-            <span class="tool-card__tag">Conversion & Event Tracking</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="creative">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#00C4CC" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Canva</title><path fill="#00C4CC" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zM6.962 7.68c.754 0 1.337.549 1.405 1.2.069.583-.171 1.097-.822 1.406-.343.171-.48.172-.549.069-.034-.069 0-.137.069-.206.617-.514.617-.926.548-1.508-.034-.378-.308-.618-.583-.618-1.2 0-2.914 2.674-2.674 4.629.103.754.549 1.646 1.509 1.646.308 0 .65-.103.96-.24.5-.264.799-.47 1.097-.8-.073-.885.704-2.046 1.851-2.046.515 0 .926.205.96.583.068.514-.377.582-.514.582s-.378-.034-.378-.17c-.034-.138.309-.07.275-.378-.035-.206-.24-.274-.446-.274-.72 0-1.131.994-1.029 1.611.035.275.172.549.447.549.205 0 .514-.31.617-.755.068-.308.343-.514.583-.514.102 0 .17.034.205.171v.138c-.034.137-.137.548-.102.651 0 .069.034.171.17.171.092 0 .436-.18.777-.459.117-.59.253-1.298.253-1.357.034-.24.137-.48.617-.48.103 0 .171.034.205.171v.138l-.136.617c.445-.583 1.097-.994 1.508-.994.172 0 .309.102.309.274 0 .103 0 .274-.069.446-.137.377-.309.96-.412 1.474 0 .137.035.274.207.274.171 0 .685-.206 1.096-.754l.007-.004c-.002-.068-.007-.134-.007-.202 0-.411.035-.754.104-.994.068-.274.411-.514.617-.514.103 0 .205.069.205.171 0 .035 0 .103-.034.137-.137.446-.24.857-.24 1.269 0 .24.034.582.102.788 0 .034.035.069.07.069.068 0 .548-.445.89-1.028-.308-.206-.48-.549-.48-.96 0-.72.446-1.097.858-1.097.343 0 .617.24.617.72 0 .308-.103.65-.274.96h.102a.77.77 0 0 0 .584-.24.293.293 0 0 1 .134-.117c.335-.425.83-.74 1.41-.74.48 0 .924.205.959.582.068.515-.378.618-.515.618l-.002-.002c-.138 0-.377-.035-.377-.172 0-.137.309-.068.274-.376-.034-.206-.24-.275-.446-.275-.686 0-1.13.891-1.028 1.611.034.275.171.583.445.583.206 0 .515-.308.652-.754.068-.274.343-.514.583-.514.103 0 .17.034.205.171 0 .069 0 .206-.137.652-.17.308-.171.48-.137.617.034.274.171.48.309.583.034.034.068.102.068.102 0 .069-.034.138-.137.138-.034 0-.068 0-.103-.035-.514-.205-.72-.548-.789-.891-.205.24-.445.377-.72.377-.445 0-.89-.411-.96-.926a1.609 1.609 0 0 1 .075-.649c-.203.13-.422.203-.623.203h-.17c-.447.652-.927 1.098-1.27 1.303a.896.896 0 0 1-.377.104c-.068 0-.171-.035-.205-.104-.095-.152-.156-.392-.193-.667-.481.527-1.145.805-1.453.805-.343 0-.548-.206-.582-.55v-.376c.102-.754.377-1.2.377-1.337a.074.074 0 0 0-.069-.07c-.24 0-1.028.824-1.166 1.373l-.103.445c-.068.309-.377.515-.582.515-.103 0-.172-.035-.206-.172v-.137l.046-.233c-.435.31-.87.508-1.075.508-.308 0-.48-.172-.514-.412-.206.274-.445.412-.754.412-.352 0-.696-.24-.862-.593-.244.275-.523.553-.852.764-.48.309-1.028.549-1.68.549-.582 0-1.097-.309-1.371-.583-.412-.377-.651-.96-.686-1.509-.205-1.68.823-3.84 2.4-4.8.378-.205.755-.343 1.132-.343zm9.77 3.291c-.104 0-.172.172-.172.343 0 .274.137.583.309.755a1.74 1.74 0 0 0 .102-.583c0-.343-.137-.515-.24-.515z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Canva Pro</span>
-            <span class="tool-card__tag">Brand Decks & Templates</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="creative">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#31A8FF" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Adobe Photoshop</title><path fill="#31A8FF" d="M9.85 8.42c-.37-.15-.77-.21-1.18-.2-.26 0-.49 0-.68.01-.2-.01-.34 0-.41.01v3.36c.14.01.27.02.39.02h.53c.39 0 .78-.06 1.15-.18.32-.09.6-.28.82-.53.21-.25.31-.59.31-1.03.01-.31-.07-.62-.23-.89-.17-.26-.41-.46-.7-.57zM19.75.3H4.25C1.9.3 0 2.2 0 4.55v14.899c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zm-7.391 11.65c-.399.56-.959.98-1.609 1.22-.68.25-1.43.34-2.25.34-.24 0-.4 0-.5-.01s-.24-.01-.43-.01v3.209c.01.07-.04.131-.11.141H5.52c-.08 0-.12-.041-.12-.131V6.42c0-.07.03-.11.1-.11.17 0 .33 0 .56-.01.24-.01.49-.01.76-.02s.56-.01.87-.02c.31-.01.61-.01.91-.01.82 0 1.5.1 2.06.31.5.17.96.45 1.34.82.32.32.57.71.73 1.14.149.42.229.85.229 1.3.001.86-.199 1.57-.6 2.13zm7.091 3.89c-.28.4-.671.709-1.12.891-.49.209-1.09.318-1.811.318-.459 0-.91-.039-1.359-.129-.35-.061-.7-.17-1.02-.32-.07-.039-.121-.109-.111-.189v-1.74c0-.029.011-.07.041-.09.029-.02.06-.01.09.01.39.23.8.391 1.24.49.379.1.779.15 1.18.15.38 0 .65-.051.83-.141.16-.07.27-.24.27-.42 0-.141-.08-.27-.24-.4-.16-.129-.489-.279-.979-.471-.51-.18-.979-.42-1.42-.719-.31-.221-.569-.51-.761-.85-.159-.32-.239-.67-.229-1.021 0-.43.12-.84.341-1.21.25-.4.619-.72 1.049-.92.469-.239 1.059-.349 1.769-.349.41 0 .83.03 1.24.09.3.04.59.12.86.23.039.01.08.05.1.09.01.04.02.08.02.12v1.63c0 .04-.02.08-.05.1-.09.02-.14.02-.18 0-.3-.16-.62-.27-.96-.34-.37-.08-.74-.13-1.12-.13-.2-.01-.41.02-.601.07-.129.03-.24.1-.31.2-.05.08-.08.18-.08.27s.04.18.101.26c.09.11.209.2.34.27.229.12.47.23.709.33.541.18 1.061.43 1.541.73.33.209.6.49.789.83.16.318.24.67.23 1.029.011.471-.129.94-.389 1.331z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Adobe Photoshop</span>
-            <span class="tool-card__tag">Raster Imaging & Retouching</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="creative">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#FF9A00" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Adobe Illustrator</title><path fill="#FF9A00" d="M10.53 10.73c-.1-.31-.19-.61-.29-.92-.1-.31-.19-.6-.27-.89-.08-.28-.15-.54-.22-.78h-.02c-.09.43-.2.86-.34 1.29-.15.48-.3.98-.46 1.48-.14.51-.29.98-.44 1.4h2.54c-.06-.211-.14-.46-.23-.721-.09-.269-.18-.559-.27-.859zM19.75.3H4.25C1.9.3 0 2.2 0 4.55v14.9c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zM14.7 16.83h-2.091c-.069.01-.139-.04-.159-.11l-.82-2.38H7.91l-.76 2.35c-.02.09-.1.15-.19.141H5.08c-.11 0-.14-.061-.11-.18L8.19 7.38c.03-.1.06-.21.1-.33.04-.21.06-.43.06-.65-.01-.05.03-.1.08-.11h2.59c.08 0 .12.03.13.08l3.65 10.3c.03.109 0 .16-.1.16zm3.4-.15c0 .11-.039.16-.129.16H16.01c-.1 0-.15-.061-.15-.16v-7.7c0-.1.041-.14.131-.14h1.98c.09 0 .129.05.129.14v7.7zm-.209-9.03c-.231.24-.571.37-.911.35-.33.01-.65-.12-.891-.35-.23-.25-.35-.58-.34-.92-.01-.34.12-.66.359-.89.242-.23.562-.35.892-.35.391 0 .689.12.91.35.22.24.34.56.33.89.01.34-.11.67-.349.92z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Adobe Illustrator</span>
-            <span class="tool-card__tag">Vector Branding & Iconography</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="creative">
-          <div class="tool-card__icon-wrap">
-            <svg class="tool-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
-  <rect width="24" height="24" rx="5.5" fill="url(#ae-grad)"/>
-  <defs>
-    <linearGradient id="ae-grad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#5C5CFF"/>
-      <stop offset="0.5" stop-color="#9333EA"/>
-      <stop offset="1" stop-color="#E11D48"/>
-    </linearGradient>
-  </defs>
-  <!-- Clean Stylized Ex -->
-  <path d="M6 8h4.5v1.6H7.8v2.1h2.4v1.6H7.8v2.3h2.8v1.6H6V8zm6.5 4.5l1.8-2.9h1.9l-2.6 4 2.8 4.4h-2l-2-3.1-2 3.1h-1.9l2.8-4.3-2.6-4.1h2l1.8 2.9z" fill="#FFFFFF"/>
-</svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Adobe Express</span>
-            <span class="tool-card__tag">Quick Social Visuals</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="creative">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000">
-  <path d="M24.189 6.442V2.671l-4.535 2.383V4.91c.002-1.505-1.078-2.411-2.638-2.411H2.64C.993 2.5 0 3.407 0 4.91V8.72L6.354 12 0 15.316v3.8C0 20.595 1 21.5 2.64 21.5h14.373c1.56 0 2.639-.907 2.639-2.382v-.197l4.536 2.409v-3.828L13.64 12 24.19 6.443zM9.982 13.873l7.797 4.083H2.157l7.825-4.083zm7.741-7.828l-7.742 4.057-7.825-4.057h15.567z"/>
-</svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">CapCut Pro</span>
-            <span class="tool-card__tag">Viral Short-Form Video & Hooks</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="creative">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#EA77FF" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Adobe Premiere Pro</title><path fill="#EA77FF" d="M10.15 8.42a2.93 2.93 0 00-1.18-.2 13.9 13.9 0 00-1.09.02v3.36l.39.02h.53c.39 0 .78-.06 1.15-.18.32-.09.6-.28.82-.53.21-.25.31-.59.31-1.03a1.45 1.45 0 00-.93-1.46zM19.75.3H4.25A4.25 4.25 0 000 4.55v14.9c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zm-7.09 11.65c-.4.56-.96.98-1.61 1.22-.68.25-1.43.34-2.25.34l-.5-.01-.43-.01v3.21a.12.12 0 01-.11.14H5.82c-.08 0-.12-.04-.12-.13V6.42c0-.07.03-.11.1-.11l.56-.01.76-.02.87-.02.91-.01c.82 0 1.5.1 2.06.31.5.17.96.45 1.34.82.32.32.57.71.73 1.14.15.42.23.85.23 1.3 0 .86-.2 1.57-.6 2.13zm6.82-3.15v1.95c0 .08-.05.11-.16.11a4.35 4.35 0 00-1.92.37c-.19.09-.37.21-.51.37v5.1c0 .1-.04.14-.13.14h-1.97a.14.14 0 01-.16-.12v-5.58l-.01-.75-.02-.78c0-.23-.02-.45-.04-.68a.1.1 0 01.07-.11h1.78c.1 0 .18.07.2.16a3.03 3.03 0 01.13.92c.3-.35.67-.64 1.08-.86a3.1 3.1 0 011.52-.39c.07-.01.13.04.14.11v.04z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Adobe Premiere Pro</span>
-            <span class="tool-card__tag">Multi-Cam Timeline Editing</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="creative">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#9999FF" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Adobe After Effects</title><path fill="#9999FF" d="M8.54 10.73c-.1-.31-.19-.61-.29-.92s-.19-.6-.27-.89c-.08-.28-.15-.54-.22-.78h-.02c-.09.43-.2.86-.34 1.29-.15.48-.3.98-.46 1.48-.13.51-.29.98-.44 1.4h2.54c-.06-.21-.14-.46-.23-.72-.09-.27-.18-.56-.27-.86zm8.58-.29c-.55-.03-1.07.26-1.33.76-.12.23-.19.47-.22.72h2.109c.26 0 .45 0 .57-.01.08-.01.16-.03.23-.08v-.1c0-.13-.021-.25-.061-.37-.178-.56-.708-.94-1.298-.92zM19.75.3H4.25C1.9.3 0 2.2 0 4.55v14.9c0 2.35 1.9 4.25 4.25 4.25h15.5c2.35 0 4.25-1.9 4.25-4.25V4.55C24 2.2 22.1.3 19.75.3zm-7.04 16.511h-2.09c-.07.01-.14-.041-.16-.11l-.82-2.4H5.92l-.76 2.36c-.02.09-.1.15-.19.14H3.09c-.11 0-.14-.06-.11-.18L6.2 7.39c.03-.1.06-.19.1-.31.04-.21.06-.43.06-.65-.01-.05.03-.1.08-.11h2.59c.07 0 .12.03.13.08l3.65 10.25c.03.11.001.161-.1.161zm7.851-3.991c-.021.189-.031.33-.041.42-.01.07-.069.13-.14.13-.06 0-.17.01-.33.021-.159.02-.35.029-.579.029-.23 0-.471-.04-.73-.04h-3.17c.039.31.14.62.31.89.181.271.431.48.729.601.4.17.841.26 1.281.25.35-.011.699-.04 1.039-.11.311-.039.61-.119.891-.23.05-.039.08-.02.08.08v1.531c0 .039-.01.08-.021.119-.021.03-.04.051-.069.07-.32.14-.65.24-1 .3-.471.09-.94.13-1.42.12-.761 0-1.4-.12-1.92-.35-.49-.211-.921-.541-1.261-.95-.319-.39-.55-.83-.69-1.31-.14-.471-.209-.961-.209-1.461 0-.539.08-1.07.25-1.59.16-.5.41-.96.75-1.37.33-.4.739-.72 1.209-.95.471-.23 1.03-.31 1.67-.31.531-.01 1.06.09 1.55.31.41.18.77.45 1.05.8.26.34.47.72.601 1.14.129.4.189.81.189 1.22 0 .24-.01.45-.019.64z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Adobe After Effects</span>
-            <span class="tool-card__tag">Kinetic Typography & VFX</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="creative">
-          <div class="tool-card__icon-wrap">
-            <svg class="tool-card__icon" height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Figma</title><path d="M4 20a4 4 0 014-4h4v4a4 4 0 01-8 0z" fill="#24CB71"></path><path d="M12 0v8h4a4 4 0 000-8h-4z" fill="#FF7237"></path><path d="M15.967 16a4 4 0 100-8 4 4 0 000 8z" fill="#00B6FF"></path><path d="M4 4a4 4 0 004 4h4V0H8a4 4 0 00-4 4z" fill="#FF3737"></path><path d="M4 12a4 4 0 004 4h4V8H8a4 4 0 00-4 4z" fill="#874FFF"></path></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Figma Pro</span>
-            <span class="tool-card__tag">UI Layouts & Design Systems</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ops">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>HubSpot</title><path d="M18.164 7.93V5.084a2.198 2.198 0 001.267-1.978v-.067A2.2 2.2 0 0017.238.845h-.067a2.2 2.2 0 00-2.193 2.193v.067a2.196 2.196 0 001.252 1.973l.013.006v2.852a6.22 6.22 0 00-2.969 1.31l.012-.01-7.828-6.095A2.497 2.497 0 104.3 4.656l-.012.006 7.697 5.991a6.176 6.176 0 00-1.038 3.446c0 1.343.425 2.588 1.147 3.607l-.013-.02-2.342 2.343a1.968 1.968 0 00-.58-.095h-.002a2.033 2.033 0 102.033 2.033 1.978 1.978 0 00-.1-.595l.005.014 2.317-2.317a6.247 6.247 0 104.782-11.134l-.036-.005zm-.964 9.378a3.206 3.206 0 113.215-3.207v.002a3.206 3.206 0 01-3.207 3.207z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">HubSpot</span>
-            <span class="tool-card__tag">Inbound CRM & Lead Funnels</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ops">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>MailChimp</title><path d="M11.267 0C6.791-.015-1.82 10.246 1.397 12.964l.79.669a3.88 3.88 0 0 0-.22 1.792c.084.84.518 1.644 1.22 2.266.666.59 1.542.964 2.392.964 1.406 3.24 4.62 5.228 8.386 5.34 4.04.12 7.433-1.776 8.854-5.182.093-.24.488-1.316.488-2.267 0-.956-.54-1.352-.885-1.352-.01-.037-.078-.286-.172-.586-.093-.3-.19-.51-.19-.51.375-.563.382-1.065.332-1.35-.053-.353-.2-.653-.496-.964-.296-.311-.902-.63-1.753-.868l-.446-.124c-.002-.019-.024-1.053-.043-1.497-.014-.32-.042-.822-.197-1.315-.186-.668-.508-1.253-.911-1.627 1.112-1.152 1.806-2.422 1.804-3.511-.003-2.095-2.576-2.729-5.746-1.416l-.672.285A678.22 678.22 0 0 0 12.7.504C12.304.159 11.817.002 11.267 0zm.073.873c.166 0 .322.019.465.058.297.084 1.28 1.224 1.28 1.224s-1.826 1.013-3.52 2.426c-2.28 1.757-4.005 4.311-5.037 7.082-.811.158-1.526.618-1.963 1.253-.261-.218-.748-.64-.834-.804-.698-1.326.761-3.902 1.781-5.357C5.834 3.44 9.37.867 11.34.873zm3.286 3.273c.04-.002.06.05.028.074-.143.11-.299.26-.413.414a.04.04 0 0 0 .031.064c.659.004 1.587.235 2.192.574.041.023.012.103-.034.092-.915-.21-2.414-.369-3.97.01-1.39.34-2.45.863-3.224 1.426-.04.028-.086-.023-.055-.06.896-1.035 1.999-1.935 2.987-2.44.034-.018.07.019.052.052-.079.143-.23.447-.278.678-.007.035.032.063.062.042.615-.42 1.684-.868 2.622-.926zm3.023 3.205l.056.001a.896.896 0 0 1 .456.146c.534.355.61 1.216.638 1.845.015.36.059 1.229.074 1.478.034.571.184.651.487.751.17.057.33.098.563.164.706.198 1.125.4 1.39.658.157.162.23.333.253.497.083.608-.472 1.36-1.942 2.041-1.607.746-3.557.935-4.904.785l-.471-.053c-1.078-.145-1.693 1.247-1.046 2.201.417.615 1.552 1.015 2.688 1.015 2.604 0 4.605-1.111 5.35-2.072a.987.987 0 0 0 .06-.085c.036-.055.006-.085-.04-.054-.608.416-3.31 2.069-6.2 1.571 0 0-.351-.057-.672-.182-.255-.1-.788-.344-.853-.891 2.333.72 3.801.039 3.801.039a.072.072 0 0 0 .042-.072.067.067 0 0 0-.074-.06s-1.911.283-3.718-.378c.197-.64.72-.408 1.51-.345a11.045 11.045 0 0 0 3.647-.394c.818-.234 1.892-.697 2.727-1.356.281.618.38 1.299.38 1.299s.219-.04.4.073c.173.106.299.326.213.895-.176 1.063-.628 1.926-1.387 2.72a5.714 5.714 0 0 1-1.666 1.244c-.34.18-.704.334-1.087.46-2.863.935-5.794-.093-6.739-2.3a3.545 3.545 0 0 1-.189-.522c-.403-1.455-.06-3.2 1.008-4.299.065-.07.132-.153.132-.256 0-.087-.055-.179-.102-.243-.374-.543-1.669-1.466-1.409-3.254.187-1.284 1.31-2.189 2.357-2.135.089.004.177.01.266.015.453.027.85.085 1.223.1.625.028 1.187-.063 1.853-.618.225-.187.405-.35.71-.401.028-.005.092-.028.215-.028zm.022 2.18a.42.42 0 0 0-.06.005c-.335.054-.347.468-.228 1.04.068.32.187.595.32.765.175-.02.343-.022.498 0 .089-.205.104-.557.024-.942-.112-.535-.261-.872-.554-.868zm-3.66 1.546a1.724 1.724 0 0 0-1.016.326c-.16.117-.311.28-.29.378.008.032.031.056.088.063.131.015.592-.217 1.122-.25.374-.023.684.094.923.2.239.104.386.173.443.113.037-.038.026-.11-.031-.204-.118-.192-.36-.387-.618-.497a1.601 1.601 0 0 0-.621-.129zm4.082.81c-.171-.003-.313.186-.317.42-.004.236.131.43.303.432.172.003.314-.185.318-.42.004-.236-.132-.429-.304-.432zm-3.58.172c-.05 0-.102.002-.155.008-.311.05-.483.152-.593.247-.094.082-.152.173-.152.237a.075.075 0 0 0 .075.076c.07 0 .228-.063.228-.063a1.98 1.98 0 0 1 1.001-.104c.157.018.23.027.265-.026.01-.016.022-.049-.01-.1-.063-.103-.311-.269-.66-.275zm2.26.4c-.127 0-.235.051-.283.148-.075.154.035.363.246.466.21.104.443.063.52-.09.075-.155-.035-.364-.246-.467a.542.542 0 0 0-.237-.058zm-11.635.024c.048 0 .098 0 .149.003.73.04 1.806.6 2.052 2.19.217 1.41-.128 2.843-1.449 3.069-.123.02-.248.029-.374.026-1.22-.033-2.539-1.132-2.67-2.435-.145-1.44.591-2.548 1.894-2.811.117-.024.252-.04.398-.042zm-.07.927a1.144 1.144 0 0 0-.847.364c-.38.418-.439.988-.366 1.19.027.073.07.094.1.098.064.008.16-.039.22-.2a1.2 1.2 0 0 0 .017-.052 1.58 1.58 0 0 1 .157-.37.689.689 0 0 1 .955-.199c.266.174.369.5.255.81-.058.161-.154.469-.133.721.043.511.357.717.64.738.274.01.466-.143.515-.256.029-.067.005-.107-.011-.125-.043-.053-.113-.037-.18-.021a.638.638 0 0 1-.16.022.347.347 0 0 1-.294-.148c-.078-.12-.073-.3.013-.504.011-.028.025-.058.04-.092.138-.308.368-.825.11-1.317-.195-.37-.513-.602-.894-.65a1.135 1.135 0 0 0-.138-.01z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Mailchimp</span>
-            <span class="tool-card__tag">Email Campaigns & Automations</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ops">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Slack</title><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Slack</span>
-            <span class="tool-card__tag">Client Comms & Team Sync</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ops">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#000000" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Notion</title><path fill="#000000" d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Notion AI Workspace</span>
-            <span class="tool-card__tag">Central Knowledge & SOP Hub</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ops">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#0F9D58" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Google Sheets</title><path fill="#0F9D58" d="M11.318 12.545H7.91v-1.909h3.41v1.91zM14.728 0v6h6l-6-6zm1.363 10.636h-3.41v1.91h3.41v-1.91zm0 3.273h-3.41v1.91h3.41v-1.91zM20.727 6.5v15.864c0 .904-.732 1.636-1.636 1.636H4.909a1.636 1.636 0 0 1-1.636-1.636V1.636C3.273.732 4.005 0 4.909 0h9.318v6.5h6.5zm-3.273 2.773H6.545v7.909h10.91v-7.91zm-6.136 4.636H7.91v1.91h3.41v-1.91z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Google Sheets</span>
-            <span class="tool-card__tag">Formulas & KPI Dashboards</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ops">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#107C41" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Microsoft Excel</title><path fill="#107C41" d="M23 1.5q.41 0 .7.3.3.29.3.7v19q0 .41-.3.7-.29.3-.7.3H7q-.41 0-.7-.3-.3-.29-.3-.7V18H1q-.41 0-.7-.3-.3-.29-.3-.7V7q0-.41.3-.7Q.58 6 1 6h5V2.5q0-.41.3-.7.29-.3.7-.3zM6 13.28l1.42 2.66h2.14l-2.38-3.87 2.34-3.8H7.46l-1.3 2.4-.05.08-.04.09-.64-1.28-.66-1.29H2.59l2.27 3.82-2.48 3.85h2.16zM14.25 21v-3H7.5v3zm0-4.5v-3.75H12v3.75zm0-5.25V7.5H12v3.75zm0-5.25V3H7.5v3zm8.25 15v-3h-6.75v3zm0-4.5v-3.75h-6.75v3.75zm0-5.25V7.5h-6.75v3.75zm0-5.25V3h-6.75v3Z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Microsoft Excel</span>
-            <span class="tool-card__tag">ROAS & Financial Models</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ops">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#6D3AEC" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Make</title><path fill="#6D3AEC" d="M13.38 3.498c-.27 0-.511.19-.566.465L9.85 18.986a.578.578 0 0 0 .453.678l4.095.826a.58.58 0 0 0 .682-.455l2.963-15.021a.578.578 0 0 0-.453-.678l-4.096-.826a.589.589 0 0 0-.113-.012zm-5.876.098a.576.576 0 0 0-.516.318L.062 17.697a.575.575 0 0 0 .256.774l3.733 1.877a.578.578 0 0 0 .775-.258l6.926-13.781a.577.577 0 0 0-.256-.776L7.762 3.658a.571.571 0 0 0-.258-.062zm11.74.115a.576.576 0 0 0-.576.576v15.426c0 .318.258.578.576.578h4.178a.58.58 0 0 0 .578-.578V4.287a.578.578 0 0 0-.578-.576Z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Make.com (Integromat)</span>
-            <span class="tool-card__tag">Multi-Step Visual Automations</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ops">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#FF4A00" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Zapier</title><path fill="#FF4A00" d="M4.157 0A4.151 4.151 0 0 0 0 4.161v15.678A4.151 4.151 0 0 0 4.157 24h15.682A4.152 4.152 0 0 0 24 19.839V4.161A4.152 4.152 0 0 0 19.839 0H4.157Zm10.61 8.761h.03a.577.577 0 0 1 .23.038.585.585 0 0 1 .201.124.63.63 0 0 1 .162.431.612.612 0 0 1-.162.435.58.58 0 0 1-.201.128.58.58 0 0 1-.23.042.529.529 0 0 1-.235-.042.585.585 0 0 1-.332-.328.559.559 0 0 1-.038-.235.613.613 0 0 1 .17-.431.59.59 0 0 1 .405-.162Zm2.853 1.572c.03.004.061.004.095.004.325-.011.646.064.937.219.238.144.431.355.552.609.128.279.189.582.185.888v.193a2 2 0 0 1 0 .219h-2.498c.003.227.075.45.204.642a.78.78 0 0 0 .646.265.714.714 0 0 0 .484-.136.642.642 0 0 0 .23-.318l.915.257a1.398 1.398 0 0 1-.28.537c-.14.159-.321.284-.521.355a2.234 2.234 0 0 1-.836.136 1.923 1.923 0 0 1-1.001-.245 1.618 1.618 0 0 1-.665-.703 2.221 2.221 0 0 1-.227-1.036 1.95 1.95 0 0 1 .48-1.398 1.9 1.9 0 0 1 1.3-.488Zm-9.607.023c.162.004.325.026.48.079.207.065.4.174.563.314.26.302.393.692.366 1.088v2.276H8.53l-.109-.711h-.065c-.064.163-.155.31-.272.439a1.122 1.122 0 0 1-.374.264 1.023 1.023 0 0 1-.453.083 1.334 1.334 0 0 1-.866-.264.965.965 0 0 1-.329-.801.993.993 0 0 1 .076-.431 1.02 1.02 0 0 1 .242-.363 1.478 1.478 0 0 1 1.043-.303h.952v-.181a.696.696 0 0 0-.136-.454.553.553 0 0 0-.438-.154.695.695 0 0 0-.378.086.48.48 0 0 0-.193.254l-.99-.144a1.26 1.26 0 0 1 .257-.563c.14-.174.321-.302.533-.378.261-.091.54-.136.82-.129.053-.003.106-.007.163-.007Zm4.384.007c.174 0 .347.038.506.114.182.083.34.211.458.374.257.423.377.911.351 1.406a2.53 2.53 0 0 1-.355 1.448 1.148 1.148 0 0 1-1.009.517c-.204 0-.401-.045-.582-.136a1.052 1.052 0 0 1-.48-.457 1.298 1.298 0 0 1-.114-.234h-.045l.004 1.784h-1.059v-4.713h.904l.117.805h.057c.068-.208.177-.401.328-.56a1.129 1.129 0 0 1 .843-.344h.076v-.004Zm7.559.084h.903l.113.805h.053a1.37 1.37 0 0 1 .235-.484.813.813 0 0 1 .313-.242.82.82 0 0 1 .39-.076h.234v1.051h-.401a.662.662 0 0 0-.313.008.623.623 0 0 0-.272.155.663.663 0 0 0-.174.26.683.683 0 0 0-.027.314v1.875h-1.054v-3.666Zm-17.515.003h3.262v.896L3.73 13.104l.034.113h1.973l.042.9H2.4v-.9l1.931-1.754-.045-.117H2.441v-.896Zm11.815 0h1.055v3.659h-1.055V10.45Zm3.443.684.019.016a.69.69 0 0 0-.351.045.756.756 0 0 0-.287.204c-.11.155-.174.336-.189.522h1.545c-.034-.526-.257-.787-.74-.787h.003Zm-5.718.163c-.026 0-.057 0-.083.004a.78.78 0 0 0-.31.053.746.746 0 0 0-.257.189 1.016 1.016 0 0 0-.204.695v.064c-.015.257.057.507.204.711a.634.634 0 0 0 .253.196.638.638 0 0 0 .314.061.644.644 0 0 0 .578-.265c.14-.223.204-.48.189-.74a1.216 1.216 0 0 0-.181-.711.677.677 0 0 0-.503-.257Zm-4.509 1.266a.464.464 0 0 0-.268.102.373.373 0 0 0-.114.276c0 .053.008.106.027.155a.375.375 0 0 0 .087.132.576.576 0 0 0 .397.11v.004a.863.863 0 0 0 .563-.182.573.573 0 0 0 .211-.457v-.14h-.903Z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Zapier Webhooks</span>
-            <span class="tool-card__tag">Instant Lead Alerts & Triggers</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ai">
-          <div class="tool-card__icon-wrap">
-            <svg width="24" height="24" class="tool-card__icon" fill="#10A37F" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>OpenAI</title><path fill="#10A37F" d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">ChatGPT 4o</span>
-            <span class="tool-card__tag">Strategy, Prompts & Copy</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ai">
-          <div class="tool-card__icon-wrap">
-            <svg class="tool-card__icon" height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Claude</title><path d="M4.709 15.955l4.72-2.647.08-.23-.08-.128H9.2l-.79-.048-2.698-.073-2.339-.097-2.266-.122-.571-.121L0 11.784l.055-.352.48-.321.686.06 1.52.103 2.278.158 1.652.097 2.449.255h.389l.055-.157-.134-.098-.103-.097-2.358-1.596-2.552-1.688-1.336-.972-.724-.491-.364-.462-.158-1.008.656-.722.881.06.225.061.893.686 1.908 1.476 2.491 1.833.365.304.145-.103.019-.073-.164-.274-1.355-2.446-1.446-2.49-.644-1.032-.17-.619a2.97 2.97 0 01-.104-.729L6.283.134 6.696 0l.996.134.42.364.62 1.414 1.002 2.229 1.555 3.03.456.898.243.832.091.255h.158V9.01l.128-1.706.237-2.095.23-2.695.08-.76.376-.91.747-.492.584.28.48.685-.067.444-.286 1.851-.559 2.903-.364 1.942h.212l.243-.242.985-1.306 1.652-2.064.73-.82.85-.904.547-.431h1.033l.76 1.129-.34 1.166-1.064 1.347-.881 1.142-1.264 1.7-.79 1.36.073.11.188-.02 2.856-.606 1.543-.28 1.841-.315.833.388.091.395-.328.807-1.969.486-2.309.462-3.439.813-.042.03.049.061 1.549.146.662.036h1.622l3.02.225.79.522.474.638-.079.485-1.215.62-1.64-.389-3.829-.91-1.312-.329h-.182v.11l1.093 1.068 2.006 1.81 2.509 2.33.127.578-.322.455-.34-.049-2.205-1.657-.851-.747-1.926-1.62h-.128v.17l.444.649 2.345 3.521.122 1.08-.17.353-.608.213-.668-.122-1.374-1.925-1.415-2.167-1.143-1.943-.14.08-.674 7.254-.316.37-.729.28-.607-.461-.322-.747.322-1.476.389-1.924.315-1.53.286-1.9.17-.632-.012-.042-.14.018-1.434 1.967-2.18 2.945-1.726 1.845-.414.164-.717-.37.067-.662.401-.589 2.388-3.036 1.44-1.882.93-1.086-.006-.158h-.055L4.132 18.56l-1.13.146-.487-.456.061-.746.231-.243 1.908-1.312-.006.006z" fill="#D97757" fill-rule="nonzero"></path></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Claude 3.5 Sonnet</span>
-            <span class="tool-card__tag">Deep Analytical Frameworks</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ai">
-          <div class="tool-card__icon-wrap">
-            <svg class="tool-card__icon" height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Gemini</title><path d="M20.616 10.835a14.147 14.147 0 01-4.45-3.001 14.111 14.111 0 01-3.678-6.452.503.503 0 00-.975 0 14.134 14.134 0 01-3.679 6.452 14.155 14.155 0 01-4.45 3.001c-.65.28-1.318.505-2.002.678a.502.502 0 000 .975c.684.172 1.35.397 2.002.677a14.147 14.147 0 014.45 3.001 14.112 14.112 0 013.679 6.453.502.502 0 00.975 0c.172-.685.397-1.351.677-2.003a14.145 14.145 0 013.001-4.45 14.113 14.113 0 016.453-3.678.503.503 0 000-.975 13.245 13.245 0 01-2.003-.678z" fill="#3186FF"></path><path d="M20.616 10.835a14.147 14.147 0 01-4.45-3.001 14.111 14.111 0 01-3.678-6.452.503.503 0 00-.975 0 14.134 14.134 0 01-3.679 6.452 14.155 14.155 0 01-4.45 3.001c-.65.28-1.318.505-2.002.678a.502.502 0 000 .975c.684.172 1.35.397 2.002.677a14.147 14.147 0 014.45 3.001 14.112 14.112 0 013.679 6.453.502.502 0 00.975 0c.172-.685.397-1.351.677-2.003a14.145 14.145 0 013.001-4.45 14.113 14.113 0 016.453-3.678.503.503 0 000-.975 13.245 13.245 0 01-2.003-.678z" fill="url(#lobe-icons-gemini-0-_R_0_)"></path><path d="M20.616 10.835a14.147 14.147 0 01-4.45-3.001 14.111 14.111 0 01-3.678-6.452.503.503 0 00-.975 0 14.134 14.134 0 01-3.679 6.452 14.155 14.155 0 01-4.45 3.001c-.65.28-1.318.505-2.002.678a.502.502 0 000 .975c.684.172 1.35.397 2.002.677a14.147 14.147 0 014.45 3.001 14.112 14.112 0 013.679 6.453.502.502 0 00.975 0c.172-.685.397-1.351.677-2.003a14.145 14.145 0 013.001-4.45 14.113 14.113 0 016.453-3.678.503.503 0 000-.975 13.245 13.245 0 01-2.003-.678z" fill="url(#lobe-icons-gemini-1-_R_0_)"></path><path d="M20.616 10.835a14.147 14.147 0 01-4.45-3.001 14.111 14.111 0 01-3.678-6.452.503.503 0 00-.975 0 14.134 14.134 0 01-3.679 6.452 14.155 14.155 0 01-4.45 3.001c-.65.28-1.318.505-2.002.678a.502.502 0 000 .975c.684.172 1.35.397 2.002.677a14.147 14.147 0 014.45 3.001 14.112 14.112 0 013.679 6.453.502.502 0 00.975 0c.172-.685.397-1.351.677-2.003a14.145 14.145 0 013.001-4.45 14.113 14.113 0 016.453-3.678.503.503 0 000-.975 13.245 13.245 0 01-2.003-.678z" fill="url(#lobe-icons-gemini-2-_R_0_)"></path><defs><linearGradient gradientUnits="userSpaceOnUse" id="lobe-icons-gemini-0-_R_0_" x1="7" x2="11" y1="15.5" y2="12"><stop stop-color="#08B962"></stop><stop offset="1" stop-color="#08B962" stop-opacity="0"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="lobe-icons-gemini-1-_R_0_" x1="8" x2="11.5" y1="5.5" y2="11"><stop stop-color="#F94543"></stop><stop offset="1" stop-color="#F94543" stop-opacity="0"></stop></linearGradient><linearGradient gradientUnits="userSpaceOnUse" id="lobe-icons-gemini-2-_R_0_" x1="3.5" x2="17.5" y1="13.5" y2="12"><stop stop-color="#FABC12"></stop><stop offset=".46" stop-color="#FABC12" stop-opacity="0"></stop></linearGradient></defs></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Google Gemini Pro</span>
-            <span class="tool-card__tag">Multimodal AI & Search</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ai">
-          <div class="tool-card__icon-wrap">
-            <svg class="tool-card__icon" height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Perplexity</title><path d="M19.785 0v7.272H22.5V17.62h-2.935V24l-7.037-6.194v6.145h-1.091v-6.152L4.392 24v-6.465H1.5V7.188h2.884V0l7.053 6.494V.19h1.09v6.49L19.786 0zm-7.257 9.044v7.319l5.946 5.234V14.44l-5.946-5.397zm-1.099-.08l-5.946 5.398v7.235l5.946-5.234V8.965zm8.136 7.58h1.844V8.349H13.46l6.105 5.54v2.655zm-8.982-8.28H2.59v8.195h1.8v-2.576l6.192-5.62zM5.475 2.476v4.71h5.115l-5.115-4.71zm13.219 0l-5.115 4.71h5.115v-4.71z" fill="#22B8CD" fill-rule="nonzero"></path></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Perplexity AI</span>
-            <span class="tool-card__tag">Real-Time Competitor Intel</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ai">
-          <div class="tool-card__icon-wrap">
-            <svg class="tool-card__icon" fill="#1E1F22" fill-rule="evenodd" height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Midjourney</title><path d="M22.369 17.676c-1.387 1.259-3.17 2.378-5.332 3.417.044.03.086.057.13.083l.018.01.019.012c.216.123.42.184.641.184.222 0 .426-.061.642-.184l.018-.011.019-.011c.14-.084.266-.178.492-.366l.178-.148c.279-.232.426-.342.625-.456.304-.174.612-.266.949-.266.337 0 .645.092.949.266l.023.014c.188.109.334.219.602.442l.178.148c.221.184.346.278.483.36l.028.017.018.01c.21.12.407.181.62.185h.022a.31.31 0 110 .618c-.337 0-.645-.092-.95-.266a3.137 3.137 0 01-.09-.054l-.022-.014-.022-.013-.02-.014a5.356 5.356 0 01-.49-.377l-.159-.132a3.836 3.836 0 00-.483-.36l-.027-.017-.019-.01a1.256 1.256 0 00-.641-.185c-.222 0-.426.061-.641.184l-.02.011-.018.011c-.14.084-.266.178-.492.366l-.158.132a5.125 5.125 0 01-.51.39l-.022.014-.022.014-.09.054a1.868 1.868 0 01-.95.266c-.337 0-.644-.092-.949-.266a3.137 3.137 0 01-.09-.054l-.022-.014-.022-.013-.026-.017a4.881 4.881 0 01-.425-.325.308.308 0 01-.12-.1l-.098-.081a3.836 3.836 0 00-.483-.36l-.027-.017-.019-.01a1.256 1.256 0 00-.641-.185c-.222 0-.426.061-.642.184l-.018.011-.019.011c-.14.084-.266.178-.492.366l-.158.132a5.125 5.125 0 01-.51.39l-.023.014-.022.014-.09.054A1.868 1.868 0 0112 22c-.337 0-.645-.092-.949-.266a3.137 3.137 0 01-.09-.054l-.022-.014-.022-.013-.021-.014a5.356 5.356 0 01-.49-.377l-.158-.132a3.836 3.836 0 00-.483-.36l-.028-.017-.018-.01a1.256 1.256 0 00-.642-.185c-.221 0-.425.061-.641.184l-.019.011-.018.011c-.141.084-.266.178-.492.366l-.158.132a5.125 5.125 0 01-.511.39l-.022.014-.022.014-.09.054a1.868 1.868 0 01-.986.264c-.746-.09-1.319-.38-1.89-.866l-.035-.03c-.047-.041-.118-.106-.192-.174l-.196-.181-.107-.1-.011-.01a1.531 1.531 0 00-.336-.253.313.313 0 00-.095-.03h-.005c-.119.022-.238.059-.361.11a.308.308 0 01-.077.061l-.008.005a.309.309 0 01-.126.034 5.66 5.66 0 00-.774.518l-.416.324-.055.043a6.542 6.542 0 01-.324.236c-.305.207-.552.315-.8.315a.31.31 0 01-.01-.618h.01c.09 0 .235-.062.438-.198l.04-.027c.077-.054.163-.117.27-.199l.385-.301.06-.047c.268-.206.506-.373.73-.505l-.633-1.21a.309.309 0 01.254-.451l20.287-1.305a.309.309 0 01.228.537zm-1.118.14L2.369 19.03l.423.809c.128-.045.256-.078.388-.1a.31.31 0 01.052-.005c.132 0 .26.032.386.093.153.073.294.179.483.35l.016.015.092.086.144.134.097.089c.065.06.125.114.16.144.485.418.948.658 1.554.736h.011a1.25 1.25 0 00.6-.172l.021-.011.019-.011.018-.011c.141-.084.266-.178.492-.366l.178-.148c.279-.232.426-.342.625-.456.305-.174.612-.266.95-.266.336 0 .644.092.948.266l.023.014c.188.109.335.219.603.442l.177.148c.222.184.346.278.484.36l.027.017.019.01c.215.124.42.185.641.185.222 0 .426-.061.641-.184l.019-.011.018-.011c.141-.084.267-.178.493-.366l.177-.148c.28-.232.427-.342.626-.456.304-.174.612-.266.949-.266.337 0 .644.092.949.266l.025.015c.187.109.334.22.603.443 1.867-.878 3.448-1.811 4.73-2.832l.02-.016zM3.653 2.026C6.073 3.06 8.69 4.941 10.8 7.258c2.46 2.7 4.109 5.828 4.637 9.149a.31.31 0 01-.421.335c-2.348-.945-4.54-1.258-6.59-1.02-1.739.2-3.337.792-4.816 1.703-.294.182-.62-.182-.405-.454 1.856-2.355 2.581-4.99 2.343-7.794-.195-2.292-1.031-4.61-2.284-6.709a.31.31 0 01.388-.442zM10.04 4.45c1.778.543 3.892 2.102 5.782 4.243 1.984 2.248 3.552 4.934 4.347 7.582a.31.31 0 01-.401.38l-.022-.01-.386-.154a10.594 10.594 0 00-.291-.112l-.016-.006c-.68-.247-1.199-.291-1.944-.101a.31.31 0 01-.375-.218C15.378 11.123 13.073 7.276 9.775 5c-.291-.201-.072-.653.266-.55zM4.273 2.996l.008.015c1.028 1.94 1.708 4.031 1.885 6.113.213 2.513-.31 4.906-1.673 7.092l-.02.031.003-.001c1.198-.581 2.47-.969 3.825-1.132l.055-.006c1.981-.23 4.083.029 6.309.837l.066.025-.007-.039c-.593-2.95-2.108-5.737-4.31-8.179l-.07-.078c-1.785-1.96-3.944-3.6-6.014-4.65l-.057-.028zm7.92 3.238l.048.048c2.237 2.295 3.885 5.431 4.974 9.191l.038.132.022-.004c.71-.133 1.284-.063 1.963.18l.027.01.066.024.046.018-.025-.073c-.811-2.307-2.208-4.62-3.936-6.594l-.058-.065c-1.02-1.155-2.103-2.132-3.15-2.856l-.015-.011z"></path></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Midjourney v6</span>
-            <span class="tool-card__tag">Commercial Conceptual Visuals</span>
-          </div>
-        </div>
-        <div class="tool-card" data-category="ai">
-          <div class="tool-card__icon-wrap">
-            <svg class="tool-card__icon" fill="#111111" fill-rule="evenodd" height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Runway</title><path d="M17.86 22.992c-2.669.245-4.887-2.876-6.597-4.454C10.398 24.759 1 24.177 1 17.86V6.15c0-.921.244-1.861.733-2.65C2.635 1.977 4.383.98 6.15 1h11.71c6.316 0 6.918 9.398.677 10.243l2.97 2.951c3.252 3.064.808 8.929-3.646 8.797zm-1.428-3.721c1.842 1.898 4.774-1.034 2.876-2.876l-5.132-5.132H11.3v2.876l4.436 4.436.696.696zM4.12 17.842c-.037 2.632 4.117 2.632 4.06 0V6.132c.038-1.316-1.353-2.35-2.612-1.955-.057.019-.113.037-.15.056-.79.301-1.335 1.09-1.317 1.936v11.673h.02zm13.74-9.68c2.632.037 2.632-4.098 0-4.06h-6.973c.526 1.109.395 2.857.413 4.06h6.56z"></path></svg>
-          </div>
-          <div class="tool-card__info">
-            <span class="tool-card__name">Runway Gen-3</span>
-            <span class="tool-card__tag">AI Video Generation & Motion</span>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- Growth Insights & Strategic Articles Section -->
-  <section class="p-insights" id="insights">
+<section class="p-insights" id="insights">
     <div class="container-boxed">
       <!-- Section Header in 2 Balanced Clean Lines -->
       <div class="section-head" style="text-align: left; margin-bottom: 24px;">
@@ -1478,224 +435,35 @@
     </div>
   </section>
 
-  <!-- Contact Stage & Unified FAQ (Combined Stage) -->
-  <section class="p-contact" id="contact">
+  <!-- Bottom Callout CTA -->
+  <section class="page-bottom-cta">
     <div class="container-boxed">
-
-      <!-- Integrated Compact FAQ Block -->
-      <div class="p-faq-unified" id="faq">
-        <div class="faq-unified__header">
-          <div class="faq-unified__heading-wrap">
-            <span class="faq-unified__tag">FREQUENTLY ASKED QUESTIONS</span>
-            <h2 class="faq-unified__title">Before You Reach Out</h2>
-            <p class="faq-unified__desc">Common questions answered upfront. Or send a project brief directly using the form below.</p>
-          </div>
+      <div class="bottom-cta-card">
+        <span class="cta-pill-tag">✦ READY FOR MEASURABLE GROWTH?</span>
+        <h2 class="bottom-cta-heading">Ready to scale your brand with profitable acquisition systems?</h2>
+        <p class="bottom-cta-text">Open for worldwide monthly retainers, dedicated social media handling, and performance marketing consulting.</p>
+        <div class="bottom-cta-actions">
+          <a href="contact.html" class="hero-cta-btn">
+            <span>Start a Project</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="https://wa.me/923004822560?text=Hi%20Shahid!%20I%20would%20love%20to%20discuss%20a%20project." class="action-btn-pill btn-wa" target="_blank" rel="noopener noreferrer">
+            <span>Chat on WhatsApp</span>
+          </a>
         </div>
-
-        <!-- 2-Column Compact Grid -->
-        <div class="faq-unified__grid" id="faqAccordion">
-          <!-- Col 1 -->
-          <div class="faq-unified__col">
-            <!-- Item 1 -->
-            <div class="p-faq__item">
-              <button class="p-faq__question" type="button" aria-expanded="false">
-                <span>What is your typical turnaround time for deliverables?</span>
-                <span class="p-faq__toggle">+</span>
-              </button>
-              <div class="p-faq__answer">
-                <div class="p-faq__answer-inner">
-                  Focused single projects (like landing pages, LinkedIn profile revamps, or creative kits) take <strong>2 to 5 business days</strong>. Monthly retainers operate on continuous weekly sprints with scheduled reporting.
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="p-faq__item">
-              <button class="p-faq__question" type="button" aria-expanded="false">
-                <span>How do retainers compare to one-off project pricing?</span>
-                <span class="p-faq__toggle">+</span>
-              </button>
-              <div class="p-faq__answer">
-                <div class="p-faq__answer-inner">
-                  One-off projects have a fixed milestone scope. Monthly retainers reserve <strong>dedicated weekly hours (10–30 hrs/week)</strong> for multi-channel strategy, ad scaling, and continuous creative testing at a discounted, predictable rate.
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 3 -->
-            <div class="p-faq__item">
-              <button class="p-faq__question" type="button" aria-expanded="false">
-                <span>Do you manage the advertising spend directly?</span>
-                <span class="p-faq__toggle">+</span>
-              </button>
-              <div class="p-faq__answer">
-                <div class="p-faq__answer-inner">
-                  No, you keep <strong>100% control and ownership</strong> of your ad accounts (Meta Business Manager, Google Ads). You invite partner access, and ad spend is charged directly by Meta or Google to your company card with zero markup.
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Col 2 -->
-          <div class="faq-unified__col">
-            <!-- Item 4 -->
-            <div class="p-faq__item">
-              <button class="p-faq__question" type="button" aria-expanded="false">
-                <span>Can we sign an NDA before sharing business data?</span>
-                <span class="p-faq__toggle">+</span>
-              </button>
-              <div class="p-faq__answer">
-                <div class="p-faq__answer-inner">
-                  <strong>Yes, absolutely.</strong> I routinely work with proprietary e-commerce sales figures and enterprise inventory data. I am happy to sign a mutual Non-Disclosure Agreement (NDA) before any sensitive records are shared.
-                </div>
-              </div>
-            </div>
-
-            <!-- Item 5 -->
-            <div class="p-faq__item">
-              <button class="p-faq__question" type="button" aria-expanded="false">
-                <span>Which communication and PM tools do you use?</span>
-                <span class="p-faq__toggle">+</span>
-              </button>
-              <div class="p-faq__answer">
-                <div class="p-faq__answer-inner">
-                  I adapt to your workflow: <strong>Slack, WhatsApp Business, Notion, Asana, Trello, Google Meet, or Zoom</strong>. File deliveries are managed through Figma and Google Drive for frictionless collaboration.
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Direct guide to contact card below (Right-corner aligned, box-free) -->
-        <a href="#mildContactForm" class="faq-unified__prompt-link">
-          <div class="faq-prompt-text">
-            <strong>Have a specific project or custom inquiry?</strong>
-            <span>Fill out the brief form below or reach out directly.</span>
-          </div>
-          <span class="faq-prompt-arrow" aria-hidden="true">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="12" y1="4" x2="12" y2="19"></line>
-              <polyline points="19 13 12 20 5 13"></polyline>
-            </svg>
-          </span>
-        </a>
-      </div>
-
-      <div class="contact-card-mild">
-        <div class="contact-card__info">
-          <span class="section-head__tag" style="margin-bottom: 12px; display: inline-block;">GET IN TOUCH</span>
-          <h2 class="u-en contact-title-single">Let's Build &amp; Scale</h2>
-          <p class="sub" style="margin-bottom: 22px; font-size: 15px; line-height: 1.6; max-width: 420px;">
-            Looking for a dedicated social media handler, executive LinkedIn branding, or high-ROAS paid ad campaigns? Reach out directly or send a quick project brief.
-          </p>
-
-          <div class="contact-direct-links">
-            <div class="contact-direct-item">
-              <span class="contact-direct-icon">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                </svg>
-              </span>
-              <div class="contact-direct-text">
-                <span class="contact-direct-label">Direct Email</span>
-                <span class="contact-direct-val" title="Select to copy">heyshahidakram@gmail.com</span>
-              </div>
-            </div>
-
-            <div class="contact-direct-item">
-              <span class="contact-direct-icon">
-                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-                </svg>
-              </span>
-              <div class="contact-direct-text">
-                <span class="contact-direct-label">WhatsApp &amp; Direct Line</span>
-                <span class="contact-direct-val" title="Select to copy">+92 300 4822560</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-avail-pill">
-            <span class="status-indicator-dot"></span>
-            <span>Typically replies within 2 hours</span>
-          </div>
-        </div>
-
-                <!-- Form for Instant Brief with Dual Dispatch -->
-        <form class="contact-form-mild" id="mildContactForm" onsubmit="event.preventDefault();">
-          <label for="contactName" class="visually-hidden">Your Name or Brand</label>
-          <input type="text" id="contactName" name="name" class="mild-input" placeholder="Your Name or Brand" required>
-          <label for="contactService" class="visually-hidden">Select Service Needed</label>
-          <select id="contactService" name="service" aria-label="Select Service Needed" class="mild-input" required>
-            <option value="" disabled selected>Select Service Needed</option>
-            <option value="Social Media Strategy &amp; Viral Growth">Social Media Strategy &amp; Viral Growth</option>
-            <option value="LinkedIn Profile Writing &amp; Optimization">LinkedIn Profile Writing &amp; Optimization</option>
-            <option value="Graphic Design &amp; Creative Brand Identity">Graphic Design &amp; Creative Brand Identity</option>
-            <option value="Performance Marketing &amp; Paid Ads (ROAS)">Performance Marketing &amp; Paid Ads (ROAS)</option>
-            <option value="Content Strategy &amp; Conversion Copywriting">Content Strategy &amp; Conversion Copywriting</option>
-            <option value="Inventory Operations &amp; Commercial Data Systems">Inventory Operations &amp; Commercial Data Systems</option>
-            <option value="Other / Custom Project Consultation">Other / Custom Project Consultation</option>
-          </select>
-          <label for="contactMessage" class="visually-hidden">Project Goals or Requirements</label>
-          <textarea id="contactMessage" name="message" class="mild-textarea" rows="4" placeholder="Briefly describe your brand goals or requirements..." required></textarea>
-          
-          <div class="form-submit-actions">
-            <!-- WhatsApp Button -->
-            <button type="button" id="btnSubmitWhatsApp" class="form-submit-btn form-submit-btn--wa">
-              <span>Send via WhatsApp</span>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-              </svg>
-            </button>
-            
-            <!-- Direct Email Button -->
-            <button type="button" id="btnSubmitEmail" class="form-submit-btn form-submit-btn--email">
-              <span>Send via Email</span>
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-              </svg>
-            </button>
-          </div>
-        </form>
       </div>
     </div>
   </section>
+  </main>
 
-  <!-- Deep-Dive Modal Overlay -->
-  <div class="case-modal-overlay" id="caseModalOverlay" style="display: none;">
-    <div class="case-modal-content">
-      <button class="case-modal-close" id="caseModalClose" aria-label="Close Case Detail">✕</button>
-      <div id="caseModalBody">
-        <!-- Injected via JavaScript -->
-      </div>
-    </div>
-  </div>
-
-  <!-- Fullscreen Lightbox Modal for Creative Assets with Specs Drawer -->
-  <div class="poster-lightbox" id="posterLightbox" style="display: none;" onclick="closeLightbox()">
-    <button class="poster-lightbox-close" aria-label="Close Lightbox" onclick="closeLightbox()">✕</button>
-    <div class="poster-lightbox-content" onclick="event.stopPropagation()">
-      <div class="lightbox-media-wrap">
-        <img id="lightboxImg" src="" alt="Creative Asset Preview" width="1200" height="800">
-      </div>
-      <div class="lightbox-info-drawer">
-        <span class="lightbox-tag" id="lightboxTag">PERFORMANCE ASSET</span>
-        <h3 class="lightbox-title" id="lightboxTitle">Asset Title</h3>
-        <p class="lightbox-desc" id="lightboxDesc">Creative strategy breakdown.</p>
-        <div class="lightbox-specs-wrap" id="lightboxSpecs"></div>
-      </div>
-    </div>
-  </div>
-
-      <!-- Footer -->
+  <!-- Footer -->
   <footer class="l-footer">
     <div class="footer-grid-overlay" aria-hidden="true"></div>
     <div class="footer-inner-wrap">
       <div class="footer-cols">
         <!-- Brand column -->
         <div class="footer-brand-col">
-          <a href="#hero" class="footer-brand-link">
+          <a href="index.html" class="footer-brand-link">
             <div class="footer-shapes-open" title="Shahid Akram">
               <span class="footer-shape-item shape--circle">
                 <img src="shape_circle.webp" alt="Circle" width="94" height="93">
@@ -1719,7 +487,7 @@
           </p>
           <div class="footer-socials-row">
             <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/shahidakram" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/heyshahidakram" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
               </svg>
@@ -1739,23 +507,25 @@
           </div>
         </div>
 
-        <!-- Navigate Column -->
+        <!-- Navigation Column -->
         <div class="footer-nav-col">
-          <span class="footer-col-label">Navigate</span>
-          <a href="#hero" class="footer-nav-link">Home</a>
-          <a href="#cases" class="footer-nav-link">Cases (1–5)</a>
-          <a href="#disciplines" class="footer-nav-link">Disciplines</a>
-          <a href="#offer" class="footer-nav-link">Offers &amp; Pricing</a>
-          <a href="#contact" class="footer-nav-link">Say “Hey!”</a>
+          <span class="footer-col-label">Navigation</span>
+          <a href="index.html" class="footer-nav-link">Home Overview</a>
+          <a href="work.html" class="footer-nav-link">Case Studies &amp; Work</a>
+          <a href="services.html" class="footer-nav-link">Services &amp; Pricing</a>
+          <a href="about.html" class="footer-nav-link">About &amp; Experience</a>
+          <a href="blog.html" class="footer-nav-link">Growth Insights</a>
+          <a href="contact.html" class="footer-nav-link">Contact &amp; Inquiry</a>
         </div>
 
         <!-- Services Column -->
         <div class="footer-nav-col">
-          <span class="footer-col-label">Services</span>
-          <a href="#disciplines" class="footer-nav-link">Dedicated Social Media Handler</a>
-          <a href="#disciplines" class="footer-nav-link">LinkedIn Profile Optimization</a>
-          <a href="#disciplines" class="footer-nav-link">Graphic Design &amp; Brand Identity</a>
-          <a href="#disciplines" class="footer-nav-link">Performance Meta/Google Ads</a>
+          <span class="footer-col-label">Capabilities</span>
+          <a href="services.html" class="footer-nav-link">Dedicated Social Media Handler</a>
+          <a href="services.html" class="footer-nav-link">LinkedIn Profile Optimization</a>
+          <a href="services.html" class="footer-nav-link">Graphic Design &amp; Brand Identity</a>
+          <a href="services.html" class="footer-nav-link">Performance Meta/Google Ads</a>
+          <a href="services.html" class="footer-nav-link">Inventory &amp; Operations Systems</a>
         </div>
       </div>
 
@@ -1768,26 +538,6 @@
   </footer>
 
 
-  <!-- Dedicated Pricing Package Details Modal -->
-  <div class="package-modal-overlay" id="packageModalOverlay" style="display: none;" onclick="closePackageModal()">
-    <div class="package-modal-content" onclick="event.stopPropagation()">
-      <button class="package-modal-close" id="packageModalClose" aria-label="Close Package Details" onclick="closePackageModal()">✕</button>
-      <div id="packageModalBody">
-        <!-- Injected dynamically via JavaScript -->
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Discipline Scope & Deliverables Modal -->
-  <div class="discipline-modal-overlay" id="disciplineModalOverlay" style="display: none;" onclick="closeDisciplineModal()">
-    <div class="discipline-modal-content" onclick="event.stopPropagation()">
-      <button class="discipline-modal-close" id="disciplineModalClose" aria-label="Close Deliverables" onclick="closeDisciplineModal()">✕</button>
-      <div id="disciplineModalBody">
-        <!-- Injected dynamically via JavaScript -->
-      </div>
-    </div>
-  </div>
 
   <script src="articles.js" defer></script>
   <script src="app.js" defer></script>
