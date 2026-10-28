@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Start with first role fully rendered, wait before starting backspace
-    setTimeout(runTypewriter, 2600);
+    setTimeout(runTypewriter, 4200);
   }
 
   // 1. High-Performance Mouse Stalker (Fine pointer devices only - 0 CPU on mobile)
