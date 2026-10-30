@@ -868,6 +868,237 @@ h3,h4,.lede,.hero-sub{text-wrap:pretty}
 /* the phone menu sits on top while open; the box comes back when it closes */
 body.m-open .cc-bar{opacity:0;visibility:hidden;pointer-events:none}
 @media (prefers-reduced-motion:reduce){.cc-bar,.cc-modal{transition:none}}
+
+/* --- FLOATING PILL MENU WITH DROPDOWNS --- */
+.l-header__nav-desktop {
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  background: rgba(242, 238, 230, 0.94) !important;
+  padding: 6px 10px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(60, 55, 40, 0.12) !important;
+  box-shadow: 0 4px 20px rgba(60, 55, 40, 0.08) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  position: relative !important;
+  z-index: 95 !important;
+  pointer-events: auto !important;
+  transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease !important;
+}
+.nav.dark .l-header__nav-desktop {
+  background: rgba(14, 30, 56, 0.94) !important;
+  border-color: rgba(249, 236, 224, 0.14) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45) !important;
+}
+.nav-item-link {
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #1a1a1a !important;
+  text-decoration: none !important;
+  padding: 7px 14px !important;
+  border-radius: 999px !important;
+  transition: background 0.18s ease, color 0.18s ease !important;
+  white-space: nowrap !important;
+  opacity: 0.9 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+.nav.dark .nav-item-link {
+  color: rgba(249, 236, 224, 0.9) !important;
+}
+.nav-item-link:hover,
+.nav-item-dropdown:hover .nav-item-link,
+.nav-item-link.is-active {
+  background: rgba(0, 0, 0, 0.06) !important;
+  color: #000 !important;
+  opacity: 1 !important;
+}
+.nav.dark .nav-item-link:hover,
+.nav.dark .nav-item-dropdown:hover .nav-item-link,
+.nav.dark .nav-item-link.is-active {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
+/* Dropdown Container */
+.nav-item-dropdown {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+.nav-caret {
+  font-size: 10px !important;
+  margin-left: 4px !important;
+  display: inline-block !important;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  opacity: 0.7 !important;
+}
+.nav-item-dropdown:hover .nav-caret {
+  transform: rotate(180deg) !important;
+  opacity: 1 !important;
+}
+
+/* Dropdown Menu Card */
+.nav-dropdown-menu {
+  position: absolute !important;
+  top: calc(100% + 10px) !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(8px) !important;
+  min-width: 300px !important;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(60, 55, 40, 0.12) !important;
+  border-radius: 14px !important;
+  padding: 8px !important;
+  box-shadow: 0 18px 40px rgba(60, 55, 40, 0.14), 0 2px 6px rgba(0, 0, 0, 0.04) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s !important;
+  z-index: 1000 !important;
+}
+.nav-dropdown-menu::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -14px !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 16px !important;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateX(-50%) translateY(0) !important;
+}
+.nav.dark .nav-dropdown-menu {
+  background: rgba(14, 30, 56, 0.98) !important;
+  border-color: rgba(249, 236, 224, 0.14) !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(242, 158, 100, 0.15) !important;
+}
+
+/* Dropdown Items */
+.nav-drop-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 9px 13px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 550 !important;
+  color: #1a1a1a !important;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease !important;
+  white-space: nowrap !important;
+}
+.nav.dark .nav-drop-item {
+  color: #E2E8F0 !important;
+}
+.nav-drop-item:hover {
+  background: rgba(242, 158, 100, 0.12) !important;
+  color: var(--orange, #c87a3e) !important;
+  transform: translateX(3px) !important;
+}
+.nav.dark .nav-drop-item:hover {
+  background: rgba(242, 158, 100, 0.18) !important;
+  color: var(--orange, #F29E64) !important;
+}
+.nav-drop-divider {
+  height: 1px !important;
+  background: rgba(60, 55, 40, 0.08) !important;
+  margin: 6px 4px !important;
+}
+.nav.dark .nav-drop-divider {
+  background: rgba(249, 236, 224, 0.1) !important;
+}
+.nav-drop-item--all {
+  font-weight: 700 !important;
+  color: var(--orange, #c87a3e) !important;
+  margin-top: 2px !important;
+}
+.nav.dark .nav-drop-item--all {
+  color: var(--orange, #F29E64) !important;
+}
+
+/* CTA Button inside Pill */
+.nav-item-cta {
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  background: #FEA831 !important;
+  color: #0B0E14 !important;
+  text-decoration: none !important;
+  padding: 7px 18px !important;
+  border-radius: 999px !important;
+  box-shadow: 0 4px 14px rgba(254, 168, 49, 0.35) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  margin-left: 4px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  white-space: nowrap !important;
+}
+.nav-item-cta:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(254, 168, 49, 0.5) !important;
+}
+
+/* --- RIGHT SHAHID BUTTON (FOOTER BRUSHER FONT) --- */
+.nav-shahid-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px 22px !important;
+  border-radius: 999px !important;
+  background: var(--navy, #0e1e38) !important;
+  color: var(--cream, #FBF8F3) !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(249, 236, 224, 0.15) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.35s ease !important;
+  flex: 0 0 auto !important;
+}
+.nav-shahid-pill:hover {
+  transform: translateY(-1px) !important;
+  border-color: var(--orange, #F29E64) !important;
+  box-shadow: 0 6px 20px rgba(242, 158, 100, 0.25) !important;
+}
+.nav-shahid-name {
+  font-family: 'Kaushan Script', 'Caveat', 'Brush Script MT', cursive !important;
+  font-size: 21px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: baseline !important;
+  color: #FFFFFF !important;
+}
+.nav-shahid-name .logo-dot {
+  color: var(--orange, #F29E64) !important;
+  font-family: sans-serif !important;
+  font-size: 22px !important;
+  margin-left: 2px !important;
+}
+.nav.dark .nav-shahid-pill {
+  background: rgba(249, 236, 224, 0.12) !important;
+  color: var(--cream, #FBF8F3) !important;
+  border-color: rgba(249, 236, 224, 0.25) !important;
+}
+.nav.dark .nav-shahid-name {
+  color: var(--cream, #FBF8F3) !important;
+}
+
+@media (max-width: 900px) {
+  .l-header__nav-desktop {
+    display: none !important;
+  }
+}
+
 </style>
 <!-- site structured data (carried over from the previous site for brand continuity) -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Cogent Labs", "url": "https://cogentlabs.co", "logo": "https://cogentlabs.co/cogent-labs-logo.png", "description": "Agentic AI solutions that automate complex enterprise workflows, accelerate decision-making, and drive measurable business outcomes.", "founder": {"@type": "Person", "name": "Ehmad Zubair", "jobTitle": "CEO & Co-founder"}, "sameAs": ["https://www.linkedin.com/company/cogentlabs/", "https://www.instagram.com/cogent.labs.co/"], "contactPoint": {"@type": "ContactPoint", "email": "hello@cogentlabs.co", "telephone": "+92-300-111-4369", "contactType": "sales"}, "address": {"@type": "PostalAddress", "streetAddress": "16192 Coastal Hwy", "addressLocality": "Lewes", "addressRegion": "DE", "postalCode": "19958", "addressCountry": "US"}}, {"@type": "WebSite", "name": "Cogent Labs", "url": "https://cogentlabs.co"}]}</script>
@@ -890,11 +1121,15 @@ body.m-open .cc-bar{opacity:0;visibility:hidden;pointer-events:none}
   transform: scale(1.08) rotate(-3deg) !important;
 }
 .nav-shahid-pill {
-  font-weight: 800 !important;
-  letter-spacing: .08em !important;
-  font-size: 15px !important;
-  text-transform: uppercase !important;
-  padding: 14px 28px !important;
+  font-family: 'Kaushan Script', 'Caveat', 'Brush Script MT', cursive !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  font-size: 21px !important;
+  text-transform: none !important;
+  padding: 8px 22px !important;
+}
+.nav-shahid-pill * {
+  text-transform: none !important;
 }
 .nav.dark .nav-shahid-pill {
   background: var(--cream) !important;
@@ -1397,6 +1632,237 @@ body.m-open .cc-bar{opacity:0;visibility:hidden;pointer-events:none}
   height: 20px !important;
 }
 
+
+/* --- FLOATING PILL MENU WITH DROPDOWNS --- */
+.l-header__nav-desktop {
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  background: rgba(242, 238, 230, 0.94) !important;
+  padding: 6px 10px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(60, 55, 40, 0.12) !important;
+  box-shadow: 0 4px 20px rgba(60, 55, 40, 0.08) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  position: relative !important;
+  z-index: 95 !important;
+  pointer-events: auto !important;
+  transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease !important;
+}
+.nav.dark .l-header__nav-desktop {
+  background: rgba(14, 30, 56, 0.94) !important;
+  border-color: rgba(249, 236, 224, 0.14) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45) !important;
+}
+.nav-item-link {
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #1a1a1a !important;
+  text-decoration: none !important;
+  padding: 7px 14px !important;
+  border-radius: 999px !important;
+  transition: background 0.18s ease, color 0.18s ease !important;
+  white-space: nowrap !important;
+  opacity: 0.9 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+.nav.dark .nav-item-link {
+  color: rgba(249, 236, 224, 0.9) !important;
+}
+.nav-item-link:hover,
+.nav-item-dropdown:hover .nav-item-link,
+.nav-item-link.is-active {
+  background: rgba(0, 0, 0, 0.06) !important;
+  color: #000 !important;
+  opacity: 1 !important;
+}
+.nav.dark .nav-item-link:hover,
+.nav.dark .nav-item-dropdown:hover .nav-item-link,
+.nav.dark .nav-item-link.is-active {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
+/* Dropdown Container */
+.nav-item-dropdown {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+.nav-caret {
+  font-size: 10px !important;
+  margin-left: 4px !important;
+  display: inline-block !important;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  opacity: 0.7 !important;
+}
+.nav-item-dropdown:hover .nav-caret {
+  transform: rotate(180deg) !important;
+  opacity: 1 !important;
+}
+
+/* Dropdown Menu Card */
+.nav-dropdown-menu {
+  position: absolute !important;
+  top: calc(100% + 10px) !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(8px) !important;
+  min-width: 300px !important;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(60, 55, 40, 0.12) !important;
+  border-radius: 14px !important;
+  padding: 8px !important;
+  box-shadow: 0 18px 40px rgba(60, 55, 40, 0.14), 0 2px 6px rgba(0, 0, 0, 0.04) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s !important;
+  z-index: 1000 !important;
+}
+.nav-dropdown-menu::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -14px !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 16px !important;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateX(-50%) translateY(0) !important;
+}
+.nav.dark .nav-dropdown-menu {
+  background: rgba(14, 30, 56, 0.98) !important;
+  border-color: rgba(249, 236, 224, 0.14) !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(242, 158, 100, 0.15) !important;
+}
+
+/* Dropdown Items */
+.nav-drop-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 9px 13px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 550 !important;
+  color: #1a1a1a !important;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease !important;
+  white-space: nowrap !important;
+}
+.nav.dark .nav-drop-item {
+  color: #E2E8F0 !important;
+}
+.nav-drop-item:hover {
+  background: rgba(242, 158, 100, 0.12) !important;
+  color: var(--orange, #c87a3e) !important;
+  transform: translateX(3px) !important;
+}
+.nav.dark .nav-drop-item:hover {
+  background: rgba(242, 158, 100, 0.18) !important;
+  color: var(--orange, #F29E64) !important;
+}
+.nav-drop-divider {
+  height: 1px !important;
+  background: rgba(60, 55, 40, 0.08) !important;
+  margin: 6px 4px !important;
+}
+.nav.dark .nav-drop-divider {
+  background: rgba(249, 236, 224, 0.1) !important;
+}
+.nav-drop-item--all {
+  font-weight: 700 !important;
+  color: var(--orange, #c87a3e) !important;
+  margin-top: 2px !important;
+}
+.nav.dark .nav-drop-item--all {
+  color: var(--orange, #F29E64) !important;
+}
+
+/* CTA Button inside Pill */
+.nav-item-cta {
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  background: #FEA831 !important;
+  color: #0B0E14 !important;
+  text-decoration: none !important;
+  padding: 7px 18px !important;
+  border-radius: 999px !important;
+  box-shadow: 0 4px 14px rgba(254, 168, 49, 0.35) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  margin-left: 4px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  white-space: nowrap !important;
+}
+.nav-item-cta:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(254, 168, 49, 0.5) !important;
+}
+
+/* --- RIGHT SHAHID BUTTON (FOOTER BRUSHER FONT) --- */
+.nav-shahid-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px 22px !important;
+  border-radius: 999px !important;
+  background: var(--navy, #0e1e38) !important;
+  color: var(--cream, #FBF8F3) !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(249, 236, 224, 0.15) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.35s ease !important;
+  flex: 0 0 auto !important;
+}
+.nav-shahid-pill:hover {
+  transform: translateY(-1px) !important;
+  border-color: var(--orange, #F29E64) !important;
+  box-shadow: 0 6px 20px rgba(242, 158, 100, 0.25) !important;
+}
+.nav-shahid-name {
+  font-family: 'Kaushan Script', 'Caveat', 'Brush Script MT', cursive !important;
+  font-size: 21px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: baseline !important;
+  color: #FFFFFF !important;
+}
+.nav-shahid-name .logo-dot {
+  color: var(--orange, #F29E64) !important;
+  font-family: sans-serif !important;
+  font-size: 22px !important;
+  margin-left: 2px !important;
+}
+.nav.dark .nav-shahid-pill {
+  background: rgba(249, 236, 224, 0.12) !important;
+  color: var(--cream, #FBF8F3) !important;
+  border-color: rgba(249, 236, 224, 0.25) !important;
+}
+.nav.dark .nav-shahid-name {
+  color: var(--cream, #FBF8F3) !important;
+}
+
+@media (max-width: 900px) {
+  .l-header__nav-desktop {
+    display: none !important;
+  }
+}
+
 </style></head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -1408,14 +1874,54 @@ body.m-open .cc-bar{opacity:0;visibility:hidden;pointer-events:none}
 <header class="nav" id="nav">
   <div class="wrap">
     <a href="/" class="logo text-logo" aria-label="Shahid Akram"><img src="shahid_logo.png" alt="Shahid Akram" class="logo-mark"></a>
-        <nav class="links">
-      <a href="#results">Work</a>
-      <a href="#method">Framework</a>
-      <a href="#cert">Credentials</a>
-      <a href="#honesty">Philosophy</a>
-      <a href="#offer">Audit</a>
+    
+    <!-- Desktop Nav Links (Center Floating Pill with Dropdowns) -->
+    <nav class="l-header__nav-desktop" aria-label="Main Navigation">
+      <a href="index.html" class="nav-item-link is-active">Home</a>
+
+      <!-- Work Dropdown -->
+      <div class="nav-item-dropdown">
+        <a href="work.html" class="nav-item-link nav-item-trigger">
+          Work <span class="nav-caret">▾</span>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="work.html#case-ads" class="nav-drop-item">Apex Audio (4.2x ROAS Meta Ad)</a>
+          <a href="work.html#case-growth" class="nav-drop-item">Kumo Matcha (85K Community)</a>
+          <a href="work.html#case-identity" class="nav-drop-item">Zotir Systems (3D Visual Identity)</a>
+          <a href="work.html#case-copy" class="nav-drop-item">Apex B2B (42 Inbound Leads)</a>
+          <a href="work.html#case-data" class="nav-drop-item">Commercial Inventory &amp; Data</a>
+          <a href="work.html#gallery" class="nav-drop-item">Design Posters Showcase</a>
+          <div class="nav-drop-divider"></div>
+          <a href="work.html" class="nav-drop-item nav-drop-item--all">View All Work &amp; Case Studies →</a>
+        </div>
+      </div>
+
+      <!-- Services & Pricing Dropdown -->
+      <div class="nav-item-dropdown">
+        <a href="services.html" class="nav-item-link nav-item-trigger">
+          Services &amp; Pricing <span class="nav-caret">▾</span>
+        </a>
+        <div class="nav-dropdown-menu">
+          <a href="services.html#service-social" class="nav-drop-item">Social Media Strategy &amp; Viral Growth</a>
+          <a href="services.html#service-ads" class="nav-drop-item">Performance Marketing &amp; Meta/Google Ads</a>
+          <a href="services.html#service-design" class="nav-drop-item">Graphic Design &amp; Brand Identity</a>
+          <a href="services.html#service-data" class="nav-drop-item">Precision Commercial Data Operations</a>
+          <a href="services.html#offer" class="nav-drop-item">Monthly Retainer Packages &amp; Pricing</a>
+          <a href="services.html#tools-certs" class="nav-drop-item">Degrees, Certifications &amp; Tool Stack</a>
+          <div class="nav-drop-divider"></div>
+          <a href="services.html" class="nav-drop-item nav-drop-item--all">View All Services &amp; Rates →</a>
+        </div>
+      </div>
+
+      <a href="about.html" class="nav-item-link">About</a>
+      <a href="blog.html" class="nav-item-link">Insights</a>
+      <a href="contact.html" class="nav-item-cta">Let's Talk ↗</a>
     </nav>
-    <a href="#hero" class="pill pill-navy nav-shahid-pill">SHAHID<span class="logo-dot">.</span></a>
+
+    <!-- Right button with footer Brusher font -->
+    <a href="#hero" class="pill pill-navy nav-shahid-pill" aria-label="Shahid Akram">
+      <span class="nav-shahid-name">Shahid<span class="logo-dot">.</span></span>
+    </a>
     <button class="burger" id="burger" aria-label="Open menu"><i></i><i></i></button>
   </div>
 </header>
@@ -2151,6 +2657,237 @@ requestAnimationFrame(loop);
   .nav{background:var(--nav-bg,transparent);transition:background-color .35s,transform .5s var(--ease),color .4s}
   .m-open .nav{background:transparent}
 }
+
+/* --- FLOATING PILL MENU WITH DROPDOWNS --- */
+.l-header__nav-desktop {
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  background: rgba(242, 238, 230, 0.94) !important;
+  padding: 6px 10px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(60, 55, 40, 0.12) !important;
+  box-shadow: 0 4px 20px rgba(60, 55, 40, 0.08) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  position: relative !important;
+  z-index: 95 !important;
+  pointer-events: auto !important;
+  transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease !important;
+}
+.nav.dark .l-header__nav-desktop {
+  background: rgba(14, 30, 56, 0.94) !important;
+  border-color: rgba(249, 236, 224, 0.14) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45) !important;
+}
+.nav-item-link {
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #1a1a1a !important;
+  text-decoration: none !important;
+  padding: 7px 14px !important;
+  border-radius: 999px !important;
+  transition: background 0.18s ease, color 0.18s ease !important;
+  white-space: nowrap !important;
+  opacity: 0.9 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+.nav.dark .nav-item-link {
+  color: rgba(249, 236, 224, 0.9) !important;
+}
+.nav-item-link:hover,
+.nav-item-dropdown:hover .nav-item-link,
+.nav-item-link.is-active {
+  background: rgba(0, 0, 0, 0.06) !important;
+  color: #000 !important;
+  opacity: 1 !important;
+}
+.nav.dark .nav-item-link:hover,
+.nav.dark .nav-item-dropdown:hover .nav-item-link,
+.nav.dark .nav-item-link.is-active {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
+/* Dropdown Container */
+.nav-item-dropdown {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+.nav-caret {
+  font-size: 10px !important;
+  margin-left: 4px !important;
+  display: inline-block !important;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  opacity: 0.7 !important;
+}
+.nav-item-dropdown:hover .nav-caret {
+  transform: rotate(180deg) !important;
+  opacity: 1 !important;
+}
+
+/* Dropdown Menu Card */
+.nav-dropdown-menu {
+  position: absolute !important;
+  top: calc(100% + 10px) !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(8px) !important;
+  min-width: 300px !important;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(60, 55, 40, 0.12) !important;
+  border-radius: 14px !important;
+  padding: 8px !important;
+  box-shadow: 0 18px 40px rgba(60, 55, 40, 0.14), 0 2px 6px rgba(0, 0, 0, 0.04) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s !important;
+  z-index: 1000 !important;
+}
+.nav-dropdown-menu::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -14px !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 16px !important;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateX(-50%) translateY(0) !important;
+}
+.nav.dark .nav-dropdown-menu {
+  background: rgba(14, 30, 56, 0.98) !important;
+  border-color: rgba(249, 236, 224, 0.14) !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(242, 158, 100, 0.15) !important;
+}
+
+/* Dropdown Items */
+.nav-drop-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 9px 13px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 550 !important;
+  color: #1a1a1a !important;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease !important;
+  white-space: nowrap !important;
+}
+.nav.dark .nav-drop-item {
+  color: #E2E8F0 !important;
+}
+.nav-drop-item:hover {
+  background: rgba(242, 158, 100, 0.12) !important;
+  color: var(--orange, #c87a3e) !important;
+  transform: translateX(3px) !important;
+}
+.nav.dark .nav-drop-item:hover {
+  background: rgba(242, 158, 100, 0.18) !important;
+  color: var(--orange, #F29E64) !important;
+}
+.nav-drop-divider {
+  height: 1px !important;
+  background: rgba(60, 55, 40, 0.08) !important;
+  margin: 6px 4px !important;
+}
+.nav.dark .nav-drop-divider {
+  background: rgba(249, 236, 224, 0.1) !important;
+}
+.nav-drop-item--all {
+  font-weight: 700 !important;
+  color: var(--orange, #c87a3e) !important;
+  margin-top: 2px !important;
+}
+.nav.dark .nav-drop-item--all {
+  color: var(--orange, #F29E64) !important;
+}
+
+/* CTA Button inside Pill */
+.nav-item-cta {
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  background: #FEA831 !important;
+  color: #0B0E14 !important;
+  text-decoration: none !important;
+  padding: 7px 18px !important;
+  border-radius: 999px !important;
+  box-shadow: 0 4px 14px rgba(254, 168, 49, 0.35) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  margin-left: 4px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  white-space: nowrap !important;
+}
+.nav-item-cta:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(254, 168, 49, 0.5) !important;
+}
+
+/* --- RIGHT SHAHID BUTTON (FOOTER BRUSHER FONT) --- */
+.nav-shahid-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px 22px !important;
+  border-radius: 999px !important;
+  background: var(--navy, #0e1e38) !important;
+  color: var(--cream, #FBF8F3) !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(249, 236, 224, 0.15) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.35s ease !important;
+  flex: 0 0 auto !important;
+}
+.nav-shahid-pill:hover {
+  transform: translateY(-1px) !important;
+  border-color: var(--orange, #F29E64) !important;
+  box-shadow: 0 6px 20px rgba(242, 158, 100, 0.25) !important;
+}
+.nav-shahid-name {
+  font-family: 'Kaushan Script', 'Caveat', 'Brush Script MT', cursive !important;
+  font-size: 21px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: baseline !important;
+  color: #FFFFFF !important;
+}
+.nav-shahid-name .logo-dot {
+  color: var(--orange, #F29E64) !important;
+  font-family: sans-serif !important;
+  font-size: 22px !important;
+  margin-left: 2px !important;
+}
+.nav.dark .nav-shahid-pill {
+  background: rgba(249, 236, 224, 0.12) !important;
+  color: var(--cream, #FBF8F3) !important;
+  border-color: rgba(249, 236, 224, 0.25) !important;
+}
+.nav.dark .nav-shahid-name {
+  color: var(--cream, #FBF8F3) !important;
+}
+
+@media (max-width: 900px) {
+  .l-header__nav-desktop {
+    display: none !important;
+  }
+}
+
 </style>
 <script>
 (function(){
@@ -2183,6 +2920,237 @@ requestAnimationFrame(loop);
 <style>
 .no-gl .slot.dotted::after{display:none}
 .slot canvas.dots-c{position:absolute;left:0;top:0;width:100%;height:100%;display:block}
+
+/* --- FLOATING PILL MENU WITH DROPDOWNS --- */
+.l-header__nav-desktop {
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  background: rgba(242, 238, 230, 0.94) !important;
+  padding: 6px 10px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(60, 55, 40, 0.12) !important;
+  box-shadow: 0 4px 20px rgba(60, 55, 40, 0.08) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  position: relative !important;
+  z-index: 95 !important;
+  pointer-events: auto !important;
+  transition: background 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease !important;
+}
+.nav.dark .l-header__nav-desktop {
+  background: rgba(14, 30, 56, 0.94) !important;
+  border-color: rgba(249, 236, 224, 0.14) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45) !important;
+}
+.nav-item-link {
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: #1a1a1a !important;
+  text-decoration: none !important;
+  padding: 7px 14px !important;
+  border-radius: 999px !important;
+  transition: background 0.18s ease, color 0.18s ease !important;
+  white-space: nowrap !important;
+  opacity: 0.9 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+.nav.dark .nav-item-link {
+  color: rgba(249, 236, 224, 0.9) !important;
+}
+.nav-item-link:hover,
+.nav-item-dropdown:hover .nav-item-link,
+.nav-item-link.is-active {
+  background: rgba(0, 0, 0, 0.06) !important;
+  color: #000 !important;
+  opacity: 1 !important;
+}
+.nav.dark .nav-item-link:hover,
+.nav.dark .nav-item-dropdown:hover .nav-item-link,
+.nav.dark .nav-item-link.is-active {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
+/* Dropdown Container */
+.nav-item-dropdown {
+  position: relative !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+.nav-caret {
+  font-size: 10px !important;
+  margin-left: 4px !important;
+  display: inline-block !important;
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  opacity: 0.7 !important;
+}
+.nav-item-dropdown:hover .nav-caret {
+  transform: rotate(180deg) !important;
+  opacity: 1 !important;
+}
+
+/* Dropdown Menu Card */
+.nav-dropdown-menu {
+  position: absolute !important;
+  top: calc(100% + 10px) !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(8px) !important;
+  min-width: 300px !important;
+  background: #FFFFFF !important;
+  border: 1px solid rgba(60, 55, 40, 0.12) !important;
+  border-radius: 14px !important;
+  padding: 8px !important;
+  box-shadow: 0 18px 40px rgba(60, 55, 40, 0.14), 0 2px 6px rgba(0, 0, 0, 0.04) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s !important;
+  z-index: 1000 !important;
+}
+.nav-dropdown-menu::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -14px !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 16px !important;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateX(-50%) translateY(0) !important;
+}
+.nav.dark .nav-dropdown-menu {
+  background: rgba(14, 30, 56, 0.98) !important;
+  border-color: rgba(249, 236, 224, 0.14) !important;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(242, 158, 100, 0.15) !important;
+}
+
+/* Dropdown Items */
+.nav-drop-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 9px 13px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 550 !important;
+  color: #1a1a1a !important;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease !important;
+  white-space: nowrap !important;
+}
+.nav.dark .nav-drop-item {
+  color: #E2E8F0 !important;
+}
+.nav-drop-item:hover {
+  background: rgba(242, 158, 100, 0.12) !important;
+  color: var(--orange, #c87a3e) !important;
+  transform: translateX(3px) !important;
+}
+.nav.dark .nav-drop-item:hover {
+  background: rgba(242, 158, 100, 0.18) !important;
+  color: var(--orange, #F29E64) !important;
+}
+.nav-drop-divider {
+  height: 1px !important;
+  background: rgba(60, 55, 40, 0.08) !important;
+  margin: 6px 4px !important;
+}
+.nav.dark .nav-drop-divider {
+  background: rgba(249, 236, 224, 0.1) !important;
+}
+.nav-drop-item--all {
+  font-weight: 700 !important;
+  color: var(--orange, #c87a3e) !important;
+  margin-top: 2px !important;
+}
+.nav.dark .nav-drop-item--all {
+  color: var(--orange, #F29E64) !important;
+}
+
+/* CTA Button inside Pill */
+.nav-item-cta {
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif) !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  background: #FEA831 !important;
+  color: #0B0E14 !important;
+  text-decoration: none !important;
+  padding: 7px 18px !important;
+  border-radius: 999px !important;
+  box-shadow: 0 4px 14px rgba(254, 168, 49, 0.35) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  margin-left: 4px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  white-space: nowrap !important;
+}
+.nav-item-cta:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 6px 20px rgba(254, 168, 49, 0.5) !important;
+}
+
+/* --- RIGHT SHAHID BUTTON (FOOTER BRUSHER FONT) --- */
+.nav-shahid-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 8px 22px !important;
+  border-radius: 999px !important;
+  background: var(--navy, #0e1e38) !important;
+  color: var(--cream, #FBF8F3) !important;
+  text-decoration: none !important;
+  border: 1px solid rgba(249, 236, 224, 0.15) !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.35s ease !important;
+  flex: 0 0 auto !important;
+}
+.nav-shahid-pill:hover {
+  transform: translateY(-1px) !important;
+  border-color: var(--orange, #F29E64) !important;
+  box-shadow: 0 6px 20px rgba(242, 158, 100, 0.25) !important;
+}
+.nav-shahid-name {
+  font-family: 'Kaushan Script', 'Caveat', 'Brush Script MT', cursive !important;
+  font-size: 21px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: baseline !important;
+  color: #FFFFFF !important;
+}
+.nav-shahid-name .logo-dot {
+  color: var(--orange, #F29E64) !important;
+  font-family: sans-serif !important;
+  font-size: 22px !important;
+  margin-left: 2px !important;
+}
+.nav.dark .nav-shahid-pill {
+  background: rgba(249, 236, 224, 0.12) !important;
+  color: var(--cream, #FBF8F3) !important;
+  border-color: rgba(249, 236, 224, 0.25) !important;
+}
+.nav.dark .nav-shahid-name {
+  color: var(--cream, #FBF8F3) !important;
+}
+
+@media (max-width: 900px) {
+  .l-header__nav-desktop {
+    display: none !important;
+  }
+}
+
 </style>
 <script>
 (function(){
