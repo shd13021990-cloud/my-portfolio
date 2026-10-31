@@ -854,6 +854,108 @@
       .about-cta-box { padding: 40px 24px; }
       .fg { grid-template-columns: 1fr; }
     }
+  
+    /* ---------- ABOUT HERO WITH INTERACTIVE PARTICLE CARD ---------- */
+    .about-hero-grid {
+      display: grid;
+      grid-template-columns: 1.22fr 0.9fr;
+      gap: 44px;
+      align-items: center;
+      margin-bottom: 32px;
+    }
+    .about-anim-card {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(6, 23, 58, 0.09);
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: 0 24px 50px -16px rgba(6, 23, 58, 0.12);
+      backdrop-filter: blur(12px);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transition: box-shadow .3s ease;
+    }
+    .about-anim-card:hover {
+      box-shadow: 0 28px 60px -14px rgba(6, 23, 58, 0.16);
+    }
+    .about-anim-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #c95d1b;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(6, 23, 58, 0.06);
+    }
+    .anim-pulse-group {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .anim-pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--orange);
+      box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7);
+      animation: animPulse 2s infinite;
+    }
+    @keyframes animPulse {
+      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7); }
+      70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(242, 158, 100, 0); }
+      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0); }
+    }
+    .anim-card-badge {
+      font-size: 11px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: rgba(6, 23, 58, 0.06);
+      color: var(--navy);
+      font-weight: 700;
+    }
+    .about-canvas-box {
+      width: 100%;
+      height: 360px;
+      position: relative;
+      background: radial-gradient(circle at center, rgba(242, 158, 100, 0.08) 0%, rgba(249, 236, 224, 0.2) 65%, transparent 100%);
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: grab;
+    }
+    .about-canvas-box:active { cursor: grabbing; }
+    #aboutParticleCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .about-anim-card-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 12px;
+      color: var(--ink-2);
+      font-weight: 600;
+      padding-top: 8px;
+      border-top: 1px solid rgba(6, 23, 58, 0.06);
+    }
+    .anim-foot-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .anim-foot-hint::before {
+      content: '✦';
+      color: var(--orange);
+      font-size: 11px;
+    }
+
   </style>
 </head>
 <body>
@@ -927,31 +1029,60 @@
 <main id="main">
 
   <!-- ================= ABOUT HERO ================= -->
+    <!-- ================= ABOUT HERO ================= -->
   <section class="about-hero" id="hero">
     <div class="wrap">
-      <span class="eyebrow">✦ THE STRATEGIST BEHIND THE SCREENS</span>
-      <h1>Craft, Digital Discipline &amp; <span class="it">Personal Bio.</span></h1>
-      <p class="about-hero-lead">
-        Founder of Zotir Systems. Growth strategist, visual narrative designer, and digital craftsman with a 14-year professional track record spanning GCC operations, enterprise database precision, and modern social media systems.
-      </p>
+      
+      <div class="about-hero-grid">
+        <!-- Left: Editorial Headline & Lead -->
+        <div class="about-hero-left">
+          <span class="eyebrow">✦ THE STRATEGIST BEHIND THE SCREENS</span>
+          <h1>Craft, Digital Discipline &amp; <span class="it">Personal Bio.</span></h1>
+          <p class="about-hero-lead">
+            Founder of Zotir Systems. Growth strategist, visual narrative designer, and digital craftsman with a 14-year professional track record spanning GCC operations, enterprise database precision, and modern social media systems.
+          </p>
 
-      <!-- Metric Stats Strip -->
-      <div class="hero-stats-strip">
-        <div class="hero-stat-card">
-          <div class="hero-stat-num">14<span>+</span></div>
-          <div class="hero-stat-label">Years Cross-Functional Professional Track Record</div>
+          <!-- Metric Stats Strip -->
+          <div class="hero-stats-strip">
+            <div class="hero-stat-card">
+              <div class="hero-stat-num">14<span>+</span></div>
+              <div class="hero-stat-label">Years Cross-Functional Professional Track Record</div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hero-stat-num">4<span>+</span></div>
+              <div class="hero-stat-label">Years Dedicated Digital Growth &amp; Performance Media</div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hero-stat-num">50<span>+</span></div>
+              <div class="hero-stat-label">Completed International Client Retainers &amp; Brands</div>
+            </div>
+            <div class="hero-stat-card">
+              <div class="hero-stat-num">100<span>%</span></div>
+              <div class="hero-stat-label">Remote Delivery Uptime with Dual Fiber &amp; UPS Power</div>
+            </div>
+          </div>
         </div>
-        <div class="hero-stat-card">
-          <div class="hero-stat-num">4<span>+</span></div>
-          <div class="hero-stat-label">Years Dedicated Digital Growth &amp; Performance Media</div>
-        </div>
-        <div class="hero-stat-card">
-          <div class="hero-stat-num">50<span>+</span></div>
-          <div class="hero-stat-label">Completed International Client Retainers &amp; Brands</div>
-        </div>
-        <div class="hero-stat-card">
-          <div class="hero-stat-num">100<span>%</span></div>
-          <div class="hero-stat-label">Remote Delivery Uptime with Dual Fiber &amp; UPS Power</div>
+
+        <!-- Right: Interactive Particle Swarm Card (Matching Main Page Animation) -->
+        <div class="about-hero-right">
+          <div class="about-anim-card" id="aboutAnimCard">
+            <div class="about-anim-card-head">
+              <span class="anim-pulse-group">
+                <span class="anim-pulse-dot"></span>
+                <span>INTERACTIVE ABOUT ARTIFACT</span>
+              </span>
+              <span class="anim-card-badge">THEME SWARM</span>
+            </div>
+            
+            <div class="about-canvas-box" id="aboutCanvasBox">
+              <canvas id="aboutParticleCanvas" aria-label="Interactive Particle Swarm of Info Icon"></canvas>
+            </div>
+
+            <div class="about-anim-card-foot">
+              <span class="anim-foot-hint">Hover, drag or click to disperse</span>
+              <span style="color: #c95d1b; font-weight: 700;">Reconstructs in live sync</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -1392,6 +1523,304 @@
       this.classList.add('is-active');
     });
   });
+</script>
+
+
+<script>
+  // ---------- INTERACTIVE ABOUT PARTICLE SWARM ANIMATION ----------
+  // High-density particle murmuration matching index.html physics and theme palette
+  (function initAboutParticleSwarm() {
+    const canvas = document.getElementById('aboutParticleCanvas');
+    const box = document.getElementById('aboutCanvasBox');
+    if (!canvas || !box) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const base64Icon = 'data:image/png;base64,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';
+    const iconImg = new Image();
+    iconImg.src = base64Icon;
+
+    let particles = [];
+    let sparkles = [];
+    let W = 0, H = 0, dpr = 1;
+    let touch = null;
+    let isInitialized = false;
+
+    // Palette matching index.html theme
+    // 78% Navy (#06173A), 14% Signature Orange (#F29E64), 8% Powder Blue (#A8BCD2)
+    const PALETTE = [
+      '6, 23, 58',
+      '242, 158, 100',
+      '168, 188, 210'
+    ];
+
+    function resize() {
+      const rect = box.getBoundingClientRect();
+      W = Math.max(260, Math.round(rect.width));
+      H = Math.max(260, Math.round(rect.height));
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+      canvas.width = Math.round(W * dpr);
+      canvas.height = Math.round(H * dpr);
+
+      sampleIcon();
+    }
+
+    function sampleIcon() {
+      if (!iconImg.complete || iconImg.naturalWidth === 0) return;
+
+      const off = document.createElement('canvas');
+      off.width = W;
+      off.height = H;
+      const ox = off.getContext('2d');
+      if (!ox) return;
+
+      // Draw icon bolder & larger (88% height for commanding presence)
+      const maxH = H * 0.86;
+      const maxW = W * 0.74;
+      const scale = Math.min(maxW / iconImg.naturalWidth, maxH / iconImg.naturalHeight);
+      const tw = iconImg.naturalWidth * scale;
+      const th = iconImg.naturalHeight * scale;
+      const cx = (W - tw) / 2;
+      const cy = (H - th) / 2;
+
+      ox.drawImage(iconImg, cx, cy, tw, th);
+      const idata = ox.getImageData(0, 0, W, H).data;
+
+      // High density sampling: ~1,800 to 2,200 points
+      const step = Math.max(2.5, Math.sqrt((W * H) / 26000));
+      const newPts = [];
+
+      for (let y = 0; y < H; y += step) {
+        for (let x = 0; x < W; x += step) {
+          const jx = x + (Math.random() - 0.5) * step * 0.85;
+          const jy = y + (Math.random() - 0.5) * step * 0.85;
+          const ix = Math.floor(jx);
+          const iy = Math.floor(jy);
+          if (ix >= 0 && ix < W && iy >= 0 && iy < H) {
+            const alpha = idata[(iy * W + ix) * 4 + 3];
+            if (alpha > 110) {
+              newPts.push({ x: jx, y: jy });
+            }
+          }
+        }
+      }
+
+      // Shuffle points so reforming dots fly from across the figure
+      for (let i = newPts.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = newPts[i];
+        newPts[i] = newPts[j];
+        newPts[j] = temp;
+      }
+
+      // Create or update particles
+      const newParticles = [];
+      const count = newPts.length;
+
+      for (let i = 0; i < count; i++) {
+        const old = particles[i] || null;
+        let p;
+
+        if (old) {
+          p = old;
+          p.tx = newPts[i].x;
+          p.ty = newPts[i].y;
+        } else {
+          const roll = Math.random();
+          const col = roll < 0.14 ? PALETTE[1] : (roll < 0.22 ? PALETTE[2] : PALETTE[0]);
+          p = {
+            x: W / 2 + (Math.random() - 0.5) * W * 1.4,
+            y: H / 2 + (Math.random() - 0.5) * H * 1.4,
+            tx: newPts[i].x,
+            ty: newPts[i].y,
+            vx: (Math.random() - 0.5) * 3,
+            vy: (Math.random() - 0.5) * 3,
+            col: col,
+            sz: roll < 0.14 ? (1.4 + Math.random() * 1.1) : (1.1 + Math.random() * 0.85),
+            ph: Math.random() * Math.PI * 2,
+            ang: Math.random() * Math.PI * 2,
+            far: 0.5 + Math.random() * 0.8,
+            k: 0.7 + Math.random() * 0.6
+          };
+        }
+        newParticles.push(p);
+      }
+
+      particles = newParticles;
+
+      // Ambient celestial sparkles orbiting gently around the figure
+      sparkles = [];
+      for (let s = 0; s < 28; s++) {
+        sparkles.push({
+          radius: W * (0.28 + Math.random() * 0.22),
+          speed: (0.3 + Math.random() * 0.5) * (Math.random() < 0.5 ? 1 : -1),
+          angle: Math.random() * Math.PI * 2,
+          yOffset: (Math.random() - 0.5) * H * 0.6,
+          sz: 0.9 + Math.random() * 1.2,
+          col: Math.random() < 0.65 ? PALETTE[1] : PALETTE[2]
+        });
+      }
+
+      isInitialized = true;
+    }
+
+    iconImg.onload = () => {
+      sampleIcon();
+    };
+
+    // Mouse & Touch interaction
+    function updatePointer(clientX, clientY) {
+      const rect = canvas.getBoundingClientRect();
+      touch = {
+        x: clientX - rect.left,
+        y: clientY - rect.top
+      };
+    }
+
+    box.addEventListener('mousemove', (e) => {
+      updatePointer(e.clientX, e.clientY);
+    }, { passive: true });
+
+    box.addEventListener('mouseleave', () => {
+      touch = null;
+    }, { passive: true });
+
+    box.addEventListener('touchstart', (e) => {
+      if (e.touches && e.touches[0]) {
+        updatePointer(e.touches[0].clientX, e.touches[0].clientY);
+      }
+    }, { passive: true });
+
+    box.addEventListener('touchmove', (e) => {
+      if (e.touches && e.touches[0]) {
+        updatePointer(e.touches[0].clientX, e.touches[0].clientY);
+      }
+    }, { passive: true });
+
+    box.addEventListener('touchend', () => {
+      touch = null;
+    }, { passive: true });
+
+    // Click / Tap shockwave impulse
+    box.addEventListener('click', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const clickY = e.clientY - rect.top;
+
+      particles.forEach(p => {
+        const dx = p.x - clickX;
+        const dy = p.y - clickY;
+        const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        const force = Math.max(14, 40 - dist * 0.14);
+        p.vx += (dx / dist) * force + (Math.random() - 0.5) * 12;
+        p.vy += (dy / dist) * force + (Math.random() - 0.5) * 12;
+      });
+    });
+
+    // Render loop
+    let lastTime = performance.now();
+
+    function render(now) {
+      requestAnimationFrame(render);
+      if (!isInitialized || particles.length === 0) return;
+
+      const dt = Math.min((now - lastTime) / 1000, 0.05);
+      lastTime = now;
+      const t = now / 1000;
+
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, W, H);
+
+      // Group rendering by color for 60fps performance
+      const groups = {
+        [PALETTE[0]]: [],
+        [PALETTE[1]]: [],
+        [PALETTE[2]]: []
+      };
+
+      const pointerRadiusSq = 95 * 95; // 95px interaction sphere
+
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+
+        // Harmonic organic flow motion (matching index.html)
+        const sw = Math.sin(p.ph + t * 1.45 + p.ty * 0.018) * 1.8;
+        const sw2 = Math.cos(p.ph * 1.6 + t * 1.15 + p.tx * 0.018) * 1.8;
+
+        // Pointer repulsion physics
+        if (touch) {
+          const dx = p.x - touch.x;
+          const dy = p.y - touch.y;
+          const d2 = dx * dx + dy * dy;
+          if (d2 < pointerRadiusSq) {
+            const f = ((pointerRadiusSq - d2) / pointerRadiusSq) * 3.6 / Math.sqrt(d2 + 1);
+            p.vx += dx * f;
+            p.vy += dy * f;
+          }
+        }
+
+        // Spring pull towards target shape
+        const targetX = p.tx + sw;
+        const targetY = p.ty + sw2;
+        p.vx += (targetX - p.x) * 0.05 * p.k;
+        p.vy += (targetY - p.y) * 0.05 * p.k;
+
+        // Friction / damping
+        p.vx *= 0.84;
+        p.vy *= 0.84;
+
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (groups[p.col]) {
+          groups[p.col].push(p);
+        } else {
+          groups[PALETTE[0]].push(p);
+        }
+      }
+
+      // Draw all particle batches
+      for (const col in groups) {
+        const batch = groups[col];
+        if (batch.length === 0) continue;
+
+        const alpha = col === PALETTE[1] ? '0.96' : (col === PALETTE[2] ? '0.90' : '0.92');
+        ctx.fillStyle = `rgba(${col}, ${alpha})`;
+        ctx.beginPath();
+
+        for (let j = 0; j < batch.length; j++) {
+          const q = batch[j];
+          ctx.moveTo(q.x + q.sz, q.y);
+          ctx.arc(q.x, q.y, q.sz, 0, 6.283);
+        }
+        ctx.fill();
+      }
+
+      // Draw ambient orbital sparkles
+      const cx = W / 2;
+      const cy = H / 2;
+      for (let s = 0; s < sparkles.length; s++) {
+        const sp = sparkles[s];
+        sp.angle += sp.speed * dt;
+        const sx = cx + Math.cos(sp.angle) * sp.radius;
+        const sy = cy + Math.sin(sp.angle) * (sp.radius * 0.5) + sp.yOffset;
+        
+        ctx.fillStyle = `rgba(${sp.col}, 0.75)`;
+        ctx.beginPath();
+        ctx.arc(sx, sy, sp.sz, 0, 6.283);
+        ctx.fill();
+      }
+    }
+
+    window.addEventListener('resize', () => {
+      resize();
+    }, { passive: true });
+
+    resize();
+    requestAnimationFrame(render);
+  })();
 </script>
 
 </body>
