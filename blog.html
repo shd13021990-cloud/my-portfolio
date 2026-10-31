@@ -366,98 +366,27 @@
       pointer-events: none;
     }
 
-    /* Interactive Particle Card */
-    .blog-anim-card {
-      background: rgba(255, 255, 255, 0.72);
-      border: 1px solid rgba(6, 23, 58, 0.09);
-      border-radius: 28px;
-      padding: 24px;
-      box-shadow: 0 24px 50px -16px rgba(6, 23, 58, 0.12);
-      backdrop-filter: blur(12px);
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      transition: box-shadow .3s ease;
-    }
-    .blog-anim-card:hover {
-      box-shadow: 0 28px 60px -14px rgba(6, 23, 58, 0.16);
-    }
-    .blog-anim-card-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      font-size: 11.5px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #c95d1b;
-      padding-bottom: 10px;
-      border-bottom: 1px solid rgba(6, 23, 58, 0.06);
-    }
-    .blog-pulse-group {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .blog-pulse-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--orange);
-      box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7);
-      animation: blogPulse 2s infinite;
-    }
-    @keyframes blogPulse {
-      0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7); }
-      70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(242, 158, 100, 0); }
-      100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0); }
-    }
-    .blog-card-badge {
-      font-size: 11px;
-      padding: 3px 10px;
-      border-radius: 999px;
-      background: rgba(6, 23, 58, 0.06);
-      color: var(--navy);
-      font-weight: 700;
-    }
-    .blog-canvas-box {
+    /* Seamless Floating Particle Slot */
+    .blog-seamless-slot {
       width: 100%;
-      height: 340px;
+      height: 420px;
       position: relative;
-      background: radial-gradient(circle at center, rgba(242, 158, 100, 0.1) 0%, rgba(249, 236, 224, 0.25) 65%, transparent 100%);
-      border-radius: 20px;
-      overflow: hidden;
-      cursor: grab;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      cursor: crosshair;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .blog-canvas-box:active { cursor: grabbing; }
     #blogParticleCanvas {
       width: 100%;
       height: 100%;
       display: block;
+      background: transparent;
     }
-    .blog-anim-card-foot {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      font-size: 12px;
-      color: var(--ink-2);
-      font-weight: 600;
-      padding-top: 8px;
-      border-top: 1px solid rgba(6, 23, 58, 0.06);
-    }
-    .blog-foot-hint {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .blog-foot-hint::before {
-      content: '✦';
-      color: var(--orange);
-      font-size: 11px;
+    @media (max-width: 1024px) {
+      .blog-seamless-slot { height: 320px; }
     }
 
     /* Filter Pills */
@@ -822,25 +751,7 @@
 
         <!-- Right: Brain-Lightbulb Interactive Particle Card -->
         <div>
-          <div class="blog-anim-card" id="blogAnimCard">
-            <div class="blog-anim-card-head">
-              <span class="blog-pulse-group">
-                <span class="blog-pulse-dot"></span>
-                <span>INTERACTIVE INSIGHTS ARTIFACT</span>
-              </span>
-              <span class="blog-card-badge">THEME SWARM</span>
-            </div>
-
-            <div class="blog-canvas-box" id="blogCanvasBox">
-              <canvas id="blogParticleCanvas" aria-label="Interactive Particle Swarm of Brain Lightbulb Icon"></canvas>
-            </div>
-
-            <div class="blog-anim-card-foot">
-              <span class="blog-foot-hint">Hover, drag or click to disperse</span>
-              <span style="color: #c95d1b; font-weight: 700;">Reconstructs in live sync</span>
-            </div>
-          </div>
-        </div>
+          <div class="blog-seamless-slot" id="blogCanvasBox"><canvas id="blogParticleCanvas" aria-label="Particle Swarm of Brain Lightbulb Icon"></canvas></div></div>
       </div>
 
     </div>
