@@ -1202,11 +1202,33 @@ body.dark .icon-shell {
 }
 .orbit-badge-caption {
   text-align: center;
-  margin-top: 18px;
-  font-family: var(--serif);
-  font-style: normal;
-  font-size: 15px;
+  margin-top: 24px;
+}
+.orbit-pill-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 22px;
+  background: rgba(6, 23, 58, 0.04);
+  border: 1px solid rgba(6, 23, 58, 0.09);
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 500;
   color: var(--ink-2);
+  letter-spacing: 0.02em;
+  backdrop-filter: blur(8px);
+}
+.orbit-pill-badge .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #F29E64;
+  display: inline-block;
+}
+body.dark .orbit-pill-badge {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(249, 236, 224, 0.85);
 }
 @keyframes orbit-cw {
   from { transform: rotate(var(--start-angle)); }
@@ -1946,9 +1968,9 @@ body.dark .icon-shell {
 <section class="stack-section" id="stack" data-bg="cream2">
   <div class="wrap">
     <div class="stack-head">
-      <span class="eyebrow rv">MarTech &amp; Ad Platforms</span>
-      <h2 class="rv">Enterprise Tools Powering Scaled Acquisition</h2>
-      <p class="rv">From machine-learning algorithmic bidding to server-side CAPI tracking and automated CRM funnels. Every platform is operated with verified media buying discipline.</p>
+      <p class="rv" style="display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #c95d1b; margin: 0 0 10px 0;">PRODUCTION ARSENAL &amp; TECH STACK</p>
+      <h2 class="rv">Tools &amp; Platforms I Master Daily</h2>
+      <p class="rv">Industry-leading platforms I deploy daily to execute high-ROAS ad campaigns, design viral content, and automate growth systems.</p>
     </div>
     
     <div class="orbit-scene" id="orbitScene">
@@ -1956,6 +1978,12 @@ body.dark .icon-shell {
         <canvas id="particleCanvas" class="particle-canvas" aria-hidden="true"></canvas>
       </div>
       <div id="orbitsMount"></div>
+    </div>
+    <div class="orbit-badge-caption">
+      <span class="orbit-pill-badge">
+        <span class="dot"></span>
+        32 Battle-Tested Platforms · Paid Media · Creative Design · Motion Video · AI &amp; Automation
+      </span>
     </div>
 
     </div>
