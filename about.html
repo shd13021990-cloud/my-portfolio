@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager & Google Analytics (Queue-Initialized, Deferred Fetch) -->
+  <!-- Google Tag Manager & Analytics -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){window.dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-53BV17FB3X');
 
@@ -41,14 +41,15 @@
       window.addEventListener(evt, loadTrackingScripts, { once: true, passive: true });
     });
   </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About & Career Track Record | Shahid Akram</title>
-  <meta name="description" content="Founder of Zotir Systems and Google & Meta Certified Specialist. 4+ years helping international brands scale communities, paid ads, and commercial operations.">
+  <title>About &amp; Career Track Record | Shahid Akram</title>
+  <meta name="description" content="Founder of Zotir Systems, Google & Meta Certified Specialist with a 14-year professional track record spanning GCC operations, database precision, and modern social media systems.">
   <meta name="author" content="Shahid Akram">
   <link rel="canonical" href="https://byshahid.vercel.app/about.html">
 
-  <!-- Favicons and Brand Icons -->
+  <!-- Favicons -->
   <link rel="icon" type="image/png" href="favicon_shapes.png">
   <link rel="shortcut icon" type="image/png" href="favicon_shapes.png">
   <link rel="apple-touch-icon" href="favicon_shapes.png">
@@ -57,433 +58,1341 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://byshahid.vercel.app/about.html">
   <meta property="og:title" content="About & Career Track Record | Shahid Akram">
-  <meta property="og:description" content="Founder of Zotir Systems and Google & Meta Certified Specialist. 4+ years helping international brands scale communities, paid ads, and commercial operations.">
+  <meta property="og:description" content="Founder of Zotir Systems, Google & Meta Certified Specialist with a 14-year professional track record spanning GCC operations, database precision, and modern social media systems.">
   <meta property="og:image" content="https://byshahid.vercel.app/og-preview.png">
-  <meta property="og:image:secure_url" content="https://byshahid.vercel.app/og-preview.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:site_name" content="Shahid Akram Portfolio">
 
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://byshahid.vercel.app/about.html">
-  <meta name="twitter:title" content="About & Career Track Record | Shahid Akram">
-  <meta name="twitter:description" content="Founder of Zotir Systems and Google & Meta Certified Specialist. 4+ years helping international brands scale communities, paid ads, and commercial operations.">
-  <meta name="twitter:image" content="https://byshahid.vercel.app/og-preview.png">
-
-  <meta name="theme-color" content="#0B0E14">
-
-  <!-- Fonts & Styles -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Righteous&family=Syne:wght@700;800&display=optional" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Righteous&family=Syne:wght@700;800&display=optional">
-  </noscript>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kaushan+Script&display=swap">
-<link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&family=Kaushan+Script&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #F9ECE0;
+      --cream-2: #F2E1D0;
+      --navy: #06173A;
+      --navy-2: #12285A;
+      --orange: #F29E64;
+      --powder: #A8BCD2;
+      --ink-2: rgba(6, 23, 58, 0.72);
+      --muted: rgba(6, 23, 58, 0.64);
+      --line: rgba(6, 23, 58, 0.12);
+      --serif: "Newsreader", Georgia, serif;
+      --sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --ease: cubic-bezier(.16, 1, .3, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html { background: var(--cream); scroll-behavior: smooth; }
+    body {
+      color: var(--navy);
+      font-family: var(--sans);
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      background: var(--cream);
+      line-height: 1.6;
+    }
+    body.m-open { overflow: hidden; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; color: inherit; }
+    .it { font-family: var(--serif); font-style: normal; font-weight: 400; }
+    .wrap { max-width: 1360px; margin: 0 auto; padding: 0 56px; }
+
+    /* Eyebrow */
+    .eyebrow {
+      font-family: var(--serif);
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(16px, 1.6vw, 22px);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .eyebrow::before {
+      content: '';
+      width: 26px;
+      height: 2px;
+      background: var(--orange);
+    }
+    .tag-orange {
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    /* ---------- NAV ---------- */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 90;
+      transition: transform .5s var(--ease), background .4s;
+      background: rgba(249, 236, 224, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(6, 23, 58, 0.06);
+    }
+    .nav .wrap {
+      height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo.text-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--navy);
+    }
+    .logo.text-logo .logo-mark {
+      height: 38px;
+      width: auto;
+      display: block;
+      transition: transform .3s;
+    }
+    .logo.text-logo:hover .logo-mark {
+      transform: rotate(-5deg) scale(1.05);
+    }
+    .links {
+      display: flex;
+      gap: 26px;
+      font-size: 14px;
+      align-items: center;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 0 0 1px rgba(6, 23, 58, 0.08);
+      backdrop-filter: blur(8px);
+    }
+    .links a { position: relative; }
+    .links > a::after, .dd > a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px;
+      height: 2px;
+      background: var(--orange);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .4s var(--ease);
+    }
+    .links > a:hover::after, .dd:hover > a::after, .links > a.active::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    .dd { position: relative; padding: 22px 0; margin: -22px 0; }
+    .panel {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      min-width: 290px;
+      background: var(--navy);
+      color: var(--cream);
+      border-radius: 14px;
+      padding: 10px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(-50%, 10px);
+      transition: opacity .3s, transform .4s var(--ease), visibility .3s;
+      box-shadow: 0 20px 45px -18px rgba(6, 23, 58, 0.5);
+    }
+    .dd:hover .panel, .dd:focus-within .panel {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, 0);
+    }
+    .panel a {
+      display: block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      white-space: nowrap;
+      font-size: 13.5px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .panel a:hover {
+      background: var(--navy-2);
+      color: var(--orange);
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 26px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      transition: color .35s, background-color .35s;
+    }
+    .pill-navy {
+      background: var(--navy);
+      color: var(--cream);
+    }
+    .pill-navy:hover {
+      background: #0d2350;
+      color: var(--cream);
+    }
+    .pill-orange {
+      background: var(--orange);
+      color: var(--navy);
+    }
+    .pill-orange:hover {
+      background: #e88d4f;
+    }
+    .nav-shahid-pill {
+      padding: 10px 22px;
+      box-shadow: 0 4px 16px rgba(6, 23, 58, 0.12);
+    }
+    .nav-shahid-name {
+      font-family: 'Kaushan Script', 'Caveat', cursive;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .logo-dot { color: var(--orange); }
+
+    /* Burger for Mobile */
+    .burger {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--navy);
+      border: none;
+      cursor: pointer;
+      position: relative;
+    }
+    .burger i {
+      position: absolute;
+      left: 13px;
+      right: 13px;
+      height: 2px;
+      background: var(--cream);
+      transition: transform .3s, top .3s;
+    }
+    .burger i:first-child { top: 17px; }
+    .burger i:last-child { top: 25px; }
+    .m-open .burger i:first-child { transform: rotate(45deg); top: 21px; }
+    .m-open .burger i:last-child { transform: rotate(-45deg); top: 21px; }
+
+    /* Mobile Drawer */
+    .mmenu {
+      position: fixed;
+      inset: 0;
+      background: var(--cream);
+      z-index: 85;
+      padding: 110px 32px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .4s;
+    }
+    .m-open .mmenu { opacity: 1; pointer-events: auto; }
+    .m-item {
+      font-size: 24px;
+      font-weight: 700;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(6, 23, 58, 0.08);
+    }
+
+    /* ---------- ABOUT HERO ---------- */
+    .about-hero {
+      padding: 140px 0 60px;
+      position: relative;
+    }
+    .about-hero h1 {
+      font-size: clamp(40px, 4.8vw, 68px);
+      line-height: 1.08;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      margin: 16px 0 20px;
+      max-width: 1040px;
+    }
+    .about-hero p.about-hero-lead {
+      font-family: var(--serif);
+      font-size: clamp(18px, 1.4vw, 22px);
+      line-height: 1.5;
+      color: var(--ink-2);
+      max-width: 860px;
+      margin-bottom: 36px;
+    }
+
+    /* Metric Stats Strip */
+    .hero-stats-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 24px 28px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(6, 23, 58, 0.08);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 32px;
+    }
+    .hero-stat-card {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .hero-stat-num {
+      font-size: clamp(26px, 2.5vw, 36px);
+      font-weight: 800;
+      color: var(--navy);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+    .hero-stat-num span { color: var(--orange); }
+    .hero-stat-label {
+      font-size: 13px;
+      color: var(--ink-2);
+      font-weight: 600;
+      line-height: 1.35;
+    }
+
+    /* Filter Jump Pills */
+    .about-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+    .about-filter-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-size: 13.5px;
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(6, 23, 58, 0.1);
+      color: var(--navy);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      backdrop-filter: blur(8px);
+    }
+    .about-filter-pill:hover, .about-filter-pill.is-active {
+      background: var(--navy);
+      color: var(--cream);
+      border-color: var(--navy);
+      transform: translateY(-1px);
+    }
+    .about-filter-pill.is-active {
+      box-shadow: 0 4px 14px rgba(6, 23, 58, 0.2);
+    }
+
+    /* ---------- SECTION STYLES ---------- */
+    .about-section {
+      padding: 90px 0;
+      position: relative;
+      border-top: 1px solid rgba(6, 23, 58, 0.08);
+      scroll-margin-top: 90px;
+    }
+    .about-section.on-cream2 { background: var(--cream-2); }
+    .about-section.on-navy {
+      background: var(--navy);
+      color: var(--cream);
+      border-top-color: rgba(249, 236, 224, 0.08);
+    }
+    .about-section.on-navy .section-desc { color: rgba(249, 236, 224, 0.8); }
+
+    .section-head-box {
+      margin-bottom: 40px;
+    }
+    .section-title {
+      font-size: clamp(30px, 3.4vw, 44px);
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-top: 8px;
+      margin-bottom: 12px;
+      max-width: 960px;
+    }
+    .section-desc {
+      font-family: var(--serif);
+      font-size: clamp(17px, 1.3vw, 20px);
+      line-height: 1.5;
+      color: var(--ink-2);
+      max-width: 840px;
+    }
+
+    /* ---------- 01. PERSONAL STORY & JOURNEY (#story) ---------- */
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.9fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .story-narrative {
+      font-size: 16.5px;
+      line-height: 1.75;
+      color: var(--navy);
+    }
+    .story-narrative p {
+      margin-bottom: 22px;
+      color: rgba(6, 23, 58, 0.88);
+    }
+    .story-narrative strong {
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    /* Japanese Monozukuri Callout Card */
+    .monozukuri-box {
+      background: rgba(255, 255, 255, 0.75);
+      border-left: 4px solid var(--orange);
+      border-radius: 0 16px 16px 0;
+      padding: 24px 26px;
+      margin: 28px 0;
+      box-shadow: 0 8px 24px -10px rgba(6, 23, 58, 0.06);
+    }
+    .monozukuri-box h4 {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--navy);
+    }
+    .monozukuri-box p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--ink-2);
+      margin-bottom: 0;
+    }
+
+    /* Profile & Facts Sidebar */
+    .profile-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .profile-card-fact {
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(6, 23, 58, 0.09);
+      border-radius: 20px;
+      padding: 28px 26px;
+      backdrop-filter: blur(8px);
+    }
+    .profile-card-fact h4 {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #c95d1b;
+      margin-bottom: 16px;
+    }
+    .fact-row {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin-bottom: 14px;
+      font-size: 14px;
+    }
+    .fact-row:last-child { margin-bottom: 0; }
+    .fact-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+    .fact-value {
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.4;
+    }
+
+    /* Principle item */
+    .principle-item {
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(6, 23, 58, 0.06);
+    }
+    .principle-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .principle-title {
+      font-weight: 700;
+      font-size: 14.5px;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .principle-desc {
+      font-size: 13.5px;
+      color: var(--ink-2);
+      line-height: 1.45;
+    }
+
+    /* ---------- 02. CAREER & EXPERIENCE TIMELINE (#experience) ---------- */
+    .timeline-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 36px;
+    }
+    .timeline-card {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(6, 23, 58, 0.09);
+      border-radius: 24px;
+      padding: 34px 32px;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 32px;
+      transition: transform .3s ease, box-shadow .3s ease;
+      backdrop-filter: blur(8px);
+    }
+    .timeline-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px -12px rgba(6, 23, 58, 0.12);
+    }
+    .timeline-card.featured-role {
+      background: #FFFFFF;
+      border-left: 5px solid var(--orange);
+      box-shadow: 0 18px 40px -14px rgba(6, 23, 58, 0.1);
+    }
+    .timeline-meta-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .timeline-year-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #c95d1b;
+      background: rgba(242, 158, 100, 0.18);
+      padding: 4px 12px;
+      border-radius: 999px;
+      width: fit-content;
+    }
+    .timeline-badge-sub {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .timeline-main-col h3 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 4px;
+      letter-spacing: -0.02em;
+    }
+    .timeline-company {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--ink-2);
+      margin-bottom: 12px;
+    }
+    .timeline-desc {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: var(--ink-2);
+      margin-bottom: 14px;
+    }
+    .timeline-achievements-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .timeline-achievements-list li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 13.5px;
+      color: var(--navy);
+      line-height: 1.5;
+    }
+    .timeline-achievements-list li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+      font-size: 11px;
+      top: 2px;
+    }
+
+    /* ---------- 03. CREDENTIALS & ACADEMICS (#credentials) ---------- */
+    .credentials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 36px;
+    }
+    .credential-card {
+      background: rgba(255, 255, 255, 0.65);
+      border: 1px solid rgba(6, 23, 58, 0.08);
+      border-radius: 20px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(8px);
+    }
+    .credential-issuer-badge {
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #c95d1b;
+      margin-bottom: 10px;
+    }
+    .credential-card h4 {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+    .credential-card p {
+      font-size: 13.5px;
+      color: var(--ink-2);
+      line-height: 1.5;
+      margin-top: auto;
+    }
+
+    /* Cross-link banner card */
+    .cross-link-strip {
+      background: #FFFFFF;
+      border: 1px solid rgba(6, 23, 58, 0.1);
+      border-radius: 24px;
+      padding: 36px 40px;
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      box-shadow: 0 10px 30px -10px rgba(6, 23, 58, 0.06);
+    }
+    .cross-link-text h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: var(--navy);
+    }
+    .cross-link-text p {
+      font-size: 14.5px;
+      color: var(--ink-2);
+      max-width: 650px;
+    }
+
+    /* ---------- 04. EXECUTIVE WORKSPACE & INFRASTRUCTURE (#infrastructure) ---------- */
+    .infra-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 36px;
+    }
+    .infra-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(249, 236, 224, 0.12);
+      border-radius: 20px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      backdrop-filter: blur(8px);
+      transition: background 0.3s;
+    }
+    .infra-card:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    .infra-icon {
+      font-size: 28px;
+      line-height: 1;
+    }
+    .infra-card h4 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--cream);
+      letter-spacing: -0.01em;
+    }
+    .infra-card p {
+      font-size: 13.5px;
+      line-height: 1.55;
+      color: rgba(249, 236, 224, 0.75);
+    }
+
+    /* ---------- 05. INITIATE PARTNERSHIP CTA (#contact-cta) ---------- */
+    .about-cta-box {
+      background: #FFFFFF;
+      border: 1px solid rgba(6, 23, 58, 0.1);
+      border-radius: 32px;
+      padding: 60px 50px;
+      text-align: center;
+      max-width: 980px;
+      margin: 0 auto;
+      box-shadow: 0 24px 60px -20px rgba(6, 23, 58, 0.08);
+    }
+    .about-cta-box h2 {
+      font-size: clamp(32px, 3.6vw, 46px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin: 12px 0 16px;
+    }
+    .about-cta-box p {
+      font-family: var(--serif);
+      font-size: clamp(17px, 1.3vw, 20px);
+      color: var(--ink-2);
+      line-height: 1.55;
+      max-width: 720px;
+      margin: 0 auto 32px;
+    }
+    .about-cta-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: var(--navy);
+      color: var(--cream);
+      padding: 90px 0 30px;
+      position: relative;
+    }
+    .fg {
+      display: grid;
+      grid-template-columns: 2fr 1.2fr 1.2fr 1.4fr;
+      gap: 48px;
+      margin-bottom: 60px;
+    }
+    .flogo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .flogo img { height: 38px; width: auto; filter: brightness(0) invert(1); }
+    .flogo-name {
+      font-family: 'Kaushan Script', 'Caveat', cursive;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--cream);
+    }
+    .fg p {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: rgba(249, 236, 224, 0.75);
+      max-width: 320px;
+    }
+    .fg h5 {
+      color: var(--orange);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .fg a {
+      display: block;
+      font-size: 14px;
+      color: rgba(249, 236, 224, 0.8);
+      margin-bottom: 10px;
+      transition: color .2s;
+    }
+    .fg a:hover { color: var(--orange); }
+    .footer-social-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .simple-social-link {
+      color: var(--orange);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .simple-social-link:hover {
+      transform: translateY(-2px);
+      opacity: 0.85;
+    }
+    .sub {
+      border-top: 1px solid rgba(249, 236, 224, 0.12);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: rgba(249, 236, 224, 0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .wrap { padding: 0 28px; }
+      .links { display: none; }
+      .burger { display: block; }
+      .hero-stats-strip { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .story-grid { grid-template-columns: 1fr; gap: 36px; }
+      .timeline-card { grid-template-columns: 1fr; gap: 16px; }
+      .credentials-grid { grid-template-columns: repeat(2, 1fr); }
+      .infra-grid { grid-template-columns: repeat(2, 1fr); }
+      .cross-link-strip { flex-direction: column; align-items: flex-start; }
+      .fg { grid-template-columns: 1fr 1fr; gap: 36px; }
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 0 18px; }
+      .hero-stats-strip { grid-template-columns: 1fr; }
+      .credentials-grid { grid-template-columns: 1fr; }
+      .infra-grid { grid-template-columns: 1fr; }
+      .about-cta-box { padding: 40px 24px; }
+      .fg { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWKQ7C6H"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- Mouse Stalker -->
-  <div class="p-stalker" id="stalker">
-    <span class="stalker-dot"></span>
-    <span class="stalker-text" id="stalkerText"></span>
+<!-- Header -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo text-logo" aria-label="Shahid Akram">
+      <img src="shahid_logo.png" alt="Shahid Akram" class="logo-mark">
+    </a>
+    
+    <!-- Original Template Floating Pill Navbar with Native Dropdowns -->
+    <nav class="links" aria-label="Main Navigation">
+      <a href="index.html">Home</a>
+
+      <!-- Work Dropdown -->
+      <div class="dd">
+        <a href="work.html" role="button" tabindex="0">Work <span style="font-size: 10px; opacity: 0.7;">▾</span></a>
+        <div class="panel">
+          <a href="work.html#case-ads">Apex Audio (4.2x ROAS Meta Ad)</a>
+          <a href="work.html#case-growth">Kumo Matcha (85K Community)</a>
+          <a href="work.html#case-identity">Zotir Systems (3D Visual Identity)</a>
+          <a href="work.html#case-copy">Apex B2B (42 Inbound Leads)</a>
+          <a href="work.html#case-data">Commercial Inventory &amp; Data</a>
+          <a href="work.html#gallery">Design Posters Showcase</a>
+          <div style="height: 1px; background: rgba(249, 236, 224, 0.12); margin: 6px 0;"></div>
+          <a href="work.html" style="color: var(--orange); font-weight: 600;">View All Work &amp; Case Studies &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Services & Pricing Dropdown -->
+      <div class="dd">
+        <a href="services.html" role="button" tabindex="0">Services &amp; Pricing <span style="font-size: 10px; opacity: 0.7;">▾</span></a>
+        <div class="panel">
+          <a href="services.html#service-social">Social Media Strategy &amp; Viral Growth</a>
+          <a href="services.html#service-ads">Performance Marketing &amp; Meta/Google Ads</a>
+          <a href="services.html#service-design">Graphic Design &amp; Brand Identity</a>
+          <a href="services.html#service-data">Precision Commercial Data Operations</a>
+          <a href="services.html#offer">Monthly Retainer Packages &amp; Pricing</a>
+          <a href="services.html#tools-certs">Degrees, Certifications &amp; Tool Stack</a>
+          <div style="height: 1px; background: rgba(249, 236, 224, 0.12); margin: 6px 0;"></div>
+          <a href="services.html" style="color: var(--orange); font-weight: 600;">View All Services &amp; Rates &rarr;</a>
+        </div>
+      </div>
+
+      <!-- About (Active) -->
+      <a href="about.html" class="active" style="color: var(--orange);">About</a>
+      <a href="index.html#insights">Insights</a>
+    </nav>
+
+    <!-- Right button with footer Brusher font -->
+    <a href="https://wa.me/923004822560" target="_blank" rel="noopener" class="pill pill-navy nav-shahid-pill" aria-label="Chat with Shahid">
+      <span class="nav-shahid-name">Shahid<span class="logo-dot">.</span></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu"><i></i><i></i></button>
   </div>
+</header>
 
-  <!-- Header -->
-    <!-- Header -->
-  <header class="l-header">
-    <div class="l-header__inner">
-      <div class="l-header__brand">
-        <a href="index.html" class="l-header__logo u-en">
-          <img src="shahid_logo.png" alt="Shahid Akram" style="width: 44px; height: 44px; object-fit: contain; display: block;">
-          <div class="logo-text-group">
-            <div class="logo-name-row">
-              <span class="brand-name" style="font-family: 'Kaushan Script', 'Caveat', cursive; font-size: 22px; font-weight: 700;">Shahid Akram<span style="color: var(--color-orange, #c87a3e);">.</span></span>
-              <span class="brand-badge-verified" title="Google &amp; Meta Certified Specialist">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                </svg>
-              </span>
-            </div>
-            <div class="brand-animated-tagline u-en">
-              <span class="dynamic-text" id="brandDynamicText">Digital Growth &amp; Performance</span>
-              <span class="dynamic-cursor"></span>
-            </div>
-          </div>
-        </a>
-      </div>
+<!-- Mobile Menu Drawer -->
+<nav class="mmenu" id="mmenu" aria-label="Mobile Navigation">
+  <a href="index.html" class="m-item">01. Home Overview</a>
+  <a href="work.html" class="m-item">02. Work &amp; Case Studies</a>
+  <a href="services.html" class="m-item">03. Services &amp; Pricing</a>
+  <a href="about.html" class="m-item" style="color: var(--orange);">04. About &amp; Story</a>
+  <a href="index.html#insights" class="m-item">05. Growth Insights</a>
+  <a href="https://wa.me/923004822560" target="_blank" rel="noopener" class="pill pill-orange" style="margin-top: 20px; justify-content: center;">
+    Chat Directly on WhatsApp &rarr;
+  </a>
+</nav>
 
-      <!-- Desktop Nav Links (Center Floating Pill) -->
-      <nav class="l-header__nav-desktop" aria-label="Main Navigation">
-        <a href="index.html" class="nav-item-link">Home</a>
+<main id="main">
 
-        <!-- Work Dropdown -->
-        <div class="nav-item-dropdown">
-          <a href="work.html" class="nav-item-link nav-item-trigger">
-            Work <span class="nav-caret">▾</span>
-          </a>
-          <div class="nav-dropdown-menu">
-            <a href="work.html#case-ads" class="nav-drop-item">Apex Audio (4.2x ROAS Meta Ad)</a>
-            <a href="work.html#case-growth" class="nav-drop-item">Kumo Matcha (85K Community)</a>
-            <a href="work.html#case-identity" class="nav-drop-item">Zotir Systems (3D Visual Identity)</a>
-            <a href="work.html#case-copy" class="nav-drop-item">Apex B2B (42 Inbound Leads)</a>
-            <a href="work.html#case-data" class="nav-drop-item">Commercial Inventory &amp; Data</a>
-            <a href="work.html#gallery" class="nav-drop-item">Design Posters Showcase</a>
-            <div class="nav-drop-divider"></div>
-            <a href="work.html" class="nav-drop-item nav-drop-item--all">View All Work &amp; Case Studies →</a>
-          </div>
-        </div>
-
-        <!-- Services & Pricing Dropdown -->
-        <div class="nav-item-dropdown">
-          <a href="services.html" class="nav-item-link nav-item-trigger">
-            Services &amp; Pricing <span class="nav-caret">▾</span>
-          </a>
-          <div class="nav-dropdown-menu">
-            <a href="services.html#service-social" class="nav-drop-item">Social Media Strategy &amp; Viral Growth</a>
-            <a href="services.html#service-ads" class="nav-drop-item">Performance Marketing &amp; Meta/Google Ads</a>
-            <a href="services.html#service-design" class="nav-drop-item">Graphic Design &amp; Brand Identity</a>
-            <a href="services.html#service-data" class="nav-drop-item">Precision Commercial Data Operations</a>
-            <a href="services.html#offer" class="nav-drop-item">Monthly Retainer Packages &amp; Pricing</a>
-            <a href="services.html#tools-certs" class="nav-drop-item">Degrees, Certifications &amp; Tool Stack</a>
-            <div class="nav-drop-divider"></div>
-            <a href="services.html" class="nav-drop-item nav-drop-item--all">View All Services &amp; Rates →</a>
-          </div>
-        </div>
-
-        <!-- Single Direct Link for About (NO dropdown as requested by user) -->
-        <a href="about.html" class="nav-item-link is-active">About</a>
-
-        <!-- Insights -->
-        <a href="blog.html" class="nav-item-link">Insights</a>
-
-        <!-- Let's Talk CTA -->
-        <a href="contact.html" class="nav-item-cta">Let's Talk ↗</a>
-      </nav>
-
-      <div class="l-header__actions">
-        <!-- Day / Night Time Toggle -->
-        <button class="time-toggle-btn" id="timeToggleBtn" aria-label="Toggle Day / Night Mode">
-          <span class="icon">☀️</span> Day
-        </button>
-
-        <!-- 3-Dot Floating Menu Button (Mobile & Small Screens Only) -->
-        <button class="l-header__menu-button" id="menuBtn" aria-label="Open Menu">
-          <div class="dots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </button>
-      </div>
-    </div>
-
-    <!-- Dropdown Menu Drawer (Mobile & Small Screens) -->
-    <div class="l-header__menu-drawer" id="menuDrawer">
-      <nav class="l-header__nav-list">
-        <a href="index.html" class="mobile-nav-link"><span>01</span> Home</a>
-
-        <div class="mobile-nav-group">
-          <div class="mobile-nav-parent">
-            <a href="work.html" class="mobile-nav-link"><span>02</span> Work &amp; Case Studies</a>
-            <button class="mobile-accordion-btn" aria-label="Toggle Work Submenu">▾</button>
-          </div>
-          <div class="mobile-sub-list">
-            <a href="work.html#case-ads">Apex Audio (4.2x ROAS Meta Ad)</a>
-            <a href="work.html#case-growth">Kumo Matcha (85K Community)</a>
-            <a href="work.html#case-identity">Zotir Systems (3D Visual Identity)</a>
-            <a href="work.html#case-copy">Apex B2B (42 Inbound Leads)</a>
-            <a href="work.html#case-data">Commercial Data Operations</a>
-            <a href="work.html#gallery">Design Posters Showcase</a>
-          </div>
-        </div>
-
-        <div class="mobile-nav-group">
-          <div class="mobile-nav-parent">
-            <a href="services.html" class="mobile-nav-link"><span>03</span> Services &amp; Pricing</a>
-            <button class="mobile-accordion-btn" aria-label="Toggle Services Submenu">▾</button>
-          </div>
-          <div class="mobile-sub-list">
-            <a href="services.html#service-social">Social Media Strategy</a>
-            <a href="services.html#service-ads">Performance Marketing &amp; Ads</a>
-            <a href="services.html#service-design">Graphic Design &amp; Brand Identity</a>
-            <a href="services.html#service-data">Commercial Data Operations</a>
-            <a href="services.html#offer">Monthly Retainer Packages</a>
-            <a href="services.html#tools-certs">Degrees, Certifications &amp; Tools</a>
-          </div>
-        </div>
-
-        <a href="about.html" class="mobile-nav-link is-active"><span>04</span> About (Personal Bio)</a>
-        <a href="blog.html" class="mobile-nav-link"><span>05</span> Insights &amp; Articles</a>
-        <a href="contact.html" class="mobile-nav-link"><span>06</span> Let's Talk ↗</a>
-      </nav>
-      <div class="l-header__nav-sub">
-        <span>Available for Remote &amp; Global Freelance</span>
-        <span>Worldwide Client Retainers</span>
-      </div>
-    </div>
-  </header>
-
-  <main id="main-content">
-    <!-- Page Hero Banner -->
-    <section class="page-hero-banner">
-      <span class="page-hero-eyebrow">✦ THE STRATEGIST BEHIND THE SCREENS</span>
-      <h1 class="page-hero-title">Craft, Digital Discipline &amp; <span>Personal Bio</span></h1>
-      <p class="page-hero-subtitle">
-        Founder of Zotir Systems. Growth strategist, visual narrative designer, and digital craftsman with a 14-year professional track record spanning GCC operations, database precision, and modern social media systems.
+  <!-- ================= ABOUT HERO ================= -->
+  <section class="about-hero" id="hero">
+    <div class="wrap">
+      <span class="eyebrow">✦ THE STRATEGIST BEHIND THE SCREENS</span>
+      <h1>Craft, Digital Discipline &amp; <span class="it">Personal Bio.</span></h1>
+      <p class="about-hero-lead">
+        Founder of Zotir Systems. Growth strategist, visual narrative designer, and digital craftsman with a 14-year professional track record spanning GCC operations, enterprise database precision, and modern social media systems.
       </p>
-    </section>
 
-    <!-- Personal Bio & Creative Philosophy Section -->
-    <section class="p-personal-bio" id="bio">
-      <div class="container-boxed">
-        <div class="bio-card-container">
-          <div class="bio-grid-layout">
-            
-            <!-- Left: Personal Story & Philosophy -->
-            <div class="bio-story-content">
-              <div class="section-head" style="margin-bottom: 20px;">
-                <p class="section-head__tag">PERSONAL NARRATIVE &amp; JOURNEY</p>
-                <h2>From GCC Site Operations to <span>Digital Craftsmanship</span></h2>
-              </div>
-              
-              <p>
-                I didn't start in digital marketing through viral trends — I started in high-stakes operational environments. Beginning in 2009 across Saudi Arabia and the UAE, I led commercial facility sites, civil works crews, and logistics distribution for multinational projects. Operating under intense GCC standards instilled in me a non-negotiable discipline: zero margin for error, strict timeline adherence, and deep accountability.
-              </p>
+      <!-- Metric Stats Strip -->
+      <div class="hero-stats-strip">
+        <div class="hero-stat-card">
+          <div class="hero-stat-num">14<span>+</span></div>
+          <div class="hero-stat-label">Years Cross-Functional Professional Track Record</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-num">4<span>+</span></div>
+          <div class="hero-stat-label">Years Dedicated Digital Growth &amp; Performance Media</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-num">50<span>+</span></div>
+          <div class="hero-stat-label">Completed International Client Retainers &amp; Brands</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-num">100<span>%</span></div>
+          <div class="hero-stat-label">Remote Delivery Uptime with Dual Fiber &amp; UPS Power</div>
+        </div>
+      </div>
 
-              <p>
-                Later, I spent seven years at IVCC Engineering in Lahore, advancing from Data Entry Operator to Inventory Control Officer. Managing enterprise ERP databases and tracking tens of thousands of asset records shaped my analytical approach. When I pursued my <strong>BS in Mass Communication</strong> at the Virtual University of Pakistan, everything converged: my structural data rigor combined with high-impact communication theory and narrative psychology.
-              </p>
+      <!-- Quick Jump Filter Bar -->
+      <div class="about-filter-bar">
+        <a href="#hero" class="about-filter-pill is-active">Overview</a>
+        <a href="#story" class="about-filter-pill">Personal Story &amp; Journey</a>
+        <a href="#profile" class="about-filter-pill">Profile &amp; Principles</a>
+        <a href="#experience" class="about-filter-pill">Career Timeline (14 Years)</a>
+        <a href="#credentials" class="about-filter-pill">Verified Credentials &amp; Degrees</a>
+        <a href="#infrastructure" class="about-filter-pill">Global Remote Infrastructure</a>
+        <a href="#contact-cta" class="about-filter-pill">Initiate Partnership</a>
+      </div>
+    </div>
+  </section>
 
-              <div class="bio-philosophy-box">
-                <h4>Japanese Digital Craftsmanship &amp; Aesthetic Restraint</h4>
-                <p>
-                  Inspired by the ethos of Japanese craftsmanship (<em>Monozukuri</em>) and minimalist Swiss design, I treat digital growth as an engineering discipline. Every social hook, layout proportion, typography choice, and ad copy variation is tested and refined for measurable ROI, not vanity metrics.
-                </p>
-              </div>
+  <!-- ================= 01. PERSONAL STORY & JOURNEY (#story) ================= -->
+  <section class="about-section on-cream" id="story">
+    <div class="wrap">
+      <div class="section-head-box">
+        <span class="tag-orange">01 // PERSONAL NARRATIVE &amp; JOURNEY</span>
+        <h2 class="section-title">From GCC Site Operations to <span class="it">Digital Craftsmanship.</span></h2>
+        <p class="section-desc">
+          How rigorous commercial operational discipline, multi-thousand inventory databases, and academic mass communication theory converged into an engineering approach to modern marketing.
+        </p>
+      </div>
 
-              <p>
-                Today, as the founder of <strong>Zotir Systems</strong> and Social Media &amp; Sales Manager for <strong>The Rockets Consulting (Dubai)</strong>, I partner with forward-thinking founders, e-commerce brands, and global agencies to scale attention into community and community into predictable revenue.
-              </p>
+      <div class="story-grid">
+        <!-- Left: The Narrative Story -->
+        <div class="story-narrative">
+          <p>
+            I didn't start in digital marketing through viral trends — I started in high-stakes operational environments. Beginning in <strong>2009 across Saudi Arabia and the UAE</strong>, I led commercial facility sites, civil works crews, and logistics distribution for multinational projects. Operating under intense GCC commercial standards instilled in me a non-negotiable discipline: <em>zero margin for error, strict timeline adherence, and deep operational accountability</em>.
+          </p>
+
+          <p>
+            Later, I spent seven years at <strong>IVCC Engineering in Lahore</strong>, advancing from Data Entry Operator to <strong>Inventory Control Officer</strong>. Managing enterprise computerized ERP databases and tracking tens of thousands of asset records shaped my deeply analytical mindset. When I pursued my <strong>BS in Mass Communication</strong> at the Virtual University of Pakistan, everything converged: structural data rigor combined with high-impact communication theory, narrative persuasion, and visual media psychology.
+          </p>
+
+          <!-- Monozukuri Callout -->
+          <div class="monozukuri-box">
+            <h4>Japanese Digital Craftsmanship &amp; Aesthetic Restraint</h4>
+            <p>
+              Inspired by the Japanese ethos of craftsmanship (<em>Monozukuri</em>) and minimalist Swiss typographic discipline, I treat digital growth as an engineering problem. Every social media hook, grid proportion, color contrast, and ad variation is deployed to serve a commercial outcome — never vanity inflation.
+            </p>
+          </div>
+
+          <p>
+            Today, as the founder of <strong>Zotir Systems</strong> and Social Media &amp; Sales Manager for <strong>The Rockets Consulting (Dubai)</strong>, I partner with forward-thinking founders, e-commerce brands, and global agencies to scale attention into community, and community into predictable revenue.
+          </p>
+        </div>
+
+        <!-- Right: Profile & Facts Sidebar (#profile) -->
+        <div class="profile-sidebar" id="profile">
+          <div class="profile-card-fact">
+            <h4>Personal Profile</h4>
+            <div class="fact-row">
+              <span class="fact-label">Full Name</span>
+              <span class="fact-value">Shahid Akram</span>
             </div>
-
-            <!-- Right: At a Glance & Working Philosophy -->
-            <div class="bio-sidebar-facts">
-              <div class="bio-fact-card">
-                <h4>Personal Profile</h4>
-                <p><strong>Name:</strong> Shahid Akram</p>
-                <p><strong>Based in:</strong> Lahore, Pakistan (PKT / UTC+5)</p>
-                <p><strong>Availability:</strong> Global Remote Roles, Sponsorship &amp; Retainers</p>
-                <p><strong>Languages:</strong> English (Fluent), Urdu (Native), Hindi, Arabic (Conversational)</p>
-              </div>
-
-              <div class="bio-fact-card">
-                <h4>Core Working Principles</h4>
-                <p><strong>1. Craft Over Fluff:</strong> Every deliverable serves a real commercial objective.</p>
-                <p><strong>2. Data Meets Aesthetic:</strong> Visual beauty backed by rigorous analytical metrics.</p>
-                <p><strong>3. Radical Transparency:</strong> Direct communication, no jargon, no vanity inflation.</p>
-              </div>
-
-              <div class="bio-fact-card">
-                <h4>Education &amp; Background</h4>
-                <p><strong>Degree:</strong> BS in Mass Communication — Virtual University of Pakistan</p>
-                <p><strong>Track Record:</strong> 4+ Years Digital Growth | 14+ Years Operational Management</p>
-                <p><strong>Agency:</strong> Founder &amp; Creative Director, Zotir Systems</p>
-              </div>
+            <div class="fact-row">
+              <span class="fact-label">Location / Base</span>
+              <span class="fact-value">Lahore, Pakistan (PKT / UTC+5)</span>
             </div>
+            <div class="fact-row">
+              <span class="fact-label">Engagement Availability</span>
+              <span class="fact-value">Global Remote Retainers, Contract Roles &amp; Agency Partnerships</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">Spoken Languages</span>
+              <span class="fact-value">English (Fluent), Urdu (Native), Hindi, Arabic (Conversational)</span>
+            </div>
+          </div>
 
+          <div class="profile-card-fact">
+            <h4>Core Working Principles</h4>
+            <div class="principle-item">
+              <div class="principle-title">1. Craft Over Fluff</div>
+              <div class="principle-desc">Every reel, carousel, and ad copy variation serves a measurable commercial outcome, not vanity metrics.</div>
+            </div>
+            <div class="principle-item">
+              <div class="principle-title">2. Data Meets Aesthetic</div>
+              <div class="principle-desc">World-class visual beauty backed by mathematical ROAS metrics, conversion tracking, and spreadsheet precision.</div>
+            </div>
+            <div class="principle-item">
+              <div class="principle-title">3. Radical Transparency</div>
+              <div class="principle-desc">Direct communications, honest timeline forecasts, weekly video reviews, and no marketing jargon.</div>
+            </div>
+          </div>
+
+          <div class="profile-card-fact">
+            <h4>Academic &amp; Agency Foundation</h4>
+            <div class="fact-row">
+              <span class="fact-label">Degree</span>
+              <span class="fact-value">BS in Mass Communication (Virtual University of Pakistan)</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">Experience Base</span>
+              <span class="fact-value">4+ Yrs Digital Media | 14+ Yrs Operational Leadership</span>
+            </div>
+            <div class="fact-row">
+              <span class="fact-label">Private Agency</span>
+              <span class="fact-value">Founder &amp; Creative Director, Zotir Systems</span>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Career Track Record & Professional Experience -->
-    <section class="p-experience" id="experience">
-      <div class="container-boxed">
-        <div class="section-head">
-          <p class="section-head__tag">CAREER &amp; FREELANCE TRACK RECORD</p>
-          <h2 class="section-head__title">Proven Execution Across Global Brands &amp; Client Projects</h2>
-          <p class="section-head__desc">Demonstrated expertise across brand building, high-growth consultancies, international retainers, and cross-functional operational leadership.</p>
-        </div>
+  <!-- ================= 02. CAREER & EXPERIENCE TIMELINE (#experience) ================= -->
+  <section class="about-section on-cream2" id="experience">
+    <div class="wrap">
+      <div class="section-head-box">
+        <span class="tag-orange">02 // CAREER &amp; FREELANCE TRACK RECORD</span>
+        <h2 class="section-title">Proven Execution Across <span class="it">Global Brands &amp; Client Projects.</span></h2>
+        <p class="section-desc">
+          A 14-year professional career path demonstrating leadership across brand creation, high-growth consultancies, international retainers, and cross-functional operations.
+        </p>
+      </div>
 
-        <div class="experience-grid">
+      <div class="timeline-stack">
 
         <!-- Role 1: Zotir Systems -->
-        <div class="exp-card">
-          <div>
-            <div class="exp-date">2025 – PRESENT</div>
+        <div class="timeline-card featured-role">
+          <div class="timeline-meta-col">
+            <span class="timeline-year-tag">2025 – PRESENT</span>
+            <span class="timeline-badge-sub">Active Agency Venture</span>
+          </div>
+          <div class="timeline-main-col">
             <h3>Founder &amp; Creative Director</h3>
-            <div class="exp-company">Zotir Systems (Creative &amp; Growth Studio)</div>
-            <p>Directing bespoke brand identity, aesthetic content design, and organic growth systems. Scaling digital presence across social channels, producing viral short-form video hooks (CapCut/Premiere), high-converting carousels, and conversion-focused creative assets for growing businesses.</p>
+            <div class="timeline-company">Zotir Systems &bull; Lahore &amp; Global Remote</div>
+            <p class="timeline-desc">
+              Directing bespoke brand identity, aesthetic content design, and organic growth systems. Scaling digital presence across social channels, producing viral short-form video hooks (CapCut/Premiere), high-converting carousels, and conversion-focused creative assets for growing businesses.
+            </p>
+            <ul class="timeline-achievements-list">
+              <li>Built proprietary multi-channel social growth frameworks producing 4.2M+ organic views.</li>
+              <li>Engineered 3D brand guidelines and digital design design kits for emerging consumer brands.</li>
+              <li>Spearheaded AI workflow integrations (Claude, ChatGPT, Midjourney) accelerating creative turnaround by 65%.</li>
+            </ul>
           </div>
         </div>
 
         <!-- Role 2: The Rockets Consulting -->
-        <div class="exp-card">
-          <div>
-            <div class="exp-date">2023 – PRESENT</div>
+        <div class="timeline-card">
+          <div class="timeline-meta-col">
+            <span class="timeline-year-tag">2023 – PRESENT</span>
+            <span class="timeline-badge-sub">International Retainer</span>
+          </div>
+          <div class="timeline-main-col">
             <h3>Social Media &amp; Sales Manager</h3>
-            <div class="exp-company">The Rockets Consulting (Dubai, UAE)</div>
-            <p>Formulated and executing multi-channel social media strategies across Instagram, LinkedIn, and Facebook. Designing and scaling high-converting lead generation funnels, Meta Ads, and Metricool scheduling, maintaining a 95%+ client retention rate and lowering CPA.</p>
+            <div class="timeline-company">The Rockets Consulting &bull; Dubai, UAE</div>
+            <p class="timeline-desc">
+              Formulated and executing multi-channel social media strategies across Instagram, LinkedIn, and Facebook. Designing and scaling high-converting lead generation funnels, Meta Ads, and Metricool scheduling, maintaining a 95%+ client retention rate and lowering CPA.
+            </p>
+            <ul class="timeline-achievements-list">
+              <li>Maintained continuous 95%+ client retention rate through transparent reporting and consistent ROAS.</li>
+              <li>Scaled Meta and LinkedIn lead generation campaigns delivering 42+ qualified B2B inbound leads monthly.</li>
+              <li>Orchestrated daily publishing schedules, community engagement, and CRM pipeline handoffs.</li>
+            </ul>
           </div>
         </div>
 
-        <!-- Role 3: Freelance Digital Consultant & Multi-Disciplinary Projects -->
-        <div class="exp-card">
-          <div>
-            <div class="exp-date">2021 – PRESENT</div>
+        <!-- Role 3: Freelance Growth Consultant -->
+        <div class="timeline-card">
+          <div class="timeline-meta-col">
+            <span class="timeline-year-tag">2021 – PRESENT</span>
+            <span class="timeline-badge-sub">50+ Global Retainers</span>
+          </div>
+          <div class="timeline-main-col">
             <h3>Freelance Growth Strategist &amp; Creative Consultant</h3>
-            <div class="exp-company">Fiverr, Upwork &amp; Independent Client Retainers</div>
-            <p>Delivered multi-disciplinary digital growth projects for 50+ local and international clients with 5-star ratings. Produced high-CTR social ad creatives, brand identity kits, and marketing collateral. Authored persuasive copywriting, content writing, assignment research, and executive resume crafting alongside e-commerce growth retainers.</p>
+            <div class="timeline-company">Independent Retainers &bull; Fiverr, Upwork &amp; Direct Clients</div>
+            <p class="timeline-desc">
+              Delivered multi-disciplinary digital growth projects for 50+ local and international clients with 5-star ratings. Produced high-CTR social ad creatives, brand identity kits, and marketing collateral. Authored persuasive copywriting, content writing, assignment research, and executive resume crafting alongside e-commerce growth retainers.
+            </p>
+            <ul class="timeline-achievements-list">
+              <li>Maintained 5-star service rating across international freelance contracts and private retainers.</li>
+              <li>Authored conversion copywriting for landing pages, high-CTR Meta ad copy, and executive brand stories.</li>
+              <li>Designed custom visual assets, presentation pitch decks, and brand identity systems in Figma &amp; Canva.</li>
+            </ul>
           </div>
         </div>
 
-        <!-- Role 4: IVCC Engineering (Lahore) -->
-        <div class="exp-card">
-          <div>
-            <div class="exp-date">2016 – 2023</div>
+        <!-- Role 4: IVCC Engineering -->
+        <div class="timeline-card">
+          <div class="timeline-meta-col">
+            <span class="timeline-year-tag">2016 – 2023</span>
+            <span class="timeline-badge-sub">7-Year Corporate Tenure</span>
+          </div>
+          <div class="timeline-main-col">
             <h3>Inventory Control Officer (Promoted from Data Entry)</h3>
-            <div class="exp-company">IVCC Engineering (Lahore, Pakistan)</div>
-            <p>Completed 7 years of dedicated operational tenure. Began as Data Entry Operator managing database records and tracking systems; rapidly promoted to Inventory Control Officer. Spearheaded computerized ERP stock databases, weekly discrepancy audits, procurement / GRIN workflows, and cross-departmental coordination before transitioning into full-time digital marketing &amp; agency leadership.</p>
+            <div class="timeline-company">IVCC Engineering &bull; Lahore, Pakistan</div>
+            <p class="timeline-desc">
+              Completed 7 years of dedicated operational tenure. Began as Data Entry Operator managing database records and tracking systems; rapidly promoted to Inventory Control Officer. Spearheaded computerized ERP stock databases, weekly discrepancy audits, procurement / GRIN workflows, and cross-departmental coordination before transitioning into full-time digital marketing &amp; agency leadership.
+            </p>
+            <ul class="timeline-achievements-list">
+              <li>Supervised 25,000+ line-item inventory catalog across multi-site geotechnical and drilling facilities.</li>
+              <li>Achieved 99.8% database inventory accuracy with zero unresolved reconciliation discrepancies.</li>
+              <li>Automated material requisition and store gate-pass workflows in Excel and custom ERP modules.</li>
+            </ul>
           </div>
         </div>
 
-      </div>
-
-      <!-- Prior International Onsite & Operational Career Strip (Saudi Arabia, UAE, TCS, Early Foundations) -->
-      <div class="prior-career-panel">
-        <div class="prior-career-header">
-          <div>
-            <h4>Prior International Onsite &amp; Operational Leadership (2009 – 2016)</h4>
-            <p class="prior-career-sub">4 Years GCC Onsite Supervision (UAE &amp; Saudi Arabia) • Logistics, Signage &amp; Data Administration</p>
+        <!-- Role 5: International Onsite & Logistics -->
+        <div class="timeline-card">
+          <div class="timeline-meta-col">
+            <span class="timeline-year-tag">2009 – 2016</span>
+            <span class="timeline-badge-sub">GCC Operational Roots</span>
           </div>
-          <div class="prior-badge">14+ YRS PROFESSIONAL FOUNDATION</div>
-        </div>
-
-        <!-- Cross-Link to Services & Tool Stack -->
-        <div class="about-cross-link-card">
-          <h3>Looking for My Verified Certifications &amp; Technical Tool Stack?</h3>
-          <p>
-            Explore my accredited qualifications (Google Ads, Meta Certified, GA4, HubSpot) alongside my full daily software arsenal across design, analytics, and video motion.
-          </p>
-          <a href="services.html#tools-certs" class="hero-cta-btn" style="margin: 0 auto; display: inline-flex;">
-            <span>Explore Degrees, Certifications &amp; Tool Stack</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Page Bottom CTA -->
-    <section class="page-bottom-cta">
-      <div class="container-boxed">
-        <div class="bottom-cta-card">
-          <span class="cta-pill-tag">✦ WORK TOGETHER</span>
-          <h2 class="bottom-cta-heading">Let's build a profitable partnership together.</h2>
-          <p class="bottom-cta-text">
-            Whether you need a dedicated social media growth partner, a high-ROAS paid acquisition specialist, or custom visual branding, I'm currently open for select retainers and remote roles.
-          </p>
-          <div class="bottom-cta-actions">
-            <a href="contact.html" class="hero-cta-btn">
-              <span>Start a Conversation</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
-            <a href="services.html" class="hero-outline-btn">
-              <span>View Services &amp; Retainers</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-</main>
-
-  <!-- Footer -->
-  <footer class="l-footer">
-    <div class="footer-grid-overlay" aria-hidden="true"></div>
-    <div class="footer-inner-wrap">
-      <div class="footer-cols">
-        <!-- Brand column -->
-        <div class="footer-brand-col">
-          <a href="index.html" class="footer-brand-link" style="text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
-            <img src="shahid_logo.png" alt="Shahid Akram" style="width: 52px; height: 52px; object-fit: contain; display: block;">
-            <span style="font-family: 'Kaushan Script', 'Caveat', 'Brush Script MT', cursive; font-size: 26px; font-weight: 700; color: var(--color-black, #111); display: inline-flex; align-items: baseline; letter-spacing: 0.02em;">Shahid Akram<span style="color: var(--color-orange, #c87a3e);">.</span></span>
-          </a>
-          <p class="footer-tagline" style="margin-top: 4px;">
-            Senior Digital Marketer, Growth Strategist &amp; Systems Architect. Scaling modern brands with engineering precision from Lahore, Pakistan.
-          </p>
-          <div class="footer-social-row" style="display: flex; flex-direction: row; align-items: center; gap: 16px; margin-top: 6px;">
-            <a href="https://wa.me/923004822560" target="_blank" rel="noopener" class="simple-social-link" title="WhatsApp Chat" aria-label="WhatsApp" style="color: var(--color-orange, #c87a3e); display: inline-flex; align-items: center; justify-content: center; transition: transform 0.2s ease, opacity 0.2s ease;">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
-                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.3-1.39a10 10 0 004.69 1.18h.01c5.46 0 9.91-4.45 9.91-9.91A9.87 9.87 0 0012.04 2zm0 18.06h-.01a8.17 8.17 0 01-4.17-1.15l-.3-.18-3.1.81.83-3.02-.2-.31a8.21 8.21 0 01-1.26-4.3c0-4.52 3.68-8.2 8.22-8.2a8.18 8.18 0 015.82 2.41 8.16 8.16 0 012.4 5.8c0 4.53-3.68 8.14-8.2 8.14zm4.51-6.15c-.25-.12-1.46-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.37 1 2.54c.12.16 1.74 2.65 4.2 3.72.59.25 1.04.41 1.4.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.3z"/>
-              </svg>
-            </a>
-            <a href="mailto:heyshahidakram@gmail.com" class="simple-social-link" title="Direct Email" aria-label="Direct Email" style="color: var(--color-orange, #c87a3e); display: inline-flex; align-items: center; justify-content: center; transition: transform 0.2s ease, opacity 0.2s ease;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
-                <rect width="20" height="16" x="2" y="4" rx="2"/>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/heyshahidakram" target="_blank" rel="noopener" class="simple-social-link" title="LinkedIn" aria-label="LinkedIn" style="color: var(--color-orange, #c87a3e); display: inline-flex; align-items: center; justify-content: center; transition: transform 0.2s ease, opacity 0.2s ease;">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
-            </a>
-            <a href="https://zotirlabs.com/" target="_blank" rel="noopener" class="simple-social-link" title="Zotir Labs Website" aria-label="Zotir Labs Website" style="color: var(--color-orange, #c87a3e); display: inline-flex; align-items: center; justify-content: center; transition: transform 0.2s ease, opacity 0.2s ease;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="2" y1="12" x2="22" y2="12"/>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/>
-              </svg>
-            </a>
+          <div class="timeline-main-col">
+            <h3>International Onsite &amp; Commercial Site Operations</h3>
+            <div class="timeline-company">Saudi Arabia &amp; UAE Commercial Sites &bull; TCS Logistics Foundations</div>
+            <p class="timeline-desc">
+              4 Years GCC Onsite Supervision in UAE &amp; Saudi Arabia. Logistics distribution, commercial signage installation, site administration, and field operations under rigorous multinational engineering standards.
+            </p>
+            <ul class="timeline-achievements-list">
+              <li>Led multicultural site crews delivering physical commercial signage, branding, and facility setups.</li>
+              <li>Managed time-sensitive logistics tracking, customs clearances, and storehouse deliveries.</li>
+              <li>Built the deep operational discipline, punctuality, and zero-compromise work ethic that governs all modern digital projects today.</li>
+            </ul>
           </div>
         </div>
 
-        <!-- Navigation Column -->
-        <div class="footer-nav-col">
-          <span class="footer-col-label">Navigation</span>
-          <a href="index.html" class="footer-nav-link">Home Overview</a>
-          <a href="work.html" class="footer-nav-link">Case Studies &amp; Work</a>
-          <a href="services.html" class="footer-nav-link">Services &amp; Pricing</a>
-          <a href="about.html" class="footer-nav-link">About &amp; Experience</a>
-          <a href="blog.html" class="footer-nav-link">Growth Insights</a>
-          <a href="contact.html" class="footer-nav-link">Contact &amp; Inquiry</a>
-        </div>
-
-        <!-- Services Column -->
-        <div class="footer-nav-col">
-          <span class="footer-col-label">Capabilities</span>
-          <a href="services.html#service-social" class="footer-nav-link">Dedicated Social Media Handler</a>
-          <a href="services.html#service-linkedin" class="footer-nav-link">LinkedIn Profile Optimization</a>
-          <a href="services.html#service-design" class="footer-nav-link">Graphic Design &amp; Brand Identity</a>
-          <a href="services.html#service-ads" class="footer-nav-link">Performance Meta/Google Ads</a>
-          <a href="services.html#service-data" class="footer-nav-link">Inventory &amp; Operations Systems</a>
-        </div>
-      </div>
-
-      <!-- Bottom bar -->
-      <div class="footer-bottom-bar">
-        <p class="footer-copy">&copy; 2026 Shahid Akram. All rights reserved.</p>
-        <a href="mailto:heyshahidakram@gmail.com" class="footer-email-link">heyshahidakram@gmail.com</a>
       </div>
     </div>
-  </footer>
+  </section>
 
+  <!-- ================= 03. CREDENTIALS & ACADEMICS (#credentials) ================= -->
+  <section class="about-section on-cream" id="credentials">
+    <div class="wrap">
+      <div class="section-head-box">
+        <span class="tag-orange">03 // ACADEMIC &amp; INDUSTRY QUALIFICATIONS</span>
+        <h2 class="section-title">Verified Education &amp; <span class="it">Industry Credentials.</span></h2>
+        <p class="section-desc">
+          Formal academic training in mass communication combined with verified certifications from Google, Meta, and HubSpot.
+        </p>
+      </div>
 
+      <div class="credentials-grid">
+        <div class="credential-card">
+          <span class="credential-issuer-badge">FORMAL DEGREE &bull; HIGHER EDUCATION</span>
+          <h4>BS in Mass Communication</h4>
+          <p>Virtual University of Pakistan &bull; Specialized in media theory, digital persuasion, visual journalism, and public relations psychology.</p>
+        </div>
 
-  <script src="articles.js" defer></script>
-  <script src="app.js" defer></script>
+        <div class="credential-card">
+          <span class="credential-issuer-badge">META ACCREDITATION</span>
+          <h4>Meta Certified Digital Marketing Associate</h4>
+          <p>Meta Blueprint &bull; Campaign architecture, Advantage+ setups, Meta Pixel &amp; CAPI attribution, and audience targeting.</p>
+        </div>
+
+        <div class="credential-card">
+          <span class="credential-issuer-badge">GOOGLE SKILLSHOP</span>
+          <h4>Google Ads Display &amp; Search Certified</h4>
+          <p>Google &bull; Intent-driven search keyword funnels, display audience networks, and bidding optimization.</p>
+        </div>
+
+        <div class="credential-card">
+          <span class="credential-issuer-badge">ANALYTICS &amp; ATTRIBUTION</span>
+          <h4>Google Analytics 4 (GA4) Qualified</h4>
+          <p>Google &bull; Custom event tracking, conversion funnel diagnostics, cross-channel attribution, and ROAS audit models.</p>
+        </div>
+
+        <div class="credential-card">
+          <span class="credential-issuer-badge">INBOUND &amp; CRM</span>
+          <h4>Inbound Marketing &amp; Social Strategy</h4>
+          <p>HubSpot Academy &bull; Lifecycle email sequences, CRM pipelines, flywheel methodologies, and friction reduction.</p>
+        </div>
+
+        <div class="credential-card">
+          <span class="credential-issuer-badge">PROFESSIONAL ASSOCIATION</span>
+          <h4>Active Member, PAFLA</h4>
+          <p>Pakistan Freelancers Association &bull; Verified professional member in good standing with the national digital workforce body.</p>
+        </div>
+      </div>
+
+      <!-- Cross-Link Card to Services and Tool Stack -->
+      <div class="cross-link-strip">
+        <div class="cross-link-text">
+          <h3>Explore Full 32+ Tool Arsenal &amp; Monthly Retainers</h3>
+          <p>
+            Inspect the exact platforms I deploy daily (Adobe Suite, Figma, CapCut, Metricool, GA4, Sheets) along with transparent monthly package pricing starting at $180/mo.
+          </p>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="services.html#tools-certs" class="pill pill-navy">
+            <span>View Tool Stack &rarr;</span>
+          </a>
+          <a href="services.html#offer" class="pill pill-orange">
+            <span>View Retainer Pricing &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 04. EXECUTIVE WORKSPACE & INFRASTRUCTURE (#infrastructure) ================= -->
+  <section class="about-section on-navy" id="infrastructure">
+    <div class="wrap">
+      <div class="section-head-box">
+        <span class="tag-orange" style="color: var(--orange);">04 // OPERATIONAL READINESS &amp; UPTIME</span>
+        <h2 class="section-title" style="color: var(--cream);">Engineered for High-Uptime <span class="it" style="color: var(--orange);">Global Remote Delivery.</span></h2>
+        <p class="section-desc">
+          Equipped with dedicated workstation hardware, dual high-speed fiber internet, and 100% redundant battery backup for seamless collaboration across global client timezones.
+        </p>
+      </div>
+
+      <div class="infra-grid">
+        <div class="infra-card">
+          <div class="infra-icon">🖥️</div>
+          <h4>Dual-Monitor Workstation</h4>
+          <p>Calibrated color-accurate dual displays powered by dedicated GPU rendering for precision graphic design and 4K video exports.</p>
+        </div>
+
+        <div class="infra-card">
+          <div class="infra-icon">⚡</div>
+          <h4>100% Uninterrupted Power</h4>
+          <p>Equipped with seamless UPS and hybrid solar/inverter backup systems ensuring continuous uptime during all scheduled city maintenance.</p>
+        </div>
+
+        <div class="infra-card">
+          <div class="infra-icon">🌐</div>
+          <h4>Dual High-Speed Fiber</h4>
+          <p>Primary gigabit fiber optic line with an automated secondary LTE/5G failover connection for instant client video calls and heavy asset transfers.</p>
+        </div>
+
+        <div class="infra-card">
+          <div class="infra-icon">🌍</div>
+          <h4>Global Timezone Coverage</h4>
+          <p>Active daily overlap with GCC (Dubai UTC+4), UK &amp; Europe (GMT/CET), and US East Coast (EST) business hours for real-time Slack/WhatsApp sync.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 05. INITIATE PARTNERSHIP CTA (#contact-cta) ================= -->
+  <section class="about-section on-cream" id="contact-cta">
+    <div class="wrap">
+      <div class="about-cta-box">
+        <span class="tag-orange">05 // INITIATE PARTNERSHIP</span>
+        <h2>Let's build a profitable partnership together.</h2>
+        <p>
+          Whether you need a dedicated social media growth partner, a high-ROAS paid acquisition specialist, or custom visual branding, I'm currently open for select retainers and remote roles.
+        </p>
+        <div class="about-cta-actions">
+          <a href="https://wa.me/923004822560?text=Hi%20Shahid%2C%20I%20reviewed%20your%20About%20page%20and%20would%20like%20to%20discuss%20working%20together." target="_blank" rel="noopener" class="pill pill-navy">
+            <span>Chat Directly on WhatsApp &rarr;</span>
+          </a>
+          <a href="services.html#offer" class="pill pill-orange">
+            <span>View Monthly Retainers &rarr;</span>
+          </a>
+          <a href="mailto:heyshahidakram@gmail.com" class="pill" style="background: rgba(6, 23, 58, 0.08); color: var(--navy);">
+            <span>Send Email Inquiry &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <div class="flogo">
+          <img src="shahid_logo.png" alt="Shahid Akram">
+          <span class="flogo-name">Shahid Akram<span style="color:var(--orange)">.</span></span>
+        </div>
+        <p>Senior Digital Marketer, Growth Strategist &amp; Systems Architect. Scaling modern brands with engineering precision from Lahore, Pakistan.</p>
+      </div>
+
+      <div>
+        <h5>Navigation</h5>
+        <a href="index.html">Home Overview</a>
+        <a href="work.html">Case Studies &amp; Work</a>
+        <a href="services.html">Services &amp; Pricing</a>
+        <a href="about.html">About &amp; Experience</a>
+        <a href="index.html#insights">Growth Insights</a>
+        <a href="https://wa.me/923004822560" target="_blank" rel="noopener">Contact on WhatsApp</a>
+      </div>
+
+      <div>
+        <h5>Services</h5>
+        <a href="services.html#service-social">Social Media &amp; Reels</a>
+        <a href="services.html#service-ads">Performance Meta/Google Ads</a>
+        <a href="services.html#service-design">Brand Identity &amp; Creative Kit</a>
+        <a href="services.html#service-data">Commercial Data Systems</a>
+        <a href="services.html#offer">Monthly Pricing Retainers</a>
+        <a href="services.html#tools-certs">Degrees &amp; Certifications</a>
+      </div>
+
+      <div>
+        <h5>Connect Direct</h5>
+        <div class="footer-social-row">
+          <a href="https://wa.me/923004822560" target="_blank" rel="noopener" class="simple-social-link" title="WhatsApp Chat" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.3-1.39a10 10 0 004.69 1.18h.01c5.46 0 9.91-4.45 9.91-9.91A9.87 9.87 0 0012.04 2zm0 18.06h-.01a8.17 8.17 0 01-4.17-1.15l-.3-.18-3.1.81.83-3.02-.2-.31a8.21 8.21 0 01-1.26-4.3c0-4.52 3.68-8.2 8.22-8.2a8.18 8.18 0 015.82 2.41 8.16 8.16 0 012.4 5.8c0 4.53-3.68 8.14-8.2 8.14zm4.51-6.15c-.25-.12-1.46-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.37 1 2.54c.12.16 1.74 2.65 4.2 3.72.59.25 1.04.41 1.4.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.3z"/></svg>
+          </a>
+          <a href="mailto:heyshahidakram@gmail.com" class="simple-social-link" title="Direct Email" aria-label="Direct Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/heyshahidakram" target="_blank" rel="noopener" class="simple-social-link" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub">
+      <small>&copy; 2026 Shahid Akram. All rights reserved.</small>
+      <a href="#hero" style="color:var(--cream);">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile Burger Menu Toggle
+  const burger = document.getElementById('burger');
+  const mmenu = document.getElementById('mmenu');
+  if (burger) {
+    burger.addEventListener('click', () => {
+      document.body.classList.toggle('m-open');
+    });
+  }
+
+  // Close mobile menu on link click
+  document.querySelectorAll('.m-item').forEach(link => {
+    link.addEventListener('click', () => {
+      document.body.classList.remove('m-open');
+    });
+  });
+
+  // Active state on jump filter pills
+  const pills = document.querySelectorAll('.about-filter-pill');
+  pills.forEach(pill => {
+    pill.addEventListener('click', function() {
+      pills.forEach(p => p.classList.remove('is-active'));
+      this.classList.add('is-active');
+    });
+  });
+</script>
+
 </body>
 </html>
