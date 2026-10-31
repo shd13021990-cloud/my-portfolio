@@ -1099,6 +1099,112 @@ body.m-open .cc-bar{opacity:0;visibility:hidden;pointer-events:none}
   }
 }
 
+
+/* --- GROWTH INSIGHTS / BLOG STYLES --- */
+.insights-pill-btn {
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(6, 23, 58, 0.12);
+  background: rgba(255, 255, 255, 0.75);
+  color: #06173A;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+.insights-pill-btn:hover {
+  background: rgba(6, 23, 58, 0.06);
+  border-color: rgba(6, 23, 58, 0.25);
+}
+.insights-pill-btn.is-active {
+  background: #06173A !important;
+  color: #F9ECE0 !important;
+  border-color: #06173A !important;
+}
+.nav.dark ~ main .insights-pill-btn,
+body.dark .insights-pill-btn {
+  background: rgba(255, 255, 255, 0.08);
+  color: #F9ECE0;
+  border-color: rgba(249, 236, 224, 0.16);
+}
+body.dark .insights-pill-btn.is-active {
+  background: #F29E64 !important;
+  color: #06173A !important;
+  border-color: #F29E64 !important;
+}
+.insights-card {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(6, 23, 58, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.insights-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 36px rgba(6, 23, 58, 0.08);
+  border-color: #F29E64;
+}
+body.dark .insights-card {
+  background: rgba(14, 30, 56, 0.7);
+  border-color: rgba(249, 236, 224, 0.1);
+  color: #F9ECE0;
+}
+body.dark .insights-card:hover {
+  border-color: #F29E64;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+.insights-tag-badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #F29E64;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(242, 158, 100, 0.12);
+  display: inline-block;
+}
+.insights-card-title {
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif);
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 16px 0 10px;
+  color: var(--ink, #06173A);
+}
+body.dark .insights-card-title {
+  color: #F9ECE0;
+}
+.insights-card-snippet {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-2, rgba(6, 23, 58, 0.7));
+  margin-bottom: 24px;
+}
+body.dark .insights-card-snippet {
+  color: rgba(249, 236, 224, 0.75);
+}
+.insights-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid rgba(6, 23, 58, 0.07);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #F29E64;
+}
+body.dark .insights-card-footer {
+  border-top-color: rgba(249, 236, 224, 0.1);
+}
+
 </style>
 <!-- site structured data (carried over from the previous site for brand continuity) -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Cogent Labs", "url": "https://cogentlabs.co", "logo": "https://cogentlabs.co/cogent-labs-logo.png", "description": "Agentic AI solutions that automate complex enterprise workflows, accelerate decision-making, and drive measurable business outcomes.", "founder": {"@type": "Person", "name": "Ehmad Zubair", "jobTitle": "CEO & Co-founder"}, "sameAs": ["https://www.linkedin.com/company/cogentlabs/", "https://www.instagram.com/cogent.labs.co/"], "contactPoint": {"@type": "ContactPoint", "email": "hello@cogentlabs.co", "telephone": "+92-300-111-4369", "contactType": "sales"}, "address": {"@type": "PostalAddress", "streetAddress": "16192 Coastal Hwy", "addressLocality": "Lewes", "addressRegion": "DE", "postalCode": "19958", "addressCountry": "US"}}, {"@type": "WebSite", "name": "Cogent Labs", "url": "https://cogentlabs.co"}]}</script>
@@ -1880,7 +1986,7 @@ body.m-open .cc-bar{opacity:0;visibility:hidden;pointer-events:none}
       <a href="#results">Work</a>
       <a href="#method">Framework</a>
       <a href="#cert">Credentials</a>
-      <a href="#honesty">Philosophy</a>
+      <a href="#insights">Insights</a>
       <a href="#offer">Audit</a>
     </nav>
 
@@ -2078,6 +2184,61 @@ body.m-open .cc-bar{opacity:0;visibility:hidden;pointer-events:none}
     <div class="slot" id="s-honesty" data-fb="○"></div>
   </div>
 </section>
+
+
+<!-- GROWTH INSIGHTS & STRATEGIC PLAYBOOKS (BLOG SECTION) -->
+<section class="insights-section" id="insights" data-bg="cream" style="padding: 120px 0; position: relative;">
+  <div class="wrap">
+    <div style="max-width: 780px; margin-bottom: 36px;">
+      <span class="eyebrow rv">Strategic Playbooks &amp; Articles</span>
+      <h2 class="rv" style="font-size: clamp(34px, 4vw, 54px); line-height: 1.1; margin: 12px 0 16px;">
+        Growth Insights &amp; <span class="it">Performance Playbooks</span>
+      </h2>
+      <p class="rv" style="font-size: 16.5px; line-height: 1.6; color: var(--ink-2); margin: 0;">
+        Practical playbooks from scaling 85k+ organic communities, testing high-converting ad hooks, and turning vanity metrics into predictable business revenue.
+      </p>
+    </div>
+
+    <!-- Category Filter Pills -->
+    <div class="insights-filter-pills" id="insightsFilterPills" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px;">
+      <button type="button" class="insights-pill-btn is-active" data-cat="all">All Playbooks</button>
+      <button type="button" class="insights-pill-btn" data-cat="Growth Strategy">Growth Strategy</button>
+      <button type="button" class="insights-pill-btn" data-cat="Short-Form Video">Short-Form Video</button>
+      <button type="button" class="insights-pill-btn" data-cat="Paid Performance">Paid Performance</button>
+      <button type="button" class="insights-pill-btn" data-cat="Personal Branding">Personal Branding</button>
+    </div>
+
+    <!-- Articles Grid -->
+    <div class="insights-grid" id="insightsGrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
+      <!-- Dynamically Injected from articles.js -->
+    </div>
+
+    <!-- Bottom Explore Button -->
+    <div style="display: flex; justify-content: center; align-items: center; gap: 16px; margin-top: 48px;">
+      <a href="blog.html" class="pill pill-navy">View All Articles &amp; Publication <span class="ar">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Deep-Dive Article Reader Modal Overlay -->
+<div class="insights-modal-overlay" id="insightsModalOverlay" aria-hidden="true" style="display: none; position: fixed; inset: 0; z-index: 99999; background: rgba(6, 23, 58, 0.75); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); align-items: center; justify-content: center; padding: 20px;">
+  <div class="insights-modal-card" style="background: var(--cream, #F9ECE0); color: var(--ink, #06173A); max-width: 720px; width: 100%; max-height: 85vh; border-radius: 24px; box-shadow: 0 25px 60px rgba(0,0,0,0.4); border: 1px solid rgba(249,236,224,0.3); display: flex; flex-direction: column; position: relative; overflow: hidden;">
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 20px 28px; border-bottom: 1px solid rgba(6, 23, 58, 0.08); background: rgba(255,255,255,0.4);">
+      <span id="modalArticleTag" style="font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--orange, #F29E64); padding: 4px 12px; border-radius: 999px; background: rgba(242, 158, 100, 0.12);">Category</span>
+      <button type="button" id="insightsModalClose" aria-label="Close Playbook" style="background: none; border: none; font-size: 22px; cursor: pointer; color: var(--ink, #06173A); width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 50%; transition: background 0.2s;">✕</button>
+    </div>
+    <div style="overflow-y: auto; padding: 32px 32px 40px;">
+      <h2 id="modalArticleTitle" style="font-size: clamp(24px, 2.5vw, 32px); line-height: 1.25; margin-bottom: 20px; color: var(--ink, #06173A);">Article Title</h2>
+      <div id="modalArticleBody" style="font-size: 15.5px; line-height: 1.75; color: var(--ink-2, rgba(6,23,58,0.85));">
+        <!-- Content injected here -->
+      </div>
+      <div style="margin-top: 36px; padding-top: 24px; border-top: 1px solid rgba(6, 23, 58, 0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+        <span style="font-size: 13px; font-weight: 600; color: var(--ink-2);">Written by Shahid Akram &bull; Digital Growth &amp; Strategy</span>
+        <a href="https://wa.me/923004822560" target="_blank" rel="noopener" class="pill pill-navy" style="padding: 10px 20px; font-size: 13.5px;">Chat on WhatsApp &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- OFFER -->
 <section class="offer on-navy" id="offer" data-bg="navy">
@@ -3573,6 +3734,107 @@ requestAnimationFrame(loop);
 
   requestAnimationFrame(update);
 })();
+</script>
+
+
+<!-- Load Articles Database and Wire Homepage Insights Interactive Grid -->
+<script src="articles.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.getElementById('insightsGrid');
+    const filterPills = document.querySelectorAll('#insightsFilterPills .insights-pill-btn');
+    const modalOverlay = document.getElementById('insightsModalOverlay');
+    const modalClose = document.getElementById('insightsModalClose');
+    const modalTitle = document.getElementById('modalArticleTitle');
+    const modalTag = document.getElementById('modalArticleTag');
+    const modalBody = document.getElementById('modalArticleBody');
+
+    let activeCategory = 'all';
+
+    function renderInsights() {
+      if (!grid || typeof BLOG_ARTICLES === 'undefined') return;
+
+      let list = BLOG_ARTICLES.map((item, idx) => ({ ...item, idx }));
+      if (activeCategory !== 'all') {
+        list = list.filter(item => item.tag.toLowerCase() === activeCategory.toLowerCase());
+      }
+
+      grid.innerHTML = list.map(item => `
+        <article class="insights-card" data-idx="${item.idx}">
+          <div>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+              <span class="insights-tag-badge">${item.tag}</span>
+              <span style="font-size: 12px; color: var(--ink-2); opacity: 0.65;">~3 min read</span>
+            </div>
+            <h3 class="insights-card-title">${item.title}</h3>
+            <p class="insights-card-snippet">${item.snippet}</p>
+          </div>
+          <div class="insights-card-footer">
+            <span>Read Playbook &rarr;</span>
+            <span style="font-size: 12px; opacity: 0.6; color: var(--ink-2);">Shahid Akram</span>
+          </div>
+        </article>
+      `).join('');
+
+      // Attach click listeners to cards
+      grid.querySelectorAll('.insights-card').forEach(card => {
+        card.addEventListener('click', () => {
+          const idx = parseInt(card.getAttribute('data-idx'), 10);
+          openArticleModal(idx);
+        });
+      });
+    }
+
+    function openArticleModal(idx) {
+      if (!modalOverlay || typeof BLOG_ARTICLES === 'undefined') return;
+      const article = BLOG_ARTICLES[idx];
+      if (!article) return;
+
+      modalTitle.textContent = article.title;
+      modalTag.textContent = article.tag;
+      modalBody.innerHTML = article.content;
+      modalOverlay.style.display = 'flex';
+      modalOverlay.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeArticleModal() {
+      if (!modalOverlay) return;
+      modalOverlay.style.display = 'none';
+      modalOverlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    if (modalClose) {
+      modalClose.addEventListener('click', closeArticleModal);
+    }
+    if (modalOverlay) {
+      modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) closeArticleModal();
+      });
+    }
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeArticleModal();
+    });
+
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => p.classList.remove('is-active'));
+        pill.classList.add('is-active');
+        activeCategory = pill.getAttribute('data-cat') || 'all';
+        renderInsights();
+      });
+    });
+
+    // Check if BLOG_ARTICLES is already loaded, otherwise poll briefly
+    if (typeof BLOG_ARTICLES !== 'undefined') {
+      renderInsights();
+    } else {
+      window.addEventListener('load', () => {
+        renderInsights();
+      });
+    }
+  });
 </script>
 
 </body>
