@@ -1049,6 +1049,112 @@ body.dark .icon-shell {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
 }
 
+
+/* ---------- INSIGHTS INTERACTIVE PARTICLE CARD & HEADER ---------- */
+.insights-header-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.insights-anim-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(6, 23, 58, 0.09);
+  border-radius: 28px;
+  padding: 22px;
+  box-shadow: 0 24px 50px -16px rgba(6, 23, 58, 0.12);
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: box-shadow .3s ease;
+}
+.insights-anim-card:hover {
+  box-shadow: 0 28px 60px -14px rgba(6, 23, 58, 0.16);
+}
+.insights-anim-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c95d1b;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(6, 23, 58, 0.06);
+}
+.insights-pulse-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.insights-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--orange, #F29E64);
+  box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7);
+  animation: insightsPulse 2s infinite;
+}
+@keyframes insightsPulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(242, 158, 100, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0); }
+}
+.insights-card-badge {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(6, 23, 58, 0.06);
+  color: var(--navy, #06173A);
+  font-weight: 700;
+}
+.insights-canvas-box {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  background: radial-gradient(circle at center, rgba(242, 158, 100, 0.1) 0%, rgba(249, 236, 224, 0.25) 65%, transparent 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: grab;
+}
+.insights-canvas-box:active { cursor: grabbing; }
+#insightsParticleCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.insights-anim-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--ink-2, rgba(6, 23, 58, 0.72));
+  font-weight: 600;
+  padding-top: 8px;
+  border-top: 1px solid rgba(6, 23, 58, 0.06);
+}
+.insights-foot-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.insights-foot-hint::before {
+  content: '✦';
+  color: var(--orange, #F29E64);
+  font-size: 11px;
+}
+@media (max-width: 1024px) {
+  .insights-header-grid { grid-template-columns: 1fr; gap: 32px; }
+  .insights-canvas-box { height: 280px; }
+}
+
 </style>
 <!-- site structured data (carried over from the previous site for brand continuity) -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Cogent Labs", "url": "https://cogentlabs.co", "logo": "https://cogentlabs.co/cogent-labs-logo.png", "description": "Agentic AI solutions that automate complex enterprise workflows, accelerate decision-making, and drive measurable business outcomes.", "founder": {"@type": "Person", "name": "Ehmad Zubair", "jobTitle": "CEO & Co-founder"}, "sameAs": ["https://www.linkedin.com/company/cogentlabs/", "https://www.instagram.com/cogent.labs.co/"], "contactPoint": {"@type": "ContactPoint", "email": "hello@cogentlabs.co", "telephone": "+92-300-111-4369", "contactType": "sales"}, "address": {"@type": "PostalAddress", "streetAddress": "16192 Coastal Hwy", "addressLocality": "Lewes", "addressRegion": "DE", "postalCode": "19958", "addressCountry": "US"}}, {"@type": "WebSite", "name": "Cogent Labs", "url": "https://cogentlabs.co"}]}</script>
@@ -1835,6 +1941,112 @@ body.dark .orbit-pill-badge {
   }
 }
 
+
+/* ---------- INSIGHTS INTERACTIVE PARTICLE CARD & HEADER ---------- */
+.insights-header-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.insights-anim-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(6, 23, 58, 0.09);
+  border-radius: 28px;
+  padding: 22px;
+  box-shadow: 0 24px 50px -16px rgba(6, 23, 58, 0.12);
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: box-shadow .3s ease;
+}
+.insights-anim-card:hover {
+  box-shadow: 0 28px 60px -14px rgba(6, 23, 58, 0.16);
+}
+.insights-anim-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c95d1b;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(6, 23, 58, 0.06);
+}
+.insights-pulse-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.insights-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--orange, #F29E64);
+  box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7);
+  animation: insightsPulse 2s infinite;
+}
+@keyframes insightsPulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(242, 158, 100, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0); }
+}
+.insights-card-badge {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(6, 23, 58, 0.06);
+  color: var(--navy, #06173A);
+  font-weight: 700;
+}
+.insights-canvas-box {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  background: radial-gradient(circle at center, rgba(242, 158, 100, 0.1) 0%, rgba(249, 236, 224, 0.25) 65%, transparent 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: grab;
+}
+.insights-canvas-box:active { cursor: grabbing; }
+#insightsParticleCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.insights-anim-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--ink-2, rgba(6, 23, 58, 0.72));
+  font-weight: 600;
+  padding-top: 8px;
+  border-top: 1px solid rgba(6, 23, 58, 0.06);
+}
+.insights-foot-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.insights-foot-hint::before {
+  content: '✦';
+  color: var(--orange, #F29E64);
+  font-size: 11px;
+}
+@media (max-width: 1024px) {
+  .insights-header-grid { grid-template-columns: 1fr; gap: 32px; }
+  .insights-canvas-box { height: 280px; }
+}
+
 </style></head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -2088,23 +2300,49 @@ body.dark .orbit-pill-badge {
 <!-- GROWTH INSIGHTS & STRATEGIC PLAYBOOKS (BLOG SECTION) -->
 <section class="insights-section" id="insights" data-bg="cream" style="padding: 120px 0; position: relative;">
   <div class="wrap">
-    <div style="max-width: 780px; margin-bottom: 36px;">
-      <span class="eyebrow rv">Strategic Playbooks &amp; Articles</span>
-      <h2 class="rv" style="font-size: clamp(34px, 4vw, 54px); line-height: 1.1; margin: 12px 0 16px;">
-        Growth Insights &amp; <span class="it">Performance Playbooks</span>
-      </h2>
-      <p class="rv" style="font-size: 16.5px; line-height: 1.6; color: var(--ink-2); margin: 0;">
-        Practical playbooks from scaling 85k+ organic communities, testing high-converting ad hooks, and turning vanity metrics into predictable business revenue.
-      </p>
-    </div>
+    
+    <div class="insights-header-grid">
+      <!-- Left Column: Title & Intro -->
+      <div>
+        <span class="eyebrow rv">✦ STRATEGIC GROWTH PLAYBOOKS &amp; ARTICLES</span>
+        <h2 class="rv" style="font-size: clamp(34px, 4vw, 54px); line-height: 1.1; margin: 12px 0 16px;">
+          Growth Insights &amp; <span class="it">Performance Playbooks</span>
+        </h2>
+        <p class="rv" style="font-size: 16.5px; line-height: 1.6; color: var(--ink-2); margin-bottom: 24px;">
+          Field-tested tactics and playbooks from scaling 85k+ organic communities, testing high-converting ad hooks, and turning vanity metrics into predictable business revenue.
+        </p>
 
-    <!-- Category Filter Pills -->
-    <div class="insights-filter-pills" id="insightsFilterPills" style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px;">
-      <button type="button" class="insights-pill-btn is-active" data-cat="all">All Playbooks</button>
-      <button type="button" class="insights-pill-btn" data-cat="Growth Strategy">Growth Strategy</button>
-      <button type="button" class="insights-pill-btn" data-cat="Short-Form Video">Short-Form Video</button>
-      <button type="button" class="insights-pill-btn" data-cat="Paid Performance">Paid Performance</button>
-      <button type="button" class="insights-pill-btn" data-cat="Personal Branding">Personal Branding</button>
+        <!-- Category Filter Pills -->
+        <div class="insights-filter-pills" id="insightsFilterPills" style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <button type="button" class="insights-pill-btn is-active" data-cat="all">All Playbooks</button>
+          <button type="button" class="insights-pill-btn" data-cat="Growth Strategy">Growth Strategy</button>
+          <button type="button" class="insights-pill-btn" data-cat="Short-Form Video">Short-Form Video</button>
+          <button type="button" class="insights-pill-btn" data-cat="Paid Performance">Paid Performance</button>
+          <button type="button" class="insights-pill-btn" data-cat="Personal Branding">Personal Branding</button>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Brain-Lightbulb Particle Swarm Card -->
+      <div>
+        <div class="insights-anim-card" id="insightsAnimCard">
+          <div class="insights-anim-card-head">
+            <span class="insights-pulse-group">
+              <span class="insights-pulse-dot"></span>
+              <span>INTERACTIVE INSIGHTS ARTIFACT</span>
+            </span>
+            <span class="insights-card-badge">THEME SWARM</span>
+          </div>
+
+          <div class="insights-canvas-box" id="insightsCanvasBox">
+            <canvas id="insightsParticleCanvas" aria-label="Interactive Particle Swarm of Brain Lightbulb Icon"></canvas>
+          </div>
+
+          <div class="insights-anim-card-foot">
+            <span class="insights-foot-hint">Hover, drag or click to disperse</span>
+            <span style="color: #c95d1b; font-weight: 700;">Reconstructs in live sync</span>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Articles Grid -->
@@ -2914,6 +3152,112 @@ requestAnimationFrame(loop);
   }
 }
 
+
+/* ---------- INSIGHTS INTERACTIVE PARTICLE CARD & HEADER ---------- */
+.insights-header-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.insights-anim-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(6, 23, 58, 0.09);
+  border-radius: 28px;
+  padding: 22px;
+  box-shadow: 0 24px 50px -16px rgba(6, 23, 58, 0.12);
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: box-shadow .3s ease;
+}
+.insights-anim-card:hover {
+  box-shadow: 0 28px 60px -14px rgba(6, 23, 58, 0.16);
+}
+.insights-anim-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c95d1b;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(6, 23, 58, 0.06);
+}
+.insights-pulse-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.insights-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--orange, #F29E64);
+  box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7);
+  animation: insightsPulse 2s infinite;
+}
+@keyframes insightsPulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(242, 158, 100, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0); }
+}
+.insights-card-badge {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(6, 23, 58, 0.06);
+  color: var(--navy, #06173A);
+  font-weight: 700;
+}
+.insights-canvas-box {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  background: radial-gradient(circle at center, rgba(242, 158, 100, 0.1) 0%, rgba(249, 236, 224, 0.25) 65%, transparent 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: grab;
+}
+.insights-canvas-box:active { cursor: grabbing; }
+#insightsParticleCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.insights-anim-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--ink-2, rgba(6, 23, 58, 0.72));
+  font-weight: 600;
+  padding-top: 8px;
+  border-top: 1px solid rgba(6, 23, 58, 0.06);
+}
+.insights-foot-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.insights-foot-hint::before {
+  content: '✦';
+  color: var(--orange, #F29E64);
+  font-size: 11px;
+}
+@media (max-width: 1024px) {
+  .insights-header-grid { grid-template-columns: 1fr; gap: 32px; }
+  .insights-canvas-box { height: 280px; }
+}
+
 </style>
 <script>
 (function(){
@@ -3175,6 +3519,112 @@ requestAnimationFrame(loop);
   .l-header__nav-desktop {
     display: none !important;
   }
+}
+
+
+/* ---------- INSIGHTS INTERACTIVE PARTICLE CARD & HEADER ---------- */
+.insights-header-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.insights-anim-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(6, 23, 58, 0.09);
+  border-radius: 28px;
+  padding: 22px;
+  box-shadow: 0 24px 50px -16px rgba(6, 23, 58, 0.12);
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: box-shadow .3s ease;
+}
+.insights-anim-card:hover {
+  box-shadow: 0 28px 60px -14px rgba(6, 23, 58, 0.16);
+}
+.insights-anim-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #c95d1b;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(6, 23, 58, 0.06);
+}
+.insights-pulse-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.insights-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--orange, #F29E64);
+  box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7);
+  animation: insightsPulse 2s infinite;
+}
+@keyframes insightsPulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(242, 158, 100, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0); }
+}
+.insights-card-badge {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(6, 23, 58, 0.06);
+  color: var(--navy, #06173A);
+  font-weight: 700;
+}
+.insights-canvas-box {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  background: radial-gradient(circle at center, rgba(242, 158, 100, 0.1) 0%, rgba(249, 236, 224, 0.25) 65%, transparent 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: grab;
+}
+.insights-canvas-box:active { cursor: grabbing; }
+#insightsParticleCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.insights-anim-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--ink-2, rgba(6, 23, 58, 0.72));
+  font-weight: 600;
+  padding-top: 8px;
+  border-top: 1px solid rgba(6, 23, 58, 0.06);
+}
+.insights-foot-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.insights-foot-hint::before {
+  content: '✦';
+  color: var(--orange, #F29E64);
+  font-size: 11px;
+}
+@media (max-width: 1024px) {
+  .insights-header-grid { grid-template-columns: 1fr; gap: 32px; }
+  .insights-canvas-box { height: 280px; }
 }
 
 </style>
@@ -3670,6 +4120,304 @@ requestAnimationFrame(loop);
 
 
 
+
+
+<script>
+  // ---------- INTERACTIVE INSIGHTS BRAIN-LIGHTBULB PARTICLE SWARM ----------
+  // High-density particle murmuration matching theme palette and physics
+  (function initInsightsParticleSwarm() {
+    const canvas = document.getElementById('insightsParticleCanvas');
+    const box = document.getElementById('insightsCanvasBox');
+    if (!canvas || !box) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    const base64Icon = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUIAAAFXCAYAAADXtke0AAAhu0lEQVR4nO3dC9x3U5UH8DUj26hUGDbTTZSkUmiiXa9ySWZkUHpl0FW6iKQbjWQyMupN0nRllIRQLtFlymVKs4oZlyiSMKJYw0gYsZLms993PzPP+/hfzjn/fc7e+5zf9/MRPf9z9tnP+f//69nnnL3XIgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA6L0/Sd0BAGPdukR0CRGtvuBsLFbh03GGoG0IhJCUse77RLRoymYrqPBDHXUJBuhPU3cAhstYd2yFIOjd1kF3YMAQCCEJY50hor0qbr6Gse6DLXcJBgyBEFI5sub2h7bUDwAEQkhmH5x7yAVGhJDKijj1kAsEQgAYPARCABg8BEIAGDwEQgAYPARCABg8BEIAGDwEQgAYPARCABg8BEIAGLxHDP4MZMBY93YiegMRCRF9SIV/mLpPkIaxzhLR1kS0MxFdT0RLVPgOvB/tQj7ChIx1txLRWmNe3liFr6CeMtb9se4+Ktzrz6ux7qdEtOEQf/fUcGmcNhCMC4Le5ca6v+6wS5D+87DhpNeNdY/qtlfDgUCY92joGy13BTJgrLuz4qb3ttyVwUIg7JixbpOa23+3vd5AasY6f1Wwao3tj2m3R8OEQNi9E2tuv01L/YA8+PvEdezbUj8GDYGwe2PvA8V8sAD5M9a9PHUfYBkEwu79pslOxrrnx+8KJHZO6g7AMgiE3ftEw/0ujtwPSMhY986Gu94duSuAQNg9Ff77pvsa67aP2xtI6KiG+20buR+AQJjMaQ33OzdyPyABY93nmu6rwrgyaAEujRNQ4V2b7musOzxubyCBvRvuN2kCPswAgTCd/Rvu9/7I/YAOGeuajuh+psJ+LTq0AIEwERVu+tAEk6zL1ujpvwo/I35XYA4CYWFzCoNtjHXIHFQYY91vG+761chdgQUQCBNS4Wv8vxru/nsa1gOjy6lgxrrNiOgxTfZV4VfF7xHMh0CY3mOb7misewGV6601t2/8gCkTP2q43yGR+wEjIBAmpsL3ExE33L3pfsmpsM+4sqTi5ueo8HVUKGPda5ruq8KHxe0NjIJAmAEVfuGM2a2LpMLvIaKTpmx2kQr/DZXthIb77R65HzAGAmE+jmy43yepYCq8R8i+/O0FL51HRE9X4S2oYMa6xiuJVPjkuL2BcZD+OyMzZJk5WoWbrl2FPN/T56nwpZG7A2NgRJiX3TuenA0tMtZ9vOm+CILdwoiwPyOIC1V4q8jdgYaMdYaIHmi4++NUuOmcQ2gAI8L8bNpwvy0j9wNmc1XD/b6FINg9jAj7NSq8T4VR6SwxY93aRPTrJvuibGcaGBHmaY2G+z3SWPfkyH2B+i5oeNI+g5OdBgJhhlT4DiL6XsfTcCCeDZrspMJvw5uQBgJhplT4JQ13RVH4MuHJf0IIhHk7vsE+N7TQD8g4LRvMDoEwYyr8xga7LVyhAfkrOXlGLyAQ5u+1dTZW4QPb6wpUtFudM6XCTTPTQCQIhJlT4S/V2PyAFrsCFanwV3xq/YrbYgpbBhAIC1Dxy/J5FW68pAviCqn1b5yy2S4473lAICwrGL5+xEt+Yf7qKvzmBN2CCVR43fAU/6cLXjrWv58q/DWcQIDZ1rECQCS4PwEzC4WkrF/ZEmqp3K7C/4NTC6VAIITajHU+Y/S+vppehc3v9fVJVPjLsU+1sW4jIjqw4lPaC4noKBU+N3Y/oHwIhFBn1OeX/bkZTtn3ZlgxM78vfkrRF2dsZgcERZiDQAhTGev+hYi2jXiq9mw6QjTW3UpEa0Xsy7NV+CcR24MCIRDCWMY6X4e3rQShH1ThD3WUnqzK1CM8dR8wBEIYyVj3Il9BruXT8zoVPiFxEJzzDRV+ecvHgExhHiE8jLFu5Q6CIFW9z2es+3z7XaHtZ6k4B2VDIIRR7uvqtBjrPlxhszdRNw7p6DiQGQRCWI6xrknGm1kcNOlFY92u3XWlk0twyBACISx0XGanZMeuD2ise2LXx4S0EAjh/xjrNsvwdKyXe+ozKB8CIcz3viHfr5znsATHhIT8aoFeMNY9lohOJaKXhR/dTERvUeFv0sAZ654R0v4/XYVXm7Dpzh12q1jGuiv9RGwieoUKn0kDZ5ZdSfhMOo8PP/ovInpXG8sq29KLeYTGurOJyK9/HWmIyS+NdU8nolOIaOMFL/mUXXfm9KBg0vtjrPNrhGdelhe5T6PO07tV+GM0MMa6W+YFwFFWVOEHKXPFXxob646bFATDNn801hXz12kWxroDwxf1ZyOCII0LglDLbSN+tiR8zm421j2t7+fTWPfa8DmbFAQpZCPKXtGB0Fi3iIiqTvfYPXxQfcaS3jHWHRI+mEek7ssATMoE/gQi+nn4rK1DPWSWfc4qJ70w1tUpN5FE0YGQiL7fYJ8fG+sWZgwulrHuHeGDWWVVxHc66NIQcMXtbjTW3Wmsexz1gLHu1Ia3T/akzJUeCJvaMPzFfjUVyli3dvhQHl1jt5gZZHrNWBfru7EqEf3GWPdPVChj3bPCZ23xDG1MvH2VWrGBMNJlxykhIPrsysUw1n2OiH6duh895x82jdNkvuU+4bO2ChXEWHcHEV0VoSl/yyBbxQbCyIHgNmPdGVSA8Jd57xn2f1LcHvXWpKV/S2Zo925j3d9S5ox1O4XP2uqRmryeMlZsIFRhjdzkzuEvdpZDeGPdoyJNb7mp1BvaHRt5X8tY97oIbZ9krMt2qo1Z9jmLOj9ShX1y32wVGwiDq1to82xjnZ8Qmg1j3Zah9kes9v44NzI01q1krDu3hBvaXVv4hydM1fpCpOYPMNZdRhkx1n24pbmkt1Pmip9o3PIk4L9T4SppolpjrNuUiP6DeizHCdUdulSFn5eyA8a6NYlI2mq/hAUNpY8IvUe32PbhKW9wh9UhvQ6CQJumHBka6/5t6EGwF4HQ188NJ7vN9FF3hw9MZ4x1m4TVIdB/Gxvr3tXlAf0Dm3A15Vo6xAGlBEGvmI5W1cF62V1U2C8wb9WQEoQO/NK40xKjoSyrf2D2Fy0d4koVfg4VpvgR4Zgv1Q4tHuKrxrofttj+oIIgLOectidGh7W/bQXBrUoMgr0MhJ7/qxoC4o9bOsTmxrq3tNGwsW7fNtot2Ao0IC3/EYwxMXqUM/z3TYX96L1IvQyEc1T4uUT0ly01/5mW2j2mpXahEMa6Q1tos62Hbk9Q4VdS4XodCD0V/o8wOqyzJrcSY93jI7fXJIlE3/2BhueDLbTpp2HFdHgYBf6KeqD3gXCOCr+zhadYm0fOIu3TigH4z0Nbt3VmpssC4MHUI4MJhHNCMNwtUnN3Ud6rZPrgIRqmjYx1f055WVTSlJg6BhcIPRX+SnhDvzpjO+fH6xVAtkvTLgqjwB9QTw0yEM5R4VcRkV9elJSxDgF1vKGOCGPfh26a9ODFKrwF9dygA6GnwreH0WGtEo6RLxG2orJ9O/wOm2U0ivkIEX2FyndajEZUeLuau3wljAIH8QCvN+U8Z6XCvubHkT6bsK+8NUOuulqMdVtTuXzJxqMW/GxNY93biOhTkY7x3zW331uFj533/3cLa8XvpjLFXALni3ldXmG79VT4BhqQwY8IR6xbNkS014RztrEK/2PE98DXGy5OGC0cNea1TxPR/d33is5aEATn+nNPGMGfSAUy1kWZp6fCVxDR+kT0wKT1wTqwIOj18glQzLogRPR6IrrVX/6p8K0tHKO05XQ3qfDUMgnGOn+pfH6Etcb+8nbXWduZ155PvOvrYJfkNhX2n8VoQkGpncPMh0v6Mh+wKVwaTxACX9J8hJm5TIWrTszNsqi3Cn/dWPd8/+WncqwVu0EVvitiktni4dI4IWNd1ZrMObiuRhD0vkcdM9ZVKrOpwv/u61xTQULWGGgJTm5aC6dG3EdE7yeik/1DAhV+2NQRY51fO+3LkPqHLJ1l+lBhf29pqlACYGRdlA68wFh3lwpPrSOswieHc7k/dedwIjpBha8bt4Gx7gXhHvWOCwon+fux+3XTzeHBPcKEjHWLwof7YBW+dobUSt9qs1xi1alCxroLiGjLmO3XuUe4wIYqfM20jYx1D7aY4cZPJdrLX47POKvgo0R06CztwGQIhD1irPsiEb02crOVplLM8tCnpUDoHVTlCX8LD6zOU+GXRm4TWoR7hD2iwq8LQaXSvbIKbpwWBI11NuMn30dUXLXjL0OjCNNPEAQLg0DYQyr8wkj3D59ZYZvbKG9bhTKcY0W65DyprwkJhgCBsKdU+Ep/WTtDE7eo8O8mbZDxSHChNxrrpgX1987Q/lUqvMcM+0NieGqcKWOd/yO1kn+P/MqIJm34y1pfrSw8ha5rmyn9O4vK8pNJ98RV+KPGOr8+uTYV3qjJfsa61YjoSeHpsF9K+EsVvrNJWzAbDOUzEWqVfLhCnebbQ4KI46aN2Oa1/UsiemLEBxj+ix8tcWiLD0sWOk2Fx7ZlrLs//PGp46UqfN60jYx1j/JLAKf9gZnn135qjwqfXrM/0ABGhAmFFQ7fJaLH1NhtjVDX5BhjXdVpInvUnOA8bU1uqUXnF08JqrvUrSQ3LQga69YlouupPl9p7rTwHvtEIJuo8H82aAcqwD3CBIx1K4f7axfXDIKjXG2smzgHsUEqpbHFxkPW5GnZebJlrDt13Guxawob697ZMAgutKp/gm+sw2VzSxAIO2ase39YQRLT+j6whlUJo475D3VzNE54+Qgqmx8VRmOs237Mz/09v5HZeWawanif/X1fiAiBsEPGun8Ny6zawsa6MxYc80NE9HcRjzEpRVkfXFpz+3ONdY8ZMdr3D0LacpKxbu8W2x8c3CPsSLh8rbRed0Y7hy+iv9e1Q4P9f049Z6zbckIx8rqJYL3fhnt5XfqcTzirwh/r+sB9hBFhB4x1P+woCM7XJAjSpEzOIYddH0xKW+/v25ZiSVhrDjNCIGyZse59Mesfd2BS0tW6dS9K/B2fS2W5KnUH+gCBsEXGuscSUcy0/l2YVEu35Poq87kWRtLJGOv8FCyYAQJhu2IWgM8hYWxfHpS0lrIskW2MdU9P3YmSIRC2xFjn60GU6jhj3W4FZ9OeatTvU9Da6VEuSt2BkmGJXUsK/1J1qsMldqP4lGWdP/JtA7LfNIcRYQtCBTcoQy+CYJ2aLfBwCITtOKmldgEmGbmyCKZDICyk/CJAFca6Z+BM1YdAGJmx7mWx2wSo4Z9xtupDIIyv9KQEUDZcHjeAtcbxbdxCm9AfPreg95gWy4hCTQiEefPL876jwleM28BY9zQi+ici2rbbrkHFh2afVeEfTNvQWOezjh8c46z6OaAqfAreoeowjzC/+YMP+AQNKvzLBsf2NY19beOiJJ5H2IbjVbjRBHRjnV/rfPmMx/+qCr9qxjYGBfcIIzLWvXjGJhar8J81CYKeCp8QgkrsxK9Qr65x41U4fvQf3sNDZjjpr5xh30FCIIxrlmScj45VqEeFfaEgKHhlhwr7S+X9Gu6OK72aEAjzWMy/uwr/T+S+zFLTGOp7a+yTpsKf9LVK8Ga0D4EwLl+jtjYVblJ3eFqbN8RuEyY6s6Xz8yac9/bhqXFcvtRmK4x1axLRm0N94vNV+NQp2yMtU7d8tqHPVize5W+hnFXlaTIRPRSnezAJAmFcdYuDL+Wrko0bFRrrfE2KAxb8+E3haar3lDH1bn/WpC/Q2GfGBUJjna9Dve+CH78r1Dm5jYi2UOHrxrSLlSIdwKVxHnxVsuXqGxvrVgtTcRYGwYVuDCUeTdjvES2kALs4zFPsS2LW80Ix96jZWhaed2PdvuFnC4PgwnXpPzfW/cuI9nz1wafE7COMhhFhXH+YYV9fCc2P4o4mokMbJG54oIVKaueo8N8s+Nk/G+v81I6/p/Lcq8KrzPv/X/P/Y6z7sn9gFeMAM/wR2jbsuyQ8IPFlWFeP0SeYDiPCuCYVRq9ig3B5lUP2mqeNCIJLqbD/kv6eCrMgCM7/+R5t3t+t6d1E9CkEwW5hRNjOOtIhzIfzX9b9qSdU+A4//w6ZxYcJI8K4rqHhTAq21EPh90eJzIHJakRorPMjjI93eMhLiGi3iHPuLqUBBEFjnb9kXq64UwmMdfupsH+CO5EKb1T4yPD+mI0Z6w7sOL2cf5j1KhW+a1AjQmPdyuGD12UQ9J5PRNcb69429EnMNYKgn794NpXpE8a6awdQCKnK/MRKzLLvZdc5Nrfxt5mMdUsfZg0mEGaQJOBTIXPLUG0xbQNjnQ1fisVUtvXDdKM1q2xLZfpmjEZM+lHxK4x1nx5EIDTW3Up5KC59VSS3qPDEmrjGug+Hib99Isa6L03aIExyLnH0e8KsDZhlI/9eruHOMhBmMlVkKWNdjPRFF1JBVNgv2RvLWOdXNhxE/bSnse6HkzZQ4Z2oMCp8Z4RmFlMmuhgVJg2ExrpnUV4a55Gbx68GKMWJFW6Sv4H6bfMKo5+XUjlunrUBY11uadwW931EOMtKjDb8btYGVHjiCCMnKvyaSQ+wBlSIavGkP8oq7J9ilmLmp/kaPyXcrFbseyD0k1j76DuUv5syf4DVtWlzB33yi+yp8L9R/9ze60Cowq3/gjXNkh69tBxyY0cOQy0SHtZQTyqklbvjqZ8O7fuI0DuOMqHCP43UTqOaI12acgk/1JUVYxNJqHBut3EeZpZaKSNkM2FehX1SjH4HQhV+U0/vQzyHyjXYervGuk0mvDyXAzJHp8VsTIX973o1pecnV1PvA+G8WfwpazOsqMIPxmxQha/MeO7d2DmTxrr30rD5NGitzc9riwpHL3mqws9MPB1sexU+f1BrjVV4XWPd44nIF6x5Uajv+4iKIxd/2fJgSGv+h/Dvh0LG6AfCz1YIgd+nj/JPxe4mogNV+JIWf6e1M5idP8q3J7zmU2wN2aIJr7X2Wcn1MlaFt/L/DstQtwvfKf89uoeIVpn3vfrT8N8rzhtgVbmdMPcd/n3Yzw8ePqHCF1CHsgmEngr/yi+roX5Zh4hGpdJP6erY5QaGwE9UbiH57ayOCJexrVJhP6m5k+VuKWRxadxnKuynqexIecn+YU5KxrpSEi5cpMK+GBTMCIGwAyr89VDlLLYL/f3VuX+IaNOK/fltC33pk6dFaONvw3uyYks3/K9X4anJMqDAS+M+U+GzImdAXnPhPEwVvsxYN3dfFJqb6cHZ/BRe4SHc+eG9P5KIYjyM2l+FPxGhHQgwIuxY+JL4EWJTbw4jwJGT0VVYp60ayXAtaW5uaWOtuQr7SdnLVSus6UfhvUcQjAyBMAEV3jEExDqTyZeEL8HnK2z7sNKQC/xljeMOTvhj8jAVH5SsPKXte8J7/+YaXTo+vPcvqLEP1IBL4/STyZdOKDfWrROmJ2xIRP8dnuz6+0CXNWh67ymv++P865jXLpoyhWTINq6wzcFE9IFpG4U/aEv/qBnr/DSUdUL5Tj848Tk6f5lh8oPeQiDMhAr/ZyjlORNj3QcrbLbZlPWqQw6Ek25b+AnGUxnr1lLhypPp/ShxwMsas4BL4x4x1h1bcYH6S8a9oMJDzdQ9Z2xqshoJanPJug4VIRD2hLHuF0S014DSiLViytQif9uikkxXFMEYCISFM9a9Pnzp1qu539ildCr8MhqmJ417wVj31LqNhSJRb5+5V9A6BMJCGeueGwJg0xx0H5gljX8PqQpPSnM/7uHSNJ8MAfEtDfeHDpSylKg3jHUbEdGPiegU/4SxTi1kY52vneEXv8cqKLTepON3dXk3qYawsc6vo901ZR8in4t7QwLgk1VYqu5krFvbr1bxk7NV+IpIfYEAT427t968jCG7jZib5ktI+ieOD4anlFXq7zb180mfAR8cBnKva+tJLxrrqszdrOrRRHSU/2fBe/+LMJHb1815AhH5GiqjgvPtLX8mBgmXxh1T4TMrrHP101e27OADv4Kx7q+nbLMB9dvhk1I+hQQMXSQPfmp4mv9XRPTsCVdrQ7tl0QmMCOEbk26RqPC1kddI52QXFf7alG0up7xkmxy2ZBgRpvE9yoix7syK99B6M60mLFmbGASNdXvkVnIhZD6HyBAI08ht0fxOxrqpqaL8tJoQEM+mMvmli2tMezAyDy5DBwKBMM/7hCl8N5RKmEqFd4qQRadrj1ThP1fhSrW0M70V8I7UHegrBEKY7xZj3dhJxaOy6BDRqzM/hQeFy2D/NJYKDoL+fB+Tug99hUCYTq61WW6aUtJyOSp8KmVMhf+x6rbGusflGgShXQiEiWR6eTznUmPd6TQgxrr3ENFvKF87pO5AnyEQplUnMWvXdglLwybWWjHWPZYyZqxbd8rrJowCP0IZU+FzU/ehzxAI0ydmzd0ZISD6WtOj3EV5u37cC8a68wup77IkdQf6DhOq0/OrGpYW0c7cRWFJ2IWhHKjP1uzXTWcvjPh85u2PE5H/Jd5NBVFhf9kOLUIgTEyFty7sBr1f+leiRYVm3n5r6g4MAS6N8+CzkQA8jArPXL4BpkMgzIAKH5a6D5Clp6TuwFAgEObDVzEDmPORUNALOoBAmAkV9kXZY+a9g4KFYvDQEQTCjKhwnaLf0FM1kkJAJAiEmcGXYPCePPgzkAACYZ5WSt0BSOJ9KuznaELHEAgzpMKKJ4aDc7QKZ73Mr88QCDPlnxjiMnkwDlDhd6buxJAhEGYOwbD3dldhv/QPEkIgLCcY5pwiCprZUYVPxslLD4GwECq8mi89mbofEM0KKlxSqYNeQ9KFBox1bxyRS/ANKvwFapEKH2ysO42IftzmcaBVt6nw2m2fY2OdL6FwyoIfn+RrNNcpWzAUGBHW4FPYh0wxoxKqHt9FFhlfzjFcKt/X9rEgurd2FAR/NSIIerv7z42x7r1t96E0CIQVGeu+5VPYV9iuk5RaKvwoJOwsylpdZJIJn7+/mLLZkSHZbtbZxbuEQDiFsW5R+HBtV/WkGuvOou4Sdj6vi2NBY9eHKnrS9jk01tWdgnOXse6ElrpTFATCCYx11xDR9xucV1/mshMqfCmm2GTrcBV+aofHO6rBPq8Jo8Mu+5kdBMIxD0PCKHCDpifWWPd86lAIhjd2eUyYaHP/cKugc3Sdse4GGig8NZ7HWOfPx+8jndsnEtEl1CEVXtdY9/1CU9L3RooRurHumRGaeUoYAHxUhQf1QAUjwsBY99mIQdC7khJQ4S2I6LwUx4akK4FiXg28p7A6OjMbfCA01m0W3vSouQBV+LqY7dU89ksnlbGE/uURVOHo06nMsnuHfrZE7w06EBrrLiOiH7XQdJLR4Hwd36SHGe4nR3RiC21uFwLiy6nHBhkIjXV/FUaBvjZvdCr8HMoAniZ3Zh8VvpYSU+HXtNj8OWEWRS8NLhAa624hom8OKPgcmboDPccq/GnKRMurjjYIo8MDqWcGEwiNdfuHUeDjWzrE9hkGQf/F6N2HNicq/ELKTFh19O4WD3FECIhrUU/0PhAa69YPAbCtnG83hpUDrY0yI1gjdQd6alPKlAp/LPxhbvOh3a3GuvOpB3odCI11LyOia1ueNLsuZU6F7yCiC1L3o2d+psL+YVvWVHh9ItqqxUNs1YepNr0OhET07ZbaPSmMAi+mQqjw1qn70Ccq/AwqhApfGEaHZ7Z1DGPdl6lgvQ2Exrq2kl6uqsJ7UJlQHCgOnxOyOCr8CiJasaXmd6eC9TYQEtEOLZRa9KPAu6hQKvy+1H3oAxXelQqlwg+G0eEbYrdtrNuICtXnQBjLTSEA9mU09anUHSjcB6gHfDb1EBDvjtjsi6hQCISTLVLhdahHVPjtqftQMhX+B+oRFfbJWTeP1FyxxekRCEc7O4wCf0D9dHXqDhSql0/eVfjiMDr8xoztnEuF6nMgXNxwv2er8E7Ub9uk7kChev25UGG/nviRDXcvutxsbwOhCp9ec5cvhlHgT6jnVPjW1H0okQrfQz2nwr8Lo8PFDcrNFqu3gdCrseRtZRV+PQ3Lnqk7UJj9aEBU+PTw/flphc23pcL1OhB64c3kMS/vG0aB99PAqHDRE2C7psKfpAFS4WdNeZiyngp/lwr3iCEtjA8Fap5ARJer8G9T9wuK8QANmC5bQfUnc4mMfXYbFb6KemQQgXCOCv+CiPw/8P/V9s7GyZhqf5yjZUpaVlpH7y+NYTwVbmsZYq90UZgd0kIgBIDBQyCEI3AKJvoizk//IRAOnAq/P3UfMndY6g5A+xAIASZQ4RtwgvoPgRC8m3EaYMgQCMHD5d9oR+PjMQwIhEBtpnAvXDZlOqFdCIQwV9wJFlDhNivAQUYQCAFg8BAIYU6VLCNDguS1A4JACHO+gFOxnJNxPoYDgRDm4IHJ8k7BR2M4EAhhKUwcXh7Ox7AgEALA4CEQwnwxa9zG8lCCY/Yy5x6Mh0AI8x2e4elIkR0aiVgHBoEQ/o8KfyTD02G7PqAK/6jrY0JaCISw0AGZnZK7Oj7e1h0fDzKAQAjLUeGPZ1bH5HEdHusdKnxBh8eDTCAQwsOo8E5ElEv5ykd3dJxXq/AxHR0LMoNACCOp8H6hJnTqBygXttz+YaG29aktHwcytrRWKUBfGevmytYunYajwimm4wAAAAAAAAAAAAAAAAAAAAAAAAAAQKYwoRoqMdatQ0THEtE2RHRvh0vf2nAlER2pwqhLAkshEMJExjqf9OA3PT5Na6vwbak7AWlhrTFM0+cg6N1qrFs5dScgLQRCGMtY98eBnJ77UncA0kIghJGMdVsM6dQY616Zug+QDgIhjPOZgZ2aof2+MA8CIYyz4cBOzRqpOwDpIBACwOAhEALA4CEQwjgnDuzUDO33hXkQCGGc/QZ2avZJ3QFIB4EQRlJhX0+YB3J6zlDhe1J3AtLBEjuYyFh3JxGt2uPTdL0KPzV1JyAtjAhhIhVejYgO6elp2gdBEDyMCKEyY92TiWgREa1CRP6/byCiP4SXHxrxB3Za6cz52z0U2pr7b5rXdlMrhOVzvyOilYhodSK6m4i+qcIPzNg2AAAAAAAAAAAAAAAAAABkDZmnoSpMn4HGjHVfIqI9CzmFu6jw11J3AvKEQAiNGOvuKbCS3SIV/kHqTkB+sLIEajPWvaPAIOhdlLoDkCcEQmjiaJw26BMEQgAYPARCABg8BEJoYsdCT9vNqTsAecJTYxhS8feVVFhTdwLygxEhNHVQYafuCgRBGAcjQhjEqFCF8VmHsTAihCEEl+ek7gDkDYEQ+h5k9lLhK1N3AvJWyl90yJix7iVEdCHlZ0cV/nrqTkD+EAghCmPdKqEeSC42VOFrUncCyoBACFEZ695IRMclPK3vUeElCY8PBUIghFYY615NRKd0eHoXq/DpHR4PegSBEFpnrNuEiLYLpUC3IKJHztDcLSGLjH8AcpwK3xGxqwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAED9879mqSxGRltzTQAAAABJRU5ErkJggg==';
+    const iconImg = new Image();
+    iconImg.src = base64Icon;
+
+    let particles = [];
+    let sparkles = [];
+    let W = 0, H = 0, dpr = 1;
+    let touch = null;
+    let isInitialized = false;
+
+    // Palette: Navy (#06173A), Signature Orange (#F29E64), Powder Blue (#A8BCD2)
+    const PALETTE = [
+      '6, 23, 58',
+      '242, 158, 100',
+      '168, 188, 210'
+    ];
+
+    function resize() {
+      const rect = box.getBoundingClientRect();
+      W = Math.max(240, Math.round(rect.width));
+      H = Math.max(240, Math.round(rect.height));
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+      canvas.width = Math.round(W * dpr);
+      canvas.height = Math.round(H * dpr);
+
+      sampleIcon();
+    }
+
+    function sampleIcon() {
+      if (!iconImg.complete || iconImg.naturalWidth === 0) return;
+
+      const off = document.createElement('canvas');
+      off.width = W;
+      off.height = H;
+      const ox = off.getContext('2d');
+      if (!ox) return;
+
+      // Scale to comfortably fit within canvas
+      const maxH = H * 0.88;
+      const maxW = W * 0.82;
+      const scale = Math.min(maxW / iconImg.naturalWidth, maxH / iconImg.naturalHeight);
+      const tw = iconImg.naturalWidth * scale;
+      const th = iconImg.naturalHeight * scale;
+      const cx = (W - tw) / 2;
+      const cy = (H - th) / 2;
+
+      ox.drawImage(iconImg, cx, cy, tw, th);
+      const idata = ox.getImageData(0, 0, W, H).data;
+
+      // High density sampling: ~2,000 to 2,500 particles
+      const step = Math.max(2.4, Math.sqrt((W * H) / 28000));
+      const newPts = [];
+
+      for (let y = 0; y < H; y += step) {
+        for (let x = 0; x < W; x += step) {
+          const jx = x + (Math.random() - 0.5) * step * 0.85;
+          const jy = y + (Math.random() - 0.5) * step * 0.85;
+          const ix = Math.floor(jx);
+          const iy = Math.floor(jy);
+          if (ix >= 0 && ix < W && iy >= 0 && iy < H) {
+            const alpha = idata[(iy * W + ix) * 4 + 3];
+            if (alpha > 110) {
+              newPts.push({ x: jx, y: jy });
+            }
+          }
+        }
+      }
+
+      // Shuffle points so reforming dots fly dynamically across the figure
+      for (let i = newPts.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        const temp = newPts[i];
+        newPts[i] = newPts[j];
+        newPts[j] = temp;
+      }
+
+      // Create or update particles
+      const newParticles = [];
+      const count = newPts.length;
+
+      for (let i = 0; i < count; i++) {
+        const old = particles[i] || null;
+        let p;
+
+        if (old) {
+          p = old;
+          p.tx = newPts[i].x;
+          p.ty = newPts[i].y;
+        } else {
+          const roll = Math.random();
+          // Give rays and filament vibrant orange accent
+          const col = roll < 0.18 ? PALETTE[1] : (roll < 0.28 ? PALETTE[2] : PALETTE[0]);
+          p = {
+            x: W / 2 + (Math.random() - 0.5) * W * 1.5,
+            y: H / 2 + (Math.random() - 0.5) * H * 1.5,
+            tx: newPts[i].x,
+            ty: newPts[i].y,
+            vx: (Math.random() - 0.5) * 3,
+            vy: (Math.random() - 0.5) * 3,
+            col: col,
+            sz: roll < 0.18 ? (1.3 + Math.random() * 1.0) : (1.05 + Math.random() * 0.8),
+            ph: Math.random() * Math.PI * 2,
+            ang: Math.random() * Math.PI * 2,
+            far: 0.5 + Math.random() * 0.8,
+            k: 0.7 + Math.random() * 0.6
+          };
+        }
+        newParticles.push(p);
+      }
+
+      particles = newParticles;
+
+      // Ambient celestial sparkles orbiting gently around the radiating bulb
+      sparkles = [];
+      for (let s = 0; s < 26; s++) {
+        sparkles.push({
+          radius: W * (0.32 + Math.random() * 0.2),
+          speed: (0.35 + Math.random() * 0.45) * (Math.random() < 0.5 ? 1 : -1),
+          angle: Math.random() * Math.PI * 2,
+          yOffset: (Math.random() - 0.5) * H * 0.5,
+          sz: 0.9 + Math.random() * 1.2,
+          col: Math.random() < 0.65 ? PALETTE[1] : PALETTE[2]
+        });
+      }
+
+      isInitialized = true;
+    }
+
+    iconImg.onload = () => {
+      sampleIcon();
+    };
+
+    // Mouse & Touch interaction
+    function updatePointer(clientX, clientY) {
+      const rect = canvas.getBoundingClientRect();
+      touch = {
+        x: clientX - rect.left,
+        y: clientY - rect.top
+      };
+    }
+
+    box.addEventListener('mousemove', (e) => {
+      updatePointer(e.clientX, e.clientY);
+    }, { passive: true });
+
+    box.addEventListener('mouseleave', () => {
+      touch = null;
+    }, { passive: true });
+
+    box.addEventListener('touchstart', (e) => {
+      if (e.touches && e.touches[0]) {
+        updatePointer(e.touches[0].clientX, e.touches[0].clientY);
+      }
+    }, { passive: true });
+
+    box.addEventListener('touchmove', (e) => {
+      if (e.touches && e.touches[0]) {
+        updatePointer(e.touches[0].clientX, e.touches[0].clientY);
+      }
+    }, { passive: true });
+
+    box.addEventListener('touchend', () => {
+      touch = null;
+    }, { passive: true });
+
+    // Click / Tap shockwave impulse
+    box.addEventListener('click', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const clickY = e.clientY - rect.top;
+
+      particles.forEach(p => {
+        const dx = p.x - clickX;
+        const dy = p.y - clickY;
+        const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+        const force = Math.max(14, 38 - dist * 0.12);
+        p.vx += (dx / dist) * force + (Math.random() - 0.5) * 12;
+        p.vy += (dy / dist) * force + (Math.random() - 0.5) * 12;
+      });
+    });
+
+    // Render loop
+    let lastTime = performance.now();
+
+    function render(now) {
+      requestAnimationFrame(render);
+      if (!isInitialized || particles.length === 0) return;
+
+      const dt = Math.min((now - lastTime) / 1000, 0.05);
+      lastTime = now;
+      const t = now / 1000;
+
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.clearRect(0, 0, W, H);
+
+      // Group rendering by color for 60fps performance
+      const groups = {
+        [PALETTE[0]]: [],
+        [PALETTE[1]]: [],
+        [PALETTE[2]]: []
+      };
+
+      const pointerRadiusSq = 95 * 95;
+
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+
+        // Harmonic organic flow motion (matching index.html)
+        const sw = Math.sin(p.ph + t * 1.5 + p.ty * 0.018) * 1.8;
+        const sw2 = Math.cos(p.ph * 1.6 + t * 1.2 + p.tx * 0.018) * 1.8;
+
+        // Pointer repulsion physics
+        if (touch) {
+          const dx = p.x - touch.x;
+          const dy = p.y - touch.y;
+          const d2 = dx * dx + dy * dy;
+          if (d2 < pointerRadiusSq) {
+            const f = ((pointerRadiusSq - d2) / pointerRadiusSq) * 3.6 / Math.sqrt(d2 + 1);
+            p.vx += dx * f;
+            p.vy += dy * f;
+          }
+        }
+
+        // Spring pull towards target shape
+        const targetX = p.tx + sw;
+        const targetY = p.ty + sw2;
+        p.vx += (targetX - p.x) * 0.05 * p.k;
+        p.vy += (targetY - p.y) * 0.05 * p.k;
+
+        // Friction / damping
+        p.vx *= 0.84;
+        p.vy *= 0.84;
+
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (groups[p.col]) {
+          groups[p.col].push(p);
+        } else {
+          groups[PALETTE[0]].push(p);
+        }
+      }
+
+      // Draw all particle batches
+      for (const col in groups) {
+        const batch = groups[col];
+        if (batch.length === 0) continue;
+
+        const alpha = col === PALETTE[1] ? '0.96' : (col === PALETTE[2] ? '0.90' : '0.92');
+        ctx.fillStyle = `rgba(${col}, ${alpha})`;
+        ctx.beginPath();
+
+        for (let j = 0; j < batch.length; j++) {
+          const q = batch[j];
+          ctx.moveTo(q.x + q.sz, q.y);
+          ctx.arc(q.x, q.y, q.sz, 0, 6.283);
+        }
+        ctx.fill();
+      }
+
+      // Draw ambient orbital sparkles
+      const cx = W / 2;
+      const cy = H / 2;
+      for (let s = 0; s < sparkles.length; s++) {
+        const sp = sparkles[s];
+        sp.angle += sp.speed * dt;
+        const sx = cx + Math.cos(sp.angle) * sp.radius;
+        const sy = cy + Math.sin(sp.angle) * (sp.radius * 0.5) + sp.yOffset;
+        
+        ctx.fillStyle = `rgba(${sp.col}, 0.75)`;
+        ctx.beginPath();
+        ctx.arc(sx, sy, sp.sz, 0, 6.283);
+        ctx.fill();
+      }
+    }
+
+    window.addEventListener('resize', () => {
+      resize();
+    }, { passive: true });
+
+    resize();
+    requestAnimationFrame(render);
+  })();
+</script>
 
 </body>
 </html>
