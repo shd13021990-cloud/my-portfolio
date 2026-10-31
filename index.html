@@ -1050,111 +1050,36 @@ body.dark .icon-shell {
 }
 
 
-/* ---------- INSIGHTS INTERACTIVE PARTICLE CARD & HEADER ---------- */
+/* ---------- INSIGHTS SEAMLESS FLOATING PARTICLES (ORIGINAL TEMPLATE STYLE) ---------- */
 .insights-header-grid {
   display: grid;
-  grid-template-columns: 1.25fr 0.9fr;
-  gap: 40px;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
   align-items: center;
   margin-bottom: 40px;
 }
-.insights-anim-card {
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(6, 23, 58, 0.09);
-  border-radius: 28px;
-  padding: 22px;
-  box-shadow: 0 24px 50px -16px rgba(6, 23, 58, 0.12);
-  backdrop-filter: blur(12px);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  transition: box-shadow .3s ease;
-}
-.insights-anim-card:hover {
-  box-shadow: 0 28px 60px -14px rgba(6, 23, 58, 0.16);
-}
-.insights-anim-card-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  font-size: 11.5px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #c95d1b;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(6, 23, 58, 0.06);
-}
-.insights-pulse-group {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.insights-pulse-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--orange, #F29E64);
-  box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7);
-  animation: insightsPulse 2s infinite;
-}
-@keyframes insightsPulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(242, 158, 100, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0); }
-}
-.insights-card-badge {
-  font-size: 11px;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: rgba(6, 23, 58, 0.06);
-  color: var(--navy, #06173A);
-  font-weight: 700;
-}
-.insights-canvas-box {
+.insights-seamless-slot {
   width: 100%;
-  height: 320px;
+  height: 380px;
   position: relative;
-  background: radial-gradient(circle at center, rgba(242, 158, 100, 0.1) 0%, rgba(249, 236, 224, 0.25) 65%, transparent 100%);
-  border-radius: 20px;
-  overflow: hidden;
-  cursor: grab;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: crosshair;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.insights-canvas-box:active { cursor: grabbing; }
 #insightsParticleCanvas {
   width: 100%;
   height: 100%;
   display: block;
-}
-.insights-anim-card-foot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  font-size: 12px;
-  color: var(--ink-2, rgba(6, 23, 58, 0.72));
-  font-weight: 600;
-  padding-top: 8px;
-  border-top: 1px solid rgba(6, 23, 58, 0.06);
-}
-.insights-foot-hint {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.insights-foot-hint::before {
-  content: '✦';
-  color: var(--orange, #F29E64);
-  font-size: 11px;
+  background: transparent;
 }
 @media (max-width: 1024px) {
-  .insights-header-grid { grid-template-columns: 1fr; gap: 32px; }
-  .insights-canvas-box { height: 280px; }
+  .insights-header-grid { grid-template-columns: 1fr; gap: 24px; }
+  .insights-seamless-slot { height: 300px; }
 }
-
 </style>
 <!-- site structured data (carried over from the previous site for brand continuity) -->
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "Cogent Labs", "url": "https://cogentlabs.co", "logo": "https://cogentlabs.co/cogent-labs-logo.png", "description": "Agentic AI solutions that automate complex enterprise workflows, accelerate decision-making, and drive measurable business outcomes.", "founder": {"@type": "Person", "name": "Ehmad Zubair", "jobTitle": "CEO & Co-founder"}, "sameAs": ["https://www.linkedin.com/company/cogentlabs/", "https://www.instagram.com/cogent.labs.co/"], "contactPoint": {"@type": "ContactPoint", "email": "hello@cogentlabs.co", "telephone": "+92-300-111-4369", "contactType": "sales"}, "address": {"@type": "PostalAddress", "streetAddress": "16192 Coastal Hwy", "addressLocality": "Lewes", "addressRegion": "DE", "postalCode": "19958", "addressCountry": "US"}}, {"@type": "WebSite", "name": "Cogent Labs", "url": "https://cogentlabs.co"}]}</script>
@@ -1942,111 +1867,36 @@ body.dark .orbit-pill-badge {
 }
 
 
-/* ---------- INSIGHTS INTERACTIVE PARTICLE CARD & HEADER ---------- */
+/* ---------- INSIGHTS SEAMLESS FLOATING PARTICLES (ORIGINAL TEMPLATE STYLE) ---------- */
 .insights-header-grid {
   display: grid;
-  grid-template-columns: 1.25fr 0.9fr;
-  gap: 40px;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
   align-items: center;
   margin-bottom: 40px;
 }
-.insights-anim-card {
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(6, 23, 58, 0.09);
-  border-radius: 28px;
-  padding: 22px;
-  box-shadow: 0 24px 50px -16px rgba(6, 23, 58, 0.12);
-  backdrop-filter: blur(12px);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  transition: box-shadow .3s ease;
-}
-.insights-anim-card:hover {
-  box-shadow: 0 28px 60px -14px rgba(6, 23, 58, 0.16);
-}
-.insights-anim-card-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  font-size: 11.5px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #c95d1b;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(6, 23, 58, 0.06);
-}
-.insights-pulse-group {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.insights-pulse-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--orange, #F29E64);
-  box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7);
-  animation: insightsPulse 2s infinite;
-}
-@keyframes insightsPulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(242, 158, 100, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0); }
-}
-.insights-card-badge {
-  font-size: 11px;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: rgba(6, 23, 58, 0.06);
-  color: var(--navy, #06173A);
-  font-weight: 700;
-}
-.insights-canvas-box {
+.insights-seamless-slot {
   width: 100%;
-  height: 320px;
+  height: 380px;
   position: relative;
-  background: radial-gradient(circle at center, rgba(242, 158, 100, 0.1) 0%, rgba(249, 236, 224, 0.25) 65%, transparent 100%);
-  border-radius: 20px;
-  overflow: hidden;
-  cursor: grab;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: crosshair;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.insights-canvas-box:active { cursor: grabbing; }
 #insightsParticleCanvas {
   width: 100%;
   height: 100%;
   display: block;
-}
-.insights-anim-card-foot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  font-size: 12px;
-  color: var(--ink-2, rgba(6, 23, 58, 0.72));
-  font-weight: 600;
-  padding-top: 8px;
-  border-top: 1px solid rgba(6, 23, 58, 0.06);
-}
-.insights-foot-hint {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.insights-foot-hint::before {
-  content: '✦';
-  color: var(--orange, #F29E64);
-  font-size: 11px;
+  background: transparent;
 }
 @media (max-width: 1024px) {
-  .insights-header-grid { grid-template-columns: 1fr; gap: 32px; }
-  .insights-canvas-box { height: 280px; }
+  .insights-header-grid { grid-template-columns: 1fr; gap: 24px; }
+  .insights-seamless-slot { height: 300px; }
 }
-
 </style></head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -2324,25 +2174,7 @@ body.dark .orbit-pill-badge {
 
       <!-- Right Column: Interactive Brain-Lightbulb Particle Swarm Card -->
       <div>
-        <div class="insights-anim-card" id="insightsAnimCard">
-          <div class="insights-anim-card-head">
-            <span class="insights-pulse-group">
-              <span class="insights-pulse-dot"></span>
-              <span>INTERACTIVE INSIGHTS ARTIFACT</span>
-            </span>
-            <span class="insights-card-badge">THEME SWARM</span>
-          </div>
-
-          <div class="insights-canvas-box" id="insightsCanvasBox">
-            <canvas id="insightsParticleCanvas" aria-label="Interactive Particle Swarm of Brain Lightbulb Icon"></canvas>
-          </div>
-
-          <div class="insights-anim-card-foot">
-            <span class="insights-foot-hint">Hover, drag or click to disperse</span>
-            <span style="color: #c95d1b; font-weight: 700;">Reconstructs in live sync</span>
-          </div>
-        </div>
-      </div>
+        <div class="insights-seamless-slot" id="insightsCanvasBox"><canvas id="insightsParticleCanvas" aria-label="Particle Swarm of Brain Lightbulb Icon"></canvas></div></div>
     </div>
 
     <!-- Articles Grid -->
@@ -3153,111 +2985,36 @@ requestAnimationFrame(loop);
 }
 
 
-/* ---------- INSIGHTS INTERACTIVE PARTICLE CARD & HEADER ---------- */
+/* ---------- INSIGHTS SEAMLESS FLOATING PARTICLES (ORIGINAL TEMPLATE STYLE) ---------- */
 .insights-header-grid {
   display: grid;
-  grid-template-columns: 1.25fr 0.9fr;
-  gap: 40px;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
   align-items: center;
   margin-bottom: 40px;
 }
-.insights-anim-card {
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(6, 23, 58, 0.09);
-  border-radius: 28px;
-  padding: 22px;
-  box-shadow: 0 24px 50px -16px rgba(6, 23, 58, 0.12);
-  backdrop-filter: blur(12px);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  transition: box-shadow .3s ease;
-}
-.insights-anim-card:hover {
-  box-shadow: 0 28px 60px -14px rgba(6, 23, 58, 0.16);
-}
-.insights-anim-card-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  font-size: 11.5px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #c95d1b;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(6, 23, 58, 0.06);
-}
-.insights-pulse-group {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.insights-pulse-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--orange, #F29E64);
-  box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7);
-  animation: insightsPulse 2s infinite;
-}
-@keyframes insightsPulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(242, 158, 100, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0); }
-}
-.insights-card-badge {
-  font-size: 11px;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: rgba(6, 23, 58, 0.06);
-  color: var(--navy, #06173A);
-  font-weight: 700;
-}
-.insights-canvas-box {
+.insights-seamless-slot {
   width: 100%;
-  height: 320px;
+  height: 380px;
   position: relative;
-  background: radial-gradient(circle at center, rgba(242, 158, 100, 0.1) 0%, rgba(249, 236, 224, 0.25) 65%, transparent 100%);
-  border-radius: 20px;
-  overflow: hidden;
-  cursor: grab;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: crosshair;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.insights-canvas-box:active { cursor: grabbing; }
 #insightsParticleCanvas {
   width: 100%;
   height: 100%;
   display: block;
-}
-.insights-anim-card-foot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  font-size: 12px;
-  color: var(--ink-2, rgba(6, 23, 58, 0.72));
-  font-weight: 600;
-  padding-top: 8px;
-  border-top: 1px solid rgba(6, 23, 58, 0.06);
-}
-.insights-foot-hint {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.insights-foot-hint::before {
-  content: '✦';
-  color: var(--orange, #F29E64);
-  font-size: 11px;
+  background: transparent;
 }
 @media (max-width: 1024px) {
-  .insights-header-grid { grid-template-columns: 1fr; gap: 32px; }
-  .insights-canvas-box { height: 280px; }
+  .insights-header-grid { grid-template-columns: 1fr; gap: 24px; }
+  .insights-seamless-slot { height: 300px; }
 }
-
 </style>
 <script>
 (function(){
@@ -3522,111 +3279,36 @@ requestAnimationFrame(loop);
 }
 
 
-/* ---------- INSIGHTS INTERACTIVE PARTICLE CARD & HEADER ---------- */
+/* ---------- INSIGHTS SEAMLESS FLOATING PARTICLES (ORIGINAL TEMPLATE STYLE) ---------- */
 .insights-header-grid {
   display: grid;
-  grid-template-columns: 1.25fr 0.9fr;
-  gap: 40px;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
   align-items: center;
   margin-bottom: 40px;
 }
-.insights-anim-card {
-  background: rgba(255, 255, 255, 0.72);
-  border: 1px solid rgba(6, 23, 58, 0.09);
-  border-radius: 28px;
-  padding: 22px;
-  box-shadow: 0 24px 50px -16px rgba(6, 23, 58, 0.12);
-  backdrop-filter: blur(12px);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  transition: box-shadow .3s ease;
-}
-.insights-anim-card:hover {
-  box-shadow: 0 28px 60px -14px rgba(6, 23, 58, 0.16);
-}
-.insights-anim-card-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  font-size: 11.5px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #c95d1b;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(6, 23, 58, 0.06);
-}
-.insights-pulse-group {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-.insights-pulse-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--orange, #F29E64);
-  box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7);
-  animation: insightsPulse 2s infinite;
-}
-@keyframes insightsPulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(242, 158, 100, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(242, 158, 100, 0); }
-}
-.insights-card-badge {
-  font-size: 11px;
-  padding: 3px 10px;
-  border-radius: 999px;
-  background: rgba(6, 23, 58, 0.06);
-  color: var(--navy, #06173A);
-  font-weight: 700;
-}
-.insights-canvas-box {
+.insights-seamless-slot {
   width: 100%;
-  height: 320px;
+  height: 380px;
   position: relative;
-  background: radial-gradient(circle at center, rgba(242, 158, 100, 0.1) 0%, rgba(249, 236, 224, 0.25) 65%, transparent 100%);
-  border-radius: 20px;
-  overflow: hidden;
-  cursor: grab;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: crosshair;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.insights-canvas-box:active { cursor: grabbing; }
 #insightsParticleCanvas {
   width: 100%;
   height: 100%;
   display: block;
-}
-.insights-anim-card-foot {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  font-size: 12px;
-  color: var(--ink-2, rgba(6, 23, 58, 0.72));
-  font-weight: 600;
-  padding-top: 8px;
-  border-top: 1px solid rgba(6, 23, 58, 0.06);
-}
-.insights-foot-hint {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-}
-.insights-foot-hint::before {
-  content: '✦';
-  color: var(--orange, #F29E64);
-  font-size: 11px;
+  background: transparent;
 }
 @media (max-width: 1024px) {
-  .insights-header-grid { grid-template-columns: 1fr; gap: 32px; }
-  .insights-canvas-box { height: 280px; }
+  .insights-header-grid { grid-template-columns: 1fr; gap: 24px; }
+  .insights-seamless-slot { height: 300px; }
 }
-
 </style>
 <script>
 (function(){
