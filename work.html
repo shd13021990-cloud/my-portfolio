@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager & Google Analytics (Queue-Initialized, Deferred Fetch) -->
+  <!-- Google Tag Manager & Analytics -->
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){window.dataLayer.push(arguments);}
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-53BV17FB3X');
 
@@ -41,14 +41,15 @@
       window.addEventListener(evt, loadTrackingScripts, { once: true, passive: true });
     });
   </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work & Case Studies | Shahid Akram</title>
-  <meta name="description" content="Commercial case studies and creative design showcase by Shahid Akram. Scaling modern brands with 4.2x ROAS campaigns and viral content funnels.">
+  <title>Client Case Studies &amp; Proven Work | Shahid Akram</title>
+  <meta name="description" content="Data-backed client turnarounds, 4.2x ROAS paid ad funnels, viral short-form video hooks, and enterprise commercial data systems by Shahid Akram.">
   <meta name="author" content="Shahid Akram">
   <link rel="canonical" href="https://byshahid.vercel.app/work.html">
 
-  <!-- Favicons and Brand Icons -->
+  <!-- Favicons -->
   <link rel="icon" type="image/png" href="favicon_shapes.png">
   <link rel="shortcut icon" type="image/png" href="favicon_shapes.png">
   <link rel="apple-touch-icon" href="favicon_shapes.png">
@@ -56,553 +57,1604 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://byshahid.vercel.app/work.html">
-  <meta property="og:title" content="Work & Case Studies | Shahid Akram">
-  <meta property="og:description" content="Commercial case studies and creative design showcase by Shahid Akram. Scaling modern brands with 4.2x ROAS campaigns and viral content funnels.">
+  <meta property="og:title" content="Client Case Studies & Proven Work | Shahid Akram">
+  <meta property="og:description" content="Data-backed client turnarounds, 4.2x ROAS paid ad funnels, viral short-form video hooks, and enterprise commercial data systems by Shahid Akram.">
   <meta property="og:image" content="https://byshahid.vercel.app/og-preview.png">
-  <meta property="og:image:secure_url" content="https://byshahid.vercel.app/og-preview.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:site_name" content="Shahid Akram Portfolio">
 
-  <!-- Twitter / X -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://byshahid.vercel.app/work.html">
-  <meta name="twitter:title" content="Work & Case Studies | Shahid Akram">
-  <meta name="twitter:description" content="Commercial case studies and creative design showcase by Shahid Akram. Scaling modern brands with 4.2x ROAS campaigns and viral content funnels.">
-  <meta name="twitter:image" content="https://byshahid.vercel.app/og-preview.png">
-
-  <meta name="theme-color" content="#0B0E14">
-
-  <!-- Fonts & Styles -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Righteous&family=Syne:wght@700;800&display=optional" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Righteous&family=Syne:wght@700;800&display=optional">
-  </noscript>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Kaushan+Script&display=swap">
-<link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&family=Kaushan+Script&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #F9ECE0;
+      --cream-2: #F2E1D0;
+      --navy: #06173A;
+      --navy-2: #12285A;
+      --orange: #F29E64;
+      --powder: #A8BCD2;
+      --ink-2: rgba(6, 23, 58, 0.72);
+      --muted: rgba(6, 23, 58, 0.64);
+      --line: rgba(6, 23, 58, 0.12);
+      --serif: "Newsreader", Georgia, serif;
+      --sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --ease: cubic-bezier(.16, 1, .3, 1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html { background: var(--cream); scroll-behavior: smooth; }
+    body {
+      color: var(--navy);
+      font-family: var(--sans);
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      background: var(--cream);
+      line-height: 1.6;
+    }
+    body.m-open { overflow: hidden; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; color: inherit; }
+    .it { font-family: var(--serif); font-style: normal; font-weight: 400; }
+    .wrap { max-width: 1360px; margin: 0 auto; padding: 0 56px; }
+
+    /* Eyebrow */
+    .eyebrow {
+      font-family: var(--serif);
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(16px, 1.6vw, 22px);
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .eyebrow::before {
+      content: '';
+      width: 26px;
+      height: 2px;
+      background: var(--orange);
+    }
+    .tag-orange {
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    /* ---------- NAV ---------- */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 90;
+      transition: transform .5s var(--ease), background .4s;
+      background: rgba(249, 236, 224, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(6, 23, 58, 0.06);
+    }
+    .nav .wrap {
+      height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .logo.text-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--navy);
+    }
+    .logo.text-logo .logo-mark {
+      height: 38px;
+      width: auto;
+      display: block;
+      transition: transform .3s;
+    }
+    .logo.text-logo:hover .logo-mark {
+      transform: rotate(-5deg) scale(1.05);
+    }
+    .links {
+      display: flex;
+      gap: 26px;
+      font-size: 14px;
+      align-items: center;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: 0 0 0 1px rgba(6, 23, 58, 0.08);
+      backdrop-filter: blur(8px);
+    }
+    .links a { position: relative; }
+    .links > a::after, .dd > a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -5px;
+      height: 2px;
+      background: var(--orange);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .4s var(--ease);
+    }
+    .links > a:hover::after, .dd:hover > a::after, .links > a.active::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    .dd { position: relative; padding: 22px 0; margin: -22px 0; }
+    .panel {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      min-width: 290px;
+      background: var(--navy);
+      color: var(--cream);
+      border-radius: 14px;
+      padding: 10px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(-50%, 10px);
+      transition: opacity .3s, transform .4s var(--ease), visibility .3s;
+      box-shadow: 0 20px 45px -18px rgba(6, 23, 58, 0.5);
+    }
+    .dd:hover .panel, .dd:focus-within .panel {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, 0);
+    }
+    .panel a {
+      display: block;
+      padding: 10px 14px;
+      border-radius: 8px;
+      white-space: nowrap;
+      font-size: 13.5px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .panel a:hover {
+      background: var(--navy-2);
+      color: var(--orange);
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 26px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      transition: color .35s, background-color .35s;
+    }
+    .pill-navy {
+      background: var(--navy);
+      color: var(--cream);
+    }
+    .pill-navy:hover {
+      background: #0d2350;
+      color: var(--cream);
+    }
+    .pill-orange {
+      background: var(--orange);
+      color: var(--navy);
+    }
+    .pill-orange:hover {
+      background: #e88d4f;
+    }
+    .nav-shahid-pill {
+      padding: 10px 22px;
+      box-shadow: 0 4px 16px rgba(6, 23, 58, 0.12);
+    }
+    .nav-shahid-name {
+      font-family: 'Kaushan Script', 'Caveat', cursive;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .logo-dot { color: var(--orange); }
+
+    /* Burger for Mobile */
+    .burger {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--navy);
+      border: none;
+      cursor: pointer;
+      position: relative;
+    }
+    .burger i {
+      position: absolute;
+      left: 13px;
+      right: 13px;
+      height: 2px;
+      background: var(--cream);
+      transition: transform .45s var(--ease), top .45s var(--ease);
+    }
+    .burger i:nth-child(1) { top: 17px; }
+    .burger i:nth-child(2) { top: 25px; }
+    .m-open .burger i:nth-child(1) { top: 21px; transform: rotate(45deg); }
+    .m-open .burger i:nth-child(2) { top: 21px; transform: rotate(-45deg); }
+
+    /* Mobile Menu Drawer */
+    .mmenu {
+      position: fixed;
+      inset: 0;
+      z-index: 85;
+      background: var(--navy);
+      color: var(--cream);
+      padding: 100px 24px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      overflow-y: auto;
+      transform: translateY(-100%);
+      transition: transform .5s var(--ease);
+    }
+    .m-open .mmenu { transform: translateY(0); }
+    .m-item {
+      font-size: 22px;
+      font-family: var(--serif);
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(249, 236, 224, 0.12);
+    }
+
+    /* ---------- WORK HERO ---------- */
+    .work-hero {
+      padding: 140px 0 60px;
+      text-align: center;
+      position: relative;
+    }
+    .work-hero h1 {
+      font-size: clamp(38px, 4.8vw, 68px);
+      line-height: 1.08;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      margin: 16px auto 20px;
+      max-width: 960px;
+    }
+    .work-hero p {
+      font-family: var(--serif);
+      font-size: clamp(17px, 1.4vw, 21px);
+      line-height: 1.5;
+      color: var(--ink-2);
+      max-width: 780px;
+      margin: 0 auto 36px;
+    }
+
+    /* Jump Filter Bar */
+    .work-filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 0 auto;
+      max-width: 1060px;
+    }
+    .work-filter-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 20px;
+      border-radius: 999px;
+      font-size: 13.5px;
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(6, 23, 58, 0.1);
+      color: var(--navy);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      backdrop-filter: blur(8px);
+    }
+    .work-filter-pill:hover, .work-filter-pill.is-active {
+      background: var(--navy);
+      color: var(--cream);
+      border-color: var(--navy);
+      transform: translateY(-1px);
+    }
+    .work-filter-pill.is-active {
+      box-shadow: 0 4px 14px rgba(6, 23, 58, 0.2);
+    }
+
+    /* ---------- CASE STUDY SECTION BLOCK ---------- */
+    .case-section {
+      padding: 100px 0;
+      position: relative;
+      border-top: 1px solid rgba(6, 23, 58, 0.08);
+      scroll-margin-top: 90px;
+    }
+    .case-section.on-cream2 { background: var(--cream-2); }
+    .case-section.on-navy {
+      background: var(--navy);
+      color: var(--cream);
+      border-top-color: rgba(249, 236, 224, 0.08);
+    }
+    .case-section.on-navy .eyebrow::before { background: var(--orange); }
+    .case-section.on-navy .case-subtitle { color: rgba(249, 236, 224, 0.8); }
+
+    .case-header {
+      margin-bottom: 40px;
+    }
+    .case-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+    .case-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(242, 158, 100, 0.15);
+      color: #c95d1b;
+      border: 1px solid rgba(242, 158, 100, 0.35);
+    }
+    .case-section.on-navy .case-badge-pill {
+      color: var(--orange);
+      border-color: rgba(242, 158, 100, 0.3);
+    }
+    .case-client-tag {
+      font-size: 13.5px;
+      color: var(--ink-2);
+      font-weight: 600;
+    }
+    .case-section.on-navy .case-client-tag { color: var(--powder); }
+
+    .case-title {
+      font-size: clamp(30px, 3.2vw, 44px);
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+      max-width: 1080px;
+    }
+    .case-subtitle {
+      font-family: var(--serif);
+      font-size: clamp(16.5px, 1.25vw, 19px);
+      line-height: 1.5;
+      color: var(--ink-2);
+      max-width: 920px;
+    }
+
+    /* 4-Stat Metric Box Grid */
+    .case-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin: 36px 0 48px;
+    }
+    .case-stat-card {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(6, 23, 58, 0.08);
+      border-radius: 18px;
+      padding: 22px 20px;
+      text-align: center;
+      transition: transform .25s ease, box-shadow .25s ease;
+      backdrop-filter: blur(8px);
+    }
+    .case-section.on-navy .case-stat-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(249, 236, 224, 0.12);
+    }
+    .case-stat-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 26px -10px rgba(6, 23, 58, 0.15);
+    }
+    .case-stat-val {
+      font-size: clamp(26px, 2.5vw, 36px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      color: #06173A;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .case-section.on-navy .case-stat-val { color: var(--orange); }
+    .case-stat-label {
+      font-size: 12.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--ink-2);
+    }
+    .case-section.on-navy .case-stat-label { color: rgba(249, 236, 224, 0.7); }
+
+    /* Two-Column Deep-Dive Grid */
+    .case-details-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .case-visual-col {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .case-img-box {
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(6, 23, 58, 0.1);
+      box-shadow: 0 16px 36px -14px rgba(6, 23, 58, 0.2);
+      position: relative;
+      background: #000;
+    }
+    .case-img-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform .4s ease;
+    }
+    .case-img-box:hover img {
+      transform: scale(1.025);
+    }
+
+    /* Tools Pill Stack */
+    .case-tools-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .case-tool-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid rgba(6, 23, 58, 0.08);
+      border-radius: 999px;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .case-section.on-navy .case-tool-chip {
+      background: rgba(255, 255, 255, 0.07);
+      border-color: rgba(249, 236, 224, 0.14);
+      color: var(--cream);
+    }
+
+    /* Content Breakdown Column */
+    .case-content-col {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    .case-sub-block {
+      background: rgba(255, 255, 255, 0.55);
+      border: 1px solid rgba(6, 23, 58, 0.08);
+      border-radius: 18px;
+      padding: 26px 28px;
+      backdrop-filter: blur(8px);
+    }
+    .case-section.on-navy .case-sub-block {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(249, 236, 224, 0.1);
+    }
+    .case-block-h {
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .case-block-p {
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--ink-2);
+    }
+    .case-section.on-navy .case-block-p { color: rgba(249, 236, 224, 0.85); }
+
+    /* 3-Phase Timeline Steps */
+    .case-phases-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-top: 10px;
+    }
+    .case-phase-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .case-phase-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: var(--cream);
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .case-section.on-navy .case-phase-num {
+      background: var(--orange);
+      color: var(--navy);
+    }
+    .case-phase-txt h5 {
+      font-size: 14.5px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .case-phase-txt p {
+      font-size: 13.5px;
+      line-height: 1.5;
+      color: var(--ink-2);
+    }
+    .case-section.on-navy .case-phase-txt p { color: rgba(249, 236, 224, 0.75); }
+
+    /* Results Bullet List */
+    .case-results-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .case-results-list li {
+      position: relative;
+      padding-left: 24px;
+      font-size: 14.5px;
+      line-height: 1.55;
+    }
+    .case-results-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #27ae60;
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .case-section.on-navy .case-results-list li::before { color: var(--orange); }
+
+    /* CTA in Case Section */
+    .case-action-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    /* ---------- GALLERY GRID ---------- */
+    .gallery-grid-new {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 36px;
+    }
+    .poster-card-new {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(6, 23, 58, 0.08);
+      border-radius: 18px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform .3s ease, box-shadow .3s ease;
+      backdrop-filter: blur(8px);
+    }
+    .poster-card-new:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 36px -12px rgba(6, 23, 58, 0.18);
+    }
+    .poster-img-wrap {
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      background: #06173A;
+      position: relative;
+    }
+    .poster-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .4s ease;
+    }
+    .poster-card-new:hover .poster-img-wrap img {
+      transform: scale(1.04);
+    }
+    .poster-info-wrap {
+      padding: 18px 20px 22px;
+    }
+    .poster-info-wrap span {
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #c95d1b;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .poster-info-wrap h4 {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--navy);
+    }
+
+    /* Lightbox Modal */
+    .poster-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: rgba(6, 23, 58, 0.88);
+      backdrop-filter: blur(12px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .poster-lightbox-content {
+      background: var(--cream);
+      max-width: 920px;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+    .poster-lightbox-close {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      background: rgba(0, 0, 0, 0.1);
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: var(--navy);
+      color: var(--cream);
+      padding: 90px 0 30px;
+      position: relative;
+    }
+    .fg {
+      display: grid;
+      grid-template-columns: 2fr 1.2fr 1.2fr 1.4fr;
+      gap: 48px;
+      margin-bottom: 60px;
+    }
+    .flogo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .flogo img { height: 38px; width: auto; filter: brightness(0) invert(1); }
+    .flogo-name {
+      font-family: 'Kaushan Script', 'Caveat', cursive;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--cream);
+    }
+    .fg p {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: rgba(249, 236, 224, 0.75);
+      max-width: 320px;
+    }
+    .fg h5 {
+      color: var(--orange);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .fg a {
+      display: block;
+      font-size: 14px;
+      color: rgba(249, 236, 224, 0.8);
+      margin-bottom: 10px;
+      transition: color .2s;
+    }
+    .fg a:hover { color: var(--orange); }
+    .footer-social-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .simple-social-link {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(249, 236, 224, 0.08);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cream);
+      transition: background .2s, transform .2s;
+    }
+    .simple-social-link:hover {
+      background: var(--orange);
+      color: var(--navy);
+      transform: translateY(-2px);
+    }
+    .sub {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(249, 236, 224, 0.12);
+      font-size: 13.5px;
+      color: rgba(249, 236, 224, 0.6);
+    }
+
+    /* Responsive */
+    @media (max-width: 1080px) {
+      .wrap { padding: 0 28px; }
+      .links { display: none; }
+      .burger { display: block; }
+      .case-stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .case-details-grid { grid-template-columns: 1fr; gap: 32px; }
+      .gallery-grid-new { grid-template-columns: repeat(2, 1fr); }
+      .fg { grid-template-columns: 1fr 1fr; gap: 36px; }
+    }
+    @media (max-width: 640px) {
+      .wrap { padding: 0 18px; }
+      .case-stats-grid { grid-template-columns: 1fr; }
+      .gallery-grid-new { grid-template-columns: 1fr; }
+      .fg { grid-template-columns: 1fr; }
+      .poster-lightbox-content { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWKQ7C6H"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-  <!-- Mouse Stalker -->
-  <div class="p-stalker" id="stalker">
-    <span class="stalker-dot"></span>
-    <span class="stalker-text" id="stalkerText"></span>
-  </div>
+<!-- Header -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="index.html" class="logo text-logo" aria-label="Shahid Akram">
+      <img src="shahid_logo.png" alt="Shahid Akram" class="logo-mark">
+    </a>
+    
+    <!-- Original Template Floating Pill Navbar with Native Dropdowns -->
+    <nav class="links" aria-label="Main Navigation">
+      <a href="index.html">Home</a>
 
-  <!-- Header -->
-    <!-- Header -->
-  <header class="l-header">
-    <div class="l-header__inner">
-      <div class="l-header__brand">
-        <a href="index.html" class="l-header__logo u-en">
-          <img src="shahid_logo.png" alt="Shahid Akram" style="width: 44px; height: 44px; object-fit: contain; display: block;">
-          <div class="logo-text-group">
-            <div class="logo-name-row">
-              <span class="brand-name" style="font-family: 'Kaushan Script', 'Caveat', cursive; font-size: 22px; font-weight: 700;">Shahid Akram<span style="color: var(--color-orange, #c87a3e);">.</span></span>
-              <span class="brand-badge-verified" title="Google &amp; Meta Certified Specialist">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                </svg>
-              </span>
-            </div>
-            <div class="brand-animated-tagline u-en">
-              <span class="dynamic-text" id="brandDynamicText">Digital Growth &amp; Performance</span>
-              <span class="dynamic-cursor"></span>
-            </div>
-          </div>
-        </a>
+      <!-- Work Dropdown -->
+      <div class="dd">
+        <a href="work.html" role="button" tabindex="0" class="active" style="color: var(--orange);">Work <span style="font-size: 10px; opacity: 0.7;">▾</span></a>
+        <div class="panel">
+          <a href="work.html#case-ads">Apex Audio (4.2x ROAS Meta Ad)</a>
+          <a href="work.html#case-growth">Kumo Matcha (85K Community)</a>
+          <a href="work.html#case-identity">Zotir Systems (3D Visual Identity)</a>
+          <a href="work.html#case-copy">Apex B2B (42 Inbound Leads)</a>
+          <a href="work.html#case-data">Commercial Inventory &amp; Data</a>
+          <a href="work.html#gallery">Design Posters Showcase</a>
+          <div style="height: 1px; background: rgba(249, 236, 224, 0.12); margin: 6px 0;"></div>
+          <a href="work.html" style="color: var(--orange); font-weight: 600;">View All Work &amp; Case Studies &rarr;</a>
+        </div>
       </div>
 
-      <!-- Desktop Nav Links (Center Floating Pill) -->
-      <nav class="l-header__nav-desktop" aria-label="Main Navigation">
-        <a href="index.html" class="nav-item-link">Home</a>
-
-        <!-- Work Dropdown -->
-        <div class="nav-item-dropdown">
-          <a href="work.html" class="nav-item-link nav-item-trigger is-active">
-            Work <span class="nav-caret">▾</span>
-          </a>
-          <div class="nav-dropdown-menu">
-            <a href="work.html#case-ads" class="nav-drop-item">Apex Audio (4.2x ROAS Meta Ad)</a>
-            <a href="work.html#case-growth" class="nav-drop-item">Kumo Matcha (85K Community)</a>
-            <a href="work.html#case-identity" class="nav-drop-item">Zotir Systems (3D Visual Identity)</a>
-            <a href="work.html#case-copy" class="nav-drop-item">Apex B2B (42 Inbound Leads)</a>
-            <a href="work.html#case-data" class="nav-drop-item">Commercial Inventory &amp; Data</a>
-            <a href="work.html#gallery" class="nav-drop-item">Design Posters Showcase</a>
-            <div class="nav-drop-divider"></div>
-            <a href="work.html" class="nav-drop-item nav-drop-item--all">View All Work &amp; Case Studies →</a>
-          </div>
+      <!-- Services & Pricing Dropdown -->
+      <div class="dd">
+        <a href="services.html" role="button" tabindex="0">Services &amp; Pricing <span style="font-size: 10px; opacity: 0.7;">▾</span></a>
+        <div class="panel">
+          <a href="services.html#service-social">Social Media Strategy &amp; Viral Growth</a>
+          <a href="services.html#service-ads">Performance Marketing &amp; Meta/Google Ads</a>
+          <a href="services.html#service-design">Graphic Design &amp; Brand Identity</a>
+          <a href="services.html#service-data">Precision Commercial Data Operations</a>
+          <a href="services.html#offer">Monthly Retainer Packages &amp; Pricing</a>
+          <a href="services.html#tools-certs">Degrees, Certifications &amp; Tool Stack</a>
+          <div style="height: 1px; background: rgba(249, 236, 224, 0.12); margin: 6px 0;"></div>
+          <a href="services.html" style="color: var(--orange); font-weight: 600;">View All Services &amp; Rates &rarr;</a>
         </div>
-
-        <!-- Services & Pricing Dropdown -->
-        <div class="nav-item-dropdown">
-          <a href="services.html" class="nav-item-link nav-item-trigger">
-            Services &amp; Pricing <span class="nav-caret">▾</span>
-          </a>
-          <div class="nav-dropdown-menu">
-            <a href="services.html#service-social" class="nav-drop-item">Social Media Strategy &amp; Viral Growth</a>
-            <a href="services.html#service-ads" class="nav-drop-item">Performance Marketing &amp; Meta/Google Ads</a>
-            <a href="services.html#service-design" class="nav-drop-item">Graphic Design &amp; Brand Identity</a>
-            <a href="services.html#service-data" class="nav-drop-item">Precision Commercial Data Operations</a>
-            <a href="services.html#offer" class="nav-drop-item">Monthly Retainer Packages &amp; Pricing</a>
-            <a href="services.html#tools-certs" class="nav-drop-item">Degrees, Certifications &amp; Tool Stack</a>
-            <div class="nav-drop-divider"></div>
-            <a href="services.html" class="nav-drop-item nav-drop-item--all">View All Services &amp; Rates →</a>
-          </div>
-        </div>
-
-        <!-- Single Direct Link for About (NO dropdown as requested by user) -->
-        <a href="about.html" class="nav-item-link">About</a>
-
-        <!-- Insights -->
-        <a href="blog.html" class="nav-item-link">Insights</a>
-
-        <!-- Let's Talk CTA -->
-        <a href="contact.html" class="nav-item-cta">Let's Talk ↗</a>
-      </nav>
-
-      <div class="l-header__actions">
-        <!-- Day / Night Time Toggle -->
-        <button class="time-toggle-btn" id="timeToggleBtn" aria-label="Toggle Day / Night Mode">
-          <span class="icon">☀️</span> Day
-        </button>
-
-        <!-- 3-Dot Floating Menu Button (Mobile & Small Screens Only) -->
-        <button class="l-header__menu-button" id="menuBtn" aria-label="Open Menu">
-          <div class="dots">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </div>
-        </button>
-      </div>
-    </div>
-
-    <!-- Dropdown Menu Drawer (Mobile & Small Screens) -->
-    <div class="l-header__menu-drawer" id="menuDrawer">
-      <nav class="l-header__nav-list">
-        <a href="index.html" class="mobile-nav-link"><span>01</span> Home</a>
-
-        <div class="mobile-nav-group">
-          <div class="mobile-nav-parent">
-            <a href="work.html" class="mobile-nav-link is-active"><span>02</span> Work &amp; Case Studies</a>
-            <button class="mobile-accordion-btn" aria-label="Toggle Work Submenu">▾</button>
-          </div>
-          <div class="mobile-sub-list">
-            <a href="work.html#case-ads">Apex Audio (4.2x ROAS Meta Ad)</a>
-            <a href="work.html#case-growth">Kumo Matcha (85K Community)</a>
-            <a href="work.html#case-identity">Zotir Systems (3D Visual Identity)</a>
-            <a href="work.html#case-copy">Apex B2B (42 Inbound Leads)</a>
-            <a href="work.html#case-data">Commercial Data Operations</a>
-            <a href="work.html#gallery">Design Posters Showcase</a>
-          </div>
-        </div>
-
-        <div class="mobile-nav-group">
-          <div class="mobile-nav-parent">
-            <a href="services.html" class="mobile-nav-link"><span>03</span> Services &amp; Pricing</a>
-            <button class="mobile-accordion-btn" aria-label="Toggle Services Submenu">▾</button>
-          </div>
-          <div class="mobile-sub-list">
-            <a href="services.html#service-social">Social Media Strategy</a>
-            <a href="services.html#service-ads">Performance Marketing &amp; Ads</a>
-            <a href="services.html#service-design">Graphic Design &amp; Brand Identity</a>
-            <a href="services.html#service-data">Commercial Data Operations</a>
-            <a href="services.html#offer">Monthly Retainer Packages</a>
-            <a href="services.html#tools-certs">Degrees, Certifications &amp; Tools</a>
-          </div>
-        </div>
-
-        <a href="about.html" class="mobile-nav-link"><span>04</span> About (Personal Bio)</a>
-        <a href="blog.html" class="mobile-nav-link"><span>05</span> Insights &amp; Articles</a>
-        <a href="contact.html" class="mobile-nav-link"><span>06</span> Let's Talk ↗</a>
-      </nav>
-      <div class="l-header__nav-sub">
-        <span>Available for Remote &amp; Global Freelance</span>
-        <span>Worldwide Client Retainers</span>
-      </div>
-    </div>
-  </header>
-
-  <main id="main-content">
-  <!-- Page Hero Banner -->
-  <section class="page-hero-banner">
-    <span class="page-hero-eyebrow">✦ COMMERCIAL CASE STUDIES &amp; PORTFOLIO</span>
-    <h1 class="page-hero-title">Client Transformations &amp; <span>Design Vault</span></h1>
-    <p class="page-hero-subtitle">
-      Explore data-backed client turnarounds, viral short-form video hooks, high-converting motion ads, and scalable paid acquisition campaigns.
-    </p>
-  </section>
-
-<section class="p-cases-stage" id="cases">
-    <!-- Huge Ghost Headline in Background -->
-    <div class="p-cases__bg-text" aria-hidden="true">
-      <div class="bg-ghost-quote" id="bgGhostQuote">
-        From viral hook to community loyalty. 85K+ followers &amp; 4.2M views.
-      </div>
-    </div>
-
-    <!-- Center Stage Case Card Display -->
-    <div class="p-cases__main">
-
-      <!-- Case 01: Social Media -->
-      <div class="case-card is-active" data-case="0">
-        <div class="case-card__number u-en">01 // VIRAL GROWTH ENGINE</div>
-        <div class="case-card__visual" onclick="openCaseModal(0)" title="Click to view deep dive">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width: 48%; height: 48%; color: var(--color-orange);">
-            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-            <polyline points="17 6 23 6 23 12"></polyline>
-          </svg>
-        </div>
-        <h3 class="case-card__title">Social Media Growth Engine: From Cold Scrollers to 85K+ Engaged Community</h3>
-        <p class="case-card__desc">Engineered retention-optimized short-form video hooks, carousel frameworks, and automated DM lead funnels across Instagram and TikTok for international brands and creator channels.</p>
-        <div class="case-card__tags">
-          <span class="case-tag">Social Media Specialist</span>
-          <span class="case-tag">Viral Video Hooks</span>
-          <span class="case-tag">85K Followers</span>
-        </div>
-        <button class="mildsugar-btn" onclick="openCaseModal(0)" style="font-size: 20px;">
-          <span class="label">
-            <span class="label-text">View Case Breakdown [↗]</span>
-            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
-          </span>
-        </button>
       </div>
 
-      <!-- Case 02: Content Writing -->
-      <div class="case-card" data-case="1">
-        <div class="case-card__number u-en">02 // CONVERSION COPYWRITING</div>
-        <div class="case-card__visual" onclick="openCaseModal(1)" title="Click to view deep dive">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width: 48%; height: 48%; color: var(--color-orange);">
-            <path d="M12 20h9"></path>
-            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-          </svg>
-        </div>
-        <h3 class="case-card__title">Conversion Copywriting &amp; Content Architecture: Generating 42 Inbound B2B Leads/mo</h3>
-        <p class="case-card__desc">Authored authoritative SEO pillar hubs, persuasive landing page copy, and executive LinkedIn thought-leadership essays that position founders as industry authorities.</p>
-        <div class="case-card__tags">
-          <span class="case-tag">Content Writing</span>
-          <span class="case-tag">B2B Strategy</span>
-          <span class="case-tag">120K Views/mo</span>
-        </div>
-        <button class="mildsugar-btn" onclick="openCaseModal(1)" style="font-size: 20px;">
-          <span class="label">
-            <span class="label-text">View Case Breakdown [↗]</span>
-            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
-          </span>
-        </button>
-      </div>
-
-      <!-- Case 03: Graphic Design -->
-      <div class="case-card" data-case="2">
-        <div class="case-card__number u-en">03 // BRAND IDENTITY &amp; CREATIVES</div>
-        <div class="case-card__visual" onclick="openCaseModal(2)" title="Click to view deep dive">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width: 48%; height: 48%; color: var(--color-orange);">
-            <circle cx="12" cy="12" r="10"></circle>
-            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
-            <path d="M2 12h20"></path>
-          </svg>
-        </div>
-        <h3 class="case-card__title">Visual Identity &amp; High-CTR Creative Kit: Elevating Brand Perception Across 15 Channels</h3>
-        <p class="case-card__desc">Designed cohesive brand kits, scroll-stopping social ad creative systems, and investor pitch decks that boosted ad click-through rate by +3.8% across diverse client niches.</p>
-        <div class="case-card__tags">
-          <span class="case-tag">Graphic Design</span>
-          <span class="case-tag">Brand Identity</span>
-          <span class="case-tag">Pitch Decks</span>
-        </div>
-        <button class="mildsugar-btn" onclick="openCaseModal(2)" style="font-size: 20px;">
-          <span class="label">
-            <span class="label-text">View Case Breakdown [↗]</span>
-            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
-          </span>
-        </button>
-      </div>
-
-      <!-- Case 04: Digital Marketing -->
-      <div class="case-card" data-case="3">
-        <div class="case-card__number u-en">04 // PERFORMANCE PAID ADS</div>
-        <div class="case-card__visual" onclick="openCaseModal(3)" title="Click to view deep dive">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width: 48%; height: 48%; color: var(--color-orange);">
-            <circle cx="12" cy="12" r="10"></circle>
-            <circle cx="12" cy="12" r="6"></circle>
-            <circle cx="12" cy="12" r="2"></circle>
-          </svg>
-        </div>
-        <h3 class="case-card__title">Full-Funnel Paid Advertising: Slashing CPA by 52% and Scaling ROAS to 4.2x–6.8x</h3>
-        <p class="case-card__desc">Restructured Meta and Google Ads accounts with creative fatigue management, lookalike segmentation, and omnichannel cart recovery sequences.</p>
-        <div class="case-card__tags">
-          <span class="case-tag">Digital Marketing</span>
-          <span class="case-tag">Meta Ads</span>
-          <span class="case-tag">4.2x ROAS</span>
-        </div>
-        <button class="mildsugar-btn" onclick="openCaseModal(3)" style="font-size: 20px;">
-          <span class="label">
-            <span class="label-text">View Case Breakdown [↗]</span>
-            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
-          </span>
-        </button>
-      </div>
-
-      <!-- Case 05: Data Entry -->
-      <div class="case-card" data-case="4">
-        <div class="case-card__number u-en">05 // COMMERCIAL DATA SYSTEMS</div>
-        <div class="case-card__visual" onclick="openCaseModal(4)" title="Click to view deep dive">
-          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width: 48%; height: 48%; color: var(--color-orange);">
-            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-          </svg>
-        </div>
-        <h3 class="case-card__title">Precision Data Entry &amp; Automation: 100% Accuracy Across 25,000+ Records</h3>
-        <p class="case-card__desc">Backed by 7+ years of rigorous data management, inventory systems, and spreadsheet architecture with 100% precision across 25,000+ records.</p>
-        <div class="case-card__tags">
-          <span class="case-tag">Data Entry &amp; Systems</span>
-          <span class="case-tag">Excel &amp; Sheets</span>
-          <span class="case-tag">100% Accuracy</span>
-        </div>
-        <button class="mildsugar-btn" onclick="openCaseModal(4)" style="font-size: 20px;">
-          <span class="label">
-            <span class="label-text">View Case Breakdown [↗]</span>
-            <span class="label-text label-text--clone">View Case Breakdown [↗]</span>
-          </span>
-        </button>
-      </div>
-
-    </div>
-
-    <!-- Right Side Vertical Dots Navigation (mildsugar signature) -->
-    <nav class="p-cases__nav" aria-label="Case Switcher">
-      <ul class="p-cases__nav-list">
-        <li class="p-cases__nav-item is-current" data-case-index="0">
-          <span class="dot"></span> <span>01. Viral Growth</span>
-        </li>
-        <li class="p-cases__nav-item" data-case-index="1">
-          <span class="dot"></span> <span>02. Copywriting</span>
-        </li>
-        <li class="p-cases__nav-item" data-case-index="2">
-          <span class="dot"></span> <span>03. Brand Identity</span>
-        </li>
-        <li class="p-cases__nav-item" data-case-index="3">
-          <span class="dot"></span> <span>04. Paid Ads</span>
-        </li>
-        <li class="p-cases__nav-item" data-case-index="4">
-          <span class="dot"></span> <span>05. Data Systems</span>
-        </li>
-      </ul>
+      <a href="about.html">About</a>
+      <a href="index.html#insights">Insights</a>
     </nav>
-  </section>
 
-<section class="p-gallery" id="gallery">
-    <div class="container-boxed">
-      <div class="section-head">
-        <p class="section-head__tag">CREATIVE DESIGN &amp; MARKETING ASSETS</p>
-        <h2 class="section-head__title gallery-main-title">High-Impact Ad Creatives &amp; Visual&nbsp;Storytelling</h2>
-        <p class="section-head__desc">A curated showcase of performance ad creatives, viral social infographics, and brand storytelling assets engineered to stop the scroll and drive conversions. Click any asset to inspect specs and full resolution.</p>
-      </div>
+    <!-- Right button with footer Brusher font -->
+    <a href="https://wa.me/923004822560" target="_blank" rel="noopener" class="pill pill-navy nav-shahid-pill" aria-label="Chat with Shahid">
+      <span class="nav-shahid-name">Shahid<span class="logo-dot">.</span></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu"><i></i><i></i></button>
+  </div>
+</header>
 
-      <div class="gallery-grid">
+<!-- Mobile Menu Drawer -->
+<nav class="mmenu" id="mmenu" aria-label="Mobile Navigation">
+  <a href="index.html" class="m-item">01. Home Overview</a>
+  <a href="work.html" class="m-item">02. Work &amp; Case Studies</a>
+  <a href="services.html" class="m-item">03. Services &amp; Pricing</a>
+  <a href="about.html" class="m-item">04. About &amp; Story</a>
+  <a href="index.html#insights" class="m-item">05. Growth Insights</a>
+  <a href="https://wa.me/923004822560" target="_blank" rel="noopener" class="pill pill-orange" style="margin-top: 20px; justify-content: center;">
+    Chat Directly on WhatsApp &rarr;
+  </a>
+</nav>
 
-        <!-- Creative Asset 01: Performance Ad -->
-        <div class="poster-card" onclick="openLightbox('showcase_apex_audio_ad.webp', 'High-ROAS Meta Ad Creative: Luxury Cyber-Tech E-Commerce Campaign', 'PAID ADS & PERFORMANCE MEDIA', 'Engineered for high-ROAS Meta and TikTok paid campaigns. Combines floating product staging, high-contrast studio lighting, and conversion-focused typography that stops feed scrolling within 1.5 seconds.', [['Objective', 'Cold Traffic Acquisition & 4.2x ROAS Scaling'], ['Platforms', 'Meta (Feed & Stories) & TikTok Ads'], ['Tools Used', 'Adobe Photoshop, Canva Pro, Midjourney'], ['Impact', '+38% Click-Through Rate & Lowered CPA']])">
-          <div class="poster-img-container">
-            <img src="showcase_apex_audio_ad.webp" alt="Performance Ad Creative" loading="lazy" decoding="async" width="1024" height="1024">
-            <div class="poster-zoom-hint">🔍</div>
-          </div>
-          <div class="poster-details">
-            <div>
-              <span class="poster-category-tag">Paid Ads &amp; Performance Media</span>
-              <h3>High-ROAS Meta Ad Creative: Luxury Cyber-Tech Campaign</h3>
-              <p>Commercial ad creative engineered for high-ROAS Meta &amp; TikTok campaigns, pairing floating product staging with conversion-focused hooks.</p>
-              <div class="poster-spec-strip">
-                <span class="poster-spec-pill"><strong>Goal:</strong> 4.2x ROAS</span>
-                <span class="poster-spec-pill"><strong>Channels:</strong> Meta &amp; TikTok</span>
-                <span class="poster-spec-pill"><strong>CTR:</strong> +38% Uplift</span>
-              </div>
-            </div>
-            <div class="poster-footer-meta">
-              <span>PERFORMANCE ASSET</span>
-              <span>EXPLORE SPECS ↗</span>
-            </div>
-          </div>
-        </div>
+<main id="main">
 
-        <!-- Creative Asset 02: Brand Identity System -->
-        <div class="poster-card" onclick="openLightbox('showcase_helvetiqa_identity.webp', 'Zotir Systems Visual Identity System: 3D Brand Guidelines & Mockup', 'BRAND IDENTITY & VISUAL SYSTEMS', 'Comprehensive brand architecture created for Zotir Systems Creative Studio. Showcases custom minimalist typography, geometric logo construction, luxury tactile stationery, and cohesive digital design guidelines.', [['Objective', 'Premium Agency Positioning & Authority'], ['Deliverables', 'Logo Suite, Typography Scale, Color Palette'], ['Tools Used', 'Adobe Illustrator, Photoshop, Figma'], ['Impact', '95%+ Client Pitch Win Rate']])">
-          <div class="poster-img-container">
-            <img src="showcase_helvetiqa_identity.webp" alt="Brand Identity Guidelines" loading="lazy" decoding="async" width="1024" height="1024">
-            <div class="poster-zoom-hint">🔍</div>
-          </div>
-          <div class="poster-details">
-            <div>
-              <span class="poster-category-tag">Brand Identity &amp; Design Systems</span>
-              <h3>Zotir Systems Visual Identity System: 3D Brand Guidelines</h3>
-              <p>Comprehensive agency brand architecture showcasing custom geometric typography, tactile stationery mockups, and cohesive design scales.</p>
-              <div class="poster-spec-strip">
-                <span class="poster-spec-pill"><strong>Scope:</strong> Full Brand System</span>
-                <span class="poster-spec-pill"><strong>Stack:</strong> Illustrator &amp; Figma</span>
-                <span class="poster-spec-pill"><strong>Positioning:</strong> Luxury Tech</span>
-              </div>
-            </div>
-            <div class="poster-footer-meta">
-              <span>BRAND ARCHITECTURE</span>
-              <span>EXPLORE SPECS ↗</span>
-            </div>
-          </div>
-        </div>
+  <!-- ================= WORK HERO ================= -->
+  <section class="work-hero" id="hero">
+    <div class="wrap">
+      <span class="eyebrow">Proven Commercial Case Studies &amp; Results</span>
+      <h1>Client Transformations &amp; <span class="it">Performance Systems.</span></h1>
+      <p>
+        Data-backed client turnarounds, high-converting paid acquisition funnels, viral short-form video hooks, and enterprise commercial data systems engineered with precision by Shahid Akram.
+      </p>
 
-        <!-- Creative Asset 03: Viral Motion Hook -->
-        <div class="poster-card" onclick="openLightbox('showcase_viral_motion_hook.webp', 'Viral Short-Form Motion Hook: 3D Kinetic Social Engagement', 'VIRAL CONTENT & MOTION DESIGN', 'High-velocity short-form visual asset engineered for TikTok and Instagram Reels. Built with 3D kinetic typography and psychological pattern interrupts that lock viewer attention past the crucial 3-second drop-off.', [['Objective', 'Algorithmic Reach & Organic Community'], ['Platforms', 'TikTok, Instagram Reels & YouTube Shorts'], ['Tools Used', 'CapCut Pro, Adobe Premiere, After Effects'], ['Impact', '85K+ Followers Scaled & 4.2M Views']])">
-          <div class="poster-img-container">
-            <img src="showcase_viral_motion_hook.webp" alt="Viral Motion Hook" loading="lazy" decoding="async" width="1024" height="1024">
-            <div class="poster-zoom-hint">🔍</div>
-          </div>
-          <div class="poster-details">
-            <div>
-              <span class="poster-category-tag">Viral Content &amp; Motion Design</span>
-              <h3>Viral Short-Form Motion Hook: 3D Kinetic Social Asset</h3>
-              <p>High-velocity visual hook engineered for Reels &amp; TikTok with kinetic typography and psychological pattern interrupts that maximize retention.</p>
-              <div class="poster-spec-strip">
-                <span class="poster-spec-pill"><strong>Format:</strong> 9:16 Video Hook</span>
-                <span class="poster-spec-pill"><strong>Tools:</strong> CapCut Pro &amp; Premiere</span>
-                <span class="poster-spec-pill"><strong>Reach:</strong> 4.2M Views</span>
-              </div>
-            </div>
-            <div class="poster-footer-meta">
-              <span>VIRAL HOOK DESIGN</span>
-              <span>EXPLORE SPECS ↗</span>
-            </div>
-          </div>
-        </div>
-
+      <!-- Category Filter Pills -->
+      <div class="work-filter-bar">
+        <a href="#hero" class="work-filter-pill is-active">All Work &amp; Cases (6)</a>
+        <a href="#case-ads" class="work-filter-pill">Paid Ads (4.2x ROAS)</a>
+        <a href="#case-growth" class="work-filter-pill">Social Growth (85K)</a>
+        <a href="#case-identity" class="work-filter-pill">Brand Identity &amp; 3D</a>
+        <a href="#case-copy" class="work-filter-pill">Conversion Copy (42 Leads)</a>
+        <a href="#case-data" class="work-filter-pill">Commercial Data (25K SKUs)</a>
+        <a href="#gallery" class="work-filter-pill">Design Posters Vault</a>
       </div>
     </div>
   </section>
 
-  <!-- Bottom Callout CTA -->
-  <section class="page-bottom-cta">
-    <div class="container-boxed">
-      <div class="bottom-cta-card">
-        <span class="cta-pill-tag">✦ READY FOR MEASURABLE GROWTH?</span>
-        <h2 class="bottom-cta-heading">Need similar high-ROAS results for your brand?</h2>
-        <p class="bottom-cta-text">Available for global freelance retainers and performance growth contracts.</p>
-        <div class="bottom-cta-actions">
-          <a href="contact.html" class="hero-cta-btn">
-            <span>Start a Project</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-          <a href="https://wa.me/923004822560?text=Hi%20Shahid!%20I%20would%20love%20to%20discuss%20a%20project." class="action-btn-pill btn-wa" target="_blank" rel="noopener noreferrer">
-            <span>Chat on WhatsApp</span>
-          </a>
+  <!-- ================= CASE 01: APEX AUDIO (PAID ADS) ================= -->
+  <section class="case-section on-cream2" id="case-ads">
+    <div class="wrap">
+      <div class="case-header">
+        <div class="case-meta-row">
+          <span class="case-badge-pill">01 // PERFORMANCE MARKETING &amp; PAID ADS</span>
+          <span class="case-client-tag">Client: Apex Audio &bull; E-Commerce Retainers</span>
+        </div>
+        <h2 class="case-title">Full-Funnel Paid Advertising: Slashing CPA by 52% and Scaling ROAS to 4.2x–6.8x</h2>
+        <p class="case-subtitle">
+          Engineered dynamic creative testing (DCT) matrix, Meta Conversions API (CAPI) server-side attribution, and automated abandoned cart recovery sequences.
+        </p>
+      </div>
+
+      <!-- 4-Stat Box Grid -->
+      <div class="case-stats-grid">
+        <div class="case-stat-card">
+          <span class="case-stat-val">4.2x–6.8x</span>
+          <span class="case-stat-label">Blended Ad ROAS</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">-52%</span>
+          <span class="case-stat-label">CPA Reduction</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">+$48K</span>
+          <span class="case-stat-label">Cart Revenue Recovered</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">$25K+</span>
+          <span class="case-stat-label">Monthly Profitable Spend</span>
+        </div>
+      </div>
+
+      <!-- Two-Column Details -->
+      <div class="case-details-grid">
+        <div class="case-visual-col">
+          <div class="case-img-box">
+            <img src="showcase_apex_audio_ad.webp" alt="Apex Audio High-ROAS Meta Ad Creative" loading="lazy">
+          </div>
+          <div class="case-tools-bar">
+            <span class="case-tool-chip">Meta Ads Manager</span>
+            <span class="case-tool-chip">Google Ads (Certified)</span>
+            <span class="case-tool-chip">GA4 &amp; CAPI</span>
+            <span class="case-tool-chip">Looker Studio</span>
+            <span class="case-tool-chip">Shopify Plus</span>
+            <span class="case-tool-chip">Klaviyo</span>
+          </div>
+        </div>
+
+        <div class="case-content-col">
+          <div class="case-sub-block">
+            <h4 class="case-block-h">The Core Challenge &amp; Bottleneck</h4>
+            <p class="case-block-p">
+              Customer acquisition costs were skyrocketing ($54+ CPA) with volatile returns eating away operating margins. Attribution tracking suffered from severe iOS privacy signal loss, and campaigns suffered from creative fatigue with no dynamic testing structure.
+            </p>
+          </div>
+
+          <div class="case-sub-block">
+            <h4 class="case-block-h">3-Phase Execution Architecture</h4>
+            <div class="case-phases-list">
+              <div class="case-phase-item">
+                <span class="case-phase-num">1</span>
+                <div class="case-phase-txt">
+                  <h5>Attribution Audit &amp; Meta CAPI Setup</h5>
+                  <p>Integrated server-side Meta Conversions API (CAPI) and GA4 custom events recovering 98%+ signal tracking accuracy.</p>
+                </div>
+              </div>
+              <div class="case-phase-item">
+                <span class="case-phase-num">2</span>
+                <div class="case-phase-txt">
+                  <h5>Dynamic Creative Testing (DCT) Engine</h5>
+                  <p>Deployed rapid testing matrix pairing 3 emotional angles &times; 3 hooks &times; 3 creatives to isolate scalable winners without ad spend waste.</p>
+                </div>
+              </div>
+              <div class="case-phase-item">
+                <span class="case-phase-num">3</span>
+                <div class="case-phase-txt">
+                  <h5>Omnichannel Retargeting &amp; Scaling</h5>
+                  <p>Structured full-funnel retargeting with urgency-driven abandoned cart workflows scaling profitably from $3,000 to $25,000+ monthly spend.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-sub-block">
+            <h4 class="case-block-h">Verified Commercial Outcomes</h4>
+            <ul class="case-results-list">
+              <li>Maintained sustained 4.2x to 6.8x Return on Ad Spend (ROAS) across all scaling sprints</li>
+              <li>Slashed Cost Per Acquisition (CPA) by 52% within 60 days of campaign restructuring</li>
+              <li>Recovered over $48,000 in abandoned checkout revenue via targeted retargeting funnels</li>
+              <li>Successfully scaled ad spend profitably from $3,000 to $25,000+ monthly budget</li>
+            </ul>
+          </div>
+
+          <div class="case-action-row">
+            <a href="https://wa.me/923004822560?text=Hi%20Shahid%2C%20I%20reviewed%20your%20Apex%20Audio%20Case%20Study%20and%20want%20to%20scale%20my%20ad%20ROAS." target="_blank" rel="noopener" class="pill pill-navy">
+              Discuss Paid Ad Scaling on WhatsApp &rarr;
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  </main>
 
-  <!-- Footer -->
-  <footer class="l-footer">
-    <div class="footer-grid-overlay" aria-hidden="true"></div>
-    <div class="footer-inner-wrap">
-      <div class="footer-cols">
-        <!-- Brand column -->
-        <div class="footer-brand-col">
-          <a href="index.html" class="footer-brand-link" style="text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
-            <img src="shahid_logo.png" alt="Shahid Akram" style="width: 52px; height: 52px; object-fit: contain; display: block;">
-            <span style="font-family: 'Kaushan Script', 'Caveat', 'Brush Script MT', cursive; font-size: 26px; font-weight: 700; color: var(--color-black, #111); display: inline-flex; align-items: baseline; letter-spacing: 0.02em;">Shahid Akram<span style="color: var(--color-orange, #c87a3e);">.</span></span>
-          </a>
-          <p class="footer-tagline" style="margin-top: 4px;">
-            Senior Digital Marketer, Growth Strategist &amp; Systems Architect. Scaling modern brands with engineering precision from Lahore, Pakistan.
-          </p>
-          <div class="footer-social-row" style="display: flex; flex-direction: row; align-items: center; gap: 16px; margin-top: 6px;">
-            <a href="https://wa.me/923004822560" target="_blank" rel="noopener" class="simple-social-link" title="WhatsApp Chat" aria-label="WhatsApp" style="color: var(--color-orange, #c87a3e); display: inline-flex; align-items: center; justify-content: center; transition: transform 0.2s ease, opacity 0.2s ease;">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
-                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.3-1.39a10 10 0 004.69 1.18h.01c5.46 0 9.91-4.45 9.91-9.91A9.87 9.87 0 0012.04 2zm0 18.06h-.01a8.17 8.17 0 01-4.17-1.15l-.3-.18-3.1.81.83-3.02-.2-.31a8.21 8.21 0 01-1.26-4.3c0-4.52 3.68-8.2 8.22-8.2a8.18 8.18 0 015.82 2.41 8.16 8.16 0 012.4 5.8c0 4.53-3.68 8.14-8.2 8.14zm4.51-6.15c-.25-.12-1.46-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.37 1 2.54c.12.16 1.74 2.65 4.2 3.72.59.25 1.04.41 1.4.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.3z"/>
-              </svg>
-            </a>
-            <a href="mailto:heyshahidakram@gmail.com" class="simple-social-link" title="Direct Email" aria-label="Direct Email" style="color: var(--color-orange, #c87a3e); display: inline-flex; align-items: center; justify-content: center; transition: transform 0.2s ease, opacity 0.2s ease;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
-                <rect width="20" height="16" x="2" y="4" rx="2"/>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/heyshahidakram" target="_blank" rel="noopener" class="simple-social-link" title="LinkedIn" aria-label="LinkedIn" style="color: var(--color-orange, #c87a3e); display: inline-flex; align-items: center; justify-content: center; transition: transform 0.2s ease, opacity 0.2s ease;">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
-            </a>
-            <a href="https://zotirlabs.com/" target="_blank" rel="noopener" class="simple-social-link" title="Zotir Labs Website" aria-label="Zotir Labs Website" style="color: var(--color-orange, #c87a3e); display: inline-flex; align-items: center; justify-content: center; transition: transform 0.2s ease, opacity 0.2s ease;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="2" y1="12" x2="22" y2="12"/>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"/>
-              </svg>
-            </a>
+  <!-- ================= CASE 02: KUMO MATCHA (SOCIAL GROWTH) ================= -->
+  <section class="case-section on-navy" id="case-growth">
+    <div class="wrap">
+      <div class="case-header">
+        <div class="case-meta-row">
+          <span class="case-badge-pill">02 // ORGANIC SOCIAL &amp; VIRAL VIDEO</span>
+          <span class="case-client-tag">Client: Kumo Matcha &bull; Creator &amp; Lifestyle Brand</span>
+        </div>
+        <h2 class="case-title">Social Media Growth Engine: From Cold Scrollers to 85K+ Engaged Community</h2>
+        <p class="case-subtitle">
+          Engineered retention-optimized short-form video hooks, carousel frameworks, and automated DM lead funnels across Instagram and TikTok.
+        </p>
+      </div>
+
+      <!-- 4-Stat Box Grid -->
+      <div class="case-stats-grid">
+        <div class="case-stat-card">
+          <span class="case-stat-val">85K+</span>
+          <span class="case-stat-label">Targeted Community</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">4.2M+</span>
+          <span class="case-stat-label">Organic Video Views</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">18.0%</span>
+          <span class="case-stat-label">Avg Engagement Rate</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">310+</span>
+          <span class="case-stat-label">Inbound Sales Chats</span>
+        </div>
+      </div>
+
+      <!-- Two-Column Details -->
+      <div class="case-details-grid">
+        <div class="case-visual-col">
+          <div class="case-img-box">
+            <img src="showcase_viral_motion_hook.webp" alt="Kumo Matcha Viral Short-Form Video Hook" loading="lazy">
+          </div>
+          <div class="case-tools-bar">
+            <span class="case-tool-chip">CapCut Pro</span>
+            <span class="case-tool-chip">Instagram Reels</span>
+            <span class="case-tool-chip">TikTok Creator Studio</span>
+            <span class="case-tool-chip">Metricool</span>
+            <span class="case-tool-chip">Canva Pro</span>
+            <span class="case-tool-chip">Notion Content Hub</span>
           </div>
         </div>
 
-        <!-- Navigation Column -->
-        <div class="footer-nav-col">
-          <span class="footer-col-label">Navigation</span>
-          <a href="index.html" class="footer-nav-link">Home Overview</a>
-          <a href="work.html" class="footer-nav-link">Case Studies &amp; Work</a>
-          <a href="services.html" class="footer-nav-link">Services &amp; Pricing</a>
-          <a href="about.html" class="footer-nav-link">About &amp; Experience</a>
-          <a href="blog.html" class="footer-nav-link">Growth Insights</a>
-          <a href="contact.html" class="footer-nav-link">Contact &amp; Inquiry</a>
-        </div>
+        <div class="case-content-col">
+          <div class="case-sub-block">
+            <h4 class="case-block-h">The Core Challenge &amp; Bottleneck</h4>
+            <p class="case-block-p">
+              The brand suffered from algorithmic invisibility, flat engagement (&lt;1.2%), and zero repeatable hook frameworks. Static posts generated almost no organic reach, and viewer drop-off happened within the first 1.5 seconds.
+            </p>
+          </div>
 
-        <!-- Services Column -->
-        <div class="footer-nav-col">
-          <span class="footer-col-label">Capabilities</span>
-          <a href="services.html#service-social" class="footer-nav-link">Dedicated Social Media Handler</a>
-          <a href="services.html#service-linkedin" class="footer-nav-link">LinkedIn Profile Optimization</a>
-          <a href="services.html#service-design" class="footer-nav-link">Graphic Design &amp; Brand Identity</a>
-          <a href="services.html#service-ads" class="footer-nav-link">Performance Meta/Google Ads</a>
-          <a href="services.html#service-data" class="footer-nav-link">Inventory &amp; Operations Systems</a>
-        </div>
-      </div>
+          <div class="case-sub-block">
+            <h4 class="case-block-h">3-Phase Execution Architecture</h4>
+            <div class="case-phases-list">
+              <div class="case-phase-item">
+                <span class="case-phase-num">1</span>
+                <div class="case-phase-txt">
+                  <h5>Trend Intercept &amp; Hook Taxonomy</h5>
+                  <p>Analyzed top 100 niche videos and reverse-engineered 12 repeatable pattern-interrupt hooks designed for high retention.</p>
+                </div>
+              </div>
+              <div class="case-phase-item">
+                <span class="case-phase-num">2</span>
+                <div class="case-phase-txt">
+                  <h5>Kinetic Video Pacing &amp; Narrative Rhythm</h5>
+                  <p>Engineered rapid CapCut cuts every 1.8 seconds with bespoke kinetic typography and sound design to elevate average watch time past 82%.</p>
+                </div>
+              </div>
+              <div class="case-phase-item">
+                <span class="case-phase-num">3</span>
+                <div class="case-phase-txt">
+                  <h5>Conversational Inbound DM Funnels</h5>
+                  <p>Configured automated comment-to-DM triggers routing viewers directly into pre-qualified sales conversations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <!-- Bottom bar -->
-      <div class="footer-bottom-bar">
-        <p class="footer-copy">&copy; 2026 Shahid Akram. All rights reserved.</p>
-        <a href="mailto:heyshahidakram@gmail.com" class="footer-email-link">heyshahidakram@gmail.com</a>
+          <div class="case-sub-block">
+            <h4 class="case-block-h">Verified Commercial Outcomes</h4>
+            <ul class="case-results-list">
+              <li>Scaled organic followers from zero to 85,000+ targeted audience within 90 days</li>
+              <li>Generated 4,200,000+ verified short-form video views across key hero campaigns</li>
+              <li>Elevated average community engagement rate from 1.2% to 18.0%</li>
+              <li>Direct message automated funnels converted 310+ high-intent inbound client inquiries</li>
+            </ul>
+          </div>
+
+          <div class="case-action-row">
+            <a href="https://wa.me/923004822560?text=Hi%20Shahid%2C%20I%20reviewed%20your%20Social%20Media%20Growth%20case%20study%20and%20want%20viral%20reels%20for%20my%20brand." target="_blank" rel="noopener" class="pill pill-orange">
+              Discuss Viral Social Growth on WhatsApp &rarr;
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
 
-<!-- Deep-Dive Modal Overlay -->
-  <div class="case-modal-overlay" id="caseModalOverlay" style="display: none;">
-    <div class="case-modal-content">
-      <button class="case-modal-close" id="caseModalClose" aria-label="Close Case Detail">✕</button>
-      <div id="caseModalBody">
-        <!-- Injected via JavaScript -->
+  <!-- ================= CASE 03: ZOTIR SYSTEMS (BRAND IDENTITY) ================= -->
+  <section class="case-section on-cream" id="case-identity">
+    <div class="wrap">
+      <div class="case-header">
+        <div class="case-meta-row">
+          <span class="case-badge-pill">03 // BRAND IDENTITY &amp; CREATIVES</span>
+          <span class="case-client-tag">Client: Zotir Systems &bull; Helvetiqa Swiss Horology</span>
+        </div>
+        <h2 class="case-title">Visual Identity &amp; High-CTR Creative Kit: Elevating Brand Perception Across 15 Channels</h2>
+        <p class="case-subtitle">
+          Designed cohesive Swiss-inspired brand guidelines, scroll-stopping social ad creative systems, and investor pitch decks that boosted CTR by +3.8%.
+        </p>
       </div>
+
+      <!-- 4-Stat Box Grid -->
+      <div class="case-stats-grid">
+        <div class="case-stat-card">
+          <span class="case-stat-val">+3.8%</span>
+          <span class="case-stat-label">Ad CTR Improvement</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">15+</span>
+          <span class="case-stat-label">Touchpoints Deployed</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">100+</span>
+          <span class="case-stat-label">Bespoke Vector Assets</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">95%</span>
+          <span class="case-stat-label">1st Round Approvals</span>
+        </div>
+      </div>
+
+      <!-- Two-Column Details -->
+      <div class="case-details-grid">
+        <div class="case-visual-col">
+          <div class="case-img-box">
+            <img src="showcase_helvetiqa_identity.webp" alt="Zotir Systems & Helvetiqa Visual Identity System" loading="lazy">
+          </div>
+          <div class="case-tools-bar">
+            <span class="case-tool-chip">Adobe Illustrator</span>
+            <span class="case-tool-chip">Adobe Photoshop</span>
+            <span class="case-tool-chip">Figma Enterprise</span>
+            <span class="case-tool-chip">Canva Enterprise</span>
+            <span class="case-tool-chip">After Effects</span>
+          </div>
+        </div>
+
+        <div class="case-content-col">
+          <div class="case-sub-block">
+            <h4 class="case-block-h">The Core Challenge &amp; Bottleneck</h4>
+            <p class="case-block-p">
+              Fragmented visual branding across channels diluted credibility and hurt conversion rates among high-net-worth buyers. Paid advertising creatives suffered from low CTR (&lt;1.1%) due to generic templates, while presentation decks lacked executive polish.
+            </p>
+          </div>
+
+          <div class="case-sub-block">
+            <h4 class="case-block-h">3-Phase Execution Architecture</h4>
+            <div class="case-phases-list">
+              <div class="case-phase-item">
+                <span class="case-phase-num">1</span>
+                <div class="case-phase-txt">
+                  <h5>Swiss-Inspired Identity Guidelines</h5>
+                  <p>Constructed comprehensive brand rules: strict typography hierarchy, geometric spacing scales, and Pantone color psychology direction.</p>
+                </div>
+              </div>
+              <div class="case-phase-item">
+                <span class="case-phase-num">2</span>
+                <div class="case-phase-txt">
+                  <h5>High-CTR Paid Creative Production Matrix</h5>
+                  <p>Designed 40+ modular paid ad assets across high-contrast statics, motion teasers, and multi-slide educational carousels.</p>
+                </div>
+              </div>
+              <div class="case-phase-item">
+                <span class="case-phase-num">3</span>
+                <div class="case-phase-txt">
+                  <h5>Executive &amp; Investor Pitch Packaging</h5>
+                  <p>Created investor pitch collateral in Figma/Illustrator with data visualization layouts engineered for high-stakes presentations.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-sub-block">
+            <h4 class="case-block-h">Verified Commercial Outcomes</h4>
+            <ul class="case-results-list">
+              <li>Boosted paid ad click-through rate (CTR) by an immediate +3.8% across ad sets</li>
+              <li>Seamless visual identity deployed across 15+ international marketing touchpoints</li>
+              <li>Authored 100+ bespoke vector graphics, ad variants, and presentation assets</li>
+              <li>Achieved client and stakeholder sign-off in 95% of first-round creative reviews</li>
+            </ul>
+          </div>
+
+          <div class="case-action-row">
+            <a href="https://wa.me/923004822560?text=Hi%20Shahid%2C%20I%20reviewed%20your%20Visual%20Identity%20Case%20and%20want%20to%20redesign%20my%20brand." target="_blank" rel="noopener" class="pill pill-navy">
+              Discuss Brand Identity on WhatsApp &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CASE 04: APEX B2B (COPYWRITING) ================= -->
+  <section class="case-section on-cream2" id="case-copy">
+    <div class="wrap">
+      <div class="case-header">
+        <div class="case-meta-row">
+          <span class="case-badge-pill">04 // CONVERSION COPYWRITING &amp; B2B STRATEGY</span>
+          <span class="case-client-tag">Client: Apex B2B &bull; SaaS Founders &amp; Enterprise Consultancies</span>
+        </div>
+        <h2 class="case-title">Conversion Copywriting &amp; Content Architecture: Generating 42 Inbound B2B Leads/mo</h2>
+        <p class="case-subtitle">
+          Authored authoritative SEO pillar hubs, persuasive landing page wireframe copy, and executive LinkedIn thought-leadership essays that position founders as industry authorities.
+        </p>
+      </div>
+
+      <!-- 4-Stat Box Grid -->
+      <div class="case-stats-grid">
+        <div class="case-stat-card">
+          <span class="case-stat-val">42/mo</span>
+          <span class="case-stat-label">Qualified B2B Inbound</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">120K+</span>
+          <span class="case-stat-label">Monthly Impressions</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">46.8%</span>
+          <span class="case-stat-label">Email Open Rate</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">Top 5</span>
+          <span class="case-stat-label">14 Google Keywords</span>
+        </div>
+      </div>
+
+      <!-- Two-Column Details -->
+      <div class="case-details-grid">
+        <div class="case-visual-col">
+          <div class="case-img-box" style="padding: 36px 28px; background: #06173A; color: #F9ECE0;">
+            <p style="font-size: 13px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px;">B2B EDITORIAL FRAMEWORK</p>
+            <h3 style="font-size: 22px; font-weight: 700; line-height: 1.3; margin-bottom: 14px;">"Hook &rarr; Problem &rarr; Contrarian Insight &rarr; Verified Proof &rarr; Soft CTA"</h3>
+            <p style="font-family: var(--serif); font-size: 15px; line-height: 1.6; opacity: 0.85;">
+              High-ticket B2B decision makers do not buy from pushy copy. They buy when you articulate their unstated bottleneck better than they can themselves.
+            </p>
+          </div>
+          <div class="case-tools-bar">
+            <span class="case-tool-chip">Notion Hub</span>
+            <span class="case-tool-chip">Google Docs</span>
+            <span class="case-tool-chip">Ahrefs SEO</span>
+            <span class="case-tool-chip">LinkedIn Creator</span>
+            <span class="case-tool-chip">Shield Analytics</span>
+            <span class="case-tool-chip">Grammarly Business</span>
+          </div>
+        </div>
+
+        <div class="case-content-col">
+          <div class="case-sub-block">
+            <h4 class="case-block-h">The Core Challenge &amp; Bottleneck</h4>
+            <p class="case-block-p">
+              The client's sales pipeline was bone-dry and reliant on exhausting outbound cold pitches with dwindling reply rates. Website copy was passive and feature-centric without addressing executive purchase hesitation.
+            </p>
+          </div>
+
+          <div class="case-sub-block">
+            <h4 class="case-block-h">3-Phase Execution Architecture</h4>
+            <div class="case-phases-list">
+              <div class="case-phase-item">
+                <span class="case-phase-num">1</span>
+                <div class="case-phase-txt">
+                  <h5>Customer Persona &amp; Objection Extraction</h5>
+                  <p>Conducted stakeholder interviews extracting exact client vernacular, key ROI criteria, and primary enterprise purchase friction points.</p>
+                </div>
+              </div>
+              <div class="case-phase-item">
+                <span class="case-phase-num">2</span>
+                <div class="case-phase-txt">
+                  <h5>Executive Thought Leadership Editorial</h5>
+                  <p>Authored 3x weekly authority carousels and contrarian breakdowns following the Hook-Problem-Proof-Offer framework on LinkedIn.</p>
+                </div>
+              </div>
+              <div class="case-phase-item">
+                <span class="case-phase-num">3</span>
+                <div class="case-phase-txt">
+                  <h5>Friction-Free Wireframes &amp; Email Nurture</h5>
+                  <p>Redrafted landing page copy with social proof stacking and deployed a 6-part automated email series with 46.8% open rates.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-sub-block">
+            <h4 class="case-block-h">Verified Commercial Outcomes</h4>
+            <ul class="case-results-list">
+              <li>Consistently generated 42 qualified inbound B2B consulting inquiries every month</li>
+              <li>Surpassed 120,000+ monthly organic impressions on executive LinkedIn brand</li>
+              <li>Ranked 14 high-intent industry keywords in Google Top 5 search positions</li>
+              <li>Automated email nurture sequences delivered a sustained 46.8% open rate and 11.2% CTR</li>
+            </ul>
+          </div>
+
+          <div class="case-action-row">
+            <a href="https://wa.me/923004822560?text=Hi%20Shahid%2C%20I%20reviewed%20your%20B2B%20Copywriting%20Case%20and%20want%20more%20inbound%20leads." target="_blank" rel="noopener" class="pill pill-navy">
+              Discuss B2B Copywriting on WhatsApp &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CASE 05: COMMERCIAL DATA OPERATIONS ================= -->
+  <section class="case-section on-navy" id="case-data">
+    <div class="wrap">
+      <div class="case-header">
+        <div class="case-meta-row">
+          <span class="case-badge-pill">05 // COMMERCIAL DATA &amp; INVENTORY SYSTEMS</span>
+          <span class="case-client-tag">Client: Enterprise Construction &bull; Logistics &amp; FMCG Facilities</span>
+        </div>
+        <h2 class="case-title">Precision Commercial Data Systems: 100% Accuracy Across 25,000+ Records</h2>
+        <p class="case-subtitle">
+          Backed by 7+ years of rigorous data management, inventory reconciliation, and dynamic spreadsheet architecture with 100% precision across 25,000+ records.
+        </p>
+      </div>
+
+      <!-- 4-Stat Box Grid -->
+      <div class="case-stats-grid">
+        <div class="case-stat-card">
+          <span class="case-stat-val">100%</span>
+          <span class="case-stat-label">Precision Rate</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">25,000+</span>
+          <span class="case-stat-label">SKU Items Audited</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">80%</span>
+          <span class="case-stat-label">Manual Hours Saved</span>
+        </div>
+        <div class="case-stat-card">
+          <span class="case-stat-val">0 Penalties</span>
+          <span class="case-stat-label">7 Years Clean Audits</span>
+        </div>
+      </div>
+
+      <!-- Two-Column Details -->
+      <div class="case-details-grid">
+        <div class="case-visual-col">
+          <div class="case-img-box" style="padding: 36px 28px; background: rgba(255, 255, 255, 0.05); color: #F9ECE0; border-color: rgba(249, 236, 224, 0.15);">
+            <p style="font-size: 13px; font-weight: 700; color: var(--orange); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px;">ZERO-VARIANCE DATA ARCHITECTURE</p>
+            <h3 style="font-size: 22px; font-weight: 700; line-height: 1.3; margin-bottom: 14px;">7+ Years Industrial Track Record in High-Stakes Operations</h3>
+            <p style="font-family: var(--serif); font-size: 15px; line-height: 1.6; opacity: 0.85;">
+              From IVCC Engineering sites to high-velocity e-commerce SKUs. Automated error-trapping formulas, dynamic XLOOKUP models, and instant ERP synchronization.
+            </p>
+          </div>
+          <div class="case-tools-bar">
+            <span class="case-tool-chip">Advanced MS Excel</span>
+            <span class="case-tool-chip">Google Sheets (Apps Script)</span>
+            <span class="case-tool-chip">Power Query</span>
+            <span class="case-tool-chip">Oracle Inventory ERP</span>
+            <span class="case-tool-chip">Data Cleansing Models</span>
+          </div>
+        </div>
+
+        <div class="case-content-col">
+          <div class="case-sub-block">
+            <h4 class="case-block-h">The Core Challenge &amp; Bottleneck</h4>
+            <p class="case-block-p">
+              Fragmented manual spreadsheets caused physical inventory variance, stock discrepancies, and delayed executive visibility. Managers spent 15+ hours weekly compiling manual status sheets, and duplicate records led to frequent stockouts.
+            </p>
+          </div>
+
+          <div class="case-sub-block">
+            <h4 class="case-block-h">3-Phase Execution Architecture</h4>
+            <div class="case-phases-list">
+              <div class="case-phase-item">
+                <span class="case-phase-num">1</span>
+                <div class="case-phase-txt">
+                  <h5>Ledger Audit &amp; Deduplication Sprint</h5>
+                  <p>Cleaned and normalized 25,000+ line items, removing duplicate entries and enforcing standard data entry schemas across departments.</p>
+                </div>
+              </div>
+              <div class="case-phase-item">
+                <span class="case-phase-num">2</span>
+                <div class="case-phase-txt">
+                  <h5>Advanced Formula Pipelines &amp; Validation</h5>
+                  <p>Engineered automated Excel and Google Sheets models utilizing dynamic XLOOKUP, INDEX/MATCH, and automated error-flagging logic.</p>
+                </div>
+              </div>
+              <div class="case-phase-item">
+                <span class="case-phase-num">3</span>
+                <div class="case-phase-txt">
+                  <h5>Executive Inventory Dashboard &amp; Reorder Triggers</h5>
+                  <p>Constructed real-time stock dashboards with conditional automated alerts triggering before popular items reach critical thresholds.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-sub-block">
+            <h4 class="case-block-h">Verified Commercial Outcomes</h4>
+            <ul class="case-results-list">
+              <li>Maintained 100% data entry precision across 25,000+ technical components and logistics items</li>
+              <li>Reduced weekly executive inventory compilation time from 6 hours to real-time automated sheets</li>
+              <li>Cleaned and enriched 10,000+ client CRM records eliminating duplicate data by 99.4%</li>
+              <li>Zero audit penalties across 7 consecutive years of external commercial audits</li>
+            </ul>
+          </div>
+
+          <div class="case-action-row">
+            <a href="https://wa.me/923004822560?text=Hi%20Shahid%2C%20I%20reviewed%20your%20Data%20Systems%20Case%20and%20need%20inventory%2Fdata%20automation." target="_blank" rel="noopener" class="pill pill-orange">
+              Discuss Data Operations on WhatsApp &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CASE 06: DESIGN POSTERS & CREATIVE SHOWCASE ================= -->
+  <section class="case-section on-cream" id="gallery">
+    <div class="wrap">
+      <div class="case-header" style="text-align: center; max-width: 820px; margin: 0 auto 40px;">
+        <span class="tag-orange">06 // CREATIVE VAULT &amp; DESIGN SHOWCASE</span>
+        <h2 class="case-title" style="margin: 10px auto;">High-Impact Ad Creatives &amp; Visual Storytelling</h2>
+        <p class="case-subtitle" style="margin: 0 auto;">
+          A curated collection of performance ad creatives, viral social infographics, and brand storytelling assets engineered to stop the scroll and drive conversions. Click any asset to inspect specs and full resolution.
+        </p>
+      </div>
+
+      <div class="gallery-grid-new">
+        <!-- Asset 1 -->
+        <div class="poster-card-new" onclick="openLightbox('showcase_apex_audio_ad.webp', 'High-ROAS Meta Ad Creative: Luxury Cyber-Tech Campaign', 'PAID ADS & PERFORMANCE MEDIA', 'Engineered for high-ROAS Meta and TikTok paid campaigns. Combines floating product staging, high-contrast studio lighting, and conversion-focused typography that stops feed scrolling within 1.5 seconds.')">
+          <div class="poster-img-wrap">
+            <img src="showcase_apex_audio_ad.webp" alt="High-ROAS Meta Ad Creative" loading="lazy">
+          </div>
+          <div class="poster-info-wrap">
+            <span>Paid Ads &bull; Meta/TikTok</span>
+            <h4>Apex Audio Luxury Cyber-Tech Ad</h4>
+          </div>
+        </div>
+
+        <!-- Asset 2 -->
+        <div class="poster-card-new" onclick="openLightbox('showcase_viral_motion_hook.webp', 'Short-Form Kinetic Motion Creative: Viral Pattern Interrupt', 'VIRAL SHORT-FORM VIDEO & REELS', '9:16 high-retention video creative engineered for TikTok and Instagram Reels. Built with rapid visual pattern interrupts in the first 2 seconds to retain 82%+ watch-through rates.')">
+          <div class="poster-img-wrap">
+            <img src="showcase_viral_motion_hook.webp" alt="Short-Form Kinetic Video Creative" loading="lazy">
+          </div>
+          <div class="poster-info-wrap">
+            <span>Video &bull; Reels / TikTok</span>
+            <h4>Kumo Matcha Kinetic Pattern Interrupt</h4>
+          </div>
+        </div>
+
+        <!-- Asset 3 -->
+        <div class="poster-card-new" onclick="openLightbox('showcase_helvetiqa_identity.webp', 'Swiss-Grade Visual Identity: Helvetiqa Luxury Horology', 'BRAND IDENTITY & VISUAL PACKAGING', 'Complete visual guidelines spanning strict typographic grid systems, monochrome palette rules, and premium packaging mockups engineered for high-net-worth customer trust.')">
+          <div class="poster-img-wrap">
+            <img src="showcase_helvetiqa_identity.webp" alt="Helvetiqa Swiss Visual Identity" loading="lazy">
+          </div>
+          <div class="poster-info-wrap">
+            <span>Brand Identity &bull; Luxury</span>
+            <h4>Helvetiqa Horology Identity System</h4>
+          </div>
+        </div>
+
+        <!-- Asset 4 -->
+        <div class="poster-card-new" onclick="openLightbox('ZOTIR.png', 'Zotir Systems 3D Emblem & Visual Architecture', '3D DESIGN & VECTOR BRANDING', 'Precision 3D brand symbol created for modern software enterprise systems. Combines cyber-tech lighting with clean geometric vectors for multi-platform deployment.')">
+          <div class="poster-img-wrap" style="background: #081226;">
+            <img src="ZOTIR.png" alt="Zotir Systems 3D Emblem" loading="lazy" style="object-fit: contain; padding: 24px;">
+          </div>
+          <div class="poster-info-wrap">
+            <span>3D Vector &bull; Tech Enterprise</span>
+            <h4>Zotir Systems 3D Brand Emblem</h4>
+          </div>
+        </div>
+
+        <!-- Asset 5 -->
+        <div class="poster-card-new" onclick="openLightbox('Professional at a Modern Office Desk.webp', 'Executive Production Setup & Workspace', 'OPERATIONS & WORKSPACE SETUP', 'Dedicated high-performance workstation equipped with dual calibrated monitors, high-speed fiber internet, and 100% UPS power backup for uninterrupted client execution.')">
+          <div class="poster-img-wrap">
+            <img src="Professional at a Modern Office Desk.webp" alt="Executive Workspace" loading="lazy">
+          </div>
+          <div class="poster-info-wrap">
+            <span>Remote Infrastructure &bull; 100% Backup</span>
+            <h4>Executive Workstation &amp; Operations</h4>
+          </div>
+        </div>
+
+        <!-- Asset 6 -->
+        <div class="poster-card-new" onclick="openLightbox('og-preview.png', 'Full-Scale Performance & Growth Master Campaign', 'OMNICHANNEL MARKETING KIT', 'Comprehensive multi-platform campaign suite incorporating Meta, Google Ads, LinkedIn authority, and dynamic data spreadsheets.')">
+          <div class="poster-img-wrap">
+            <img src="og-preview.png" alt="Performance Master Campaign" loading="lazy">
+          </div>
+          <div class="poster-info-wrap">
+            <span>Omnichannel &bull; Retainer Kit</span>
+            <h4>Performance Growth Master Suite</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Lightbox Modal -->
+<div class="poster-lightbox" id="posterLightbox" style="display: none;" onclick="closeLightbox()">
+  <div class="poster-lightbox-content" onclick="event.stopPropagation()">
+    <button class="poster-lightbox-close" aria-label="Close Preview" onclick="closeLightbox()">&times;</button>
+    <div style="background: #000; display: flex; align-items: center; justify-content: center; min-height: 380px;">
+      <img id="lightboxImg" src="" alt="Creative Asset Preview" style="max-width: 100%; max-height: 75vh; object-fit: contain;">
+    </div>
+    <div style="padding: 36px 32px; display: flex; flex-direction: column; justify-content: center;">
+      <span id="lightboxTag" style="font-size: 12px; font-weight: 700; color: #c95d1b; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 8px;">Category</span>
+      <h3 id="lightboxTitle" style="font-size: 22px; font-weight: 800; line-height: 1.25; margin-bottom: 14px; color: var(--navy);">Asset Title</h3>
+      <p id="lightboxDesc" style="font-family: var(--serif); font-size: 15.5px; line-height: 1.6; color: var(--ink-2); margin-bottom: 24px;">Asset breakdown.</p>
+      <a id="lightboxWaBtn" href="https://wa.me/923004822560" target="_blank" rel="noopener" class="pill pill-navy" style="align-self: flex-start;">
+        Inquire About Similar Creatives &rarr;
+      </a>
     </div>
   </div>
+</div>
 
-<!-- Fullscreen Lightbox Modal for Creative Assets with Specs Drawer -->
-  <div class="poster-lightbox" id="posterLightbox" style="display: none;" onclick="closeLightbox()">
-    <button class="poster-lightbox-close" aria-label="Close Lightbox" onclick="closeLightbox()">✕</button>
-    <div class="poster-lightbox-content" onclick="event.stopPropagation()">
-      <div class="lightbox-media-wrap">
-        <img id="lightboxImg" src="" alt="Creative Asset Preview" width="1200" height="800">
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <div class="flogo">
+          <img src="shahid_logo.png" alt="Shahid Akram">
+          <span class="flogo-name">Shahid Akram<span style="color:var(--orange)">.</span></span>
+        </div>
+        <p>Senior Digital Marketer, Growth Strategist &amp; Systems Architect. Scaling modern brands with engineering precision from Lahore, Pakistan.</p>
       </div>
-      <div class="lightbox-info-drawer">
-        <span class="lightbox-tag" id="lightboxTag">PERFORMANCE ASSET</span>
-        <h3 class="lightbox-title" id="lightboxTitle">Asset Title</h3>
-        <p class="lightbox-desc" id="lightboxDesc">Creative strategy breakdown.</p>
-        <div class="lightbox-specs-wrap" id="lightboxSpecs"></div>
+
+      <div>
+        <h5>Navigation</h5>
+        <a href="index.html">Home Overview</a>
+        <a href="work.html">Case Studies &amp; Work</a>
+        <a href="services.html">Services &amp; Pricing</a>
+        <a href="about.html">About &amp; Experience</a>
+        <a href="index.html#insights">Growth Insights</a>
+        <a href="https://wa.me/923004822560" target="_blank" rel="noopener">Contact on WhatsApp</a>
+      </div>
+
+      <div>
+        <h5>Case Studies</h5>
+        <a href="work.html#case-ads">Apex Audio (4.2x ROAS)</a>
+        <a href="work.html#case-growth">Kumo Matcha (85K Social)</a>
+        <a href="work.html#case-identity">Zotir Systems (3D Identity)</a>
+        <a href="work.html#case-copy">Apex B2B (42 Inbound Leads)</a>
+        <a href="work.html#case-data">Commercial Data (25K SKUs)</a>
+        <a href="work.html#gallery">Design Posters Showcase</a>
+      </div>
+
+      <div>
+        <h5>Connect Direct</h5>
+        <div class="footer-social-row">
+          <a href="https://wa.me/923004822560" target="_blank" rel="noopener" class="simple-social-link" title="WhatsApp Chat" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.3-1.39a10 10 0 004.69 1.18h.01c5.46 0 9.91-4.45 9.91-9.91A9.87 9.87 0 0012.04 2zm0 18.06h-.01a8.17 8.17 0 01-4.17-1.15l-.3-.18-3.1.81.83-3.02-.2-.31a8.21 8.21 0 01-1.26-4.3c0-4.52 3.68-8.2 8.22-8.2a8.18 8.18 0 015.82 2.41 8.16 8.16 0 012.4 5.8c0 4.53-3.68 8.14-8.2 8.14zm4.51-6.15c-.25-.12-1.46-.72-1.69-.81-.23-.08-.39-.12-.56.12-.16.25-.64.81-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.16 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.37 1 2.54c.12.16 1.74 2.65 4.2 3.72.59.25 1.04.41 1.4.52.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.18-.48-.3z"/></svg>
+          </a>
+          <a href="mailto:heyshahidakram@gmail.com" class="simple-social-link" title="Direct Email" aria-label="Direct Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/heyshahidakram" target="_blank" rel="noopener" class="simple-social-link" title="LinkedIn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="articles.js" defer></script>
-  <script src="app.js" defer></script>
+    <div class="sub">
+      <small>&copy; 2026 Shahid Akram. All rights reserved.</small>
+      <a href="#hero" style="color:var(--cream);">Back to top &uarr;</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile Burger Menu Toggle
+  const burger = document.getElementById('burger');
+  const mmenu = document.getElementById('mmenu');
+  if (burger) {
+    burger.addEventListener('click', () => {
+      document.body.classList.toggle('m-open');
+    });
+  }
+
+  // Close mobile menu on link click
+  document.querySelectorAll('.m-item').forEach(link => {
+    link.addEventListener('click', () => {
+      document.body.classList.remove('m-open');
+    });
+  });
+
+  // Lightbox functions
+  function openLightbox(imgSrc, title, tag, desc) {
+    const lightbox = document.getElementById('posterLightbox');
+    document.getElementById('lightboxImg').src = imgSrc;
+    document.getElementById('lightboxTitle').innerText = title;
+    document.getElementById('lightboxTag').innerText = tag;
+    document.getElementById('lightboxDesc').innerText = desc;
+    document.getElementById('lightboxWaBtn').href = 'https://wa.me/923004822560?text=' + encodeURIComponent('Hi Shahid, I saw the ' + title + ' asset and want similar work for my brand.');
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById('posterLightbox');
+    lightbox.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  // Active state on jump filter pills
+  const pills = document.querySelectorAll('.work-filter-pill');
+  pills.forEach(pill => {
+    pill.addEventListener('click', function() {
+      pills.forEach(p => p.classList.remove('is-active'));
+      this.classList.add('is-active');
+    });
+  });
+</script>
+
 </body>
 </html>
